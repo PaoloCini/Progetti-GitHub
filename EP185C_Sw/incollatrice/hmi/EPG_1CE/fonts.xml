@@ -1,0 +1,9 @@
+<fonts>
+ <font name="tahoma.ttf" fontname="Tahoma" removable="false" size="701180" langIds="4,6,1,3,2,5"/>
+ <font name="tahomabd.ttf" fontname="Tahoma" removable="false" size="652416" langIds="4,6,1,3,2,5"/>
+ <font name="METR55W.TTF" fontname="Metrostyle" removable="false" size="76096" langIds="1"/>
+ <font name="Roboto-Light.ttf" fontname="Roboto Light" removable="false" embed="true" size="169680" langIds="4,1,2"/>
+ <font name="Roboto-Bold.ttf" fontname="Roboto" removable="false" embed="true" size="170064" langIds="1"/>
+ <font name="Roboto-Regular.ttf" fontname="Roboto" removable="false" embed="true" size="170984" langIds="1"/>
+ <font name="Roboto-Medium.ttf" fontname="Roboto Medium" removable="false" embed="true" size="171320" langIds="1"/>
+</fonts>

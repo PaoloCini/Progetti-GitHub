@@ -1,0 +1,832 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object staticFile="opt/turni uso colla.png" usedFonts="Tahoma,Metrostyle" id="Turni uso Colla" class="PageWgt" pageSize="800,600" staticOptEnable="true" dataWndSize="0,70" downloadPrepDone="false" pageName="Turni uso Colla">
+  <wgtStyle height="600" width="800" ver="040500458" y="0" x="0" fitToSize="1" v="04.05.00.458" color="rgb(0,0,0)"/>
+  <object mgrType="Page" id="_PageMLTextMgrWgt" class="PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle height="0" width="0" y="0" x="0"/>
+   <langs curLangId="L1" defLangId="L1">
+    <lang name="ITALIANO" keypads="" writingsystem="Any" removable="false" langCode="it-IT" defaultFont="Tahoma" langId="L1"/>
+    <lang name="ENGLISH" keypads="" writingsystem="Any" removable="false" langCode="en-US" defaultFont="Tahoma" langId="L2"/>
+    <lang name="FRANCAIS" keypads="" writingsystem="Any" removable="false" langCode="fr-FR" defaultFont="Tahoma" langId="L3"/>
+    <lang name="ESPANOL" keypads="" writingsystem="Any" removable="false" langCode="es-ES" defaultFont="Tahoma" langId="L4"/>
+    <lang name="DEUTSCH" keypads="" writingsystem="Any" removable="false" langCode="de-DE" defaultFont="Tahoma" langId="L5"/>
+    <lang name="PORTUGUES" keypads="" writingsystem="Any" removable="false" langCode="pt-PT" defaultFont="Tahoma" langId="L6"/>
+   </langs>
+   <MLTexts>
+    <MLText L4="2 MAR" id="1" L6="Label" L1="2 MAR" L2="2 TUE" L3="Label" L5="Label"/>
+    <MLText L4="TURNOS COLA" id="2" L6="SELEZIONE" L1="TURNI COLLA" L2="GLUE: WORK SHIFTS" L3="SELEZIONE" L5="SELEZIONE"/>
+    <MLText L4="Ok" id="12" L6="Label" L1="Ok" L2="Ok" L3="Label" L5="Label"/>
+    <MLText L4="Turno" id="14" L6="Label" L1="Turno" L2="Shift" L3="Label" L5="Label"/>
+    <MLText L4="Dìa de la semana" id="16" L6="Label" L1="Giorno della settimana" L2="Weekday" L3="Label" L5="Label"/>
+    <MLText L4="Hoy" id="17" L6="Label" L1="Oggi" L2="Today" L3="Label" L5="Label"/>
+    <MLText L4="1" id="18" L6="Label" L1="1" L2="1" L3="Label" L5="Label"/>
+    <MLText L4="2" id="19" L6="Label" L1="2" L2="2" L3="Label" L5="Label"/>
+    <MLText L4="3" id="21" L6="Label" L1="3" L2="3" L3="Label" L5="Label"/>
+    <MLText L4="Extra1" id="22" L6="Label" L1="Extra1" L2="Extra1" L3="Label" L5="Label"/>
+    <MLText L4="Extra2" id="24" L6="Label" L1="Extra2" L2="Extra2" L3="Label" L5="Label"/>
+    <MLText L4="1" id="25" L6="Label" L1="1" L2="1" L3="Label" L5="Label"/>
+    <MLText L4="2" id="26" L6="Label" L1="2" L2="2" L3="Label" L5="Label"/>
+    <MLText L4="3" id="27" L6="Label" L1="3" L2="3" L3="Label" L5="Label"/>
+    <MLText L4="4" id="28" L6="Label" L1="4" L2="4" L3="Label" L5="Label"/>
+    <MLText L4="5" id="32" L6="Label" L1="5" L2="5" L3="Label" L5="Label"/>
+    <MLText L4="6" id="33" L6="Label" L1="6" L2="6" L3="Label" L5="Label"/>
+    <MLText L4="7" id="36" L6="Label" L1="7" L2="7" L3="Label" L5="Label"/>
+    <MLText L4="1" id="37" L6="Label" L1="1" L2="1" L3="Label" L5="Label"/>
+    <MLText L4="2" id="38" L6="Label" L1="2" L2="2" L3="Label" L5="Label"/>
+    <MLText L4="3" id="39" L6="Label" L1="3" L2="3" L3="Label" L5="Label"/>
+    <MLText L4="4" id="40" L6="Label" L1="4" L2="4" L3="Label" L5="Label"/>
+    <MLText L4="5" id="41" L6="Label" L1="5" L2="5" L3="Label" L5="Label"/>
+    <MLText L4="6" id="42" L6="Label" L1="6" L2="6" L3="Label" L5="Label"/>
+    <MLText L4="7" id="74" L6="Label" L1="7" L2="7" L3="Label" L5="Label"/>
+    <MLText L4="1" id="76" L6="Label" L1="1" L2="1" L3="Label" L5="Label"/>
+    <MLText L4="2" id="77" L6="Label" L1="2" L2="2" L3="Label" L5="Label"/>
+    <MLText L4="3" id="78" L6="Label" L1="3" L2="3" L3="Label" L5="Label"/>
+    <MLText L4="4" id="79" L6="Label" L1="4" L2="4" L3="Label" L5="Label"/>
+    <MLText L4="5" id="80" L6="Label" L1="5" L2="5" L3="Label" L5="Label"/>
+    <MLText L4="6" id="81" L6="Label" L1="6" L2="6" L3="Label" L5="Label"/>
+    <MLText L4="7" id="82" L6="Label" L1="7" L2="7" L3="Label" L5="Label"/>
+    <MLText L4="1" id="83" L6="Label" L1="1" L2="1" L3="Label" L5="Label"/>
+    <MLText L4="2" id="84" L6="Label" L1="2" L2="2" L3="Label" L5="Label"/>
+    <MLText L4="3" id="85" L6="Label" L1="3" L2="3" L3="Label" L5="Label"/>
+    <MLText L4="4" id="86" L6="Label" L1="4" L2="4" L3="Label" L5="Label"/>
+    <MLText L4="5" id="87" L6="Label" L1="5" L2="5" L3="Label" L5="Label"/>
+    <MLText L4="6" id="88" L6="Label" L1="6" L2="6" L3="Label" L5="Label"/>
+    <MLText L4="7" id="89" L6="Label" L1="7" L2="7" L3="Label" L5="Label"/>
+    <MLText L4="1" id="90" L6="Label" L1="1" L2="1" L3="Label" L5="Label"/>
+    <MLText L4="2" id="91" L6="Label" L1="2" L2="2" L3="Label" L5="Label"/>
+    <MLText L4="3" id="92" L6="Label" L1="3" L2="3" L3="Label" L5="Label"/>
+    <MLText L4="4" id="93" L6="Label" L1="4" L2="4" L3="Label" L5="Label"/>
+    <MLText L4="5" id="94" L6="Label" L1="5" L2="5" L3="Label" L5="Label"/>
+    <MLText L4="6" id="95" L6="Label" L1="6" L2="6" L3="Label" L5="Label"/>
+    <MLText L4="7" id="96" L6="Label" L1="7" L2="7" L3="Label" L5="Label"/>
+    <MLText L4="1 LUN" id="97" L6="Label" L1="1 LUN" L2="1 MON" L3="Label" L5="Label"/>
+    <MLText L4="3 MIE" id="99" L6="Label" L1="3 MER" L2="3 WED" L3="Label" L5="Label"/>
+    <MLText L4="4 JUE" id="100" L6="Label" L1="4 GIO" L2="4 THU" L3="Label" L5="Label"/>
+    <MLText L4="5 VIE" id="101" L6="Label" L1="5 VEN" L2="5 FRI" L3="Label" L5="Label"/>
+    <MLText L4="6 SÁB" id="102" L6="Label" L1="6 SAB" L2="6 SAT" L3="Label" L5="Label"/>
+    <MLText L4="7 DOM" id="103" L6="Label" L1="7 DOM" L2="7 SUN" L3="Label" L5="Label"/>
+   </MLTexts>
+  </object>
+  <object id="Turni uso Colla@$GroupSubscrWgt@$0" class="GroupSubscribeWgt">
+   <wgtStyle height="0" width="0" y="0" x="0"/>
+  </object>
+  <object static="true" id="rect14" class="ShapeWgt">
+   <wgtStyle height="60" width="643" y="134" fill="none" x="16" cx="311.13" cy="30" nodeName="rect" stroke="rgb(0,0,139)"/>
+  </object>
+  <object static="true" id="rect21" class="ShapeWgt">
+   <wgtStyle height="55" width="644" y="6" fill="rgb(237,237,237)" x="6" cx="644" cy="56.83" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object id="label9" class="LabelWgt">
+   <wgtStyle height="47" font-size="24" width="500" y="7" vert-align="top" marker="true" x="71" wrapping="true" font-sizepx="32" cx="250.31" forcePaint="2" font-family="Tahoma" cy="22.74" alignment="center" keypad-type="None" font-bold="true"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd3" class="GroupWgt">
+   <wgtStyle height="65" width="200" y="533" x="598" cx="100" cy="-97.50"/>
+   <object id="BtnStd3.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle height="65" releasePath="images\Btn_rect_blueUp.svg" width="200" y="0" fill="rgb(50,205,50)" x="0" needlePath="images\Btn_rect_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" downFillColor="rgb(85,255,0)" value="0" style="0" form="standard" type="momentary" cx="100" cy="32.50" pushColor="rgb(128,128,0)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action attribute="onMouseRelease" event="onMouseUp" class="LoadPageAction" actionID="1" actionWgt="_PageMgr" pageName="vasca colla.jmx"/>
+    </links>
+   </object>
+   <object id="BtnStd3.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="60.58" font-size="18" width="177.78" y="1.48" vert-align="middle" x="7.42" wrapping="true" font-sizepx="24" font-color="rgb(237,237,237)" cx="88.90" forcePaint="3" font-family="Tahoma" cy="29.55" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+  </object>
+  <object static="true" id="rect13" class="ShapeWgt">
+   <wgtStyle height="60" width="643" y="200" fill="none" x="16" cx="311.13" cy="30" nodeName="rect" stroke="rgb(0,0,139)"/>
+  </object>
+  <object static="true" id="rect15" class="ShapeWgt">
+   <wgtStyle height="60" width="769" y="69" fill="none" x="16" cx="372.10" cy="30" nodeName="rect" stroke="rgb(0,0,139)"/>
+  </object>
+  <object static="true" id="rect140" class="ShapeWgt">
+   <wgtStyle height="60" width="642" y="398" fill="none" x="17" cx="310.65" cy="30" nodeName="rect" stroke="rgb(0,0,139)"/>
+  </object>
+  <object static="true" id="rect141" class="ShapeWgt">
+   <wgtStyle height="60" width="642" y="332" fill="none" x="17" cx="310.65" cy="30" nodeName="rect" stroke="rgb(0,0,139)"/>
+  </object>
+  <object static="true" id="rect142" class="ShapeWgt">
+   <wgtStyle height="60" width="642" y="266" fill="none" x="17" cx="310.65" cy="30" nodeName="rect" stroke="rgb(0,0,139)"/>
+  </object>
+  <object static="true" id="rect22" class="ShapeWgt">
+   <wgtStyle height="55" width="137" y="5" fill="rgb(237,237,237)" x="659" cx="137" cy="56.83" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object id="timedate3" class="NumericWgt">
+   <wgtStyle cx="75" font-family="Metrostyle" height="31.93" vert-align="middle" alignment="center" readWrite="true" max="4096" y="32" text="-1" showThousandSeparator="false" timeSpec="local" form="date-time" font-color="rgb(0,0,139)" width="150" value="-1" step="1" font-size="12" cy="15.97" usingFormat="hh:mm:ss" numberFormat="0" min="0" font-sizepx="16" keypad-type="None" x="650"/>
+  </object>
+  <object id="timedate1" class="NumericWgt">
+   <wgtStyle cx="74.99" font-family="Metrostyle" height="32" vert-align="middle" alignment="center" max="4096" y="5" text="-1" forcePaint="73" showThousandSeparator="false" timeSpec="local" form="date-time" font-color="rgb(0,0,139)" width="150" value="-1" step="1" font-size="12" cy="16" usingFormat="SHORT-DATE" numberFormat="0" min="0" font-sizepx="16" keypad-type="None" x="651"/>
+   <dataLinks>
+    <dataLink attribute="value" dataSource="_SysPropMgr" tagType="long" tagIndex="-1" class="SysPropMgrWgt" sourceType="System" tag="System Time" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+  </object>
+  <object id="label1" class="LabelWgt">
+   <wgtStyle cx="59.93" font-family="Tahoma" frame="true" height="46" vert-align="middle" alignment="center" frameColor="rgb(200,200,200)" frameFill="rgb(0,0,255)" y="75" forcePaint="2" font-color="rgb(255,255,255)" width="116" font-size="18" cy="21.15" font-sizepx="24" keypad-type="None" x="23" wrapping="true"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object id="label2" class="LabelWgt">
+   <wgtStyle cx="265.82" font-family="Tahoma" frame="true" height="46" vert-align="middle" alignment="center" frameColor="rgb(200,200,200)" frameFill="rgb(0,0,255)" y="75" forcePaint="2" font-color="rgb(255,255,255)" width="518" font-size="18" cy="21.15" font-sizepx="24" keypad-type="None" x="140" wrapping="true"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object id="label3" class="LabelWgt">
+   <wgtStyle cx="62.49" font-family="Tahoma" frame="true" height="46" vert-align="middle" alignment="center" frameColor="rgb(200,200,200)" frameFill="rgb(0,0,255)" y="75" forcePaint="2" font-color="rgb(255,255,255)" width="121" font-size="18" cy="21.15" font-sizepx="24" keypad-type="None" x="660" wrapping="true"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd4" class="GroupWgt">
+   <wgtStyle height="47" width="117" y="140" x="23" cx="58.50" cy="-70.50"/>
+   <object id="BtnStd4.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="58.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(0,0,255)" downFillColor="rgb(0,147,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="117" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Turno_1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd4.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="104" y="1.07" vert-align="middle" x="4.34" wrapping="true" font-sizepx="24" font-color="rgb(237,237,237)" cx="52.01" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="18"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd5" class="GroupWgt">
+   <wgtStyle height="47" width="117" y="206" x="23" cx="58.50" cy="-70.50"/>
+   <object id="BtnStd5.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="58.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(0,0,255)" downFillColor="rgb(0,147,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="117" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Turno_2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd5.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="104" y="1.07" vert-align="middle" x="4.34" wrapping="true" font-sizepx="24" font-color="rgb(237,237,237)" cx="52.01" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd6" class="GroupWgt">
+   <wgtStyle height="47" width="117" y="271" x="23" cx="58.50" cy="-70.50"/>
+   <object id="BtnStd6.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="58.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(0,0,255)" downFillColor="rgb(0,147,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="117" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Turno_3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd6.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="104" y="1.07" vert-align="middle" x="4.34" wrapping="true" font-sizepx="24" font-color="rgb(237,237,237)" cx="52.01" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd7" class="GroupWgt">
+   <wgtStyle height="47" width="117" y="338" x="23" cx="58.50" cy="-70.50"/>
+   <object id="BtnStd7.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="58.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(0,0,255)" downFillColor="rgb(0,147,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="117" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Turno_Extra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd7.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="104" y="1.07" vert-align="middle" x="4.34" wrapping="true" font-sizepx="24" font-color="rgb(237,237,237)" cx="52.01" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="22"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd8" class="GroupWgt">
+   <wgtStyle height="47" width="117" y="404" x="23" cx="58.50" cy="-70.50"/>
+   <object id="BtnStd8.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="58.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(0,0,255)" downFillColor="rgb(0,147,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="117" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Turno_Extra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd8.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="104" y="1.07" vert-align="middle" x="4.34" wrapping="true" font-sizepx="24" font-color="rgb(237,237,237)" cx="52.01" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="24"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd9" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140.50" x="157" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd9.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_1_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd9.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="25"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd10" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140" x="228" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd10.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_2_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd10.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd11" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140" x="300" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd11.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_3_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd11.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd12" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140.50" x="372" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd12.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_4_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd12.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="28"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd13" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140.50" x="444" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd13.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_5_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd13.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="32"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd14" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140.50" x="516" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd14.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_6_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd14.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="33"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd15" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="140.50" x="588" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd15.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_7_T1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd15.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="36"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd16" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206.50" x="157" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd16.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_1_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd16.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="37"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd17" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206" x="228" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd17.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_2_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd17.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="38"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd18" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206" x="300" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd18.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_3_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd18.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="39"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd19" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206.50" x="372" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd19.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_4_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd19.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="40"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd20" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206.50" x="444" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd20.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_5_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd20.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="41"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd21" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206.50" x="516" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd21.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_6_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd21.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="42"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd22" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="206.50" x="588" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd22.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_7_T2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd22.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="74"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd23" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272.50" x="157" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd23.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_1_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd23.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="76"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd24" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272" x="228" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd24.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_2_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd24.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="77"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd25" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272" x="300" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd25.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_3_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd25.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="78"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd26" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272.50" x="372" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd26.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_4_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd26.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="79"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd27" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272.50" x="444" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd27.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_5_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd27.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="80"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd28" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272.50" x="516" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd28.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_6_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd28.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="81"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd29" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="272.50" x="588" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd29.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_7_T3" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd29.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="82"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd30" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338.50" x="157" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd30.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_1_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd30.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="83"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd31" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338" x="228" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd31.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_2_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd31.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="84"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd32" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338" x="300" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd32.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_3_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd32.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="85"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd33" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338.50" x="372" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd33.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_4_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd33.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="86"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd34" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338.50" x="444" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd34.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_5_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd34.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="87"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd35" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338.50" x="516" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd35.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_6_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd35.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="88"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd36" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="338.50" x="588" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd36.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_7_Xtra1" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd36.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="89"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd37" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="404" x="157" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd37.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_1_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd37.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="90"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd38" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="403" x="228" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd38.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_2_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd38.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="91"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd39" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="403" x="300" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd39.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_3_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd39.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="92"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd40" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="404" x="372" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd40.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_4_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd40.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="93"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd41" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="404" x="444" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd41.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_5_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd41.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="94"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd42" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="404" x="516" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd42.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_6_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd42.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="95"/>
+    </links>
+   </object>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd43" class="GroupWgt">
+   <wgtStyle height="47" width="53" y="404" x="588" cx="26.50" cy="-70.50"/>
+   <object id="BtnStd43.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="26.50" height="47" style="0" bdrImageSize="54.00,44.00" fill="rgb(170,170,127)" downFillColor="rgb(255,215,0)" y="0" forcePaint="8" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="53" needlePath="images\Btn_rect_Dwn.svg" type="maintained" value="0" cy="23.50" releasePath="images\Btn_rect_blueUp.svg" x="0"/>
+    <dataLinks>
+     <dataLink attribute="value" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="Sel_Giorno_7_Xtra2" widgetType="Project" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd43.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle height="43.80" font-size="18" width="47.11" y="1.07" vert-align="middle" x="1.97" wrapping="true" font-sizepx="24" cx="23.56" forcePaint="3" font-family="Tahoma" cy="21.37" alignment="center" keypad-type="None"/>
+    <links>
+     <lang class="MLTextLink" textid="96"/>
+    </links>
+   </object>
+  </object>
+  <object id="label35" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="140" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_lunedi" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="97"/>
+   </links>
+  </object>
+  <object id="label36" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="193.58" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_martedi" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object id="label37" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="247.17" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_mercoledi" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="99"/>
+   </links>
+  </object>
+  <object id="label38" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="300.75" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_giovedi" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="100"/>
+   </links>
+  </object>
+  <object id="label39" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="354.33" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_venerdi" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="101"/>
+   </links>
+  </object>
+  <object id="label40" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="407.92" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_sabato" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="102"/>
+   </links>
+  </object>
+  <object id="label41" class="LabelWgt">
+   <wgtStyle height="46" font-size="18" width="116" y="461.50" vert-align="middle" x="669" frameFill="rgb(255,255,255)" wrapping="true" frameColor="rgb(200,200,200)" font-sizepx="24" cx="59.93" forcePaint="10" font-family="Tahoma" cy="21.15" alignment="center" frame="true" keypad-type="None"/>
+   <dataLinks>
+    <dataLink attribute="visibility" dataSource="_TagMgr" tagType="boolean" tagIndex="-1" class="TagMgrWgt" sourceType="Tag" tag="R_giorno_domenica" widgetType="Project" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="103"/>
+   </links>
+  </object>
+  <object customType="ButtonsWithIcon" id="BtnStd44" class="GroupWgt">
+   <wgtStyle height="79" width="63" y="530" mtx="0,1,0,-1,0,0,79,0,1" x="118" cx="39.50" cy="31.50"/>
+   <object id="BtnStd44.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="31.50" height="79" style="0" bdrImageSize="54.00,44.00" fill="rgb(255,255,255)" downFillColor="rgb(0,176,199)" y="0" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="63" needlePath="images\arrowsicon2.svg" type="momentary" changeTextColor="true" value="0" cy="39.50" releasePath="images\arrowsicon2.svg" x="0"/>
+    <links>
+     <action attribute="onMouseRelease" event="onMouseUp" class="LoadPageAction" actionID="1" actionWgt="_PageMgr" pageName="preriscaldamento colla.jmx"/>
+    </links>
+   </object>
+   <object static="true" id="BtnStd44.icoImg" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle height="79" width="29.73" y="0" fill="none" x="15.75" stroke-width="1" cx="14.87" cy="39.50" enableCache="true" stroke="rgb(237,237,237)"/>
+   </object>
+  </object>
+  <object customType="ButtonsWithIcon" id="BtnStd45" class="GroupWgt">
+   <wgtStyle height="79" width="63" y="530" mtx="0,-1,0,1,0,0,0,63,1" x="18" cx="39.50" cy="31.50"/>
+   <object id="BtnStd45.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle cx="31.50" height="79" style="0" bdrImageSize="54.00,44.00" fill="rgb(255,255,255)" downFillColor="rgb(0,176,199)" y="0" bdrSize="0.17,0.17,0.15,0.16" pushColor="rgb(128,128,0)" form="standard" width="63" needlePath="images\arrowsicon2.svg" type="momentary" changeTextColor="true" value="0" cy="39.50" releasePath="images\arrowsicon2.svg" x="0"/>
+    <links>
+     <action attribute="onMouseRelease" event="onMouseUp" class="LoadPageAction" actionID="1" actionWgt="_PageMgr" pageName="orario colla.jmx"/>
+    </links>
+   </object>
+   <object static="true" id="BtnStd45.icoImg" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle height="79" width="29.73" y="0" fill="none" x="15.75" stroke-width="1" cx="14.87" cy="39.50" enableCache="true" stroke="rgb(237,237,237)"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

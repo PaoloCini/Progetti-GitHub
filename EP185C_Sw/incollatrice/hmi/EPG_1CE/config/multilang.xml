@@ -1,0 +1,10 @@
+<multiLangs>
+ <langs curLangId="L1" defLangId="L1">
+  <lang name="ITALIANO" defaultFont="Tahoma" langCode="it-IT" keypads="" removable="false" writingsystem="Any" langId="L1"/>
+  <lang name="ENGLISH" defaultFont="Tahoma" langCode="en-US" keypads="" removable="false" writingsystem="Any" langId="L2"/>
+  <lang name="FRANCAIS" defaultFont="Tahoma" langCode="fr-FR" keypads="" removable="false" writingsystem="Any" langId="L3"/>
+  <lang name="ESPANOL" defaultFont="Tahoma" langCode="es-ES" keypads="" removable="false" writingsystem="Any" langId="L4"/>
+  <lang name="DEUTSCH" defaultFont="Tahoma" langCode="de-DE" keypads="" removable="false" writingsystem="Any" langId="L5"/>
+  <lang name="PORTUGUES" defaultFont="Tahoma" langCode="pt-PT" keypads="" removable="false" writingsystem="Any" langId="L6"/>
+ </langs>
+</multiLangs>

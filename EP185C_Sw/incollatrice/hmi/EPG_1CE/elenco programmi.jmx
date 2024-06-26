@@ -1,0 +1,361 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object id="Elenco Programmi" pageName="Elenco Programmi" pageSize="800,600" scriptFile="elenco programmi.js" downloadPrepDone="false" class="PageWgt" dataWndSize="0,70" staticOptEnable="true" usedFonts="Tahoma,Roboto Light" staticFile="opt/elenco programmi.png">
+  <wgtStyle color="rgb(0,0,0)" fitToSize="1" x="0" height="600" y="0" v="04.05.00.458" width="800" ver="040500458"/>
+  <object id="rect3" static="true" class="ShapeWgt">
+   <wgtStyle nodeName="rect" x="23" height="70" y="526" fill="none" stroke-width="2" width="291" cx="140.81" cy="35" stroke="rgb(0,0,139)"/>
+  </object>
+  <object id="rect1" static="true" class="ShapeWgt">
+   <wgtStyle nodeName="rect" x="14" height="55" y="11" fill="rgb(237,237,237)" width="775" cx="375" cy="27.50" stroke="rgb(200,200,200)"/>
+  </object>
+  <object id="_PageMLTextMgrWgt" mlFileName="" class="PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+   <langs curLangId="L4" defLangId="L4">
+    <lang name="ITALIANO" writingsystem="Any" langId="L1" keypads="" langCode="it-IT" removable="false" defaultFont="Tahoma"/>
+    <lang name="ENGLISH" writingsystem="Any" langId="L2" keypads="" langCode="en-US" removable="false" defaultFont="Tahoma"/>
+    <lang name="FRANCAIS" writingsystem="Any" langId="L3" keypads="" langCode="fr-FR" removable="false" defaultFont="Tahoma"/>
+    <lang name="ESPANOL" writingsystem="Any" langId="L4" keypads="" langCode="es-ES" removable="false" defaultFont="Tahoma"/>
+    <lang name="DEUTSCH" writingsystem="Any" langId="L5" keypads="" langCode="de-DE" removable="false" defaultFont="Tahoma"/>
+    <lang name="PORTUGUES" writingsystem="Any" langId="L6" keypads="" langCode="pt-PT" removable="false" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText id="1" L5="OK" L1="OK" L4="OK" L6="OK" L2="Ok" L3="OK"/>
+    <MLText id="5" L5="Label" L1="Programma N°" L4="Programa N°" L6="Label" L2="N° Prog." L3="Label"/>
+    <MLText id="6" L5="Label" L1="Articolo" L4="Articulo" L6="Label" L2="Item" L3="Label"/>
+    <MLText id="8" L5="Label" L1="Lung. Carta (mm)" L4="Longitud papel" L6="Label" L2="Paper Length (mm)" L3="Label"/>
+    <MLText id="10" L5="Label" L1="-" L4="-" L6="Label" L2="-" L3="Label"/>
+    <MLText id="11" L5="Label" L1="+" L4="+" L6="Label" L2="+" L3="Label"/>
+   </MLTexts>
+  </object>
+  <object id="BtnRect1" class="GroupWgt" customType="Shape Button">
+   <wgtStyle x="598" height="65" y="533" width="200" cx="100" cy="32.50"/>
+   <object id="BtnRect1.btn" class="ButtonWgt" hmiStyle="type:btn">
+    <wgtStyle dy="-1" pushColor="rgb(152,251,152)" releasePath="images\win-like.svg" x="0" height="65" y="0" fill="rgb(50,205,50)" downFillColor="rgb(0,147,0)" width="200" value="0" dx="1" form="rectangle" type="momentary" needlePath="images\win-like-press.svg"/>
+    <links>
+     <action pageName="selezione.jmx" actionID="1" attribute="onMouseRelease" class="LoadPageAction" event="onMouseUp" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object id="BtnRect1.txt" class="LabelWgt">
+    <wgtStyle font-sizepx="26" x="31.04" height="20.80" alignment="center" vert-align="middle" y="22.10" font-color="rgb(255,255,255)" font-size="20" wrapping="true" width="144.83" cx="74.35" cy="10.82" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="1" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="Elenco Programmi@$GroupSubscrWgt@$0" class="GroupSubscribeWgt">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+  </object>
+  <object id="label2" class="LabelWgt">
+   <wgtStyle font-sizepx="24" x="10" height="35" alignment="center" vert-align="middle" y="18" font-size="18" font-bold="true" wrapping="true" width="249" frameColor="rgb(200,200,200)" cx="128.04" cy="16.20" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="5" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label3" class="LabelWgt">
+   <wgtStyle font-sizepx="24" x="267" height="39" alignment="center" vert-align="middle" y="18" font-size="18" font-bold="true" wrapping="true" width="249" frameColor="rgb(200,200,200)" cx="128.05" cy="18" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="6" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label5" class="LabelWgt">
+   <wgtStyle font-sizepx="24" x="496" height="39" alignment="center" vert-align="middle" y="18" font-size="18" font-bold="true" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="18" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+   <links>
+    <lang textid="8" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="GridLayout7.numeric30" class="NumericWgt">
+   <wgtStyle max="65535" showThousandSeparator="false" timeSpec="local" cx="65" font-size="18" forcePaint="24" usingFormat="" vert-align="middle" cy="30.33" keypad-type="Numeric" height="38" alignment="center" value="9999" numberFormat="1" leadingDigits="4" font-sizepx="24" font-color="rgb(255,255,255)" form="Numeric" min="0" text="9999" width="99" y="542" wgtStaticOpt="dynamic" x="115" step="1" frameColor="rgb(200,200,200)" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="punta_elenco_prgr" tagIndex="-1"/>
+   </dataLinks>
+  </object>
+  <object id="BtnStd11" class="GroupWgt" customType="ButtonsWithLabel">
+   <wgtStyle x="59" height="46.50" y="537" width="46.75" cx="23.37" cy="-69.75"/>
+   <object id="BtnStd11.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" fill="rgb(0,0,255)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="23.38" forcePaint="8" needlePath="images\Btn_rect_Dwn.svg" cy="23.25" pushColor="rgb(128,128,0)" height="46.50" bdrImageSize="54.00,44.00" downFillColor="rgb(127,255,212)" value="0" form="standard" width="46.75" y="0" x="0"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R/W" widgetType="Project" tagType="boolean" sourceType="Tag" tag="tasto_diminuisce" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd11.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="1.73" height="43.33" alignment="center" vert-align="middle" y="1.06" font-color="rgb(237,237,237)" font-size="18" wrapping="true" width="41.56" cx="20.78" cy="21.14" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="10" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="BtnStd12" class="GroupWgt" customType="ButtonsWithLabel">
+   <wgtStyle x="229.13" height="46.50" y="537" width="46.75" cx="23.37" cy="-69.75"/>
+   <object id="BtnStd12.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" fill="rgb(0,0,255)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="23.38" forcePaint="8" needlePath="images\Btn_rect_Dwn.svg" cy="23.25" pushColor="rgb(128,128,0)" height="46.50" bdrImageSize="54.00,44.00" downFillColor="rgb(127,255,212)" value="0" form="standard" width="46.75" y="0" x="0"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R/W" widgetType="Project" tagType="boolean" sourceType="Tag" tag="tasto_aumenta" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd12.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="1.73" height="43.33" alignment="center" vert-align="middle" y="1.06" font-color="rgb(237,237,237)" font-size="18" wrapping="true" width="41.56" cx="20.78" cy="21.14" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="11" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="GridLayout1" class="GroupWgt">
+   <wgtStyle x="77" height="411" y="99" width="106" wgtStaticOpt="dynamic" cx="53" cy="205.50" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeColor="rgb(200,200,200)" gridHorUnderFlow="2" gridHorOverFlow="2" gridScrollOffset="0" gridVerOverFlow="2" gridScrollAutohide="0" gridNRows="10" gridGlobalStrokeWidth="1" gridScrollImage="" gridScrollColor="rgb(0,70,136)" gridNCols="1" gridVerUnderFlow="2" gridGlobalStrokeMode="1" gridScrollBgColor="rgb(237,237,237)" gridScrollSize="10" gridGlobalStrokeCollapsed="1">
+     <colProperties>
+      <colProperty leftMargin="0" leftStroke="1" stretch="3" rightMargin="0" rightStrokeColor="rgb(230,230,230)" leftStrokeColor="rgb(230,230,230)" rightStroke="1" minWidth="0" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object id="GridLayout1.GridLayout7.numeric31" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:39" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="30.33" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="38" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="1" preserveAspectRatio="0" vert-align="middle" y="1" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg1" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric1" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:41" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="2" preserveAspectRatio="0" vert-align="middle" y="41" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg2" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric2" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:40" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="3" preserveAspectRatio="0" vert-align="middle" y="82" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg3" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric3" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:40" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="4" preserveAspectRatio="0" vert-align="middle" y="123" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg4" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric4" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:41" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.89" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="40" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="5" preserveAspectRatio="0" vert-align="middle" y="164" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg5" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric5" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:40" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="6" preserveAspectRatio="0" vert-align="middle" y="206" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg6" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric6" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:40" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="7" preserveAspectRatio="0" vert-align="middle" y="247" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg7" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric7" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:40" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="8" preserveAspectRatio="0" vert-align="middle" y="288" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg8" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric8" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:41" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="9" preserveAspectRatio="0" vert-align="middle" y="329" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg9" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout1.GridLayout7.numeric9" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="253:40" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="10" preserveAspectRatio="0" vert-align="middle" y="370" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="NProg10" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object id="GridLayout2" class="GroupWgt">
+   <wgtStyle x="264" height="411" y="101" width="266" wgtStaticOpt="dynamic" cx="133" cy="205.50" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeColor="rgb(200,200,200)" gridHorUnderFlow="2" gridHorOverFlow="2" gridScrollOffset="0" gridVerOverFlow="2" gridScrollAutohide="0" gridNRows="10" gridGlobalStrokeWidth="1" gridScrollImage="" gridScrollColor="rgb(0,70,136)" gridNCols="1" gridVerUnderFlow="2" gridGlobalStrokeMode="1" gridScrollBgColor="rgb(237,237,237)" gridScrollSize="10" gridGlobalStrokeCollapsed="1">
+     <colProperties>
+      <colProperty leftMargin="0" leftStroke="1" stretch="3" rightMargin="0" rightStrokeColor="rgb(230,230,230)" leftStrokeColor="rgb(230,230,230)" rightStroke="1" minWidth="0" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object id="GridLayout2.GridLayout7.numeric31" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="254:39" colOcc="1" maxHeight="100000" topMargin="0" cy="19.50" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="38" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="1" preserveAspectRatio="0" vert-align="middle" y="1" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art1" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric1" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="254:41" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="2" preserveAspectRatio="0" vert-align="middle" y="41" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art2" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric2" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="127:20" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="3" preserveAspectRatio="0" vert-align="middle" y="82" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art3" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric3" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="127:20" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="4" preserveAspectRatio="0" vert-align="middle" y="123" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art4" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric4" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="254:41" colOcc="1" maxHeight="100000" topMargin="0" cy="20.50" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="40" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="5" preserveAspectRatio="0" vert-align="middle" y="164" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art5" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric5" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="127:20" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="6" preserveAspectRatio="0" vert-align="middle" y="206" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art6" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric6" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="127:20" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="7" preserveAspectRatio="0" vert-align="middle" y="247" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art7" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric7" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="127:20" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="8" preserveAspectRatio="0" vert-align="middle" y="288" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art8" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric8" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="254:41" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="9" preserveAspectRatio="0" vert-align="middle" y="329" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art9" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout2.GridLayout7.numeric9" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" leftMargin="0" minHeight="0" font-size="14" aspectRatio="127:20" colOcc="1" maxHeight="100000" topMargin="0" cy="20" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="263" x="1" minWidth="0" cx="88.01" numberFormat="0" height="39" wgtStaticOpt="dynamic" font-sizepx="19" forcePaint="25" alignment="center" value="XXXXXXXXXXXXXXXX" rowOcc="10" preserveAspectRatio="0" vert-align="middle" y="370" text="XXXXXXXXXXXXXXXX" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="string-16" sourceType="Tag" tag="Art10" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object id="GridLayout3" class="GroupWgt">
+   <wgtStyle x="595" height="411" y="98" width="106" wgtStaticOpt="dynamic" cx="53" cy="205.50" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeColor="rgb(200,200,200)" gridHorUnderFlow="2" gridHorOverFlow="2" gridScrollOffset="0" gridVerOverFlow="2" gridScrollAutohide="0" gridNRows="10" gridGlobalStrokeWidth="1" gridScrollImage="" gridScrollColor="rgb(0,70,136)" gridNCols="1" gridVerUnderFlow="2" gridGlobalStrokeMode="1" gridScrollBgColor="rgb(237,237,237)" gridScrollSize="10" gridGlobalStrokeCollapsed="1">
+     <colProperties>
+      <colProperty leftMargin="0" leftStroke="1" stretch="3" rightMargin="0" rightStrokeColor="rgb(230,230,230)" leftStrokeColor="rgb(230,230,230)" rightStroke="1" minWidth="0" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+      <rowProperty stretch="3" maxHeight="10000" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="1" minHeight="0" topMargin="0" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object id="GridLayout3.GridLayout7.numeric31" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="254:39" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="30.33" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="38" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="1" preserveAspectRatio="0" vert-align="middle" y="1" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta1" tagIndex="-1">
+      <xForms>
+       <xForm name="Scale" class="ScaleXForm" Offset="0" Scale="1" Mod="10">
+        <dataLinks>
+         <dataLink dataSource="_TagMgr" attribute="Scale" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="float" sourceType="Tag" tag="Klin" tagIndex="-1"/>
+        </dataLinks>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric1" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="254:41" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="2" preserveAspectRatio="0" vert-align="middle" y="41" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta2" tagIndex="-1">
+      <xForms>
+       <xForm name="Scale" class="ScaleXForm" Offset="0" Scale="1" Mod="10">
+        <dataLinks>
+         <dataLink dataSource="_TagMgr" attribute="Scale" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="float" sourceType="Tag" tag="Klin" tagIndex="-1"/>
+        </dataLinks>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric2" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="127:20" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="3" preserveAspectRatio="0" vert-align="middle" y="82" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta3" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric3" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="127:20" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="4" preserveAspectRatio="0" vert-align="middle" y="123" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta4" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric4" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="254:41" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.89" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="40" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="5" preserveAspectRatio="0" vert-align="middle" y="164" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta5" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric5" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="127:20" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="6" preserveAspectRatio="0" vert-align="middle" y="206" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta6" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric6" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="127:20" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="7" preserveAspectRatio="0" vert-align="middle" y="247" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta7" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric7" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="127:20" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="8" preserveAspectRatio="0" vert-align="middle" y="288" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta8" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric8" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="254:41" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="9" preserveAspectRatio="0" vert-align="middle" y="329" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta9" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="GridLayout3.GridLayout7.numeric9" class="NumericWgt">
+    <wgtStyle font-family="Roboto Light" form="Numeric" min="0" leftMargin="0" minHeight="0" font-size="18" aspectRatio="127:20" step="1" colOcc="1" maxHeight="100000" topMargin="0" cy="31.11" horItemUnderflow="0" keypad-type="Alphabet" usingFormat="" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(255,255,255)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="103" x="1" minWidth="0" cx="67.60" numberFormat="0" height="39" wgtStaticOpt="dynamic" max="65535" font-sizepx="24" forcePaint="25" alignment="center" value="9999" rowOcc="10" preserveAspectRatio="0" vert-align="middle" y="370" text="9999" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local" frameColor="rgb(200,200,200)"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="unsignedShort" sourceType="Tag" tag="LungCarta10" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,619 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object id="Ingressi_Alfa_1" pageName="Ingressi_Alfa_1" pageSize="800,600" downloadPrepDone="false" class="PageWgt" dataWndSize="0,70" staticOptEnable="true" usedFonts="Tahoma,Metrostyle" staticFile="opt/ingressi_alfa_1.png">
+  <wgtStyle color="rgb(0,0,0)" fitToSize="1" x="0" height="600" y="0" v="04.05.00.458" width="800" ver="040500458"/>
+  <object id="_PageMLTextMgrWgt" mlFileName="" class="PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+   <langs curLangId="L4" defLangId="L4">
+    <lang name="ITALIANO" writingsystem="Any" langId="L1" keypads="" langCode="it-IT" removable="false" defaultFont="Tahoma"/>
+    <lang name="ENGLISH" writingsystem="Any" langId="L2" keypads="" langCode="en-US" removable="false" defaultFont="Tahoma"/>
+    <lang name="FRANCAIS" writingsystem="Any" langId="L3" keypads="" langCode="fr-FR" removable="false" defaultFont="Tahoma"/>
+    <lang name="ESPANOL" writingsystem="Any" langId="L4" keypads="" langCode="es-ES" removable="false" defaultFont="Tahoma"/>
+    <lang name="DEUTSCH" writingsystem="Any" langId="L5" keypads="" langCode="de-DE" removable="false" defaultFont="Tahoma"/>
+    <lang name="PORTUGUES" writingsystem="Any" langId="L6" keypads="" langCode="pt-PT" removable="false" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText id="4" L5="Label" L1="0 S. Puntine Basse" L4="0 S. Agujas bajas" L6="Label" L2="0 Sheet pickers" L3="Label"/>
+    <MLText id="13" L5="Label" L1="1 S. Tasteggio Fogli" L4="1 Sensor de nivel de hoja" L6="Label" L2="1 Sheets level sensor" L3="Label"/>
+    <MLText id="14" L5="Label" L1="2 S. Pila extra-alta" L4="2 S. Pila extra alta" L6="Label" L2="2 S. Extra-high pile" L3="Label"/>
+    <MLText id="15" L5="Label" L1="4 S. Livello Acqua alto" L4="4 S. Alto nivel de agua" L6="Label" L2="4 S. High water level" L3="Label"/>
+    <MLText id="16" L5="Label" L1="7 Consenso EPS" L4="7 OK desde EPS" L6="Label" L2="7 EPS Consent" L3="Label"/>
+    <MLText id="17" L5="Label" L1="6 Start Tappeto cadenza" L4="6 Inicio paso cinta cadencia" L6="Label" L2="6 Start Belt cadence" L3="Label"/>
+    <MLText id="18" L5="Label" L1="5 Livello Acqua basso" L4="5 S. Bajo nivel de agua" L6="Label" L2="5 Low water level" L3="Label"/>
+    <MLText id="19" L5="Label" L1="3 S. Pila extra-bassa" L4="3 S. Pila extra baja" L6="Label" L2="3 S. Extra low pile" L3="Label"/>
+    <MLText id="20" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="21" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="22" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="23" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="24" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="25" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="34" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="35" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="36" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="37" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="38" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="39" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="40" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="41" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="42" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="43" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="45" L5="Label" L1="9 S. Scatola all'Antibolle" L4="9 S. Caja a Antiburbujas" L6="Label" L2="9 S. Box near Antibubbles" L3="Label"/>
+    <MLText id="46" L5="Label" L1="10 S. Fase Antibolle" L4="10 S. Fase Antiburbujas" L6="Label" L2="10 S. Anti-Bubble Phase" L3="Label"/>
+    <MLText id="48" L5="Label" L1="15 Allarme Viscosimetro" L4="15 Viscosímetro alarma" L6="Label" L2="15 Viscometer Alarm" L3="Label"/>
+    <MLText id="49" L5="Label" L1="14 S. Premiscat. esterno alto" L4="14 S. Prensador exterior alto" L6="Label" L2="14 S. Box Presser. high exterior" L3="Label"/>
+    <MLText id="53" L5="Label" L1="13 S. Premiscat. interno xalto" L4="13 S. Prensador interno extra-alto" L6="Label" L2="13 S. Box Presser xhigh int." L3="Label"/>
+    <MLText id="81" L5="Label" L1="11 S. Premiscat. interno basso" L4="11 S. Prensador interno bajo" L6="Label" L2="11 S. Box Presser low interior" L3="Label"/>
+    <MLText id="82" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="83" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="84" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="85" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="86" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="87" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="88" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="89" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="90" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="91" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="92" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="93" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="94" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="95" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="96" L5="Farenheit" L1="ON" L4="ON" L6="Farenheit" L2="ON" L3="Farenheit"/>
+    <MLText id="97" L5="Celsius" L1="OFF" L4="OFF" L6="Celsius" L2="OFF" L3="Celsius"/>
+    <MLText id="98" L5="Label" L1="Ok" L4="Ok" L6="Label" L2="Ok" L3="Label"/>
+    <MLText id="99" L5="SELEZIONE" L1="INGRESSI INCOLLATRICE - CANALE 1" L4="ENTRADAS ENCOLADORA - CANAL 1" L6="SELEZIONE" L2="GLUER INPUTS - CHANNEL 1" L3="SELEZIONE"/>
+    <MLText id="103" L5="Label" L1="12 S. Premiscat. interno alto" L4="12 S. Prens. inter. hacia arriba" L6="Label" L2="12 S. Box Presser high inter." L3="Label"/>
+    <MLText id="104" L5="Label" L1="8  P. mano Premiscatola" L4="8 Bot. del prensador de la caja" L6="Label" L2="8 P. Manual Box Presser" L3="Label"/>
+   </MLTexts>
+  </object>
+  <object id="Ingressi_Alfa_1@$GroupSubscrWgt@$0" class="GroupSubscribeWgt">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+  </object>
+  <object id="label1" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="98" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="4" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label2" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="143" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="13" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label3" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="187" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="14" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label4" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="275" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="15" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label5" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="407" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="16" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label6" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="363" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="17" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label7" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="319" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="18" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label8" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="18" height="29" vert-align="middle" y="231" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="19" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="msgtext1" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="98" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S: Puntine Basse" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S: Puntine Basse" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="21" idx="0"/>
+     <textid val="20" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext2" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="143" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_tasta_fogli" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_tasta_fogli" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="23" idx="0"/>
+     <textid val="22" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext3" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="187" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xalta" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xalta" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="25" idx="0"/>
+     <textid val="24" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext4" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="275" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_High_Livello_Acqua" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_High_Livello_Acqua" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="35" idx="0"/>
+     <textid val="34" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext5" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="319" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Low_Livello_Acqua" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Low_Livello_Acqua" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="37" idx="0"/>
+     <textid val="36" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext6" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="363" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Start_Tappeto_cadenza" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Start_Tappeto_cadenza" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="39" idx="0"/>
+     <textid val="38" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext7" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="407" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Consenso_EPS" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Consenso_EPS" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="41" idx="0"/>
+     <textid val="40" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext8" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="231" wgtStaticOpt="dynamic" continous="true" x="322" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xbassa" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xbassa" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="43" idx="0"/>
+     <textid val="42" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label10" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="98" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="104" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label11" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="143" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="45" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label12" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="187" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="46" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label13" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="275" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="103" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label14" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="407" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="48" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label15" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="363" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="49" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label16" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="319" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="349" frameColor="rgb(200,200,200)" cx="179.27" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="53" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label17" class="LabelWgt">
+   <wgtStyle font-sizepx="21" x="409" height="29" vert-align="middle" y="230" font-color="rgb(255,255,255)" font-size="16" wrapping="true" width="299" frameColor="rgb(200,200,200)" cx="153.66" cy="13.50" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="81" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="msgtext9" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="100" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="P_mano_premiscatola" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="P_mano_premiscatola" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="83" idx="0"/>
+     <textid val="82" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext10" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="145" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Scatola_Antibolle" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Scatola_Antibolle" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="85" idx="0"/>
+     <textid val="84" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext11" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="189" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_fase_Antibolle" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_fase_Antibolle" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="87" idx="0"/>
+     <textid val="86" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext12" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="278" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_interno_alto" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_interno_alto" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="89" idx="0"/>
+     <textid val="88" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext13" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="27" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="323" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_interno_xalto" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_interno_xalto" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="91" idx="0"/>
+     <textid val="90" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext14" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="367" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_esterno_alto" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_esterno_alto" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="93" idx="0"/>
+     <textid val="92" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext15" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="411" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Viscosimetro_Ok" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Viscosimetro_Ok" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="95" idx="0"/>
+     <textid val="94" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="msgtext16" class="MsgTextWgt">
+   <wgtStyle max="1" cx="31.22" frameSize="0" marker="true" font-size="18" frame="true" forcePaint="26" vert-align="middle" cy="11.84" keypad-type="None" height="25" alignment="center" value="0" font-sizepx="24" font-color="rgb(23,30,40)" min="0" text="" width="63.50" y="234" wgtStaticOpt="dynamic" continous="true" x="716" viewindex="false" frameColor="none" font-family="Tahoma" frameFill="rgb(255,0,0)">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_interno_basso" tagIndex="-1"/>
+    <dataLink dataSource="_TagMgr" attribute="frameFill" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="S_Premisc_interno_basso" tagIndex="-1">
+     <xForms>
+      <xForm name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#00ff00" class="ColorPaletteCustomXForm">
+       <value i="0">1</value>
+       <value i="1">0</value>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+     <textid val="97" idx="0"/>
+     <textid val="96" idx="1"/>
+    </lang>
+   </links>
+  </object>
+  <object id="BtnStd1" class="GroupWgt" customType="ButtonsWithIcon">
+   <wgtStyle x="10" height="79" y="517" width="73" cx="39.50" cy="36.50" mtx="0,-1,0,1,0,0,0,73,1"/>
+   <object id="BtnStd1.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" changeTextColor="true" releasePath="images\arrowsicon2.svg" fill="rgb(255,255,255)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="36.50" needlePath="images\arrowsicon2.svg" cy="39.50" pushColor="rgb(128,128,0)" height="79" bdrImageSize="54.00,44.00" downFillColor="rgb(0,176,199)" value="0" form="standard" width="73" y="0" x="0"/>
+    <links>
+     <action pageName="ingressi_alfa_0.jmx" actionID="1" attribute="onMouseRelease" class="LoadPageAction" event="onMouseUp" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object id="BtnStd1.icoImg" static="true" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle enableCache="true" x="18.25" height="79" y="0" fill="none" stroke-width="1" width="34.45" cx="17.23" cy="39.50" stroke="rgb(237,237,237)"/>
+   </object>
+  </object>
+  <object id="BtnStd2" class="GroupWgt" customType="ButtonsWithIcon">
+   <wgtStyle x="108" height="79" y="517" width="73" cx="39.50" cy="36.50" mtx="0,1,0,-1,0,0,79,0,1"/>
+   <object id="BtnStd2.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" changeTextColor="true" releasePath="images\arrowsicon2.svg" fill="rgb(255,255,255)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="36.50" needlePath="images\arrowsicon2.svg" cy="39.50" pushColor="rgb(128,128,0)" height="79" bdrImageSize="54.00,44.00" downFillColor="rgb(0,176,199)" value="0" form="standard" width="73" y="0" x="0"/>
+    <links>
+     <action pageName="manutenzione.jmx" actionID="1" attribute="onMouseRelease" class="LoadPageAction" event="onMouseUp" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object id="BtnStd2.icoImg" static="true" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle enableCache="true" x="18.25" height="79" y="0" fill="none" stroke-width="1" width="34.45" cx="17.23" cy="39.50" stroke="rgb(237,237,237)"/>
+   </object>
+  </object>
+  <object id="BtnStd4" class="GroupWgt" customType="ButtonsWithLabel">
+   <wgtStyle x="598" height="65" y="533" width="200" cx="100" cy="-97.50"/>
+   <object id="BtnStd4.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle pushColor="rgb(128,128,0)" releasePath="images\Btn_rect_blueUp.svg" bdrImageSize="54.00,44.00" x="0" height="65" bdrSize="0.17,0.17,0.15,0.16" y="0" fill="rgb(50,205,50)" downFillColor="rgb(0,0,255)" width="200" value="0" cx="100" form="standard" cy="32.50" type="momentary" needlePath="images\Btn_rect_Dwn.svg" style="0"/>
+    <links>
+     <action pageName="selezione.jmx" actionID="1" attribute="onMouseRelease" class="LoadPageAction" event="onMouseUp" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object id="BtnStd4.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="7.42" height="60.58" alignment="center" vert-align="middle" y="1.48" font-color="rgb(237,237,237)" font-size="18" wrapping="true" width="177.78" cx="88.90" cy="29.55" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="98" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="rect4" static="true" class="ShapeWgt">
+   <wgtStyle nodeName="rect" x="7.61" height="55" y="7" fill="rgb(237,237,237)" width="644" cx="644" cy="56.83" stroke="rgb(200,200,200)"/>
+  </object>
+  <object id="rect5" static="true" class="ShapeWgt">
+   <wgtStyle nodeName="rect" x="660" height="55" y="6" fill="rgb(237,237,237)" width="137" cx="137" cy="56.83" stroke="rgb(200,200,200)"/>
+  </object>
+  <object id="timedate3" class="NumericWgt">
+   <wgtStyle max="4096" readWrite="true" showThousandSeparator="false" timeSpec="local" cx="75" font-size="12" usingFormat="hh:mm:ss" vert-align="middle" cy="15.97" keypad-type="None" height="31.93" alignment="center" value="-1" numberFormat="0" font-sizepx="16" font-color="rgb(0,0,139)" form="date-time" min="0" text="-1" width="150" y="33" x="651" step="1" font-family="Metrostyle"/>
+  </object>
+  <object id="timedate1" class="NumericWgt">
+   <wgtStyle max="4096" showThousandSeparator="false" timeSpec="local" cx="74.99" font-size="12" forcePaint="73" usingFormat="SHORT-DATE" vert-align="middle" cy="16" keypad-type="None" height="32" alignment="center" value="-1" numberFormat="0" font-sizepx="16" font-color="rgb(0,0,139)" form="date-time" min="0" text="-1" width="150" y="6" x="652" step="1" font-family="Metrostyle"/>
+   <dataLinks>
+    <dataLink dataSource="_SysPropMgr" attribute="value" class="SysPropMgrWgt" readWrite="R" widgetType="Project" tagType="long" sourceType="System" tag="System Time" tagIndex="-1"/>
+   </dataLinks>
+  </object>
+  <object id="label9" class="LabelWgt">
+   <wgtStyle font-sizepx="32" x="14" height="48" alignment="center" vert-align="top" y="11" font-size="24" font-bold="true" wrapping="true" marker="true" width="618" cx="309" cy="22.74" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="99" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="line" static="true" class="LineWgt">
+   <wgtStyle x="400" height="436" y="77" stroke-width="2" width="0" cx="0" cy="218" stroke="rgb(255,255,255)" anchorIdx="1"/>
+  </object>
+ </object>
+</wgtPage>

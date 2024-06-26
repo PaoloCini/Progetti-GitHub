@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1" name="Alarm1" group="Alarm1" trigger="bitMaskAlarm" description="[9@Alarm]EMERGENZA"/>
+    <event id="2" name="Alarm2" group="Alarm2" trigger="bitMaskAlarm" description="[0@Alarm]MAGNETOTERMICO RULLI COLLA"/>
+    <event id="3" name="Alarm3" group="Alarm3" trigger="bitMaskAlarm" description="[28@Alarm]MAGNETOTERMICO TAPPETO"/>
+    <event id="4" name="Alarm4" group="Alarm4" trigger="bitMaskAlarm" description="[31@Alarm]MAGNETOTERMICO METTIFOGLIO"/>
+    <event id="5" name="Alarm5" group="Alarm5" trigger="bitMaskAlarm" description="[1@Alarm]MAGNETOTERMICO ASPIRAZIONE"/>
+    <event id="6" name="Alarm6" group="Alarm6" trigger="bitMaskAlarm" description="[22@Alarm]MAGNETOTERMICO PILA"/>
+    <event id="7" name="Alarm7" group="Alarm7" trigger="bitMaskAlarm" description="[27@Alarm]MAGNETOTERMICO ANTIBOLLE"/>
+    <event id="8" name="Alarm8" group="Alarm8" trigger="bitMaskAlarm" description="[51@Alarm]DRIVER TAPPETO"/>
+    <event id="9" name="Alarm9" group="Alarm9" trigger="bitMaskAlarm" description="[54@Alarm]DRIVER METTIFOGLIO"/>
+    <event id="10" name="Alarm10" group="Alarm10" trigger="bitMaskAlarm" description="[57@Alarm]INVERTER RULLI INCOLLATORI"/>
+    <event id="11" name="Alarm11" group="Alarm11" trigger="bitMaskAlarm" description="[60@Alarm]INVERTER ANTIBOLLE"/>
+    <event id="12" name="Alarm12" group="Alarm12" trigger="bitMaskAlarm" description="[63@Alarm]DIFFERENZIALE VASCA COLLA"/>
+    <event id="13" name="Alarm13" group="Alarm13" trigger="bitMaskAlarm" description="[32@Alarm]MAGNETOTERMICO AGITATORE"/>
+    <event id="14" name="Alarm14" group="Alarm14" trigger="bitMaskAlarm" description="[34@Alarm]MAGNETOTERMICO POMPA COLLA"/>
+    <event id="16" name="Alarm16" group="Alarm16" trigger="bitMaskAlarm" description="[10@Alarm]"/>
+    <event id="17" name="Alarm17" group="Alarm17" trigger="bitMaskAlarm" description="[10@Alarm]"/>
+    <event id="18" name="Alarm18" group="Alarm18" trigger="bitMaskAlarm" description="[78@Alarm]PROTEZIONI SICUREZZA"/>
+    <event id="19" name="Alarm19" group="Alarm19" trigger="bitMaskAlarm" description="[81@Alarm]PUNTINE STACCAFOGLIO NON BASSE"/>
+    <event id="20" name="Alarm20" group="Alarm20" trigger="bitMaskAlarm" description="[36@Alarm]TERMOCONTROLLI"/>
+    <event id="21" name="Alarm21" group="Alarm21" trigger="bitMaskAlarm" description="[87@Alarm]TIMEOUT ANTIBOLLE"/>
+    <event id="22" name="Alarm22" group="Alarm22" trigger="bitMaskAlarm" description="[90@Alarm]EXTRACORSA PILA"/>
+    <event id="23" name="Alarm23" group="Alarm23" trigger="bitMaskAlarm" description="[93@Alarm]MANCANZA FOGLI"/>
+    <event id="24" name="Alarm24" group="Alarm24" trigger="bitMaskAlarm" description="[10@Alarm]"/>
+    <event id="25" name="Alarm25" group="Alarm25" trigger="bitMaskAlarm" description="[10@Alarm]"/>
+    <event id="26" name="Alarm26" group="Alarm26" trigger="bitMaskAlarm" description="[102@Alarm]VISCOSIMETRO "/>
+    <event id="27" name="Alarm27" group="Alarm27" trigger="bitMaskAlarm" description="[105@Alarm]LUBRIFICAZIONE"/>
+    <event id="28" name="Alarm28" group="Alarm28" trigger="bitMaskAlarm" description="[10@Alarm]"/>
+</events>

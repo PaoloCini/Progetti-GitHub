@@ -1,0 +1,34 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object id="Page15" pageName="Page15" pageSize="800,600" downloadPrepDone="false" class="PageWgt" dataWndSize="0,70" staticOptEnable="true" usedFonts="Tahoma">
+  <wgtStyle fitToSize="1" x="0" height="600" y="0" v="04.05.00.458" width="800" ver="040500458" forcePaint="512"/>
+  <object id="_PageMLTextMgrWgt" mlFileName="" class="PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+   <langs curLangId="L4" defLangId="L4">
+    <lang name="ITALIANO" writingsystem="Any" langId="L1" keypads="" langCode="it-IT" removable="false" defaultFont="Tahoma"/>
+    <lang name="ENGLISH" writingsystem="Any" langId="L2" keypads="" langCode="en-US" removable="false" defaultFont="Tahoma"/>
+    <lang name="FRANCAIS" writingsystem="Any" langId="L3" keypads="" langCode="fr-FR" removable="false" defaultFont="Tahoma"/>
+    <lang name="ESPANOL" writingsystem="Any" langId="L4" keypads="" langCode="es-ES" removable="false" defaultFont="Tahoma"/>
+    <lang name="DEUTSCH" writingsystem="Any" langId="L5" keypads="" langCode="de-DE" removable="false" defaultFont="Tahoma"/>
+    <lang name="PORTUGUES" writingsystem="Any" langId="L6" keypads="" langCode="pt-PT" removable="false" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L5="OK" L1="Uscita" L4="OK" L6="OK" L2="OK" L3="OK"/>
+   </MLTexts>
+  </object>
+  <object id="BtnRect1" class="GroupWgt" customType="Shape Button">
+   <wgtStyle x="599" height="64" y="535" width="200" cx="100" cy="32"/>
+   <object id="BtnRect1.btn" class="ButtonWgt" hmiStyle="type:btn">
+    <wgtStyle dy="-1" pushColor="rgb(152,251,152)" releasePath="images\win-like.svg" x="0" height="64" y="0" fill="rgb(0,147,0)" downFillColor="rgb(0,147,0)" width="200" value="0" dx="1" form="rectangle" type="momentary" needlePath="images\win-like-press.svg"/>
+    <links>
+     <action pageName="selezione.jmx" actionID="1" attribute="onMouseRelease" class="LoadPageAction" event="onMouseUp" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object id="BtnRect1.txt" class="LabelWgt">
+    <wgtStyle font-sizepx="26" x="31.04" height="20.48" alignment="center" vert-align="middle" y="21.76" font-color="rgb(255,255,255)" font-size="20" wrapping="true" width="144.83" cx="74.35" cy="10.65" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="0" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

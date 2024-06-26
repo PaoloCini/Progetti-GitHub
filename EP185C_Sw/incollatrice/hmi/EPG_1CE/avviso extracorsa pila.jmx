@@ -1,0 +1,204 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object id="Avviso Extracorsa Pila" pageName="Avviso Extracorsa Pila" py="0" pageSize="680,500" titleName="" scriptFile="avviso extracorsa pila.js" downloadPrepDone="false" class="DialogWgt" dataWndSize="0,70" staticOptEnable="true" dynPosition="false" singleInstance="true" usedFonts="Tahoma,Roboto Light" px="0" titlebar="false" pageType="modal">
+  <wgtStyle fitToSize="1" x="0" height="500" y="0" v="04.05.00.458" width="680" ver="040500458" forcePaint="512"/>
+  <links>
+   <action actionID="1" attribute="onActivate" class="JavaScriptAction" event="onActivate" f="update_alarm_banner" actionWgt="_WgtMgr"/>
+  </links>
+  <object id="_PageMLTextMgrWgt" mlFileName="" class="PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+   <langs curLangId="L4" defLangId="L4">
+    <lang name="ITALIANO" writingsystem="Any" langId="L1" keypads="" langCode="it-IT" removable="false" defaultFont="Tahoma"/>
+    <lang name="ENGLISH" writingsystem="Any" langId="L2" keypads="" langCode="en-US" removable="false" defaultFont="Tahoma"/>
+    <lang name="FRANCAIS" writingsystem="Any" langId="L3" keypads="" langCode="fr-FR" removable="false" defaultFont="Tahoma"/>
+    <lang name="ESPANOL" writingsystem="Any" langId="L4" keypads="" langCode="es-ES" removable="false" defaultFont="Tahoma"/>
+    <lang name="DEUTSCH" writingsystem="Any" langId="L5" keypads="" langCode="de-DE" removable="false" defaultFont="Tahoma"/>
+    <lang name="PORTUGUES" writingsystem="Any" langId="L6" keypads="" langCode="pt-PT" removable="false" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText id="10" L5="" L1="" L4="" L6="" L2="" L3=""/>
+    <MLText id="4" L5="Label" L1="Extracorsa Alto" L4="Sobrecarrera Alto" L6="Label" L2="Overtravel High" L3="Label"/>
+    <MLText id="6" L5="Label" L1="Extracorsa Basso" L4="Sobrecarrera Bajo" L6="Label" L2="Low overtravel" L3="Label"/>
+    <MLText id="7" L5="Label" L1="Tasteggio" L4="Palpador" L6="Label" L2="Feeler" L3="Label"/>
+    <MLText id="8" L5="Label" L1="Allarmi Pila Incollatrice" L4="Alarmas de pila encoladora" L6="Label" L2="Alarms Pile&#xa;Gluer" L3="Label"/>
+    <MLText id="9" L5="Label" L1="Cancella Allarmi" L4="Eliminar Alarmas" L6="Label" L2="Erase Alarms" L3="Label"/>
+   </MLTexts>
+  </object>
+  <object id="LgtStd1" class="GroupWgt" customType="Lights">
+   <wgtStyle x="106" height="76" y="105" width="210" cx="105" cy="38" forcePaint="8"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm name="Formula" compiledExpression="(!$0)" expression="$Not($('Fc_pila_xalta'))" class="FormulaXForm" colorPalette="">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" attribute="$0" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xalta" tagIndex="-1"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <attr alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object id="LgtStd1.ind" class="IndicatorWgt" hmiStyle="hmi-type:light; type:light">
+    <wgtStyle imagePath="images/Light_rect_blue.svg" x="0" height="76" bdrSize="0.10,0.11,0.08,0.08" y="0" width="210" cx="105" cy="35.88" bkgColor="rgb(255,0,0);rgb(255,255,0)" stroke="none" forcePaint="9"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xalta" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="LgtStd1.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="0" height="76" alignment="center" vert-align="middle" y="0" font-color="rgb(230,230,230)" font-size="18" width="210" cx="105" cy="38.44" font-family="Tahoma" forcePaint="139" keypad-type="None"/>
+    <dataLinks>
+     <dataLink dataSource="LgtStd1.ind" attribute="fill" readWrite="R" sourceType="Widget" tag="frame" tagIndex="-1">
+      <xForms>
+       <xForm name="ColorPaletteCustom" ColorPaletteCustom="#e6e6e6;#ffffff" class="ColorPaletteCustomXForm">
+        <value i="0">0</value>
+        <value i="1">1</value>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <lang textid="4" class="MLTextLink"/>
+    </links>
+   </object>
+   <object id="LgtStd1.icoImg" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle enableCache="true" x="60.24" height="33.04" y="21.61" stroke-width="1" width="72.71" cx="38.15" cy="16.88" fill-opacity="0.5" stroke="rgb(0,0,0)" forcePaint="8"/>
+   </object>
+  </object>
+  <object id="LgtStd2" class="GroupWgt" customType="Lights">
+   <wgtStyle x="106" height="76" y="219" width="210" cx="105" cy="38" forcePaint="8"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm name="Formula" compiledExpression="(!$0)" expression="$Not($('Fc_pila_xalta'))" class="FormulaXForm" colorPalette="">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" attribute="$0" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xalta" tagIndex="-1"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <attr alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object id="LgtStd2.ind" class="IndicatorWgt" hmiStyle="hmi-type:light; type:light">
+    <wgtStyle imagePath="images/Light_rect_blue.svg" x="0" height="76" bdrSize="0.10,0.11,0.08,0.08" y="0" width="210" cx="105" cy="35.88" bkgColor="rgb(255,0,0);rgb(255,255,0)" stroke="none" forcePaint="9"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_pila_xbassa" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="LgtStd2.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="0" height="76" alignment="center" vert-align="middle" y="0" font-color="rgb(230,230,230)" font-size="18" width="210" cx="105" cy="38.44" font-family="Tahoma" forcePaint="139" keypad-type="None"/>
+    <dataLinks>
+     <dataLink dataSource="LgtStd2.ind" attribute="fill" readWrite="R" sourceType="Widget" tag="frame" tagIndex="-1">
+      <xForms>
+       <xForm name="ColorPaletteCustom" ColorPaletteCustom="#e6e6e6;#ffffff" class="ColorPaletteCustomXForm">
+        <value i="0">0</value>
+        <value i="1">1</value>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <lang textid="6" class="MLTextLink"/>
+    </links>
+   </object>
+   <object id="LgtStd2.icoImg" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle enableCache="true" x="60.24" height="33.04" y="21.61" stroke-width="1" width="72.71" cx="38.15" cy="16.88" fill-opacity="0.5" stroke="rgb(0,0,0)" forcePaint="8"/>
+   </object>
+  </object>
+  <object id="LgtStd3" class="GroupWgt" customType="Lights">
+   <wgtStyle x="106" height="76" y="334" width="210" cx="105" cy="38" forcePaint="8"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm name="Formula" compiledExpression="(!$0)" expression="$Not($('Fc_tasta_fogli'))" class="FormulaXForm" colorPalette="">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" attribute="$0" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_tasta_fogli" tagIndex="-1"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <attr alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object id="LgtStd3.ind" class="IndicatorWgt" hmiStyle="hmi-type:light; type:light">
+    <wgtStyle imagePath="images/Light_rect_blue.svg" x="0" height="76" bdrSize="0.10,0.11,0.08,0.08" y="0" width="210" cx="105" cy="35.88" bkgColor="rgb(255,128,0);rgb(0,128,64)" stroke="none" forcePaint="9"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Fc_tasta_fogli" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="LgtStd3.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="0" height="76" alignment="center" vert-align="middle" y="0" font-color="rgb(230,230,230)" font-size="18" width="210" cx="105" cy="38.44" font-family="Tahoma" forcePaint="139" keypad-type="None"/>
+    <dataLinks>
+     <dataLink dataSource="LgtStd3.ind" attribute="fill" readWrite="R" sourceType="Widget" tag="frame" tagIndex="-1">
+      <xForms>
+       <xForm name="ColorPaletteCustom" ColorPaletteCustom="#e6e6e6;#ffffff" class="ColorPaletteCustomXForm">
+        <value i="0">0</value>
+        <value i="1">1</value>
+       </xForm>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <lang textid="7" class="MLTextLink"/>
+    </links>
+   </object>
+   <object id="LgtStd3.icoImg" class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon">
+    <wgtStyle enableCache="true" x="60.24" height="33.04" y="21.61" stroke-width="1" width="72.71" cx="38.15" cy="16.88" fill-opacity="0.5" stroke="rgb(0,0,0)" forcePaint="8"/>
+   </object>
+  </object>
+  <object id="label1" class="LabelWgt">
+   <wgtStyle font-sizepx="32" x="394" height="132" alignment="center" vert-align="middle" y="181" font-color="rgb(76,76,77)" font-size="24" font-bold="true" wrapping="true" width="277" frameColor="rgb(200,200,200)" cx="142.39" cy="59.85" font-family="Tahoma" forcePaint="2" keypad-type="None"/>
+   <links>
+    <lang textid="8" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="Avviso Extracorsa Pila@$GroupSubscrWgt@$0" class="GroupSubscribeWgt">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+  </object>
+  <object id="BtnStd22" class="GroupWgt" customType="ButtonsWithLabel">
+   <wgtStyle x="478" height="65" y="433" width="200" cx="100" cy="-97.50"/>
+   <object id="BtnStd22.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" fill="rgb(0,0,139)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="100" forcePaint="8" needlePath="images\Btn_rect_Dwn.svg" cy="32.50" pushColor="rgb(128,128,0)" height="65" bdrImageSize="54.00,44.00" downFillColor="rgb(0,0,255)" value="0" form="standard" width="200" y="0" x="0"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R/W" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Cancella_allarme_hmi" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd22.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="7.42" height="60.58" alignment="center" vert-align="middle" y="1.48" font-color="rgb(255,255,255)" font-size="18" font-bold="true" wrapping="true" width="177.78" cx="88.90" cy="29.55" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="9" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="alarm_banner" class="LabelWgt">
+   <wgtStyle cx="338.50" marker="true" font-size="20" frame="true" forcePaint="2072" vert-align="middle" cy="41.69" keypad-type="None" height="87" alignment="center" font-sizepx="27" font-color="rgb(255,0,0)" scrollMode="2" font-bold="true" width="676" y="1" wgtStaticOpt="dynamic" x="1" frameColor="none" font-family="Tahoma" frameFill="rgb(102,102,102)"/>
+   <dataLinks>
+    <dataLink dataSource="_SysPropMgr" attribute="visibility" class="SysPropMgrWgt" readWrite="R" widgetType="Project" sourceType="System" tag="Alarm triggered" tagIndex="-1"/>
+   </dataLinks>
+   <links>
+    <lang textid="10" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="badge" class="GroupWgt">
+   <wgtStyle x="2" height="28" y="85" width="28" cx="14" cy="14" forcePaint="9"/>
+   <dataLinks>
+    <dataLink dataSource="_SysPropMgr" attribute="visibility" class="SysPropMgrWgt" readWrite="R" widgetType="Project" tagType="int" sourceType="System" tag="Alarm triggered" tagIndex="-1"/>
+   </dataLinks>
+   <object id="badge.circle1" class="ShapeWgt">
+    <wgtStyle nodeName="ellipse" x="0" height="28" y="0" fill="rgb(255,0,0)" width="28" cx="14" cy="14" ry="19" stroke="none" forcePaint="1" rx="22"/>
+   </object>
+   <object id="badge.field1" class="NumericWgt">
+    <wgtStyle max="2147483647" showThousandSeparator="false" timeSpec="local" cx="12.42" font-size="10" forcePaint="9" usingFormat="#" vert-align="top" cy="9.45" keypad-type="Numeric" height="21" alignment="center" value="99" numberFormat="6" font-sizepx="13" font-color="rgb(255,255,255)" form="Numeric" min="-2147483648" text="99" font-bold="true" width="27" y="5" x="0" step="1" font-family="Roboto Light"/>
+    <dataLinks>
+     <dataLink dataSource="_SysPropMgr" attribute="value" class="SysPropMgrWgt" readWrite="R" widgetType="Project" tagType="int" sourceType="System" tag="Number of triggered alarms" tagIndex="-1"/>
+    </dataLinks>
+    <links>
+     <action actionID="1" attribute="onDataUpdate" class="JavaScriptAction" event="onDataUpdate" f="update_alarm_banner" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

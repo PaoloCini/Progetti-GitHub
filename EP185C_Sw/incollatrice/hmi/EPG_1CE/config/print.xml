@@ -1,0 +1,6 @@
+<printdetails maxpixmapsize="16000000" spoolMediaType="0" spoolFolder="c:/@dati/@archivio progetti/europrogetti/linea scatole/ep185_24/incollatrice/hmi/epg_1ce/epg_1ce/reportspool" ramquota="16000000" diskquota="-1">
+ <printerPorts>
+  <port>Default</port>
+  <port>File</port>
+ </printerPorts>
+</printdetails>

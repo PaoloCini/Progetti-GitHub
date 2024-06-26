@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_tree name="root" protocolName="SVRB" type="container">
+    <config filename_source0="C:/EuroProgetti/JMobile/Marcello/EPA_2BA/ExportedTagsSystemVar.xml" dict_name="C:\EuroProgetti\JMobile\Originale\EPA_2BA\dictionary\System Variables_dataModel.xml" m_type="generic"/>
+    <property_alias>
+        <property display="Tag name" name="tagName" showEmpty="true"/>
+        <property display="Group" name="info97" showEmpty="true"/>
+        <property display="ProtocolName" name="info0" showEmpty="true"/>
+        <property display="Memory type" name="info1" showEmpty="true"/>
+        <property display="Offset" name="info2" showEmpty="true"/>
+        <property display="Subindex" name="info3" showEmpty="true"/>
+        <property display="Data type" name="icomType" showEmpty="true"/>
+        <property display="Arraysize" name="info4" showEmpty="true"/>
+        <property display="Conversion" name="info5" showEmpty="true"/>
+        <property display="Encoding" name="info99" showEmpty="true"/>
+        <property display="RefreshTime" name="info98" showEmpty="true"/>
+        <property display="AccessMode" name="rw" showEmpty="true"/>
+        <property display="Active" name="info100" showEmpty="true"/>
+        <property display="Comment" name="comment" showEmpty="true"/>
+        <property display="DataSimulator" name="info75" showEmpty="true"/>
+        <property display="Amplitude" name="info76" showEmpty="true"/>
+        <property display="Simulator Offset" name="info77" showEmpty="true"/>
+        <property display="Period" name="info78" showEmpty="true"/>
+        <property display="EnableScaling" name="info79" showEmpty="true"/>
+        <property display="S1" name="info82" showEmpty="true"/>
+        <property display="S2" name="info83" showEmpty="true"/>
+        <property display="S3" name="info84" showEmpty="true"/>
+        <property display="EnableLimits" name="info81" showEmpty="true"/>
+        <property display="Eumin" name="info88" showEmpty="true"/>
+        <property display="Eumax" name="info89" showEmpty="true"/>
+        <property display="ScalingType" name="info80" showEmpty="true"/>
+        <property display="Elmin" name="info90" showEmpty="true"/>
+        <property display="Elmax" name="info91" showEmpty="true"/>
+        <property display="TAGLOCATOR" name="info6" showEmpty="true"/>
+        <property display="Default" name="defaultValue" showEmpty="true"/>
+        <property display="Min" name="minValue" showEmpty="true"/>
+        <property display="Max" name="maxValue" showEmpty="true"/>
+        <property display="StatesText" name="states" showEmpty="true"/>
+        <property display="DecimalDigitsDigits" name="info92" showEmpty="true"/>
+        <property display="DecimalDigitsTag" name="info93" showEmpty="true"/>
+        <property display="CastType" name="info94" showEmpty="true"/>
+        <property display="TagS1" name="info85" showEmpty="true"/>
+        <property display="TagS2" name="info86" showEmpty="true"/>
+        <property display="TagS3" name="info87" showEmpty="true"/>
+        <property display="Tag URI" name="tagURI" showEmpty="true"/>
+    </property_alias>
+    <data_type name="Ktmp_01" typeName="float" tagName="Ktmp_01" info0="SVRB" info1="RET_MEM" info2="0" info10="RET_MEM?0?float" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="float" tagURI="RET_MEM?0?float" type="basic" rw="R/W" minValue="-3.40282e+38" maxValue="3.40282e+38"/>
+    <data_type name="Ktmp_offset" typeName="float" tagName="Ktmp_offset" info0="SVRB" info1="RET_MEM" info2="4" info10="RET_MEM?4?float" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="float" tagURI="RET_MEM?4?float" type="basic" rw="R/W" minValue="-3.40282e+38" maxValue="3.40282e+38"/>
+    <data_type name="Klin_1" typeName="float" tagName="Klin_1" info0="SVRB" info1="RET_MEM" info2="8" info10="RET_MEM?8?float" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="float" tagURI="RET_MEM?8?float" type="basic" rw="R/W" minValue="-3.40282e+38" maxValue="3.40282e+38"/>
+    <data_type name="Klin_01" typeName="float" tagName="Klin_01" info0="SVRB" info1="RET_MEM" info2="12" info10="RET_MEM?12?float" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="float" tagURI="RET_MEM?12?float" type="basic" rw="R/W" minValue="-3.40282e+38" maxValue="3.40282e+38"/>
+    <data_type name="Klin_001" typeName="float" tagName="Klin_001" info0="SVRB" info1="RET_MEM" info2="16" info10="RET_MEM?16?float" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="float" tagURI="RET_MEM?16?float" type="basic" rw="R/W" minValue="-3.40282e+38" maxValue="3.40282e+38"/>
+    <data_type name="Sel_hmi_alfa" typeName="unsignedShort" tagName="Sel_hmi_alfa" info0="SVRB" info1="RET_MEM" info2="20" info10="RET_MEM?20?unsignedShort" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="unsignedShort" tagURI="RET_MEM?20?unsignedShort" type="basic" rw="R/W" minValue="0" maxValue="65535"/>
+    <data_type name="Sel_hmi_tau" typeName="unsignedShort" tagName="Sel_hmi_tau" info0="SVRB" info1="RET_MEM" info2="22" info10="RET_MEM?22?unsignedShort" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="unsignedShort" tagURI="RET_MEM?22?unsignedShort" type="basic" rw="R/W" minValue="0" maxValue="65535"/>
+    <data_type name="Sel_hmi_eta" typeName="unsignedShort" tagName="Sel_hmi_eta" info0="SVRB" info1="RET_MEM" info2="24" info10="RET_MEM?24?unsignedShort" info75="Variables" info79="false" info80="byFormula" info81="false" info82="1" info83="1" info84="0" info88="0" info89="100" info90="0" info91="0" info95="None" info96="Variables" info98="1000" info100="false" icomType="unsignedShort" tagURI="RET_MEM?24?unsignedShort" type="basic" rw="R/W" minValue="0" maxValue="65535"/>
+</data_tree>

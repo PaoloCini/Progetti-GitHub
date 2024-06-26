@@ -1,0 +1,220 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object id="Emergenze" pageName="Emergenze" py="0" pageSize="800,600" titleName="" scriptFile="emergenze.js" downloadPrepDone="false" class="DialogWgt" dataWndSize="0,70" staticOptEnable="true" dynPosition="false" singleInstance="true" usedFonts="Tahoma,Roboto" px="0" titlebar="false" pageType="modal">
+  <wgtStyle fitToSize="1" x="0" height="600" y="0" v="04.05.00.458" width="800" ver="040500458" forcePaint="512"/>
+  <object id="_PageMLTextMgrWgt" mlFileName="" class="PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+   <langs curLangId="L4" defLangId="L4">
+    <lang name="ITALIANO" writingsystem="Any" langId="L1" keypads="" langCode="it-IT" removable="false" defaultFont="Tahoma"/>
+    <lang name="ENGLISH" writingsystem="Any" langId="L2" keypads="" langCode="en-US" removable="false" defaultFont="Tahoma"/>
+    <lang name="FRANCAIS" writingsystem="Any" langId="L3" keypads="" langCode="fr-FR" removable="false" defaultFont="Tahoma"/>
+    <lang name="ESPANOL" writingsystem="Any" langId="L4" keypads="" langCode="es-ES" removable="false" defaultFont="Tahoma"/>
+    <lang name="DEUTSCH" writingsystem="Any" langId="L5" keypads="" langCode="de-DE" removable="false" defaultFont="Tahoma"/>
+    <lang name="PORTUGUES" writingsystem="Any" langId="L6" keypads="" langCode="pt-PT" removable="false" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText id="2" L5="Active Alarms - Table" L1="Active Alarms - Table" L4="Active Alarms - Table" L6="Active Alarms - Table" L2="Active Alarms - Table" L3="Active Alarms - Table"/>
+    <MLText id="3" L5="Groups" L1="Groups" L4="Groups" L6="Groups" L2="Groups" L3="Groups"/>
+    <MLText id="4" L5="Select" L1="Select" L4="Select" L6="Select" L2="Select" L3="Select"/>
+    <MLText id="5" L5="Enable" L1="Enable" L4="Enable" L6="Enable" L2="Enable" L3="Enable"/>
+    <MLText id="6" L5="Value" L1="Value" L4="Value" L6="Value" L2="Value" L3="Value"/>
+    <MLText id="7" L5="State" L1="State" L4="State" L6="State" L2="State" L3="State"/>
+    <MLText id="8" L5="Description" L1="Description" L4="Description" L6="Description" L2="Description" L3="Description"/>
+    <MLText id="9" L5="Date" L1="Date" L4="Date" L6="Date" L2="Date" L3="Date"/>
+    <MLText id="10" L5="Time" L1="Time" L4="Time" L6="Time" L2="Time" L3="Time"/>
+    <MLText id="11" L5="Severity" L1="Severity" L4="Severity" L6="Severity" L2="Severity" L3="Severity"/>
+    <MLText id="12" L5="Date-Time" L1="Date-Time" L4="Date-Time" L6="Date-Time" L2="Date-Time" L3="Date-Time"/>
+    <MLText id="13" L5="User Action" L1="User Action" L4="User Action" L6="User Action" L2="User Action" L3="User Action"/>
+    <MLText id="14" L5="Comment" L1="Comment" L4="Comment" L6="Comment" L2="Comment" L3="Comment"/>
+    <MLText id="15" L5="BG Color" L1="BG Color" L4="BG Color" L6="BG Color" L2="BG Color" L3="BG Color"/>
+    <MLText id="16" L5="FG Color" L1="FG Color" L4="FG Color" L6="FG Color" L2="FG Color" L3="FG Color"/>
+    <MLText id="17" L5="Custom Field 1" L1="Custom Field 1" L4="Custom Field 1" L6="Custom Field 1" L2="Custom Field 1" L3="Custom Field 1"/>
+    <MLText id="18" L5="Custom Field 2" L1="Custom Field 2" L4="Custom Field 2" L6="Custom Field 2" L2="Custom Field 2" L3="Custom Field 2"/>
+    <MLText id="19" L5="Name" L1="Name" L4="Name" L6="Name" L2="Name" L3="Name"/>
+    <MLText id="20" L5="Label" L1="Label" L4="Label" L6="Label" L2="Label" L3="Label"/>
+    <MLText id="21" L5="Time" L1="Time" L4="Time" L6="Time" L2="Time" L3="Time"/>
+    <MLText id="22" L5="Description" L1="Description" L4="Description" L6="Description" L2="Description" L3="Description"/>
+    <MLText id="23" L5="Label" L1="Label" L4="Label" L6="Label" L2="Label" L3="Label"/>
+    <MLText id="24" L5="Name" L1="Name" L4="Name" L6="Name" L2="Name" L3="Name"/>
+    <MLText id="25" L5="Label" L1="Maschera" L4="Ocultar" L6="Label" L2="Mask Alarms" L3="Label"/>
+    <MLText id="26" L5="Label" L1="Cancella Allarmi" L4="Eliminar Alarmas" L6="Label" L2="Erase Alarms" L3="Label"/>
+   </MLTexts>
+  </object>
+  <object id="Emergenze@$GroupSubscrWgt@$0" class="GroupSubscribeWgt">
+   <wgtStyle x="0" height="0" y="0" width="0"/>
+  </object>
+  <object id="ActiveAlarmsTable" class="GroupWgt" customType="ActiveAlarmTable">
+   <wgtStyle x="0" height="493" y="12.43" width="800" wgtStaticOpt="dynamic" cx="400" cy="246.50" forcePaint="16">
+    <gridGroupLayout gridGlobalStrokeColor="rgb(0,0,0)" gridHorUnderFlow="2" gridHorOverFlow="2" gridScrollOffset="2" gridVerOverFlow="2" gridScrollAutohide="0" gridNRows="3" gridGlobalStrokeWidth="0" gridScrollImage="" gridScrollColor="rgb(153,153,153)" gridNCols="1" gridVerUnderFlow="2" gridGlobalStrokeMode="1" gridScrollBgColor="none" gridScrollSize="5" gridGlobalStrokeCollapsed="1">
+     <colProperties>
+      <colProperty leftMargin="0" leftStroke="0" stretch="1" rightMargin="2" rightStrokeColor="rgb(0,0,0)" leftStrokeColor="rgb(0,0,0)" rightStroke="0" minWidth="300" maxWidth="10000"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty stretch="1" maxHeight="21" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="0" minHeight="21" topMargin="0" bottonStroke="0" topStrokeColor="rgb(0,0,0)" bottonStrokeColor="rgb(0,0,0)" selBackColor="none"/>
+      <rowProperty stretch="7" maxHeight="10000" selForColor="none" bottonMargin="5" selStrokeColor="none" backColor="none" topStroke="0" minHeight="0" topMargin="1" bottonStroke="0" topStrokeColor="rgb(0,0,0)" bottonStrokeColor="rgb(0,0,0)" selBackColor="none"/>
+      <rowProperty stretch="1" maxHeight="39" selForColor="none" bottonMargin="0" selStrokeColor="none" backColor="none" topStroke="0" minHeight="39" topMargin="5" bottonStroke="0" topStrokeColor="rgb(0,0,0)" bottonStrokeColor="rgb(0,0,0)" selBackColor="none"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object id="ActiveAlarmsTable.Title" class="LabelWgt">
+    <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="399" maxWidth="100000" colSpan="1" font-size="10" forcePaint="19" rowSpan="1" horItemOverflow="0" vert-align="top" cy="9.95" rightMargin="0" keypad-type="None" leftMargin="0" height="21" font-color="rgb(76,76,77)" font-sizepx="13" verItemOverflow="0" colOcc="1" font-bold="true" width="798" y="0" wgtStaticOpt="dynamic" verItemUnderflow="0" x="0" minHeight="0" wrapping="true" aspectRatio="476:23" rowOcc="1" font-family="Tahoma" horItemUnderflow="0"/>
+    <links>
+     <lang textid="2" class="MLTextLink"/>
+    </links>
+   </object>
+   <object id="ActiveAlarmsTable.Table" class="GroupWgt">
+    <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="399" maxWidth="100000" colSpan="1" forcePaint="1" rowSpan="2" horItemOverflow="0" cy="235.50" rightMargin="0" leftMargin="0" height="471" verItemOverflow="0" colOcc="1" width="798" y="22" verItemUnderflow="0" x="0" minHeight="0" aspectRatio="17:8" rowOcc="2" horItemUnderflow="0"/>
+    <object id="ActiveAlarmsTable.Table.AlarmsSrcWgt" class="TableAlarmSrcWgt">
+     <wgtStyle filterCol2="17" x="0" height="471" y="0" filterCol1="5" width="798" wgtStaticOpt="dynamic" hasStaticHeader="1" filterExp2="" forcePaint="26" filterExp1="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)">
+      <header>
+       <col index="0"/>
+       <col index="1"/>
+       <col index="2"/>
+       <col index="3"/>
+       <col index="4"/>
+       <col index="5"/>
+       <col index="6"/>
+       <col index="7"/>
+       <col index="8"/>
+       <col index="9"/>
+       <col index="10"/>
+       <col index="11"/>
+       <col index="12"/>
+       <col index="13"/>
+       <col index="14"/>
+       <col index="1000"/>
+       <col index="1001"/>
+      </header>
+     </wgtStyle>
+     <dataLinks>
+      <dataLink dataSource="_SysPropMgr" attribute="model" class="SysPropMgrWgt" readWrite="R" widgetType="Project" tagType="int" sourceType="System" tag="Alarm triggered" tagIndex="-1"/>
+     </dataLinks>
+     <links>
+      <lang class="MLMsgLink:col:">
+       <MLFontFamily L5="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma" L2="Tahoma" L3="Tahoma"/>
+       <textid val="19" idx="0"/>
+       <textid val="3" idx="1"/>
+       <textid val="4" idx="2"/>
+       <textid val="5" idx="3"/>
+       <textid val="6" idx="4"/>
+       <textid val="7" idx="5"/>
+       <textid val="8" idx="6"/>
+       <textid val="9" idx="7"/>
+       <textid val="10" idx="8"/>
+       <textid val="11" idx="9"/>
+       <textid val="12" idx="10"/>
+       <textid val="13" idx="11"/>
+       <textid val="14" idx="12"/>
+       <textid val="15" idx="13"/>
+       <textid val="16" idx="14"/>
+       <textid val="17" idx="1000"/>
+       <textid val="18" idx="1001"/>
+      </lang>
+     </links>
+    </object>
+    <object id="ActiveAlarmsTable.Table.Table" class="TableGroupWgt">
+     <wgtStyle precachedPages="1" x="0" height="452.42" y="0" width="798" cx="399" cy="226.21" forcePaint="9">
+      <gridGroupLayout gridGlobalStrokeColor="rgb(200,200,200)" gridHorUnderFlow="2" gridHorOverFlow="2" gridScrollOffset="0" gridVerOverFlow="1" gridScrollAutohide="0" gridNRows="2" gridGlobalStrokeWidth="1" gridScrollImage="" gridScrollColor="rgb(0,70,136)" gridNCols="3" gridVerUnderFlow="1" gridGlobalStrokeMode="1" gridScrollBgColor="rgb(237,237,237)" gridScrollSize="5" gridGlobalStrokeCollapsed="1">
+       <colProperties>
+        <colProperty leftMargin="2" leftStroke="0" stretch="1" rightMargin="2" rightStrokeColor="rgb(230,230,230)" leftStrokeColor="rgb(230,230,230)" rightStroke="1" minWidth="56" maxWidth="100000"/>
+        <colProperty leftMargin="2" leftStroke="1" stretch="3" rightMargin="2" rightStrokeColor="rgb(230,230,230)" leftStrokeColor="rgb(230,230,230)" rightStroke="1" minWidth="128" maxWidth="100000"/>
+        <colProperty leftMargin="2" leftStroke="1" stretch="7" rightMargin="2" rightStrokeColor="rgb(230,230,230)" leftStrokeColor="rgb(230,230,230)" rightStroke="1" minWidth="150" maxWidth="100000"/>
+       </colProperties>
+       <rowProperties>
+        <rowProperty stretch="2" maxHeight="32" selForColor="none" bottonMargin="2" selStrokeColor="none" backColor="none" topStroke="0" minHeight="32" topMargin="2" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+        <rowProperty stretch="2" maxHeight="32" selForColor="none" bottonMargin="2" selStrokeColor="none" backColor="none" topStroke="0" minHeight="32" topMargin="2" bottonStroke="1" topStrokeColor="rgb(230,230,230)" bottonStrokeColor="rgb(230,230,230)" selBackColor="none"/>
+       </rowProperties>
+      </gridGroupLayout>
+     </wgtStyle>
+     <dataLinks>
+      <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="tableModel" readWrite="R" sourceType="Widget" tag="model" tagIndex="-1"/>
+      <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="rowsBg" readWrite="R" sourceType="Widget" tag="BGColor" tagIndex="-1"/>
+     </dataLinks>
+     <object id="ActiveAlarmsTable.Table.Table.namedata" class="LabelWgt">
+      <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="30" maxWidth="100000" colSpan="1" font-size="10" forcePaint="139" rowSpan="1" horItemOverflow="0" vert-align="middle" cy="12.80" rightMargin="0" keypad-type="None" leftMargin="8" height="27" font-color="rgb(76,76,77)" font-sizepx="13" verItemOverflow="0" colOcc="1" width="60" y="34" verItemUnderflow="0" x="10" minHeight="0" wrapping="true" aspectRatio="47:9" rowOcc="2" font-family="Tahoma" horItemUnderflow="0"/>
+      <dataLinks>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="text" readWrite="R" sourceType="Widget" tag="alName" tagIndex="-1"/>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="fill" readWrite="R" sourceType="Widget" tag="FGColor" tagIndex="-1"/>
+      </dataLinks>
+      <links>
+       <lang textid="20" class="MLTextLink"/>
+      </links>
+     </object>
+     <object id="ActiveAlarmsTable.Table.Table.timedatedata" class="NumericWgt">
+      <wgtStyle font-family="Roboto" form="date-time" min="0" leftMargin="8" minHeight="0" font-size="12" aspectRatio="17:2" step="1" colOcc="2" maxHeight="100000" topMargin="0" cy="13.50" horItemUnderflow="0" keypad-type="None" usingFormat="MM/DD/YY - hh:mm:ss" rightMargin="0" horItemOverflow="0" maxWidth="100000" font-color="rgb(76,76,77)" verItemUnderflow="0" verItemOverflow="0" bottonMargin="0" width="204" x="83" minWidth="0" cx="95.29" numberFormat="0" height="27" max="4096" font-sizepx="16" forcePaint="137" value="-1" rowOcc="2" preserveAspectRatio="0" vert-align="middle" y="34" text="-1" rowSpan="1" colSpan="1" showThousandSeparator="false" timeSpec="local"/>
+      <dataLinks>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="fill" readWrite="R" sourceType="Widget" tag="FGColor" tagIndex="-1"/>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="value" readWrite="R" sourceType="Widget" tag="alDateTime" tagIndex="-1"/>
+      </dataLinks>
+     </object>
+     <object id="ActiveAlarmsTable.Table.Table.timedatehdr" class="LabelWgt">
+      <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="102" maxWidth="100000" colSpan="1" font-size="12" forcePaint="11" rowSpan="1" horItemOverflow="0" vert-align="middle" cy="12.80" rightMargin="0" keypad-type="None" leftMargin="8" height="27" font-color="rgb(76,76,77)" font-sizepx="16" verItemOverflow="0" colOcc="2" font-bold="true" width="204" y="2" verItemUnderflow="0" x="83" minHeight="0" wrapping="true" aspectRatio="47:9" rowOcc="1" font-family="Tahoma" horItemUnderflow="0"/>
+      <dataLinks>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="text" readWrite="R" sourceType="Widget" tag="alTime" tagIndex="-1"/>
+      </dataLinks>
+      <links>
+       <lang textid="21" class="MLTextLink"/>
+      </links>
+     </object>
+     <object id="ActiveAlarmsTable.Table.Table.deschdr" class="LabelWgt">
+      <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="247.50" maxWidth="100000" colSpan="1" font-size="12" forcePaint="11" rowSpan="1" horItemOverflow="0" vert-align="middle" cy="12.80" rightMargin="0" keypad-type="None" leftMargin="8" height="27" font-color="rgb(76,76,77)" font-sizepx="16" verItemOverflow="0" colOcc="3" font-bold="true" width="495" y="2" verItemUnderflow="0" x="300" minHeight="0" wrapping="true" aspectRatio="115:27" rowOcc="1" font-family="Tahoma" horItemUnderflow="0"/>
+      <dataLinks>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="text" readWrite="R" sourceType="Widget" tag="alDescription" tagIndex="-1"/>
+      </dataLinks>
+      <links>
+       <lang textid="22" class="MLTextLink"/>
+      </links>
+     </object>
+     <object id="ActiveAlarmsTable.Table.Table.descdata" class="LabelWgt">
+      <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="247.50" maxWidth="100000" colSpan="1" font-size="12" forcePaint="139" rowSpan="1" horItemOverflow="0" vert-align="middle" cy="12.80" rightMargin="0" keypad-type="None" leftMargin="8" height="27" font-color="rgb(76,76,77)" font-sizepx="16" verItemOverflow="0" colOcc="3" width="495" y="34" verItemUnderflow="0" x="300" minHeight="0" wrapping="true" aspectRatio="115:27" rowOcc="2" font-family="Tahoma" horItemUnderflow="0"/>
+      <dataLinks>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="text" readWrite="R" sourceType="Widget" tag="alDescription" tagIndex="-1"/>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="fill" readWrite="R" sourceType="Widget" tag="FGColor" tagIndex="-1"/>
+      </dataLinks>
+      <links>
+       <lang textid="23" class="MLTextLink"/>
+      </links>
+     </object>
+     <object id="ActiveAlarmsTable.Table.Table.selecthdr1" class="LabelWgt">
+      <wgtStyle bottonMargin="0" maxHeight="100000" minWidth="0" preserveAspectRatio="0" topMargin="0" cx="30" maxWidth="100000" colSpan="1" font-size="10" forcePaint="11" rowSpan="1" horItemOverflow="0" vert-align="middle" cy="12.80" rightMargin="0" keypad-type="None" leftMargin="8" height="27" font-color="rgb(76,76,77)" font-sizepx="13" verItemOverflow="0" colOcc="1" font-bold="true" width="60" y="2" verItemUnderflow="0" x="10" minHeight="0" wrapping="true" aspectRatio="43:27" rowOcc="1" font-family="Tahoma" horItemUnderflow="0"/>
+      <dataLinks>
+       <dataLink dataSource="ActiveAlarmsTable.Table.AlarmsSrcWgt" attribute="text" readWrite="R" sourceType="Widget" tag="alName" tagIndex="-1"/>
+      </dataLinks>
+      <links>
+       <lang textid="24" class="MLTextLink"/>
+      </links>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object id="BtnStd2" class="GroupWgt" customType="ButtonsWithLabel">
+   <wgtStyle x="1" height="65" y="534" width="200" cx="100" cy="-97.50"/>
+   <object id="BtnStd2.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="maintained" releasePath="images\Btn_rect_blueUp.svg" fill="rgb(255,0,0)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="100" forcePaint="8" needlePath="images\Btn_rect_Dwn.svg" cy="32.50" pushColor="rgb(128,128,0)" height="65" bdrImageSize="54.00,44.00" downFillColor="rgb(255,104,32)" value="0" form="standard" width="200" y="0" x="0"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R/W" widgetType="Project" tagType="boolean" sourceType="Tag" tag="maschera_on" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd2.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="7.42" height="60.58" alignment="center" vert-align="middle" y="1.48" font-color="rgb(255,255,255)" font-size="18" font-bold="true" wrapping="true" width="177.78" cx="88.90" cy="29.55" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="25" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="BtnStd1" class="GroupWgt" customType="ButtonsWithLabel">
+   <wgtStyle x="598" height="65" y="533" width="200" cx="100" cy="-97.50"/>
+   <object id="BtnStd1.btn" class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\Btn_rect_blueUp.svg" fill="rgb(0,0,139)" style="0" bdrSize="0.17,0.17,0.15,0.16" cx="100" forcePaint="8" needlePath="images\Btn_rect_Dwn.svg" cy="32.50" pushColor="rgb(128,128,0)" height="65" bdrImageSize="54.00,44.00" downFillColor="rgb(0,0,255)" value="0" form="standard" width="200" y="0" x="0"/>
+    <dataLinks>
+     <dataLink dataSource="_TagMgr" attribute="value" class="TagMgrWgt" readWrite="R/W" widgetType="Project" tagType="boolean" sourceType="Tag" tag="Cancella_allarme_hmi" tagIndex="-1"/>
+    </dataLinks>
+   </object>
+   <object id="BtnStd1.lbl" class="LabelWgt" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-sizepx="24" x="7.42" height="60.58" alignment="center" vert-align="middle" y="1.48" font-color="rgb(255,255,255)" font-size="18" font-bold="true" wrapping="true" width="177.78" cx="88.90" cy="29.55" font-family="Tahoma" forcePaint="3" keypad-type="None"/>
+    <links>
+     <lang textid="26" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

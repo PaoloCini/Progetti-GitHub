@@ -1,0 +1,14 @@
+20/06/2024
+			Completate tutte le pag. Rimane da controllare i punti indivati sotto.
+19/06/2024
+			EPG_1CE_2024_06_19:
+			Arrivato al Dialog 4 'Cicli Prova' Fatto.
+			Pag 60 Vasca colla: -l'oggetto messaggi è associato a D940 ma nel vecchio pannello e Plc è associato a D939. Si 
+								 aggiunge variabile D939 in Hmi oppure si sostituisce nel Plc la D939 con la D940?
+								-il Ps di OFF è mantenuto mentre nel vecchio era momentaneo. Perchè?
+			Lavori HMI incollatrice 185 Salnes: EPG_1CE_2024_06_18:
+			Arrivato a pag.30 Config-assi
+			La Var Punta_messaggi: controllare l'elenco.
+			In Elenco Programmi Controllare se la lungh. di articolo deve essere di 16 byte. Nel pannello vecchio era 8 byte.
+			Controllare tutte le pag. Ingressi Alfa 0, Ingressi Alfa speciali
+			
