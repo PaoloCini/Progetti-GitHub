@@ -1,0 +1,16 @@
+EUROPROGETTI
+
+Centratore EPS185
+
+
+Modificate le misure delle corse e dell'altezza massima scatola secondo i limiti
+previsti per la linea 185
+
+Corsa totale tampone = 390 mm
+
+Altezza massima scatola = 190 mm
+
+Modificata la sequenza di conclusione della centratura con il ritorno indietro
+secondo la scatola bassa / alta
+
+26 gennaio 2021
