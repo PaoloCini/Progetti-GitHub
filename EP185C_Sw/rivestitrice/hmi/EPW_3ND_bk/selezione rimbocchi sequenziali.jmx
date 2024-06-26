@@ -1,0 +1,572 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" pageType="modal" dataWndSize="0,70" usedFonts="Tahoma,Metrostyle" dynPosition="false" px="0" singleInstance="true" staticFile="opt/selezione rimbocchi sequenziali.png" pageName="Selezione Rimbocchi sequenziali" pageSize="800,600" py="0" titleName="" scriptFile="selezione rimbocchi sequenziali.js" id="Selezione Rimbocchi sequenziali" staticOptEnable="true" downloadPrepDone="false" titlebar="false">
+  <wgtStyle width="800" ver="040500458" v="04.05.00.458" fitToSize="1" x="0" height="600" y="0"/>
+  <links>
+   <action class="WriteTagAction" actionWgt="_TagMgr" attribute="onActivate" event="onActivate" TagValue="59" actionID="1">
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="n_pagina_pop_up_1" readWrite="R" tagIndex="-1" tagType="unsignedShort" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </action>
+   <action class="WriteTagAction" actionWgt="_TagMgr" attribute="onDeactivate" event="onDeactivate" TagValue="0" actionID="2">
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="n_pagina_pop_up_1" readWrite="R" tagIndex="-1" tagType="unsignedShort" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </action>
+  </links>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle width="0" x="0" height="0" y="0"/>
+   <langs defLangId="L4" curLangId="L4">
+    <lang writingsystem="Any" langCode="it-IT" langId="L1" name="ITALIANO" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="en-US" langId="L2" name="ENGLISH" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="fr-FR" langId="L3" name="FRANCAIS" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="es-ES" langId="L4" name="ESPANOL" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="de-DE" langId="L5" name="DEUTSCH" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="pt-PT" langId="L6" name="PORTUGUES" keypads="" defaultFont="Tahoma" removable="false"/>
+   </langs>
+   <MLTexts>
+    <MLText L3="" L5="" L2="" id="44" L1="" L4="" L6=""/>
+    <MLText L3="Label" L5="Label" L2="Ok" id="0" L1="Ok" L4="Ok" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Phase 1" id="2" L1="Fase 1" L4="Fase 1" L6="Label"/>
+    <MLText L3="SELEZIONE" L5="SELEZIONE" L2="Top Turn In Management" id="3" L1="Gestione dei Rimbocchi Superiori" L4="Doblado de las Solapas superiores" L6="SELEZIONE"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 1" id="4" L1="LAMA 1" L4="CUCHILLAS 1" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 2" id="5" L1="LAMA 2" L4="CUCHILLAS 2" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 3" id="6" L1="LAMA 3" L4="CUCHILLAS 3" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 4" id="7" L1="LAMA 4" L4="CUCHILLAS 4" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Phase 2" id="8" L1="Fase 2" L4="Fase 2" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 1" id="9" L1="LAMA 1" L4="CUCHILLAS 1" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 2" id="10" L1="LAMA 2" L4="CUCHILLAS 2" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 3" id="24" L1="LAMA 3" L4="CUCHILLAS 3" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 4" id="25" L1="LAMA 4" L4="CUCHILLAS 4" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Phase 3" id="26" L1="Fase 3" L4="Fase 3" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 1" id="27" L1="LAMA 1" L4="CUCHILLAS 1" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 2" id="28" L1="LAMA 2" L4="CUCHILLAS 2" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 3" id="29" L1="LAMA 3" L4="CUCHILLAS 3" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 4" id="30" L1="LAMA 4" L4="CUCHILLAS 4" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Phase 4" id="31" L1="Fase 4" L4="Fase 4" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 1" id="32" L1="LAMA 1" L4="CUCHILLAS 1" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 2" id="33" L1="LAMA 2" L4="CUCHILLAS 2" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 3" id="34" L1="LAMA 3" L4="CUCHILLAS 3" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="BLADE 4" id="36" L1="LAMA 4" L4="CUCHILLAS 4" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Vertical Turn In" id="37" L1="Rimbocchi Verticali" L4="Doblado Vertical" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Backflap&#xa; Turn In" id="38" L1="Rimbocchi Dorsali" L4="Doblado interno CD" L6="Label"/>
+    <MLText L3="Message" L5="Message" L2="Message" id="39" L1="Rimbocco Standard" L4="Doblado Estándar" L6="Message"/>
+    <MLText L3="Message" L5="Message" L2="Message" id="40" L1="Rimbocco Sequenziale Controforma" L4="Doblado secuencial con el Contramolde" L6="Message"/>
+    <MLText L3="Message" L5="Message" L2="Message" id="42" L1="Rimbocco Sequenziale Forma" L4="Doblado secuencial con el Molde" L6="Message"/>
+    <MLText L3="" L5="" L2="Standard Turn In" id="45" L1="Rimbocco Standard" L4="Doblado Estándar" L6=""/>
+    <MLText L3="" L5="" L2="Sequential Turn In - Top Mould" id="61" L1="Rimbocco Sequenziale Controforma" L4="Doblado secuencial con el Contramolde" L6=""/>
+    <MLText L3="" L5="" L2="Sequential Turn In - Mould" id="62" L1="Rimbocco Sequenziale Forma" L4="Doblado secuencial con el Molde" L6=""/>
+    <MLText L3="Combo Box" L5="Combo Box" L2="" id="63" L1="&#xa;" L4="&#xa;" L6="Combo Box"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Selezione Rimbocchi sequenziali@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" height="0" y="0"/>
+  </object>
+  <object class="ShapeWgt" static="true" id="rect1">
+   <wgtStyle width="775" stroke="rgb(200,200,200)" x="13" height="86" y="167" nodeName="rect" cx="375" fill="rgb(181,181,180)" cy="43"/>
+  </object>
+  <object class="ShapeWgt" static="true" id="rect5">
+   <wgtStyle width="137" stroke="rgb(200,200,200)" x="662" height="55" y="1" nodeName="rect" cx="137" fill="rgb(237,237,237)" cy="56.83"/>
+  </object>
+  <object class="ShapeWgt" static="true" id="rect4">
+   <wgtStyle width="644" stroke="rgb(200,200,200)" x="9.61" height="55" y="2" nodeName="rect" cx="644" fill="rgb(237,237,237)" cy="56.83"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="ButtonsWithLabel">
+   <wgtStyle width="200" x="598" height="65" y="533" cx="100" cy="-97.50"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd4.btn">
+    <wgtStyle needlePath="images\Btn_rect_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="200" value="0" downFillColor="rgb(85,255,0)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\Btn_rect_blueUp.svg" form="standard" height="65" y="0" bdrImageSize="54.00,44.00" cx="100" type="momentary" fill="rgb(50,205,50)" cy="32.50"/>
+    <links>
+     <action class="CloseDialogAction" actionWgt="_PageMgr" attribute="onMouseRelease" event="onMouseUp" pageName="" closeParam="Selected" actionID="1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd4.lbl">
+    <wgtStyle keypad-type="None" width="177.78" font-size="18" alignment="center" vert-align="middle" x="7.42" font-sizepx="24" forcePaint="3" height="60.58" wrapping="true" y="1.48" font-color="rgb(255,255,255)" cx="88.90" cy="29.55" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle marker="true" keypad-type="None" width="594" font-size="24" alignment="center" vert-align="top" x="36" font-sizepx="32" forcePaint="2" height="48" font-bold="true" wrapping="true" y="5" cx="297" cy="22.74" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle readWrite="true" value="-1" numberFormat="0" height="31.93" font-sizepx="16" showThousandSeparator="false" text="-1" x="653" usingFormat="hh:mm:ss" width="150" alignment="center" y="28" cx="75" min="0" form="date-time" font-size="12" max="4096" cy="15.97" font-color="rgb(0,0,139)" font-family="Metrostyle" step="1" timeSpec="local" keypad-type="None" vert-align="middle"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle value="-1" numberFormat="0" height="32" font-sizepx="16" showThousandSeparator="false" text="-1" x="654" usingFormat="SHORT-DATE" width="150" alignment="center" y="1" cx="74.99" min="0" form="date-time" font-size="12" max="4096" cy="16" font-color="rgb(0,0,139)" font-family="Metrostyle" step="1" forcePaint="73" timeSpec="local" keypad-type="None" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" sourceType="System" attribute="value" tag="System Time" readWrite="R" tagIndex="-1" tagType="long" dataSource="_SysPropMgr" widgetType="Project"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="ButtonsWithLabel">
+   <wgtStyle width="166" x="23" forcePaint="8" height="58" y="181" cx="83" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd3.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="166" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="83" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(50,205,50)" style="0" fill="rgb(0,0,139)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="FASE_1" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd3.lbl">
+    <wgtStyle keypad-type="None" width="147.56" font-size="18" alignment="center" vert-align="middle" x="6.16" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="73.78" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="200" forcePaint="8" height="58" y="183" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd5.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L1_F1" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd5.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="347.33" forcePaint="8" height="58" y="183" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd6.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L2_F1" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd6.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="494.67" forcePaint="8" height="58" y="183" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd7.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L3_F1" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd7.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="642" forcePaint="8" height="58" y="183" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd8.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L4_F1" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd8.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" static="true" id="rect2">
+   <wgtStyle width="775" stroke="rgb(200,200,200)" x="12" height="86" y="256" nodeName="rect" cx="375" fill="rgb(181,181,180)" cy="43"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd9" customType="ButtonsWithLabel">
+   <wgtStyle width="166" x="22" forcePaint="8" height="58" y="270" cx="83" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd9.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="166" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="83" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(50,205,50)" style="0" fill="rgb(0,0,139)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="FASE_2" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd9.lbl">
+    <wgtStyle keypad-type="None" width="147.56" font-size="18" alignment="center" vert-align="middle" x="6.16" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="73.78" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="199" forcePaint="8" height="58" y="272" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd10.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L1_F2" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd10.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="346.33" forcePaint="8" height="58" y="272" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd11.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L2_F2" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd11.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd12" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="493.67" forcePaint="8" height="58" y="272" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd12.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L3_F2" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd12.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="24"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd13" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="641" forcePaint="8" height="58" y="272" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd13.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L4_F2" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd13.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="25"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" static="true" id="rect3">
+   <wgtStyle width="775" stroke="rgb(200,200,200)" x="13" height="86" y="344" nodeName="rect" cx="375" fill="rgb(181,181,180)" cy="43"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd14" customType="ButtonsWithLabel">
+   <wgtStyle width="166" x="23" forcePaint="8" height="58" y="358" cx="83" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd14.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="166" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="83" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(50,205,50)" style="0" fill="rgb(0,0,139)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="FASE_3" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd14.lbl">
+    <wgtStyle keypad-type="None" width="147.56" font-size="18" alignment="center" vert-align="middle" x="6.16" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="73.78" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd15" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="200" forcePaint="8" height="58" y="360" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd15.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L1_F3" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd15.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="347.33" forcePaint="8" height="58" y="360" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd16.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L2_F3" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd16.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="28"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd17" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="494.67" forcePaint="8" height="58" y="360" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd17.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L3_F3" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd17.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="29"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd18" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="642" forcePaint="8" height="58" y="360" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd18.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L4_F3" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd18.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="30"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" static="true" id="rect6">
+   <wgtStyle width="775" stroke="rgb(200,200,200)" x="12" height="86" y="433" nodeName="rect" cx="375" fill="rgb(181,181,180)" cy="43"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd19" customType="ButtonsWithLabel">
+   <wgtStyle width="166" x="22" forcePaint="8" height="58" y="447" cx="83" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd19.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="166" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="83" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(50,205,50)" style="0" fill="rgb(0,0,139)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="FASE_4" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd19.lbl">
+    <wgtStyle keypad-type="None" width="147.56" font-size="18" alignment="center" vert-align="middle" x="6.16" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="73.78" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="31"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd20" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="199" forcePaint="8" height="58" y="449" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd20.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L1_F4" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd20.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="32"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd21" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="346.33" forcePaint="8" height="58" y="449" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd21.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L2_F4" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd21.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="33"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd22" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="493.67" forcePaint="8" height="58" y="449" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd22.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L3_F4" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd22.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="34"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd23" customType="ButtonsWithLabel">
+   <wgtStyle width="136" x="641" forcePaint="8" height="58" y="449" cx="68" cy="29"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Rimbocco_sequenz_forma" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd23.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="136" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="68" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(255,173,91)" style="0" fill="rgb(127,127,127)" forcePaint="9" type="maintained"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="L4_F4" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd23.lbl">
+    <wgtStyle keypad-type="None" width="120.89" font-size="18" alignment="center" vert-align="middle" x="5.04" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="60.44" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="36"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="ButtonsWithLabel">
+   <wgtStyle width="218" x="25" height="58" y="538" cx="109" cy="29"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd1.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="218" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="109" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(50,205,50)" style="0" fill="rgb(0,0,139)" forcePaint="8" type="momentary"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="upColor" tag="Abil_Speciali_6" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+      </xForms>
+     </dataLink>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="pushColor" tag="Abil_Speciali_6" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="0">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="tst_sel_rimbint_vert" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd1.lbl">
+    <wgtStyle keypad-type="None" width="193.78" font-size="18" alignment="center" vert-align="middle" x="8.09" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="96.89" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="37"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="ButtonsWithLabel">
+   <wgtStyle width="218" x="267" height="58" y="538" cx="109" cy="29"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd2.btn">
+    <wgtStyle value="0" height="58" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="218" y="0" needlePath="images\Btn_rect_Dwn.svg" cx="109" form="standard" releasePath="images\Btn_rect_blueUp.svg" cy="29" downFillColor="rgb(50,205,50)" style="0" fill="rgb(0,0,139)" forcePaint="8" type="momentary"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="upColor" tag="Abil_Speciali_7" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+      </xForms>
+     </dataLink>
+     <dataLink class="TagMgrWgt" sourceType="Tag" attribute="pushColor" tag="Abil_Speciali_7" readWrite="R/W" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="1">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="tst_sel_rimbint_dorsale" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd2.lbl">
+    <wgtStyle keypad-type="None" width="193.78" font-size="18" alignment="center" vert-align="middle" x="8.09" font-sizepx="24" forcePaint="3" height="54.05" wrapping="true" y="1.32" font-color="rgb(237,237,237)" cx="96.89" cy="26.37" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="38"/>
+    </links>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle frameSize="0" value="0" height="48" frameColor="rgb(255,255,255)" frameFill="rgb(192,192,192)" frame="true" font-sizepx="24" text="" viewindex="false" x="11" width="776" alignment="center" y="112" cx="444.06" min="0" continous="true" font-size="18" max="3" font-bold="true" cy="21.60" font-family="Tahoma" forcePaint="10" vert-align="middle" keypad-type="None">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="Modo_rimbocco_superiore" readWrite="R" tagIndex="-1" tagType="unsignedShort" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma"/>
+     <textid val="44" idx="0"/>
+     <textid val="39" idx="1"/>
+     <textid val="40" idx="2"/>
+     <textid val="42" idx="3"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ComboBoxWgt" id="Combo1">
+   <wgtStyle height="35" font-sizepx="21" index="0" text="" list="&#xa;,Doblado Estándar,Doblado secuencial con el Contramolde,Doblado secuencial con el Molde" x="134" dropdownSelBgColor="rgb(0,176,199)" borderColor="rgb(237,237,237)" width="500" dropdownSelFontColor="rgb(255,255,255)" dropdownFontColor="rgb(76,76,77)" y="70" cx="248.48" continous="true" listData=",,," dropdownButtonBgColor="rgb(237,237,237)" dropdownButtonImageHeight="10" font-size="16" dropdownBorderColor="rgb(200,200,200)" cy="17" dropdownButtonImageWidth="10" font-color="rgb(76,76,77)" bgColor="rgb(237,237,237)" listIndex="0,1,2,3" font-family="Tahoma" forcePaint="10" imageList=",,," dropdownButtonWidth="30" keypad-type="None" vert-align="top" type="1"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="index" tag="Modo_rimbocco_superiore" readWrite="R/W" tagIndex="-1" tagType="unsignedShort" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLComboBoxLink:list:">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Tahoma" L4="Tahoma" L6="Tahoma"/>
+     <textid val="63" idx="0"/>
+     <textid val="45" idx="1"/>
+     <textid val="61" idx="2"/>
+     <textid val="62" idx="3"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

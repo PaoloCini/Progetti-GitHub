@@ -1,0 +1,6 @@
+<printdetails diskquota="-1" maxpixmapsize="16000000" ramquota="16000000" spoolFolder="c:/@dati/@archivio progetti/europrogetti/linea scatole/ep185_24/rivestitrice/hmi/epw_3ne/epw_3nd/reportspool" spoolMediaType="0">
+ <printerPorts>
+  <port>Default</port>
+  <port>File</port>
+ </printerPorts>
+</printdetails>

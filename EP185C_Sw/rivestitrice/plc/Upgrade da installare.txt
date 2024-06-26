@@ -1,0 +1,8 @@
+HanSung
+
+Linea E851 - aggiornare tutte le interfacce con la versione che comprende il coreano
+Sull'altra linea verificare la corrispondenza ed eventualmente agguiornare
+
+Rivestitrici - sw EPW_3NC da aggiornare per l'introduzione del blocco al riavvio del
+ciclo prima che sia completamente terminato (in caso di arresto con time-out)
+Ridotto anche l'anticipo di partenza della forma all'arrivo dei bracci per sicurezza

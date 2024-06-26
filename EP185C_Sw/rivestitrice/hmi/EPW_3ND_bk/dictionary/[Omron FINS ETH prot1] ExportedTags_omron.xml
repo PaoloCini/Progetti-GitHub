@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tag_dictionary>
+    <name>[Omron FINS ETH prot1] ExportedTags_omron</name>
+    <protocol>OMRE</protocol>
+    <tag_importer_version>Tag Editor exported xml 1.1</tag_importer_version>
+    <importfile>C:/EuroProgetti/JMobile/Marcello/EPA_2BA_new/ExportedTags_omron.xml</importfile>
+    <import_options importType="general" ver="1.0"/>
+    <tag_locator/>
+    <hasDataModel>true</hasDataModel>
+</tag_dictionary>

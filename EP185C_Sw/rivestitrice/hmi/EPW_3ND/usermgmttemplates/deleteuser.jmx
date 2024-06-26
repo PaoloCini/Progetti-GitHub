@@ -1,0 +1,80 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object pageName="DeleteUser" downloadPrepDone="false" staticOptEnable="false" staticFile="opt/deleteuser.png" id="DeleteUser" pageSize="480,480" class="PageWgt" dataWndSize="0,70" usedFonts="Tahoma">
+  <wgtStyle fitToSize="1" ver="040500458" height="480" v="04.05.00.458" width="480" y="0" x="0"/>
+  <object mlFileName="" mgrType="Page" id="_PageMLTextMgrWgt" class="PageMLTextMgrWgt">
+   <wgtStyle height="0" width="0" y="0" x="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang keypads="" writingsystem="Any" langId="L1" name="ITALIANO" removable="false" defaultFont="Tahoma" langCode="it-IT"/>
+    <lang keypads="" writingsystem="Any" langId="L2" name="ENGLISH" removable="false" defaultFont="Tahoma" langCode="en-US"/>
+    <lang keypads="" writingsystem="Any" langId="L3" name="FRANCAIS" removable="false" defaultFont="Tahoma" langCode="fr-FR"/>
+    <lang keypads="" writingsystem="Any" langId="L4" name="ESPANOL" removable="false" defaultFont="Tahoma" langCode="es-ES"/>
+    <lang keypads="" writingsystem="Any" langId="L5" name="DEUTSCH" removable="false" defaultFont="Tahoma" langCode="de-DE"/>
+    <lang keypads="" writingsystem="Any" langId="L6" name="PORTUGUES" removable="false" defaultFont="Tahoma" langCode="pt-PT"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object id="image2" class="ImageWgt">
+   <wgtStyle imagePath="images/bgDeleteUser.svg" cy="232.32" height="480" width="480" y="0" x="0" cx="246.57"/>
+  </object>
+  <object id="GroupWgt5" customType="Button" class="GroupWgt">
+   <wgtStyle cy="19" height="40" width="102" y="252" x="149" cx="48"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object id="image8" class="ImageWgt">
+    <wgtStyle imagePath="images/ButtonFrame.svg" cy="18" height="40" width="102" y="0" x="0" cx="46"/>
+   </object>
+   <object hmiStyle="type:btn" id="btnStd3" class="ButtonWgt">
+    <wgtStyle type="momentary" cy="15" value="0" height="33" form="standard" width="96" needlePath="images/ButtonPressed.svg" y="3.67" fill="rgb(211,211,211)" dx="1" x="3.34" releasePath="images/Button.svg" dy="-1" downFillColor="rgb(211,211,211)" cx="47.29"/>
+    <links>
+     <action actionWgt="_UserMgr" event="onMouseUp" class="ApplyEditAction" applyType="2" actionID="0" attribute="onMouseRelease"/>
+     <action actionWgt="_PageMgr" event="onMouseUp" class="LastVisitedPageAction" actionID="1" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object id="label3" class="LabelWgt">
+    <wgtStyle font-size="12" cy="10" font-family="Tahoma" forcePaint="1" vert-align="middle" font-color="rgb(40,40,40)" height="22" keypad-type="None" width="50" y="8.78" alignment="center" x="27.39" text="Delete" cx="24"/>
+   </object>
+  </object>
+  <object id="GroupWgt3" customType="Button" class="GroupWgt">
+   <wgtStyle cy="19" height="40" width="102" y="252" x="279" cx="48"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object id="image4" class="ImageWgt">
+    <wgtStyle imagePath="images/ButtonFrame.svg" cy="18" height="40" width="102" y="0" x="0" cx="46"/>
+   </object>
+   <object hmiStyle="type:btn" id="btnStd4" class="ButtonWgt">
+    <wgtStyle type="momentary" cy="15.30" value="0" height="33" form="standard" width="96" needlePath="images/ButtonPressed.svg" y="3.67" fill="rgb(211,211,211)" dx="1" x="3.01" releasePath="images/Button.svg" dy="-1" downFillColor="rgb(211,211,211)" cx="47.45"/>
+    <links>
+     <action actionWgt="_PageMgr" event="onMouseUp" class="LastVisitedPageAction" actionID="0" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object id="label14" class="LabelWgt">
+    <wgtStyle font-size="12" cy="10" font-family="Tahoma" forcePaint="1" vert-align="middle" font-color="rgb(40,40,40)" height="22" keypad-type="None" width="50" y="8.78" alignment="center" x="27.09" text="Cancel" cx="24"/>
+   </object>
+  </object>
+  <object id="error_msg" class="LabelWgt">
+   <wgtStyle font-size="12" wrapping="true" cy="36" font-family="Tahoma" forcePaint="16" vert-align="top" font-color="rgb(255,0,0)" height="76" keypad-type="None" width="204" y="301" wgtStaticOpt="dynamic" x="99" marker="true" text="" cx="100"/>
+  </object>
+  <object id="group_cmb" class="ComboBoxWgt">
+   <wgtStyle forcePaint="8" dropdownBorderColor="rgb(0,0,0)" font-size="12" vert-align="top" y="185" dropdownButtonImageWidth="10" continous="true" cy="14.57" index="0" font-family="Tahoma" keypad-type="None" cx="19.62" dropdownButtonImageHeight="10" text="" height="34" dropdownButtonWidth="30" width="170" x="211"/>
+   <dataLinks>
+    <dataLink sourceType="Data" dataSource="_UserGroupMgr" tag="groupNameList" readWrite="R" attribute="list" widgetType="Project"/>
+    <dataLink sourceType="Data" dataSource="_UserMgr" tag="editUserGroup" readWrite="R/W" attribute="index" widgetType="Project"/>
+   </dataLinks>
+  </object>
+  <object id="users_cmb" class="ComboBoxWgt">
+   <wgtStyle forcePaint="8" dropdownBorderColor="rgb(0,0,0)" font-size="12" vert-align="top" y="136" dropdownButtonImageWidth="10" continous="true" cy="15.79" index="0" font-family="Tahoma" keypad-type="None" cx="22.06" dropdownButtonImageHeight="10" text="" height="34" dropdownButtonWidth="30" width="170" x="211"/>
+   <dataLinks>
+    <dataLink sourceType="Data" dataSource="_UserMgr" tag="editUserList" readWrite="R" attribute="list" widgetType="Project"/>
+    <dataLink sourceType="Data" dataSource="_UserMgr" tag="editCurUser" readWrite="R/W" attribute="index" widgetType="Project"/>
+   </dataLinks>
+  </object>
+  <object id="label4" class="LabelWgt">
+   <wgtStyle font-size="12" cy="9" font-family="Tahoma" vert-align="top" font-color="rgb(40,40,40)" height="19" keypad-type="None" width="82" y="146" alignment="right" x="93" marker="true" text="User name:" cx="34"/>
+  </object>
+  <object id="label13" class="LabelWgt">
+   <wgtStyle font-size="12" cy="10" font-family="Tahoma" vert-align="top" font-color="rgb(40,40,40)" height="19" keypad-type="None" width="50" y="193" alignment="right" x="125" marker="true" text="Group:" cx="25"/>
+  </object>
+ </object>
+</wgtPage>

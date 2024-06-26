@@ -1,0 +1,1813 @@
+Sk_protezioni	BOOL	0.00	selettore esclusione ripari di protezione                           guards exclusion switch	0	
+SPLUS	BOOL	0.01	pulsante "aumenta"                                                        "increase" button	0	
+SMINUS	BOOL	0.02	pulsante "diminuisce"                                                     "decrease" button	0	
+ripari_sicurezza_ok	BOOL	0.03	ripari di protezione chiusi                                                  guards closed	0	
+S_i_scatola	BOOL	0.04	sensore nuova scatola dal centratore                             sensor of box in input 	0	
+S_u_scatola	BOOL	0.05	sensore uscuta scatola rivestita                                      sensor of box in output	0	
+S_pinza_sx_A	BOOL	0.06	sensore pinza A chiusa                                                   sensor of gripper A closed	0	
+S_pinza_sx_B	BOOL	0.07	sensore pinza B chiusa                                                   sensor of gripper B closed	0	
+S_pinza_dx_C	BOOL	0.08	sensore pinza C chiusa                                                   sensor of gripper C closed	0	
+S_pinza_dx_D	BOOL	0.09	sensore pinza D chiusa                                                   sensor of gripper D closed	0	
+S_pinza_sx_alta	BOOL	0.10	sensore pinza lato sx alta                                                sensor of left gripper at top	0	
+S_pinza_dx_alta	BOOL	0.11	sensore pinza lato destro alta                                          sensor of right gripper at top	0	
+S_pinza_sc_sx_ap	BOOL	0.12	sensore pinza scarico lato sinistro aperta                        sensor of left unload gripper open	0	
+S_pinza_sc_dx_ap	BOOL	0.13	sensore pinza scarico lato destro aperta                         sensor of right unload gripper open	0	
+S_controforma_aperta	BOOL	0.14	sensore posizione controstampo aperta                          sensor of top mould open	0	
+S_controforma_chiusa	BOOL	0.15	sensore posizione controstampo chiusa                   sensor of top mould shut	0	
+S_spazzole1	BOOL	1.00	sensore posizione spazzole carrello 1 indietro                 sensor of roller C1 back	0	
+S_spazzole2	BOOL	1.01	sensore posizione spazzole carrello 2 indietro                 sensor of roller C2 back	0	
+S_spazzole3	BOOL	1.02	sensore posizione spazzole carrello 3 indietro                 sensor of roller C3 back	0	
+S_spazzole4	BOOL	1.03	sensore posizione spazzole carrello 4 indietro                 sensor of roller C4 back	0	
+S_rimbcch1sx	BOOL	1.04	sensore posizione rimbocchi carrello 1 sinistro avanti      sensor of left turn in C1 forward	0	
+S_rimbcch1dx	BOOL	1.05	sensore posizione rimbocchi carrello 1 destro avanti       sensor of right turn in C1 forward	0	
+S_rimbcch3sx	BOOL	1.06	sensore posizione rimbocchi carrello 3 sinistro avanti      sensor of left turn in C3 forward	0	
+S_rimbcch3dx	BOOL	1.07	sensore posizione rimbocchi carrello 3 destro avanti       sensor of right turn in C3 forward	0	
+S_lame1	BOOL	1.08	sensore posizione lame carrello 1 indietro                        sensor of finger on C1 back	0	
+S_lame2	BOOL	1.09	sensore posizione lame carrello 2 indietro                        sensor of finger on C2 back	0	
+S_lame3	BOOL	1.10	sensore posizione lame carrello 3 indietro                        sensor of finger on C3 back	0	
+S_lame4	BOOL	1.11	sensore posizione lame carrello 4 indietro                        sensor of finger on C4 back	0	
+S_pressini1	BOOL	1.12	sensore posizione pressini carrello 1 intermedia               sensor of pressor on C1 half-way	0	
+S_pressini2	BOOL	1.13	sensore posizione pressini carrello 2 intermedia               sensor of pressor on C2 half-way	0	
+S_pressini3	BOOL	1.14	sensore posizione pressini carrello 2 intermedia               sensor of pressor on C2 half-way	0	
+S_pressini4	BOOL	1.15	sensore posizione pressini carrello 4 intermedia               sensor of pressor on C4 half-way	0	
+Emergenza_Ok	BOOL	2.00	linea sicurezze abilitata                                                    safety on	0	
+Potenza_attiva	BOOL	2.01		0	
+Vbrakes	BOOL	2.02	tensione alimentazione freni                                   power for brakes present	0	
+Vout	BOOL	2.03	tensione alimentazione uscite                                          power for outputs present	0	
+ciclo_on	BOOL	2.04	presenza pressione aria                                                   air pressure present	0	
+Ciclo_fogli	BOOL	2.05	dall'incollatrice	0	
+prot_mt_generale	BOOL	2.06	protezione magnetotermica generale                               magneto-thermal protection	0	
+i207	BOOL	2.07		0	
+prot_pompa_v	BOOL	2.08	protezione termica pompa a vuoto                                   thermal protection of vacuum pump	0	
+prot_mt_tappeti	BOOL	2.09	protezione termica tappeti esterni                                     thermal protection of external belts	0	
+prot_mt_mot_ripari	BOOL	2.10	protezione termica motore ripari di sicurezza	0	
+drv_ok_bracci	BOOL	2.11	driver bracci attivo                                                              servodriver arms enabled	0	
+drv_ok_forma	BOOL	2.12	driver forma attivo                                                          servodriver mould enabled	0	
+drv_ok_estrattore	BOOL	2.13	driver estrattore attivo                                                      servodriver ejector enabled	0	
+drv_ok_controforma	BOOL	2.14	driver controforma attivo                                                      servodriver ejector enabled	0	
+pressostato	BOOL	2.15	relé di ciclo attivo                                                             cycle on	0	
+Fc_ripari_frontali	BOOL	3.00	libero                                                                                free	0	
+Fc_ripari_posteriori	BOOL	3.01	libero                                                                                free	0	
+Fc_ripari_laterali	BOOL	3.02	libero                                                                                free	0	
+In303	BOOL	3.03	libero                                                                                free	0	
+In304	BOOL	3.04	libero                                                                                free	0	
+In305	BOOL	3.05	libero                                                                                free	0	
+In306	BOOL	3.06	libero                                                                                free	0	
+Sel_pompa_vuoto	BOOL	3.07	opzionale	0	
+rimbint1_ap	BOOL	3.08	sensore rimbocco interno carrello 1 aperto                       sensor of CD turn in C1 open	0	
+rimbint3_ap	BOOL	3.09	sensore rimbocco interno carrello 3 aperto                       sensor of CD turn in C3 open	0	
+S_piatto_bloccato_basso	BOOL	3.10		0	
+S_blocco_piatto_alto_riposo	BOOL	3.11		0	
+Coppia_forma	BOOL	3.12	monitor corrente motore (On = Ok)	0	
+Coppia_controforma	BOOL	3.13	libero                                                                                free	0	
+In314	BOOL	3.14	libero                                                                                free	0	
+In315	BOOL	3.15	libero                                                                                free	0	
+Out_st1	CHANNEL	4	modulo 32 uscite statiche - I canale                                 32 static output module - I channel	0	
+sb_freno_forma	BOOL	4.00	sblocco freno motore stampo                                           brake of the mould	0	
+sb_freno_estrattore	BOOL	4.01	                                                                                 	0	
+start_tappeto	BOOL	4.02	start nastro trasportatore                                                start conveyor	0	
+Y_vuoto_main	BOOL	4.03		0	
+o404	BOOL	4.04		0	
+o405	BOOL	4.05		0	
+start_stop_mettifogli	BOOL	4.06	impulso start o arresto mettifoglio al raggiungimento del lotto     labels stop - batch complete	0	
+abilita_ciclo	BOOL	4.07		0	
+ch_pinze_prelievo	BOOL	4.08	chiusura pinze presa scatola                                            grippers closing around the box	0	
+disc_pinze_prelievo	BOOL	4.09	abbassamento pinze presa scatola                                   grippers lowering	0	
+disc_ventose_prelievo	BOOL	4.10	abbassamento ventose presa scatola                              suckers lowering	0	
+aria_ventose_prelievo	BOOL	4.11	attivazione soffio ventose presa scatola                          puff on suckers	0	
+sostentamento	BOOL	4.12	soffio di sostentamento del foglio in arrivo dal tappeto      support blow	0	
+chiu_pinze_scarico	BOOL	4.13	chiusura pinze scarico scatola rivestita                             unload grippers closing	0	
+opt_apre_controforma	BOOL	4.14	opzionale per controforma pneumatica	0	
+opt_accosta_controforma	BOOL	4.15	opzionale per controforma pneumatica	0	
+Out_st2	CHANNEL	5	modulo 32 uscite statiche II canale                                  32 static outputs II channel	0	
+chius_spazzole_inferiori	BOOL	5.00	accostamento spazzole inferiori                                        bottom rollers closing	0	
+chius_spazzole_superiori	BOOL	5.01	accostamento spazzole superiori                                      top rollers closing	0	
+rimbocchi_1	BOOL	5.02	attivazione rimbocchi sul carrello 1                                   turn in C1 activating	0	
+rimbocchi_3	BOOL	5.03	attivazione rimbocchi sul carrello 3                                   turn in C3 activating	0	
+entrata_lama_1	BOOL	5.04	attivazione lame gruppo 1	0	
+entrata_lama_2	BOOL	5.05	attivazione lame gruppo 2                                            	0	
+entrata_lama_3	BOOL	5.06	attivazione gruppo lame 3	0	
+entrata_lama_4	BOOL	5.07	attivazione gruppo lame 4	0	
+lim_pressino_1	BOOL	5.08	limitazione chiusura pressini                                              pressors half-closing	0	
+lim_pressino_2	BOOL	5.09	limitazione pressino 2                                                        pressor 2 half closing	0	
+lim_pressino_3	BOOL	5.10	limitazione chiusura pressini                                              pressors half-closing	0	
+lim_pressino_4	BOOL	5.11	limitazione chiusura pressino 4                                          pressor 4 half-closing	0	
+pressino_1	BOOL	5.12	chiusura pressini                                                               pressors closing	0	
+pressino_2	BOOL	5.13	chiusura pressino 2                                                           pressor 2 closing	0	
+pressino_3	BOOL	5.14	chiusura pressini                                                               pressors closing	0	
+pressino_4	BOOL	5.15	chiusura pressino 4                                                           pressor 4 closing	0	
+Out_k	CHANNEL	6	modulo 8 uscite a relé                                                      8 relay module	0	
+Vuoto_pressini	BOOL	6.00		0	
+rimbocchi_inter	BOOL	6.01	attivazione rimbocchi interni                                             CD turn in activating	0	
+sfreno_carrelli	BOOL	6.02	sbloccaggio freno regolazione carrelli                               unlock travellers 	0	
+sfreno_pinze	BOOL	6.03	sbloccaggio freno regolazioni bracci e pinze                    unlock grippers adjustments	0	
+Blocco_Piatto_basso	BOOL	6.04		0	
+Blocco_Piatto_alto	BOOL	6.05		0	
+H_stato_potenza	BOOL	6.06		0	
+reset_drivers	BOOL	6.07	ripristino drievrs in errore	0	
+ab_drv_bracci	BOOL	6.08	abilitazione driver motore bracci                                       enable the servodriver of arms	0	
+ab_drv_forma	BOOL	6.09	abilitazione driver motore stampo                                      enable the servodriver of mould	0	
+ab_drv_estrattore	BOOL	6.10	abilitazione driver motore estrattore                                   enable the servodriver of ejector	0	
+ab_drv_controforma	BOOL	6.11	abilitazione driver motore CF	0	
+sirena	BOOL	6.12	segnalazione acustica (avvio ciclo)                                  acoustic signaling (Start cycle)	0	
+segn_rossa	BOOL	6.13	segnalazione luce rossa - automatico                               red lamp (Automatic)	0	
+segn_gialla	BOOL	6.14	segnalazione luce gialla -  manuale                                  yellow lamp (Manual)	0	
+pompa_v	BOOL	6.15	attivazione pompa a vuoto                                               vacuum pump	0	
+Stop_ciclo_auto	BOOL	10.00		0	
+Kall_MC_NC	BOOL	14.01	relé allarme per i moduli assi                                             alarm in motion control modules	0	
+start_fogli	BOOL	14.06	impulso start ciclo mettifoglio	0	
+stop_fogli	BOOL	14.07	impulso arresto mettifoglio al raggiungimento del lotto     labels stop - batch complete	0	
+w	BOOL	20.10		0	
+Bracci_caricaPosizione	BOOL	20.12		0	
+ciclo_avviato	BOOL	20.15		0	
+Bracci_stby_caricaPosizione	BOOL	21.00		0	
+Bracci_prelievo_caricaPosizione	BOOL	21.01		0	
+Forma_stby_caricaPosizione	BOOL	21.08		0	
+Forma_piatto_caricaPosizione	BOOL	21.09		0	
+Estratt_stby_caricaPosizione	BOOL	21.12		0	
+Estratt_piatto_caricaPosizione	BOOL	21.13		0	
+extra_alto_estrattore	BOOL	22.11	estracorsa alto estrattore dal sensore di home                                   ejector at top limit from home switch	0	
+cf_chiusa_caricaPosizione	BOOL	23.00		0	
+cf_accostata_caricaPosizione	BOOL	23.01		0	
+cf_aperta_caricaPosizione	BOOL	23.02		0	
+cf_chiusa_home	BOOL	23.04		0	
+cf_auto_carica_parametri	BOOL	23.06		0	
+interblocco_ciclo_auto	BOOL	50.01		0	
+ab_contr_scat	BOOL	50.03		0	
+passo_pezzo	BOOL	50.04		0	
+passo_no_pezzo	BOOL	50.05		0	
+passo	BOOL	50.06		0	
+interblocco_ciclo_passi	BOOL	50.07		0	
+interblocco_regolazioni	BOOL	50.08		0	
+interblocco_manuale	BOOL	50.09		0	
+sirena_ciclo	BOOL	50.10	segnalazione acustica (avvio ciclo)                                  acoustic signaling (Start cycle)	0	
+rich_programmi	BOOL	52.04	flag fase richiamo programma	0	
+salva_programmi	BOOL	52.05	flag fase salvataggio programma	0	
+Cancella_programma	BOOL	52.06	comando da HMI - cancellazione programma	0	
+agg_programma	BOOL	52.10	impulso aggiornamento parametri per richiamo programma	0	
+agg_programmi	BOOL	53.03	impulso aggiornamento programmi	0	
+Mrich_programmi	BOOL	53.04	flag fase richiamo programma	0	
+Msalva_programmi	BOOL	53.05	flag fase salvataggio programma	0	
+Light_rich_programmi	BOOL	53.06		0	
+Light_salva_programmi	BOOL	53.07		0	
+Light_canc_programmi	BOOL	53.09	flag fase cancella programma	0	
+tasto_diminuisce	BOOL	60.00		0	
+tasto_aumenta	BOOL	60.01		0	
+tasto_escape	BOOL	60.02		0	
+tasto_maschera	BOOL	60.03		0	
+maschera_allarmi	BOOL	60.04		0	
+tasto_azzeramento	BOOL	60.05		0	
+tasto_bracci_passo	BOOL	60.06		0	
+tasto_passo_passo	BOOL	60.07		0	
+tasto_scarico_scatola	BOOL	60.08		0	
+tasto_controllo_scatola	BOOL	60.09		0	
+tasto_reset_reg	BOOL	60.10		0	
+tasto_acq_correz_carrelli	BOOL	60.11		0	
+tasto_acq_correz_pinze	BOOL	60.12		0	
+tasto_acq_correzioni_reg	BOOL	60.13		0	
+acqisiz_correzioni_reg	BOOL	60.14		0	
+tasto_crea_ricetta_ref	BOOL	60.15		0	
+tasto_mano_bracci	BOOL	61.01		0	
+tasto_mano_stampo	BOOL	61.02		0	
+tasto_mano_pinze	BOOL	61.03		0	
+tasto_mano_controstampo	BOOL	61.04		0	
+tasto_mano_estrattore	BOOL	61.05		0	
+tasto_mano_spazzole	BOOL	61.06		0	
+tasto_mano_rimbocchi	BOOL	61.07		0	
+tasto_mano_lame	BOOL	61.08		0	
+tasto_mano_pressini	BOOL	61.09		0	
+tasto_reg_carrello1	BOOL	62.01		0	
+tasto_reg_carrello2	BOOL	62.02		0	
+tasto_reg_carrello3	BOOL	62.03		0	
+tasto_reg_carrello4	BOOL	62.04		0	
+tasto_reg_larghezza_p	BOOL	62.05		0	
+tasto_reg_pinza_sx	BOOL	62.06		0	
+tasto_reg_pinza_dx	BOOL	62.07		0	
+tasto_home_generale	BOOL	62.10		0	
+tasto_home_carrelli	BOOL	62.11		0	
+tasto_home_pinze	BOOL	62.12		0	
+tasto_posiz_carrelli	BOOL	62.13		0	
+tasto_posiz_pinze	BOOL	62.14		0	
+tasto_posiz_generale	BOOL	62.15		0	
+tasti_sel_ciclo	UDINT	68		0	
+tst_sel_alza_pinze	BOOL	68.00		0	
+tst_sel_alza_ventose	BOOL	68.01		0	
+tst_sel_sostentalembo	BOOL	68.02		0	
+tst_sel_invers_lame	BOOL	68.03		0	
+tst_sel_rimb_T	BOOL	68.04		0	
+tst_sel_scat_3lati	BOOL	68.05		0	
+tst_sel_rimbint_vert	BOOL	68.06		0	
+tst_sel_rimbint_dorsale	BOOL	68.07	x scatole CD	0	
+tst_sel_rimb_inclinato	BOOL	68.08	x scatole trapezoidali	0	
+tst_sel_spazzole_inclinato	BOOL	68.09	x scatole trapezoidali	0	
+tst_sel_rimbocco_sequenziale	BOOL	68.10	x rimbocchi alti	0	
+tst_sel_no_lembi_laterali	BOOL	68.12	x copertura scatola con cartoncino	0	
+tst_sel_scatola_finestra	BOOL	68.13		0	
+tst_sel_ciclo_lato_aperto	BOOL	68.14		0	
+tst_sel_no_lembi_superiori	BOOL	68.15	x copertura scatola con cartoncino	0	
+tst_sel_pressata_inferiore	BOOL	69.00		0	
+clock_2_s	BOOL	70.00	impulsi con 1 s on e 1 s off	0	
+flash_2_s	BOOL	70.01	impulsi di 0,2 s ogni 2 s	0	
+cambio_pinze	BOOL	70.07		0	
+Pb_doppia_pressata	BOOL	70.10		0	
+Xasse_X_ccw	BOOL	107.08		0	
+Xasse_X_cw	BOOL	107.09		0	
+Xtrac_asseY_ccw	BOOL	108.08	I/O asse Y (dal parametro 6011)	0	
+Xtrac_asseY_cw	BOOL	108.09		0	
+st_by_X	BOOL	111.01	corsa bracci in Fa	0	
+st_by_X_avviato	BOOL	111.02	corsa bracci in Fa	0	
+avanti_X	BOOL	111.03	corsa bracci al prelievo	0	
+avanti_X_avviato	BOOL	111.04	corsa bracci al prelievo	0	
+indietro_X	BOOL	111.06	corsa bracci verso il piatto	0	
+indietro_X_avviato	BOOL	111.07	corsa bracci verso il piatto	0	
+st_by_Y	BOOL	112.01	corsa forma  in stand by	0	
+corsa_piatto_Y	BOOL	112.02	corsa forma  a livello piatto	0	
+Liv_piatto_Y	BOOL	112.03	corsa forma  - livello piatto raggiunto	0	
+corsa_S1_Y	BOOL	112.04	corsa forma  a livello rimbocchi	0	
+corsa_S2_Y	BOOL	112.05	corsa forma  a livello lame	0	
+corsa_Sfinestra_Y	BOOL	112.06	corsa forma pressata finestra	0	
+livello_Sfinestra_Y	BOOL	112.07	 forma in pressata finestra	0	
+corsa_S3_Y	BOOL	112.08	corsa forma  a livello pressata	0	
+corsa_3lati_Y	BOOL	112.09	corsa forma  libera scatola 3 lati	0	
+corsa_Salita_Y	BOOL	112.10	corsa forma  a livello attesa scatola	0	
+corsa_S4	BOOL	112.11	corsa forma  a livello pressata inferiore	0	
+corsa_allenta_Sfinestra_Y	BOOL	112.12	corsa forma allentamento pressata finestra	0	
+st_by_Z	BOOL	113.01	corsa estrattore in standby	0	
+st_by_Z_avviato	BOOL	113.02	corsa estrattore in standby	0	
+piatto_Z	BOOL	113.03	corsa estrattorea livello piatto per estrazione	0	
+piatto_Z_avviato	BOOL	113.04	corsa estrattore a livello piatto	0	
+alto_Z	BOOL	113.05	corsa estrattore in Ea	0	
+alto_Z_avviato	BOOL	113.06	corsa estrattore in Ea	0	
+apertura_Y	BOOL	115.01	corsa forma  in apertura x rimbocco	0	
+accostamento_Y	BOOL	115.02	corsa forma  in accostamento x rimbocco	0	
+richiusura_Y	BOOL	115.03	corsa forma  in richiusura x rimbocco	0	
+riallineamento_Y	BOOL	115.04	corsa forma  in riallineamento piatto x rimbocco	0	
+Mc_res1	BOOL	161.06	reset Mcode task 1	0	
+m_avX	BOOL	161.09	mano avanti asse X	0	
+m_indX	BOOL	161.10	mano indietro asse X	0	
+S_oltre_piatto	BOOL	162.04		0	
+S_oltre_S_1	BOOL	162.05		0	
+Mc_res2	BOOL	162.06	reset Mcode task 2	0	
+m_avY	BOOL	162.09	mano avanti asse Y	0	
+m_indY	BOOL	162.10	mano indietro asse Y	0	
+reg_m_st_by_Y	BOOL	162.12		0	
+Dn_manZ	BOOL	163.06	fine comando manuale asse Z	0	
+m_avZ	BOOL	163.09	mano avanti asse Z	0	
+m_indZ	BOOL	163.10	mano indietro asse Z	0	
+Asse_forma_corsa	BOOL	201.01		0	
+Asse_bracci_corsa	BOOL	201.02		0	
+Asse_controforma_corsa	BOOL	201.03		0	
+Asse_estrattore_corsa	BOOL	201.04		0	
+Forma_I_rimbocchi	BOOL	211.01		0	
+Forma_II_lame	BOOL	211.02		0	
+Forma_III_pressata	BOOL	211.03		0	
+Forma_IV_pressata_inferiore	BOOL	211.04		0	
+Forma_livello_prepiatto	BOOL	211.05		0	
+Forma_st_by	BOOL	211.10	ok carico-scarico scatola	0	
+Forma_livello_piatto	BOOL	211.11		0	
+Forma_livello_Sra	BOOL	211.12		0	
+Forma_livello_Srs	BOOL	211.13		0	
+Forma_livello_Src	BOOL	211.14		0	
+Forma_livello_S3f	BOOL	211.15		0	
+bracci_in_Fa	BOOL	212.10	flag posizione bracci sotto alla forma	0	
+bracci_in_Ff	BOOL	212.11	flag posizione bracci in posizione di prelievo sul tappeto	0	
+bracci_out	BOOL	212.12	flag posizione bracci fuori dall'interferenza con la forma	0	
+estratt_in_Ea	BOOL	213.10	flag estrattore in standby	0	
+estratt_in_Ep	BOOL	213.11	flag estrattorei in posizione di estrazione scatola sul piatto	0	
+Ver_CF_Chiusa	BOOL	214.01	flag posizione controforma chiusa	0	
+Ver_CF_Aperta	BOOL	214.02	flag posizione controforma aperta	0	
+Ver_CF_Accostata	BOOL	214.03	flag posizione controforma accostata	0	
+ind_lingua	CHANNEL	218	memoria offset indirizzo per lingua selezionata	0	
+drv_ok_regolazioni	BOOL	222.15	drivers regolazioni 	0	
+ab_regolaz_carrelli	BOOL	224.04	abilitazione alle regolazioni dei carrelli                               enable travellers adjustments	0	
+ab_regolaz_pinze	BOOL	224.05	abilitazione alle regolazioni dei bracci (e pinze)                 enable grippers adjustments	0	
+Condiz_OK	BOOL	230.00		0	
+num_mod_ciclo	BOOL	230.08	numero modificato	0	
+num_mod	BOOL	230.09	numero modificato	0	
+Up_param_mod	BOOL	230.10	impulso di parametro numerico modificato	0	
+Up_cnfg_mod	BOOL	230.11	impulso di parametro numerico di configurazione modificato	0	
+N_cadenza	BOOL	230.14	cadenza impostata	0	
+f_impact	BOOL	230.15	fattore di impatto modificato	0	
+Suono_Allarmi	BOOL	232.00		0	
+Suono_Eventi	BOOL	232.01		0	
+Up_tasto_passo	BOOL	232.02	impulso comano in passo-passo	0	
+Up_aumenta	BOOL	232.12	impulso selettore aumenta premuto	0	
+Up_diminuisce	BOOL	232.13	impulso selettore diminuisce premuto	0	
+Vst_dn_mod	BOOL	232.15	velocità discesa stampo modificata	0	
+Protezioni	BOOL	300.06	protezioni termiche e drivers	0	
+p_allarmi	BOOL	301.10	presenza di allarmi	0	
+Up_allarmi	BOOL	301.11	impulso intervento allarme	0	
+Ripari	BOOL	301.13	ripari di sicurezza chiusi o escusi	0	
+Segn_regolaz	BOOL	302.03	segnalazione regolazioni	0	
+Segn_passi	BOOL	302.04	segnalazione modo passi	0	
+ciclo_passi	BOOL	302.05	ciclo modo a passi	0	
+Segn_mano	BOOL	302.06	segnalazione manuale	0	
+Up_mano_home	BOOL	302.07	comando home manuale asse Z	0	
+bracci_passo_on	BOOL	302.08	flag bracci attivi nel ciclo a passi	0	
+all_reg_mem	BOOL	303.09	memoria allarme protezione regolazioni	0	
+Dn_manuale	BOOL	306.00	impulso uscita modo manuale	0	
+Up_manuale	BOOL	306.01	impulso entrata modo manuale	0	
+Up_ciclo_auto	BOOL	306.05	impulso entrata ciclo automatico	0	
+Dn_passo	BOOL	306.06	impulso uscita modo passo	0	
+Org_regolaz	BOOL	306.09	ricerca origini in modo regolazioni	0	
+MC_conterrX	BOOL	306.11	errori MC inseguimento traiettoria asse X	0	
+MC_conterrY	BOOL	306.12	errori MC inseguimento traiettoria asse Y	0	
+fl_ripari	BOOL	306.14	flag ripari inseriti o esclusi	0	
+fl_m_pressione	BOOL	306.15	flag memoria mancanza aria in ciclo automatico	0	
+Dn_NCriavvio	BOOL	307.00	impulso fine riavvio modulo NC	0	
+Up_T_forma_home	BOOL	307.05		0	
+Stop_ciclo_T_forma_home	BOOL	307.06		0	
+u_scatola	BOOL	308.00	flag ciclo scarico ultima scatola	0	
+sc_u_scatola	BOOL	308.01	comando scarico ultima scatola	0	
+regolaz_larga	BOOL	308.03		0	
+cnfrnt_quote	BOOL	308.10	flag verifica congruenza quote-posizione regolazioni	0	
+quote_errate	BOOL	308.11	flag verifica congruenza quote fallita	0	
+no_cnfrnt_quote	BOOL	308.12	flag disabilitaz. verifica congruenza quote-posizione reg.	0	
+regolaz_stretta	BOOL	308.13	flag regolazione più stretta del formato	0	
+stop_ciclo_formato	BOOL	308.14		0	
+libera_ctrstmp	BOOL	308.15	comando liberazione controstampo in auto-ciclo off	0	
+Dn_ciclo	BOOL	309.00	impulso caduta ciclo	0	
+Up_ciclo	BOOL	309.01	impulso inizio ciclo	0	
+MC_reset	BOOL	309.02	comando ripristino modulo MC	0	
+Up_org_Z	BOOL	309.05	impulso origine trovata asse Z	0	
+sfrenaY	BOOL	309.06	comando allentamento freno stampo x extracorsa	0	
+freno_Y	BOOL	309.07	comando freno asse stampo	0	
+xtraYbasso	BOOL	309.08	comando allentamento freno stampo x extracorsa inferiore	0	
+xtraYalto	BOOL	309.09	comando allentamento freno stampo x extracorsa superiore	0	
+Condiz_abilita_assi	BOOL	309.10	condizioni di comando per abilitazione assi	0	
+freno_X	BOOL	309.11	comando freno asse bracci - non presente	0	
+up_err72	BOOL	309.14	 	0	
+up_err6000	BOOL	309.15	 	0	
+flags_lingua	CHANNEL	310		0	
+freno_U	BOOL	311.00	comando freno asse cf	0	
+jog_reg_minus	BOOL	314.00		0	
+jog_reg_plus	BOOL	314.01		0	
+jog_reg_set_delay	BOOL	314.08		0	
+jog_reg_set	BOOL	314.10		0	
+jog_carrelli_fine	BOOL	314.11		0	
+jog_pinze_fine	BOOL	314.12		0	
+reg_jog_attivo	BOOL	314.13		0	
+jog_reg_set_copia	BOOL	314.14		0	
+reg_jog_minimo	BOOL	314.15		0	
+pinze_alte	BOOL	321.00	posizione pinze alte o deselezionate	0	
+pinze_basse	BOOL	321.01	posizione pinze basse	0	
+pinze_p_chiuse	BOOL	321.02	posizione pinze prelievo chiuse	0	
+pinze_st_by	BOOL	321.03	posizione pinze alte ed aperte	0	
+pinze_p_aperte	BOOL	321.04	posizione pinze prelievo non chiuse	0	
+pinze_s_chiuse	BOOL	321.05	posizione pinze scarico non aperte	0	
+fl_in_forma	CHANNEL	322	segnali ingresso posizioni forma	0	
+forma_st_by	BOOL	322.00	forma in attesa pezzo	0	
+forma_liv	BOOL	322.02	forma in discesa a livello nastro	0	
+ok_bracci	BOOL	322.04	forma in discesa a livello 1 - flag per bracci	0	
+forma_liv1e	BOOL	322.05	forma in discesa a livello 1 - flag per estrattore	0	
+frm_est_st_by	BOOL	322.06	forma ed estrattore in attesa pezzo	0	
+forma_liv_nastro	BOOL	322.07	forma in salita a livello nastro	0	
+forma_liv_stby	BOOL	322.08	forma a livello attesa pezzo in manuale	0	
+ab_est	BOOL	322.09	flag abilitazioni dell'estrattore	0	
+ab_cadenza	BOOL	322.10	flag abilitazione cadenza dal ciclo automatico	0	
+diff_forma_est	BOOL	322.11	 	0	
+estr_discesa	BOOL	322.13	 	0	
+estra_non_interf	BOOL	322.14		0	
+ab_andata_bracci	BOOL	322.15		0	
+reset_reg	BOOL	323.00		0	
+carrello1_jog	BOOL	323.01		0	
+carrello2_jog	BOOL	323.02		0	
+carrello3_jog	BOOL	323.03		0	
+carrello4_jog	BOOL	323.04		0	
+largh_pinze_jog	BOOL	323.05		0	
+pinzaSx_jog	BOOL	323.06		0	
+pinzaDx_jog	BOOL	323.07		0	
+reg_jog_carrelli	BOOL	323.09		0	
+reg_st_by	BOOL	323.10		0	
+pressini_reg	BOOL	323.11		0	
+soffio	BOOL	323.12	impulso aria rilascio scatola pinze	0	
+forma_reg	BOOL	323.13		0	
+pinze_reg	BOOL	323.14		0	
+reg_jog_pinze	BOOL	323.15		0	
+cntrst_accostato	BOOL	324.00	posizione controstampo semichiuso sulle lame	0	
+rimbcch3_ap	BOOL	324.01	posizione rimbocchi aperti (non chiusi) gruppo 3	0	
+spazzole_ap	BOOL	324.02	posizione spazzole aperte	0	
+spazzole_ch	BOOL	324.03	posizione spazzole chiuse (non aperte)	0	
+rimbcch_ap	BOOL	324.04	posizione rimbocchi aperti (non chiusi)	0	
+rimbcch_ch	BOOL	324.05	posizione rimbocchi chiusi	0	
+lame_ap	BOOL	324.06	posizione lame aperte	0	
+lame_ch	BOOL	324.07	posizione lame chiuse (non aperte)	0	
+pressini_ap	BOOL	324.08	posizione pressini aperti	0	
+pressini_smch	BOOL	324.09	posizione pressini semichiusi	0	
+rimbcch3_chiusi	BOOL	324.10		0	
+rimbint_ap	BOOL	324.11	posizione rimbocchi interni aperti	0	
+rimbint_ch	BOOL	324.12	posizione rimbocchi interni non aperti	0	
+pressini_smch_3_lati	BOOL	324.13	posizione pressini 1, 3 e (2 o 4) semichiusi	0	
+rivest_ok_up	BOOL	324.14	posizione organi rivestitrice pronti per la risalita stampo	0	
+rivest_st_by	BOOL	324.15	posizione organi rivestitrice a riposo	0	
+comorg_riv	CHANNEL	325	comandi auto organi rivestitrice	0	
+accosta_controforma	BOOL	325.00		0	
+apert_controforma	BOOL	325.01		0	
+ch_rimbocchi_T	BOOL	325.02	chiusura rimbocchi	0	
+ch_spazzole_inf	BOOL	325.03	chiusura spazzole inferiori	0	
+disc_forma	BOOL	325.04	consenso discesa forma	0	
+ch_rimbocchi	BOOL	325.05	chiusura rimbocchi	0	
+ch_lame_I	BOOL	325.06	chiusura I gruppo lame	0	
+ch_lame_II	BOOL	325.07	chiusura II gruppo lame	0	
+accost_pressini	BOOL	325.08	accostamento pressini	0	
+pressata	BOOL	325.09	 	0	
+flag_usc_scat	BOOL	325.10	stampo in salita uscito dalla scatola	0	
+ch_spazzole_sup	BOOL	325.11	chiusura spazzole superiori	0	
+ap_press_1	BOOL	325.12	pressino 1 in fase di riapertura	0	
+ap_press_2	BOOL	325.13	pressino 2 in fase di riapertura	0	
+ap_press_3	BOOL	325.14	pressino 3 in fase di riapertura	0	
+ap_press_4	BOOL	325.15	pressino 4 in fase di riapertura	0	
+comorg_reg_fuc	CHANNEL	326	comandi organi fucili e regolazioni	0	
+pinze_usc_mn	BOOL	326.00	gestione manuale chiusura pinze uscita	0	
+pressini_mn	BOOL	326.01	gestione manuale pressini	0	
+lame_mn	BOOL	326.02	gestione manuale lame	0	
+rimbocchi_mn	BOOL	326.03	gestione manuale rimbocchi	0	
+sf_reg_carrelli	BOOL	326.04	sblocco freni - abilitazione regolazioni carrelli	0	
+sf_reg_r_bracci	BOOL	326.05	sblocco freni - abilitazione regolazioni bracci	0	
+sblocco_freni_reg_m	BOOL	326.06		0	
+abb_ventose	BOOL	326.07	abbassamento ventose	0	
+chius_pinze_carico	BOOL	326.08	chiusura pinze	0	
+abb_pinze	BOOL	326.09	abbassamento pinze	0	
+chius_pinze_usc	BOOL	326.10	chiusura pinze uscita	0	
+rimbocchint_mn	BOOL	326.11	gestione manuale rimbocchi interni	0	
+rimbocc1_mn	BOOL	326.12	gestione manuale rimbocchi interni	0	
+spazzole_0_mn	BOOL	326.13	gestione manuale chiusura spazzole (inferiori)	0	
+pinze_mn	BOOL	326.14	gestione manuale apertura pinze	0	
+cntrfrm_mn	BOOL	326.15	gestione manuale controforma	0	
+extrcrs_reg	CHANNEL	327	flags extracorsa regolazioni	0	
+Mem_xtest_CW	BOOL	328.00	memoria estracorsa estrattore basso	0	
+up_estrattore_alto	BOOL	328.02	fine corsa salita estrattore - consenso bracci	0	
+sf_man_carrelli	BOOL	328.04	sblocco freni carrelli con comando manuale	0	
+sf_man_bracci	BOOL	328.05	sblocco freni bracci con comando manuale	0	
+T_stp_t_o	BOOL	328.06	flag arresto ciclo per time out della diagnostica	0	
+T_diag	BOOL	328.07	flag intervento di un timer della diagnostica	0	
+fine_ciclo	BOOL	328.08	fine ciclo per misura durata ciclo e calcolo cadenza	0	
+abil_contap	BOOL	328.09	fine ciclo per abilitazione conteggio pezzo in uscita	0	
+Fase_0_cs	BOOL	328.10	fase 0 controllo uscita scatola	0	
+Up_out_scatola	BOOL	328.14	impulso scatola in uscita dalla rivestitrice	0	
+Dn_in_scatola	BOOL	328.15	impulso scatola prelevata dai fucili	0	
+rimbocchi_int	CHANNEL	329	 	0	
+ch_rimboc_int	BOOL	329.00	 	0	
+rimbocchi_int_chiusi	BOOL	329.01	 	0	
+apert_rimbocchi_int	BOOL	329.02	 	0	
+aumenta_dn	BOOL	330.00	impulso tasto - premuto in ciclo automatico	0	
+aumenta_up	BOOL	330.01	impulso tasto + premuto in ciclo automatico	0	
+aum_dim_up_auto	BOOL	330.02	impulso tasto + o - premuto in automatico	0	
+Rimb_int_eseguito	BOOL	330.06		0	
+Passo_flag_comando	BOOL	330.07		0	
+sostenta_lembo	BOOL	330.10	soffio aria levitazione lembo sopra piatto	0	
+rimbint_on	BOOL	330.11	flag rimbocchi interni selezionati	0	
+cadenza_up_contata	BOOL	330.12	impulso tasto + premuto in ciclo automatico	0	
+up_jog_carrelli	BOOL	330.13		0	
+up_jog_pinze	BOOL	330.14		0	
+up_ab_cadenza	BOOL	330.15	flag abilitazione cadenza	0	
+pressata_conclusa	BOOL	331.00	 	0	
+pressata_mn	BOOL	331.01	gestione manuale pressata	0	
+lameII_mn	BOOL	331.02	gestione manuale lame II gruppo	0	
+pressata_aut_24	BOOL	331.03	gestione automatica pressata pressino 2 o 4 per scatola a 3 lati	0	
+pressata_mn_24	BOOL	331.04	gestione manuale pressata pressino 2 o 4 per scatola a 3 lati	0	
+pressata_copia	BOOL	331.05	 	0	
+pressata_24	BOOL	331.07	gestione pressata pressino 2 o 4 per scatola a 3 lati	0	
+smc_disc_3lati	BOOL	331.08		0	
+rimbint_vert_mn	BOOL	331.10	gestione manuale rimbocchi interni verticali	0	
+rimbint_vert_aut	BOOL	331.11	gestione automatica rimbocchi interni verticali	0	
+rmb_int_on	BOOL	331.12		0	
+spazzole_1_mn	BOOL	331.13	gestione manuale chiusura spazzole superiori	0	
+cntrstmp_smc_mn	BOOL	331.15	gestione manuale semichiusura controstampo	0	
+Condizioni_reg	BOOL	500.10		0	
+Condizioni_Jog	BOOL	500.11		0	
+App_Jog_dn	BOOL	500.15		0	
+App_Pos_Preset_carrelli	BOOL	504.00		0	
+App_Pos_Preset_forma	BOOL	504.01		0	
+App_Pos_Preset_bracci	BOOL	504.02		0	
+App_Pos_Preset_estrattore	BOOL	504.03		0	
+App_Pos_Preset_controforma	BOOL	504.04		0	
+App_Pos_Preset_pinze	BOOL	504.07		0	
+Assi_forma_OK	BOOL	504.11		0	
+Assi_bracci_OK	BOOL	504.12		0	
+Assi_estrattori_OK	BOOL	504.13		0	
+Assi_controforma_OK	BOOL	504.14		0	
+pos_pres_forma_sinc	BOOL	505.01		0	
+pos_pres_bracci_sinc	BOOL	505.02		0	
+pos_pres_estratt_sinc	BOOL	505.03		0	
+pos_pres_controforma_sinc	BOOL	505.04		0	
+transfert	BOOL	555.15		0	
+fine_prg_MC	BOOL	2011.00	ingresso opzionale 0 modulo MC (sw)	0	
+bypass_rimbocchi_sequenziali	BOOL	2011.02	ingresso opzionale 2 modulo MC (sw) 	0	
+no_scat_3_lati	BOOL	2011.03	ingresso opzionale 3 modulo MC (sw) - flag scatola a 3 lati deselezionata	0	
+bypass_rimbocchi_finestra	BOOL	2011.04	ingresso opzionale 4 modulo MC (sw) 	0	
+II_pressata_selezionata	BOOL	2011.05	ingresso opzionale 5 modulo MC (sw) 	0	
+Sic_Sgancio_Forma	BOOL	2012.02	5S4	0	
+Forma_in_posizione	BOOL	2013.01		0	
+Bracci_in_posizione	BOOL	2013.02		0	
+orig_X	BOOL	2017.01	ricerca origine asse X	0	
+X_srvlck	BOOL	2017.09	servolock  asse X	0	
+orig_Y	BOOL	2019.01	ricerca origine asse Y	0	
+Y_srvlck	BOOL	2019.09	servolock  asse Y	0	
+MC_sel_error	BOOL	2020.00	 	0	
+MC_task_error	BOOL	2020.01	 	0	
+MC_axis_error	BOOL	2020.02	 	0	
+MC_err	BOOL	2020.14	errore MC	0	
+Error_codeMC	CHANNEL	2021		0	
+M_code_1	CHANNEL	2022	codice M del task 1	0	
+err1	BOOL	2025.00	errore task 1	0	
+Mcode1_on	BOOL	2025.08	Mcode task1 presente	0	
+M_code_2	CHANNEL	2026	codice M del task 2	0	
+err2	BOOL	2029.00	errore task 2	0	
+Mcode2_on	BOOL	2029.08	Mcode task2 presente	0	
+Pos_bracci	DINT	2030	posizione attuale asse X - 32 bit con segno	0	
+segno_Xquota	BOOL	2031.15	segno della quota attuale dell'asse X	0	
+Xbusy	BOOL	2032.01	occupato esecuzione comando manuale asse X	0	
+servoX_ok	BOOL	2032.02	servo-lock asse X on	0	
+Xconterr	BOOL	2032.06	errore inseguimento posizione drive X	0	
+Yquota	CHANNEL	2033	posizione attuale asse Y - 32 bit con segno	0	
+Pos_forma	DINT	2033	posizione attuale asse Y - 32 bit con segno	0	
+segno_Yquota	BOOL	2034.15	segno della quota attuale dell'asse Y	0	
+Ybusy	BOOL	2035.01	occupato esecuzione comando manuale asse Y	0	
+servoY_ok	BOOL	2035.02	servo-lock asse Y on	0	
+Pos_estrattore	DINT	2036	posizione attuale asse Z - 32 bit con segno	0	
+segno_Zquota	BOOL	2037.15	segno della quota attuale dell'asse Z	0	
+Uquota	DINT	2039	posizione attuale asse U - 32 bit con segno	0	
+Pos_Controforma	DINT	2042	posizione attuale asse Y - 32 bit con segno	0	
+orig_Z_C1	BOOL	2910.06	ricerca origine asse Z (carrello 1)	0	
+NCrelease_proh	BOOL	2910.12	ripristino stop x allarme modulo NC	0	
+NC_err_C1	BOOL	2918.12	errore NC canale 1	0	
+Zbusy	BOOL	2918.13	occupato esecuzione comando manuale asse Z	0	
+I_EOZstatus	CHANNEL	2919	immagine segnali I/O asse Z(C1)	0	
+NC_errorcode_X	CHANNEL	2920	area dati NC - codice errore asse X	0	
+NC_err_C2	BOOL	2921.12	errore NC canale 2	0	
+I_O_C2status	CHANNEL	2922	immagine segnali I/O asse Fr(C2)	0	
+NC_errorcode_Y	CHANNEL	2923	area dati NC - codice errore asse Y	0	
+NC_err_C3	BOOL	2924.12	errore NC canale 3	0	
+I_O_C3status	CHANNEL	2925	immagine segnali I/O asse Fsx(C3)	0	
+NC_errorcode_Z	CHANNEL	2926	area dati NC - codice errore asse Z	0	
+NC_err_C4	BOOL	2927.12	errore NC canale 4	0	
+I_O_C4status	CHANNEL	2928	immagine segnali I/O asse Fdx(C4)	0	
+NC_errorcode_U	CHANNEL	2929	area dati NC - codice errore asse U	0	
+S_home_Xc_asseY	BOOL	2960.00	4S1 - forma home e/o alto	0	
+Xc_asseY_cw	BOOL	2960.01	4S2 - forma extra basso	0	
+S_home_Xc_asse_X	BOOL	2960.02	3S1 - bracci home e/o indietro	0	
+Xc_asse_X_cw	BOOL	2960.03	3S2 - bracci extra avanti	0	
+i296004	BOOL	2960.04		0	
+S_sgancio_bracci	BOOL	2960.05	3S4 - giunto di sicurezza trasmissione bracci        sensor on the safety joint (arms)	0	
+Encod_sim_bracci_A	BOOL	2960.06	da 4K1	0	
+Encod_sim_bracci_B	BOOL	2960.07	da 4K1	0	
+Encod_sim_forma_A	BOOL	2960.08	da 5K1	0	
+Encod_sim_forma_B	BOOL	2960.09	da 5K1	0	
+Clk_forma	BOOL	2961.00	verso 5K1	0	
+Clk_bracci	BOOL	2961.01	verso 4K1	0	
+Dir_forma	BOOL	2961.02	verso 5K1	0	
+Dir_bracci	BOOL	2961.03	verso 4K1	0	
+o296104	BOOL	2961.04		0	
+o296105	BOOL	2961.05		0	
+S_home_Xc_estrattore	BOOL	2962.00	5S1 - estrattore home e/o alto	0	
+Xc_cw_estrattore	BOOL	2962.01	5S2 - estrattore extra basso	0	
+S_home_controforma	BOOL	2962.02	US1 - controforma home	0	
+i296203	BOOL	2962.03		0	
+i296204	BOOL	2962.04		0	
+i296205	BOOL	2962.05		0	
+Encod_sim_estrattore_A	BOOL	2962.06	da 6K1	0	
+Encod_sim_estrattore_B	BOOL	2962.07	da 6K1	0	
+Encod_sim_controforma_A	BOOL	2962.08	da UK1	0	
+Encod_sim_controforma_B	BOOL	2962.09	da UK1	0	
+Clk_estrattore	BOOL	2963.00	verso 6K1	0	
+Clk_controforma	BOOL	2963.01	verso UK1	0	
+Dir_estrattore	BOOL	2963.02	verso 6K1	0	
+Dir_controforma	BOOL	2963.03	verso UK1	0	
+o296304	BOOL	2963.04		0	
+o296305	BOOL	2963.05		0	
+cadenza	CHANNEL	D1	tabnum cadenza lavoro	0	
+Nfase_fuc	CHANNEL	D3	tabnum numero fase ciclo a passi fucili	0	
+quota_m	CHANNEL	D5	tabnum quota asse in movimento manuale	0	
+Conta_t_out_comm	UINT	D10		0	
+Np_orig_bin	CHANNEL	D12	numero programma binario	0	
+sel_Np_orig	UINT	D13	tabnum numero programma di origine	0	
+sel_Np_appgg	CHANNEL	D14	appoggio sel. numero programma	0	
+punt_Np_indrzz	CHANNEL	D15	puntatore all'indirizzo tabella numero programma (da 0 a 399)	0	
+code_alarm	CHANNEL	D20	codice ultimo allarme rilevato	0	
+T_cadenza	CHANNEL	D23	periodo impulso cadenzatore	0	
+T_delay_cadenza	CHANNEL	D25	s/100 - intervallo impulsi cadenzatore	0	
+Ea_pulse	DINT	D26	estrattore: livello attesa pezzo in impulsi	0	
+v_mano_estr_pps	CHANNEL	D30	velocità estrattore in manuale - impulsi al secondo	0	
+S_4	CHANNEL	D34		0	
+Sn_up	CHANNEL	D38		0	
+Eas	CHANNEL	D40	estrattore: limite corsa attesa p. - sicurezza pass. fucili	0	
+Ea	INT	D41	estrattore: livello attesa pezzo	0	
+Ef	CHANNEL	D42	estrattore: livello estrazione scatola	0	
+Nfase_estr	CHANNEL	D49	tabnum numero fase ciclo a passi estrattore	0	
+Sa	CHANNEL	D50	stampo: livello attesa pezzo	0	
+S_1	CHANNEL	D51	stampo: livello fermata 1	0	
+S_2	CHANNEL	D52	stampo: livello fermata 2	0	
+S_3	CHANNEL	D53	stampo: livello fermata 3	0	
+Sr	CHANNEL	D54	stampo: livello attivazione rimbocchi	0	
+Sc	CHANNEL	D56	stampo: livello apertura controstampo	0	
+Spr	CHANNEL	D57	stampo: livello accostamento pressini	0	
+Sn	CHANNEL	D58	stampo: livello nastro	0	
+Susc	CHANNEL	D59	stampo: livello uscita dalla scatola	0	
+Sp	INT	D60	stampo: livello piatto mobile	0	
+S_3_f	CHANNEL	D63	stampo: livello fermata 3 dopo rimbocco sequenziale con la forma	0	
+Quota_estrattore	CHANNEL	D69		0	
+Ef_pulseL	CHANNEL	D78	estrattore: livello estrazione scatola in impulsi	0	
+Ef_pulseH	CHANNEL	D79	estrattore: livello estrazione scatola in impulsi	0	
+Ea_pulseL	CHANNEL	D80	estrattore: livello attesa pezzo in impulsi	0	
+Ea_pulseH	CHANNEL	D81	estrattore: livello attesa pezzo in impulsi	0	
+v_dn_estr_pps	CHANNEL	D82	velocità estrattore in discesa - impulsi al secondo	0	
+Cf_aperta	INT	D82	controforma aperta	0	
+v_up_estr_pps	CHANNEL	D84	velocità estrattore in salita - impulsi al secondo	0	
+Sap_spazzole_1_pp	CHANNEL	D86	stampo: livello riapertura spazzole superiori in passo passo	0	
+Sap_spazzole_1	CHANNEL	D87	stampo: livello riapertura spazzole superiori	0	
+Sap_spazzole_0	CHANNEL	D88	stampo: livello riapertura spazzole (inferiori)	0	
+Sas	CHANNEL	D89	stampo: limite corsa attesa pezzo - sicurezza pass. fucili	0	
+Sasp_1_strette	DINT	D90		0	
+Sasp_1_strette_pp	DINT	D92		0	
+Nfase_rimbocco	CHANNEL	D94	 numero fase ciclo a passi rimbocco sequenziale	0	
+Noperazione_rimb_sequenz	CHANNEL	D95	 numero fase ciclo a passi rimbocco sequenziale	0	
+Nfase_stmp	CHANNEL	D99	tabnum numero fase ciclo a passi stampo	0	
+N_progr_work	UINT	D100	memoria N-programma lavoro	0	
+v_up_stampo	INT	D101	tabnum input velocità stampo in salita	0	
+v_up_stampo_rallentam	CHANNEL	D102	tabnum input velocità stampo in salita	0	
+v_dn_stampo	INT	D103	tabnum input velocità stampo in discesa	0	
+v_d_st_lembi	INT	D104	tabnum input velocità stampo in discesa fino a S1 (lembi)	0	
+v_av_bracci	INT	D105	tabnum input velocità fucili in andata	0	
+CF_Chiusa	INT	D106	Correzione CF Chiusa	0	
+v_ind_bracci	INT	D107	tabnum input velocità fucili in ritorno	0	
+N_pezzi_cadenza	CHANNEL	D108		0	
+v_up_estratt	INT	D109	tabnum input velocità estrattore in salita	0	
+N_vuoti_cadenza	CHANNEL	D110		0	
+v_dn_estratt	INT	D111	s	0	
+time_rimb_a_T	UINT	D112	tabnum impostazione tempo I rimbocco per carta a T	0	
+time_rimbint	UINT	D113	tabnum impostazione tempo rimbocchi interni attivi	0	
+time_pressa_finestra	UINT	D114	durata pressata lembi finestra	0	
+in_cadenza	INT	D115	tabnum impostazione cadenza	0	
+Tp	UINT	D116	tabnum input tempo pressata	0	
+ex_Up_pinze	CHANNEL	D117	abilitazione sollevamento pinze	0	
+ex_Up_vent	CHANNEL	D118	abilitazione sollevamento ventose	0	
+Tv	UINT	D119	tabnum input tempo discesa ventose ( e pinze prelievo)	0	
+Hst	INT	D120	Altezza stampo	0	
+ant_c	INT	D121	tabnum input anticipo apertura controstampo	0	
+Hsc	INT	D122	tabnum input altezza scatola	0	
+ant_r	INT	D123	anticipo attivazione rimbocchi	0	
+Lsc	INT	D124	tabnum input lunghezza scatola	0	
+ant_pr	INT	D125	tabnum input anticipo attivazione pressini	0	
+Bsc	INT	D126	tabnum input larghezza scatola	0	
+ant_ap_spazzole	INT	D127	tabnum input anticipo apertura spazzole	0	
+in_corrC1	DINT	D128	tabnum input correzione quota carrello 1	0	
+in_corrC2	DINT	D130	tabnum input correzione quota carrello 2	0	
+in_corrC3	DINT	D132	tabnum input correzione quota carrello 3	0	
+in_corrC4	DINT	D134	tabnum input correzione quota carrello 4	0	
+in_corrFr	DINT	D136	tabnum input correzione quota apertura fucili	0	
+in_corrFsx	DINT	D138	d138	0	
+in_corrFdx	DINT	D140	tabnum input correzione quota pinza destra	0	
+in_corrBfrm	INT	D142	tabnum input correzione quota bracci sotto alla forma	0	
+in_corrBprl	INT	D143	tabnum input correz. quota bracci al prelievo scatola	0	
+time_up_sostenimento	INT	D144	tabnum input tempo attivazione sostenimento aria	0	
+time_dn_sostenimento	INT	D145	tabnum input tempo caduta sostenimento aria	0	
+pos_sostenimento	INT	D146	tabnum input posizione sostenimento aria	0	
+Vel_Ap_Acc_CF	INT	D147	Velocità Apertura e Accostat. CF	0	
+Vel_Ch_CF	INT	D148	Velocità Chiusura CF	0	
+Tentra_24_scatola_3	UINT	D149	tabnum tempo entrata per scatola a 3 lati	0	
+Selezioni_ciclo_mirror	DWORD	D150	immagine delle selezioni di ciclo legate al programma in uso	0	
+Scf1	INT	D152	correzione fermata 1 stampo	0	
+Scf2	INT	D154	correzione fermata 2 stampo	0	
+Scf3	INT	D156	correzione fermata 3 stampo	0	
+ant_ch_spazz	INT	D158	tabnum input anticipo accostamento spazzole	0	
+Selezioni_rimbocchi_mirror	CHANNEL	D159	immagine delle selezioni dei rimbocchi nel modo sequenziale	0	
+Hrmb_lame	INT	D160	input altezza rimbocco superiore	0	
+H_lame	CHANNEL	D161	input spessore lame per rimbocco seq.	0	
+Hpiatto_finestra	INT	D162		0	
+Scf4	INT	D163	correzione fermata 4 stampo - pressata inferiore	0	
+Tp_inferiore	UINT	D165	tabnum input tempo pressata inferiore	0	
+Altezza_CF	INT	D166		0	
+Spessore_Cartone	INT	D167		0	
+param_68	CHANNEL	D168	ultimo paramtro programma libero	0	
+Modo_rimbocco_superiore	CHANNEL	D170		0	
+Articolo	CHANNEL	D171	stringa 16 caratteri: Articolo	0	
+v_av_bracci_imp	CHANNEL	D200		0	
+v_ind_bracci_pulse	DINT	D202	 velocità bracci ritorno in Hz	0	
+v_up_forma_pulse	DINT	D204	 velocità forma salita in Hz	0	
+v_dn_forma_pulse	DINT	D206	 velocità forma discesa in Hz	0	
+v_lembi_forma_pulse	DINT	D208	vel forma discesa lembi	0	
+cntvuoti_cadenza	CHANNEL	D210		0	
+cntpezzi_cadenza	CHANNEL	D211		0	
+Copia_di_in_cadenza	CHANNEL	D215		0	
+v_dn_estrattore_pulse	DINT	D216	 velocità estrattore discesa in Hz	0	
+v_up_estrattore_pulse	DINT	D218	 velocità estrattore salita in Hz	0	
+punta_elenco_prgr	CHANNEL	D220		0	
+punta_elenco_prgr_bin	CHANNEL	D221		0	
+punta_el_Articolo_fine	CHANNEL	D222		0	
+punta_el_Articolo	CHANNEL	D223		0	
+punt_Np_esistente	CHANNEL	D224	puntatore flag programma esistente bin	0	
+punta_el_Nprgr	CHANNEL	D226		0	
+punta_el_Hsc	CHANNEL	D227		0	
+punta_el_Lsc	CHANNEL	D228		0	
+punta_el_Bsc	CHANNEL	D229		0	
+Ff_corretto	DINT	D234		0	
+T_filtro_scatola_ingresso	CHANNEL	D236	ritardo presenza scatola ingresso calcolato secondo formato	0	
+Fa_corretto	CHANNEL	D242	quota bracci sotto lo stampo corretta, operativa	0	
+Sa_lembi	CHANNEL	D250		0	
+Time_accosta_controforma	CHANNEL	D260	tempo semicorsa controforma	0	
+T_corsa_accostamento	UINT	D262		0	
+Spf	INT	D266		0	
+Sra	CHANNEL	D280		0	
+Srs	CHANNEL	D282		0	
+Src	CHANNEL	D284		0	
+lingue	CHANNEL	D299	memoria lingua selezionata (no limits)	0	
+override	CHANNEL	D301	tabnum impostazione override	0	
+Coeff_impatto_Y	CHANNEL	D302	impostazione fattore rallentamento asse Y in discesa per impatto con il piatto	0	
+T_dn_ventose	UINT	D310	tabnum impostazione ritardo discesa ventose, chiusura pinze	0	
+Time_soffio	UINT	D311	tabnum impostazione soffio aria ventose x distacco lembo	0	
+Tblocca_scatola_seq_f	UINT	D312	tabnum impostazione tempobloccaggio scatola e piatto per rimbocco sequenziale con la forma	0	
+Tesce_press24	UINT	D316	tabnum impostazione tempo uscita pressore 2 o 4 nella formatura della scatola a 3 lati	0	
+Saspi	INT	D322	tabnum livello stampo per riapertura spazzola inferiore	0	
+Sasps	INT	D328	tabnum livello stampo per riapertura spazzola superiore	0	
+Ofst_pnz_strtt_larghezza	DINT	D330		0	
+Ofst_pnz_strtt_lunghezza	DINT	D332		0	
+Xoffset	CHANNEL	D340	tabnum impostazione offset asse X fucili	0	
+Fa	INT	D342	tabnum impostazione inizio corsa asse X fucili	0	
+Ff	INT	D344	tabnum impostazione fine corsa asse X fucili	0	
+Zoffset	CHANNEL	D360	tabnum impostazione offset asse Z estrattore	0	
+Ecf	CHANNEL	D364	correzione livello estrazione scatola	0	
+Ecf_sign	CHANNEL	D365	correzione livello estrazione scatola: segno	0	
+T_lame	UINT	D370	intervallo fra la chiusura dei due gruppi di lame	0	
+override_max	UINT	D381	tabnum impostazione override massimo	0	
+puntat_messaggi	CHANNEL	D399		0	
+puntat_elenco_ricette	CHANNEL	D400	impegna fino a D499	0	
+acc_auto_forma	UINT	D500	pls0 - tabella 60 word assi forma e bracci	0	
+dec_auto_forma	UINT	D501	pls0	0	
+freq_auto_forma	DINT	D502	pls0	0	
+target_pulses_auto_forma	DINT	D504	pls0	0	
+freq_avvio_auto_forma	DINT	D506	pls0	0	
+acc_jog_forma	UINT	D510	pls0	0	
+freq_jog_forma	DINT	D511	pls0	0	
+dec_jog_forma	UINT	D513	pls0	0	
+acc_home_forma	UINT	D516	pls0	0	
+freq_home_forma	DINT	D517	pls0	0	
+dec_home_forma	UINT	D520	pls0	0	
+acc_verso_home	UINT	D523		0	
+freq_homing_forma	DINT	D524		0	
+acc_stop_forma	CHANNEL	D527	pls0	0	
+acc_auto_bracci	UINT	D530	pls1	0	
+dec_auto_bracci	UINT	D531	pls1	0	
+freq_auto_bracci	DINT	D532	pls1	0	
+target_pulses_auto_bracci	UDINT	D534	pls1	0	
+freq_avvio_auto_bracci	UDINT	D536	pls1	0	
+acc_jog_bracci	UINT	D540	pls1	0	
+freq_jog_bracci	UDINT	D541	pls1	0	
+dec_jog_bracci	UINT	D543	pls1	0	
+acc_home_bracci	UINT	D546	pls1	0	
+freq_home_bracci	UINT	D547	pls1	0	
+dec_home_bracci	UINT	D550	pls1	0	
+acc_homing_bracci	INT	D553		0	
+freq_homing_bracci	DINT	D554		0	
+acc_stop_bracci	CHANNEL	D557	pls1	0	
+acc_auto_estratt	UINT	D560	pls2	0	
+dec_auto_estratt	UINT	D561	pls2	0	
+freq_auto_estratt	DINT	D562	pls2	0	
+target_pulses_auto_estratt	UDINT	D564	pls2	0	
+freq_avvio_auto_estratt	UDINT	D566	pls2	0	
+acc_jog_estratt	UINT	D570	pls2	0	
+freq_jog_estratt	UDINT	D571	pls2	0	
+dec_jog_estratt	UINT	D573	pls2	0	
+acc_home_estratt	UINT	D576	pls2	0	
+freq_home_estratt	UINT	D577	pls2	0	
+dec_home_estratt	UINT	D580	pls2	0	
+acc_homing_estratt	INT	D583		0	
+freq_homing_estratt	DINT	D584		0	
+acc_stop_estratt	CHANNEL	D587	pls2	0	
+CF_Aperta	DINT	D600		0	
+CF_Accostata	DINT	D602		0	
+impulsi_controforma_chiusa	DINT	D630	Parametro calcolato	0	
+acc_auto_controforma	UINT	D630	pls3	0	
+dec_auto_controforma	UINT	D631	pls3	0	
+freq_auto_controforma	DINT	D632	 	0	
+target_pulses_auto_controforma	DINT	D634	pls3	0	
+impulsi_quota_rimbocco	DINT	D634	Parametro calcolato	0	
+freq_avvio_auto_controforma	UDINT	D636	pls3	0	
+impulsi_controforma_aperta	DINT	D638	Parametro calcolato	0	
+acc_jog_controforma	UINT	D640	pls3	0	
+freq_jog_controforma	UDINT	D641	pls3	0	
+dec_jog_controforma	UINT	D643	pls3	0	
+acc_home_controforma	UINT	D646	pls3	0	
+freq_home_controforma	UINT	D647	pls3	0	
+dec_home_controforma	UINT	D650	pls3	0	
+acc_stop_controforma	CHANNEL	D657	pls3	0	
+contapezzi	UDINT	D700	 	0	
+contalotto	CHANNEL	D702	 	0	
+pres_lotto	UDINT	D706	tabnum preselezione lotto produzione	0	
+hddn_cntr	UDINT	D708	grantotale	0	
+conta_accensioni	UDINT	D710		0	
+conta_scan	UINT	D712		0	
+scansioni_secondo	UINT	D713		0	
+conta_secondi_servizio	UINT	D714		0	
+conta_minuti_servizio	UINT	D715		0	
+conta_ore_servizio	UDINT	D716		0	
+conta_secondi_produzione	UINT	D720		0	
+conta_minuti_produzione	UINT	D721		0	
+conta_ore_produzione	UDINT	D722		0	
+conta_secondi_fermo	UINT	D730		0	
+conta_minuti_fermo	UINT	D731		0	
+conta_ore_fermo	UDINT	D732		0	
+puntat_elenco_articoli	CHANNEL	D800	impegna fino a D879	0	
+pagina_richiesta	CHANNEL	D898		0	
+n_pagina_precedente	CHANNEL	D899		0	
+n_pagina_hmi	CHANNEL	D900	numero di pagina mostrata da hmi	0	
+n_pagina_pop_up_1	CHANNEL	D901		0	
+n_pagina_pop_up_2	CHANNEL	D904		0	
+n_pagina_pop_up_3	CHANNEL	D907		0	
+Lingua_hmi	CHANNEL	D910		0	
+S_misura_hmi	CHANNEL	D970		0	
+Salto	CHANNEL	D972	posizione stampo uscito dalla scatola	0	
+Sbracci	CHANNEL	D974	posizione stampo per consenso ripartenza bracci	0	
+Sfuc	CHANNEL	D976	posizione stampo per imovimento manuale fucili	0	
+Fstmp	CHANNEL	D978	posizione fucili per inizio discesa stampo	0	
+durata_ciclo	CHANNEL	D980	tempo misurato durata ultimo ciclo concluso	0	
+Fpnz	CHANNEL	D982	posizione inizio chiusura pinze	0	
+app_manoZ	CHANNEL	D984	 	0	
+Spu	CHANNEL	D986	quota riaccelerazione stampo	0	
+Vmano_impulsi_L	CHANNEL	D988	velocità manuale estrattore in impulsi/sec.	0	
+Vst_dn_rallent	CHANNEL	D992	velocità impatto stampo - piatto	0	
+Fsostenim_on	CHANNEL	D994	posizione fucili per inizio soffio sostenimento	0	
+Fsostenim_off	CHANNEL	D996	posizione fucili per fine soffio sostenimento	0	
+Fsp	CHANNEL	D998	fucili: livello chiusura spazzole	0	
+N_bytes_xmit	CHANNEL	D1000	 	0	
+Control_word_xmit	CHANNEL	D1002	setup di default	0	
+N_bytes_variabile	CHANNEL	D1003	 	0	
+Delta_bytes_variabile	CHANNEL	D1004	 	0	
+Source_Iword_xmit	CHANNEL	D1010	 buffer variabile secondo la lunghezza del messaggio da trasmettere	0	
+Destination_word_rcv_0	CHANNEL	D1030	 buffer variabile secondo la lunghezza del messaggio ricevuto	0	
+Destination_word_rcv_1	CHANNEL	D1031	 buffer variabile secondo la lunghezza del messaggio ricevuto	0	
+Destination_word_rcv_2	CHANNEL	D1032	 buffer variabile secondo la lunghezza del messaggio ricevuto	0	
+Destination_word_rcv_3	CHANNEL	D1033	 buffer variabile secondo la lunghezza del messaggio ricevuto	0	
+Buffer_ricevuto	CHANNEL	D1040	 buffer del messaggio ricevuto	0	
+Buffer_r_convertito	CHANNEL	D1050	 buffer del messaggio ricevuto e convertito	0	
+Buffer_uscita	CHANNEL	D1060	 buffer del messaggio da trasmettere	0	
+Buffer_t_convertito	CHANNEL	D1070	 buffer del messaggio da trasmettere e convertito	0	
+VelBr_calcoli	CHANNEL	D1102	 	0	
+Quota1_rimbocchi	DINT	D1110		0	
+Quota2_lame	DINT	D1120		0	
+Quota3_pressata	DINT	D1130		0	
+Memoria_programmi	DINT	D1300	fino a D29000 i primi 400 - gli altri sul banco 0 del blocco di Espansione	0	
+Regolaz_speed	CHANNEL	D29600	velocità assi regolazioni	0	
+C1_quota	DINT	D29612	posizione attuale 	0	
+C1_pos_pulse	DINT	D29614	posizione attuale 	0	
+C2_quota	DINT	D29622	posizione attuale 	0	
+C2_pos_pulse	DINT	D29624	posizione attuale 	0	
+C3_quota	DINT	D29632	posizione attuale 	0	
+C3_pos_pulse	DINT	D29634	posizione attuale 	0	
+C4_quota	DINT	D29642	posizione attuale 	0	
+C4_pos_pulse	DINT	D29644	posizione attuale 	0	
+Fr_quota	DINT	D29652	posizione attuale 	0	
+Fr_pos_pulse	DINT	D29654	posizione attuale 	0	
+Frsx_quota	DINT	D29662	posizione attuale 	0	
+Frsx_pos_pulse	DINT	D29664	posizione attuale 	0	
+Frdx_quota	DINT	D29672	posizione attuale 	0	
+Frdx_pos_pulse	DINT	D29674	posizione attuale 	0	
+backup_qC1	INT	D29712	salvataggio quota asse regolazione carrello 1	0	
+backup_qC2	INT	D29722	salvataggio quota asse regolazione carrello 2	0	
+backup_qC3	INT	D29732	salvataggio quota asse regolazione carrello 3	0	
+backup_qC4	INT	D29742	salvataggio quota asse regolazione carrello 4	0	
+backup_qFr	INT	D29752	salvataggio quota asse regolazione bracci	0	
+backup_qFrsx	INT	D29762	salvataggio quota asse regolazione pinza sinistra	0	
+backup_qFrdx	INT	D29772	salvataggio quota asse regolazione pinza destra	0	
+PLS_Forma_posiz_comandata	DINT	D29802	posizione dest. asse forma comandata	0	
+HSC_Forma_position	DINT	D29804	posizione destinazione asse forma	0	
+PLS_Bracci_posiz_comandata	DINT	D29812	posizione dest. asse bracci comandata	0	
+HSC_Bracci_position	DINT	D29814		0	
+PLS_Estratt_posiz_comandata	DINT	D29822	posizione dest. asse estrattore comandata	0	
+HSC_Estratt_position	DINT	D29824		0	
+PLS_Controf_posiz_comandata	DINT	D29826	posizione dest. asse controforma comandata	0	
+HSC_Controf_position	DINT	D29828	posizione destinazione asse controforma	0	
+PLS_Forma_quota_backup	DINT	D29902	ultima posizione comandata	0	
+HSC_Forma_quota_backup	DINT	D29904	ultima posizione raggiunta	0	
+PLS_Bracci_quota_backup	DINT	D29912	ultima posizione comandata	0	
+HSC_Bracci_quota_backup	DINT	D29914	ultima posizione raggiunta	0	
+PLS_Estratt_quota_backup	DINT	D29922	ultima posizione comandata	0	
+HSC_Estratt_quota_backup	DINT	D29924	ultima posizione raggiunta	0	
+PLS_controf_quota_backup	DINT	D29926	ultima posizione comandata	0	
+HSC_controf_quota_backup	DINT	D29928	ultima posizione comandata	0	
+DM_setup_settings	CHANNEL	D30000	area setup comunicazione	0	
+send_delay	CHANNEL	D30002	area setup comunicazione	0	
+start_end_code	CHANNEL	D30004	area setup comunicazione	0	
+start_end_code_specifier	CHANNEL	D30005	area setup comunicazione	0	
+Flag_progammar_0	CHANNEL	D31000	flag programma memorizzato - fino a 999 wd	0	
+Shm	CHANNEL	D32101	altezza minima stampo	0	
+Shmax	CHANNEL	D32102	altezza massima stampo	0	
+Schm	CHANNEL	D32103	altezza minima scatola	0	
+Schmax	CHANNEL	D32104	altezza massima scatola	0	
+Sclm	CHANNEL	D32105	lunghezza minima scatola	0	
+Sclmax	CHANNEL	D32106	lunghezza massima scatola	0	
+Scbm	CHANNEL	D32107	larghezza minima scatola	0	
+Scbmax	CHANNEL	D32108	larghezza massima scatola	0	
+Scmax	CHANNEL	D32123	corsa massima stampo	0	
+Ffmax	CHANNEL	D32124	corsa massima fucili	0	
+Ecmax	CHANNEL	D32125	corsa massima estrattore	0	
+Sds	INT	D32126	distanza sicurezza stampo - scatola	0	
+Smlap	INT	D32127	minimo livello attesa pezzo	0	
+Sf1	INT	D32128	Stampo: fermata 1	0	
+Sf2	INT	D32129	Stampo: fermata 2	0	
+Sf3	INT	D32130	Stampo: fermata 3	0	
+Sln	INT	D32131	Stampo: livello nominale nastro a riposo	0	
+Slp	INT	D32132	w130	0	
+Sf_rimb_int	CHANNEL	D32133	Stampo: fermata rimbocchi interni	0	
+Efn	INT	D32134	livello nominale estrazione scatola	0	
+Eds	INT	D32135	distanza sicurezza estrattore scatola	0	
+Kp_estrattore	INT	D32136	rapporto impulsi/mm estrattore	0	
+Vmano_forma	CHANNEL	D32140	velocità corsa stampo a passi, in manuale o st_by	0	
+Vmano_bracci	CHANNEL	D32141	velocità assi in manuale	0	
+Vmano_estratt	CHANNEL	D32142	velocità assi in manuale	0	
+Vmano_controforma	CHANNEL	D32143	velocità corsa cf a passi, in manuale 	0	
+Vstampo_max	CHANNEL	D32144	velocità massima stampo	0	
+Vfucili_max	CHANNEL	D32145	velocità massima fucili	0	
+Vestr_max	CHANNEL	D32146	velocità massima estrattore	0	
+b_m_min	CHANNEL	D32148	cadenza minima impostabile	0	
+b_m_max	CHANNEL	D32149	cadenza massima impostabile	0	
+P_cadenzatore	CHANNEL	D32150	durata impulso uscita cadenzatore	0	
+Pos_home_forma	CHANNEL	D32152		0	
+Pos_home_bracci	CHANNEL	D32154		0	
+Controforma_gap_lame	INT	D32155		0	
+Pos_home_estrattore	CHANNEL	D32156		0	
+Anticipo_Stop_Forma	CHANNEL	D32160		0	
+CF_Home	INT	D32170	posizione home controforma	0	
+CF_CorsaMax	INT	D32172	posizione massima controforma	0	
+CF_accelerazione	DINT	D32174		0	
+CF_decelerazione	DINT	D32176		0	
+Pos_home_controforma	CHANNEL	D32180		0	
+Kp_carrelli	DINT	D32300	rapporto impulsi/mm regolazione carrelli	0	
+Kp_bracci	DINT	D32302	rapporto impulsi/mm regolazione bracci	0	
+Kp_pinze	DINT	D32304	rapporto impulsi/mm regolazione pinze	0	
+delta_carrelli	DINT	D32306	tolleranza posizione carrelli rispetto al formato scatola	0	
+delta_pinze	DINT	D32308	tolleranza posizione pinze rispetto al formato scatola	0	
+dC1	DINT	D32310	distanza home-centro macchina carrello 1	0	
+C1min	DINT	D32312	corsa massima carrello 1	0	
+dC1_pulse	DINT	D32314		0	
+Cr1	DINT	D32316	corsa regolazione carrello 1	0	
+Cr1_pulse	DINT	D32318	corsa regolazione carrello 1 in impulsi	0	
+dC2	DINT	D32320	distanza home-centro macchina carrello 2	0	
+C2min	DINT	D32322	corsa massima carrello 2	0	
+dC2_pulse	DINT	D32324		0	
+Cr2	DINT	D32326	corsa regolazione carrello 2	0	
+Cr2_pulse	DINT	D32328	corsa regolazione carrello 2 in impulsi	0	
+dC3	DINT	D32330	distanza home-centro macchina carrello 3	0	
+C3min	DINT	D32332	corsa massima carrello 3	0	
+dC3_pulse	DINT	D32334		0	
+Cr3	DINT	D32336	corsa regolazione carrello 3	0	
+Cr3_pulse	DINT	D32338	corsa regolazione carrello 3 in impulsi	0	
+dC4	DINT	D32340	distanza home-centro macchina carrello 4	0	
+C4min	DINT	D32342	corsa massima carrello 4	0	
+dC4_pulse	DINT	D32344		0	
+Cr4	DINT	D32346	corsa regolazione carrello 4	0	
+Cr4_pulse	INT	D32348	corsa regolazione carrello 4 in impulsi	0	
+dBracci	DINT	D32350	distanza home-centro macchina regolazione bracci	0	
+Fmin	DINT	D32352	corsa massima regolazione bracci	0	
+dB_pulse	INT	D32354		0	
+Fr	DINT	D32356	corsa regolazione bracci	0	
+Fr_pulse	DINT	D32358	corsa regolazione braccii in impulsi	0	
+dFsx	DINT	D32360	distanza home-centro regolaz. pinza bracci sinistra	0	
+Fsxmin	DINT	D32362	corsa massima regolazione pinza bracci sinistra	0	
+dFsx_pulse	DINT	D32364		0	
+Frsx	DINT	D32366	   	0	
+Frsx_pulse	DINT	D32368	corsa regolazione pinza sx in impulsi	0	
+dFdx	DINT	D32370	distanza home-centro regolaz. pinza bracci destra	0	
+Fdxmin	DINT	D32372	corsa massima regolazione pinza bracci destra	0	
+dFdx_pulse	DINT	D32374		0	
+Frdx	DINT	D32376	corsa regolazione pinza braccii destra	0	
+Frdx_pulse	DINT	D32378	corsa regolazione pinza dx in impulsi	0	
+Offset_tav_ruotata_C13	INT	D32380	lunghezza blocchetto antiinterferenza con il telaio - def 83,0 mm	0	
+Fr_stretta	DINT	D32384	corsa regolazione bracci con pinze strette	0	
+Frsx_stretta	DINT	D32386	corsa regolazione pinza bracci sinistra con pinze strette	0	
+Frdx_stretta	DINT	D32388	corsa regolazione pinza bracci destra con pinze strette	0	
+Lungh_scatola	DINT	D32390		0	
+Largh_scatola	DINT	D32392		0	
+Semilunghezza_scatola	DINT	D32396		0	
+Semilarghezza_scatola	DINT	D32398	w350	0	
+dC1_ruotata	DINT	D32400		0	
+dC3_ruotata	DINT	D32404		0	
+N_progr_ref	CHANNEL	D32500	40 w - memoria programma campione	0	
+Codice_licenza	INT	D32760		0	
+Hidden_code	INT	D32762		0	
+backup_lingua	CHANNEL	D32767		0	
+punt_Np_indrzzo	CHANNEL	E32760	puntatore all'indirizzo parametro nel programma	0	
+punt_Np_indrzzo_art	CHANNEL	E32763	puntatore all'indirizzo parametro nel programma	0	
+punt_Np_indrzzo_Lsc	CHANNEL	E32764	puntatore all'indirizzo parametro nel programma	0	
+punt_Np_indrzzo_Bsc	CHANNEL	E32765	puntatore all'indirizzo parametro nel programma	0	
+punt_Np_indrzzo_Hsc	CHANNEL	E32766	puntatore all'indirizzo parametro nel programma	0	
+M_vari	CHANNEL	H0	memoria vari comandi	0	
+M_avvio	BOOL	H0.00	memoria fase avvio/presentazione	0	
+M_ciclo	BOOL	H0.01	memoria ciclo automatico	0	
+cadenzatore	BOOL	H0.02	generatore cadenza linea	0	
+Stop0_slvqt	BOOL	H0.03	memoria arresto regolazioni verso home	0	
+Stop_slvqt	BOOL	H0.04	memoria arresto regolazioni per salvataggio quote attuali	0	
+Mciclo_ok	BOOL	H0.05	flag di ciclo automatico attivo	0	
+restartNC	BOOL	H0.06	comando riavvio modulo NC	0	
+M_ciclo_avviato	BOOL	H0.10		0	
+in_produzione	BOOL	H0.11	flag produzione avviata	0	
+cadenza_pezzo	BOOL	H0.12	cadenza - chiamata foglio	0	
+fine_prog_atto	BOOL	H0.15		0	
+M_modo	CHANNEL	H1	memoria modo operativo	0	
+M_modo_selez	BOOL	H1.00	memoria modo operativo: selezione	0	
+M_modo_auto	BOOL	H1.01	memoria modo operativo: automatico	0	
+M_modo_passo	BOOL	H1.02	memoria modo operativo: passo-passo	0	
+M_modo_regolaz	BOOL	H1.03	memoria modo operativo: regolazioni	0	
+M_modo_mano	BOOL	H1.06	memoria modo operativo: manuale	0	
+M_modo_param	BOOL	H1.08	memoria modo operativo: parametri	0	
+M_modo_prog	BOOL	H1.09	memoria modo operativo: selezione programmi	0	
+M_modo_config	BOOL	H1.11	memoria modo operativo: configurazione	0	
+M_manuale	CHANNEL	H2	memoria movimento manuale operativo	0	
+M_mano_bracci	BOOL	H2.01	memoria movimento manuale operativo: fucili	0	
+M_mano_forma	BOOL	H2.02	memoria movimento manuale operativo: stampo	0	
+M_mano_pinze	BOOL	H2.03	memoria movimento manuale operativo: pinze	0	
+M_mano_contrfrm	BOOL	H2.04	memoria movimento manuale operativo: controforma	0	
+M_mano_estratt	BOOL	H2.05	memoria movimento manuale operativo: estrattore	0	
+M_mano_spazz	BOOL	H2.06	memoria movimento manuale operativo: spazzole	0	
+M_mano_rimb	BOOL	H2.07	memoria movimento manuale operativo: rimbocchi	0	
+M_mano_lame	BOOL	H2.08	memoria movimento manuale operativo: lame	0	
+M_mano_pressini	BOOL	H2.09	memoria movimento manuale operativo: pressini	0	
+M_mano_ventose_up	BOOL	H2.11	memoria sollevamento manuale ventose	0	
+M_mano_soffio_ventose	BOOL	H2.12	memoria soffio ventose 	0	
+M_mano_pinze_up	BOOL	H2.13	memoria sollevamento manuale pinze	0	
+Home_forma_noto	BOOL	H6.01		0	
+Home_bracci_noto	BOOL	H6.02		0	
+Home_estrattore_noto	BOOL	H6.03		0	
+Home_controforma_noto	BOOL	H6.04		0	
+Home_forma_raggiunto	BOOL	H6.06		0	
+Home_bracci_raggiunto	BOOL	H6.07		0	
+Home_estratti_raggiunto	BOOL	H6.08		0	
+Home_controforma_raggiunto	BOOL	H6.09		0	
+Home_reg_noto	BOOL	H6.10		0	
+home_reg_carrelli_done	BOOL	H6.11		0	
+home_reg_pnze_done	BOOL	H6.12		0	
+Pos_reg_eseguito	BOOL	H6.15		0	
+M_asseZ	CHANNEL	H7	memoria riavviamento estrattore	0	
+Ciclo_finestra	CHANNEL	H8	fasi forma nel ciclo rimbocco finestra	0	
+Ciclo_finestra_attivo	BOOL	H8.00		0	
+Finestra_fase_1	BOOL	H8.01		0	
+Finestra_fase_2	BOOL	H8.02		0	
+Finestra_fase_3	BOOL	H8.03		0	
+Finestra_fase_4	BOOL	H8.04		0	
+Finestra_fase_5	BOOL	H8.05		0	
+Finestra_fase_6_uscita	BOOL	H8.06		0	
+pos_carr_ok	BOOL	H10.00	flag posizione carrelli = quote	0	
+s_r_ricercaO	BOOL	H10.02	flag appoggio selezione ricerca origini	0	
+s_r_posizion	BOOL	H10.03	flag appoggio selezione posizionamento regolazioni	0	
+Ciclo_bracci	CHANNEL	H11	memoria fasi fucili in ciclo	0	
+B1_bracci_st_by	BOOL	H11.01		0	
+B2_bracci_attesa	BOOL	H11.02		0	
+B3_bracci_avanti	BOOL	H11.03		0	
+B4_bracci_prelievo	BOOL	H11.04		0	
+B5_bracci_pinze	BOOL	H11.05		0	
+B6_bracci_ritorno	BOOL	H11.06		0	
+B7_bracci_rilascio_pezzo	BOOL	H11.07		0	
+B8_bracci_pronti	BOOL	H11.08		0	
+Ciclo_forma	CHANNEL	H12	fasi forma in ciclo	0	
+F01_forma_st_by	BOOL	H12.01		0	
+F02_forma_attesa	BOOL	H12.02		0	
+F03_discesa_S1	BOOL	H12.03		0	
+F04_rimbocchi	BOOL	H12.04		0	
+F05_fine_rimbocchi	BOOL	H12.05		0	
+F06_discesa_S2	BOOL	H12.06		0	
+F07_lame	BOOL	H12.07		0	
+F08_apre_lame	BOOL	H12.08		0	
+F09_discesa_S3	BOOL	H12.09		0	
+F10_forma_pressata	BOOL	H12.10		0	
+F11_forma_S4	BOOL	H12.11		0	
+F12_pressata_inferiore	BOOL	H12.12		0	
+F13_forma_salita	BOOL	H12.13		0	
+F14_forma_pronta	BOOL	H12.14		0	
+F15_rimbocco_sequenziale	BOOL	H12.15		0	
+Ciclo_estrattore	CHANNEL	H13	fasi estrattore in ciclo	0	
+M_estrattore_ciclo	CHANNEL	H13	memoria fasi estrattore in ciclo	0	
+E0_estrattore_quote_st_by	BOOL	H13.00		0	
+E1_estrattore_st_by	BOOL	H13.01		0	
+E2_estrattore_quote_basso	BOOL	H13.02	attesa	0	
+E3_estrattore_basso	BOOL	H13.03		0	
+E4_estrattore_quote_alto	BOOL	H13.04		0	
+E5_estrattore_alto	BOOL	H13.05		0	
+M_salvaquote	CHANNEL	H14	flags di salvataggio delle quote a seguito di stop regolaz	0	
+Ciclo_forma_rimb_sequenziale	CHANNEL	H15	fasi forma per rimbocco sequenziale	0	
+f151_entrata_lame1	BOOL	H15.01	fasi forma per rimbocco sequenziale	0	
+f152_uscita_lame1	BOOL	H15.02	fasi forma per rimbocco sequenziale	0	
+f153_pressata1	BOOL	H15.03	fasi forma per rimbocco sequenziale	0	
+f154_riapertua_controforma	BOOL	H15.04	fasi forma per rimbocco sequenziale	0	
+f155_entrata_lame2	BOOL	H15.05	fasi forma per rimbocco sequenziale	0	
+f156_uscita_lame2	BOOL	H15.06	fasi forma per rimbocco sequenziale	0	
+f157_conclusione_sequenza	BOOL	H15.07	fasi forma per rimbocco sequenziale	0	
+f158_uscita_sequenza	BOOL	H15.08	fasi forma per rimbocco sequenziale	0	
+No_cadenza	BOOL	H16.02	flag di cadenza interrotta	0	
+cad_continua	BOOL	H16.03	flag di segnale continuo	0	
+reg_orig_nota	BOOL	H16.04	memoria origini regolazioni trovate	0	
+contalotto_abil	BOOL	H16.05	flag di abilitazione contatore di lotto	0	
+lotto_raggiunto	BOOL	H16.06	flag di comparazione contatore di lotto	0	
+regolaz_in_home	BOOL	H16.10		0	
+regolaz_inizializzate	BOOL	H16.12		0	
+M_avviata	BOOL	H16.15		0	
+M_impostazioni_ciclo	CHANNEL	H18	flags di abilitazione delle funzioni speciali condizionanti il ciclo di lavoro - mirror d150	0	
+Up_pinze_abil	BOOL	H18.00	flag abilitazione salita-discesa pinze	0	
+Up_vent_abil	BOOL	H18.01	flag abilitazione salita-discesa ventose	0	
+ab_sostenta_lembo	BOOL	H18.02	abilitazione soffio levitazione lembo 	0	
+Inversione_lame	BOOL	H18.03	abilitazione inversione sequenza entrata lame 	0	
+Rimbcchi_a_T	BOOL	H18.04	abilitazione rimbocco speciale per scatola con carta a T	0	
+Scatola_3_lati	BOOL	H18.05	abilitazione esecuzione scatola a 3 lati 	0	
+Rimbocco_vert_int	BOOL	H18.06	abilitazione rimbocco speciale verticale interno (su lato mancante)	0	
+Rimbocco_dorsale_int	BOOL	H18.07	abilitazione rimbocco speciale dorsale interno (per scatole CD)	0	
+Piramidale_rimbocchi	BOOL	H18.08	x scatole con lati rimboccati inclinati (Palm box, Flower pot,...)	0	
+Piramidale_spazzole	BOOL	H18.09		0	
+Rimbocco_sequenz_controforma	BOOL	H18.10		0	
+Rimbocco_sequenz_forma	BOOL	H18.11		0	
+Scatola_no_lembi_laterali	BOOL	H18.12	abilitazione ciclo scatola foderata senza lembi rimboccati	0	
+Rimbocchi_finestra	BOOL	H18.13		0	
+Scatola_lato_aperto	BOOL	H18.14	abilitazione esecuzione scatola con lato aperto 	0	
+Scatola_no_lembi_superiori	BOOL	H18.15	abilitazione ciclo scatola foderata senza lembi rimboccati	0	
+M_impostazioni_ciclo_piu	CHANNEL	H19	flags di abilitazione delle funzioni speciali condizionanti il ciclo di lavoro - mirror d150	0	
+Pressata_inferiore	BOOL	H19.00	abilitazione esecuzione seconda pressata	0	
+Pressata_inferiore_lato	BOOL	H19.01	abilitazione esecuzione seconda pressata sui fianchi della scatola	0	
+Pressata_inferiore_fronte	BOOL	H19.02	abilitazione esecuzione seconda pressata su lati lunghi della scatola	0	
+res_cs	BOOL	H20.00	reset controllo uscita scatola	0	
+Mi_cs	BOOL	H20.01	memoria ingresso scatola per controllo uscita scatola	0	
+Mo_cs	BOOL	H20.02	memoria scatola in macchina per controllo uscita scatola	0	
+Mx_cs	BOOL	H20.03	memoria allarme scatola non uscita	0	
+My_cs	BOOL	H20.04	memoria mancato riconoscimento scatola in entrata	0	
+Mz_cs	BOOL	H20.05	memoria allarme scatola in entrata	0	
+Doppia_Pressata	BOOL	H21.00	installazione esecuzione doppia pressata	0	
+outlock	BOOL	H23.00		0	
+Selezione_fase_rimbocco_sequenziale	CHANNEL	H30		0	
+FASE_1	BOOL	H30.00		0	
+FASE_2	BOOL	H30.01		0	
+FASE_3	BOOL	H30.02		0	
+FASE_4	BOOL	H30.03		0	
+Selezioni_rimbocco_sequenziale	CHANNEL	H31		0	
+L1_F1	BOOL	H31.00	LAMA 1 CON FASE1	0	
+L2_F1	BOOL	H31.01	LAMA 2 CON FASE1	0	
+L3_F1	BOOL	H31.02	LAMA 3 CON FASE1	0	
+L4_F1	BOOL	H31.03	LAMA 4 CON FASE1	0	
+L1_F2	BOOL	H31.04	LAMA 1 CON FASE2	0	
+L2_F2	BOOL	H31.05	LAMA 2 CON FASE2	0	
+L3_F2	BOOL	H31.06	LAMA 3 CON FASE2	0	
+L4_F2	BOOL	H31.07	LAMA 4 CON FASE2	0	
+L1_F3	BOOL	H31.08	LAMA 1 CON FASE3	0	
+L2_F3	BOOL	H31.09	LAMA 2 CON FASE3	0	
+L3_F3	BOOL	H31.10	LAMA 3 CON FASE3	0	
+L4_F3	BOOL	H31.11	LAMA 4 CON FASE3	0	
+L1_F4	BOOL	H31.12	LAMA 1 CON FASE4	0	
+L2_F4	BOOL	H31.13	LAMA 2 CON FASE4	0	
+L3_F4	BOOL	H31.14	LAMA 3 CON FASE4	0	
+L4_F4	BOOL	H31.15	LAMA 4 CON FASE4	0	
+Fasi_rimbocco_sequenziale	CHANNEL	H32		0	
+F_rimb_0_preparazione	BOOL	H32.00		0	
+F_rimb_1_selezione	BOOL	H32.01		0	
+F_rimb_2_apre_forma	BOOL	H32.02		0	
+F_rimb_3_entra_lame	BOOL	H32.03		0	
+F_rimb_4_accosta_forma	BOOL	H32.04		0	
+F_rimb_5_ritorno_lame	BOOL	H32.05		0	
+F_rimb_6_chiude_forma	BOOL	H32.06		0	
+F_rimb_7_pressata	BOOL	H32.07		0	
+F_rimb_8_cambio	BOOL	H32.08		0	
+F_rimb_9_riallineamento	BOOL	H32.09		0	
+F_rimb_15_fine	BOOL	H32.15		0	
+Pinze_strette	BOOL	H70.00	0	0	
+Pinze_standard	BOOL	H70.01	assenza delle pinze strette per larghezza scatole < 30 mm	0	
+Scatole_corte	BOOL	H70.10	interferenza asta per lunghezza scatole < 65 mm	0	
+Scatole_strette	BOOL	H70.11	esigenza delle pinze strette per larghezza scatole < 30 mm	0	
+Controforma_motorizzata	BOOL	H100.04	0 = pneumatica	0	
+CF_Mot	BOOL	H100.04	Scelta controforma motorizzata (1) o pneumatica (0)	0	
+Layout_uscita	BOOL	H100.10	0 = sinistra (C2) 1 = destra (C4)	0	
+Installa_rimbocco_seq_forma	BOOL	H100.11		0	
+Installa_scatola_no_lembi	BOOL	H100.12		0	
+Installa_Scatola_Finestra	BOOL	H100.13		0	
+Installa_Scatola_Lato_aperto	BOOL	H100.14		0	
+Sel_tavola_carrelli	BOOL	H100.15	0 = standard   1 = ruotata	0	
+T_operat_dn	BOOL	T0000		0	
+T_mask_allarmi_generale	BOOL	T0001		0	
+T_attivazione_potenza	BOOL	T0002		0	
+T_posX	BOOL	T0003	filtro verifica posizione st_by X	0	
+T_posY	BOOL	T0004	filtro verifica posizione stand by Y	0	
+T_pressata	BOOL	T0005	tempo pressata scatola	0	
+T_apre_pinze_c	BOOL	T0006		0	
+T_ciclo_PV	CHANNEL	T7	timer misurazione durata ciclo	0	
+T_ch_lame_I	BOOL	T0008	tempo chiusura I gruppo di lame	0	
+T_ch_lame_II	BOOL	T0009	tempo chiusura II gruppo di lame	0	
+T_entra_lama	BOOL	T0010		0	
+T_soffio	BOOL	T0011	tempo impulso aria rilascio scatola	0	
+T_pwr_attivata	BOOL	T0012		0	
+T_filt_I_forma	BOOL	T0014		0	
+Tavvio	BOOL	T0016	tempo avvio/pagina presentazione	0	
+Tf_allarme	BOOL	T0018	tempo filtro segnalazione fine allarme	0	
+Ts_ciclo	BOOL	T0019	tempo segnalazione inizio ciclo automatico	0	
+T_avvio_home	BOOL	T0020		0	
+T_home_generale	BOOL	T0021		0	
+T_Jog_dn	BOOL	T0022		0	
+T_filtro_up_tasto_passo	BOOL	T0023		0	
+T_filtro_dn_tasto_passo	BOOL	T0024		0	
+T_delay	BOOL	T0027	intervallo impulsi cadenzatore	0	
+T_pulse	BOOL	T0028	durata impulsi cadenzatore	0	
+Time_out_assi	BOOL	T0033	spegnimento assi bracci-forma-estrattore	0	
+Scatola_ingresso_filtrata	BOOL	T0036	filtro verifica arrivo scatola ingresso in posizione di prelievo	0	
+T_exc_rg	BOOL	T0040	filtro extracorsa regolazioni	0	
+T_dn_abilZ	BOOL	T0041	ritardo caduta abilitazione asse Z	0	
+T_Dn_ciclo	BOOL	T0043	ritardo caduta ciclo	0	
+T_Up_ciclo	BOOL	T0045	ritardo avvio ciclo per ricerca Home	0	
+T_assi_ok	BOOL	T0046	ritardo verifica assi pronti	0	
+T_Up_regolazioni	BOOL	T0047	ritardo avvio regolazioni per ricerca Home	0	
+T_release_estrattore	BOOL	T0050	tempo riabilitazione estrattore per uscita da estracorsa	0	
+T_dn_abil_Y_Status	BOOL	T0051	ritardo caduta abilitazione asse Y	0	
+T_dn_aria	BOOL	T0052	filtro caduta pressione aria	0	
+T_rimb_interni	BOOL	T0053	tempo chiusura rimbocchi interni	0	
+T_start_fogli	BOOL	T0054	durata impulso start mettifolio per richiesta scatole	0	
+T_stop_fogli	BOOL	T0055	durata impulso arresto mettifolio per fine lotto	0	
+T_dn_abil_controforma	BOOL	T0056	ritardo caduta abilitazione asse U	0	
+T_reset_slave	BOOL	T0057		0	
+T_on_foglio	BOOL	T0058		0	
+T_off_foglio	BOOL	T0059		0	
+T_out_start_ciclo	BOOL	T0060	tempo massimo inizio ciclo	0	
+T_out_av_bracci	BOOL	T0061	timer corsa fucili avanti	0	
+T_out_ind_bracci	BOOL	T0062	timer corsa fucili indietro	0	
+T_out_stampo1_Status	BOOL	T0063	timer corsa stampo posizione 1	0	
+T_out_stampo2_Status	BOOL	T0064	timer corsa stampo posizione 2	0	
+Tout_stampo3_Status	BOOL	T0065	timer corsa stampo posizione 3	0	
+T_out_stampo_up	BOOL	T0066	timer corsa stampo risalita	0	
+T_out_estrattore	BOOL	T0067	timer pinze x rilascio pezzo	0	
+T_strt_home_auto	BOOL	T0068		0	
+T_out_start_ciclo_up	BOOL	T0069	tempo abort inizio ciclo	0	
+T_out_ciclo	BOOL	T0070	tempo massimo attesa conclusione ciclo	0	
+T_res_T_out	BOOL	T0071	tempo di mantenimento messaggio causa time out	0	
+T_stop_tappeto	BOOL	T0072	filtro arresto tappeto	0	
+T_stop_ciclo	BOOL	T0073	durata impulso arresto ciclo per TIM70	0	
+T_Imp_Stop	BOOL	T0074		0	
+T_rimbocch3	BOOL	T0075		0	
+T_rimbocch1	BOOL	T0076		0	
+T_ab_dn_pinze	BOOL	T0079		0	
+T_step_jog_carr	BOOL	T0080		0	
+T_enable_jog_reg	BOOL	T0081		0	
+T_step_jog_pnz	BOOL	T0083		0	
+T_entra_press24	BOOL	T0085	per scatola 3 lati	0	
+T_esce_press24	BOOL	T0086	per scatola 3 lati	0	
+T_rimbocchi_interni	BOOL	T0087		0	
+T_chiude_controforma	BOOL	T0088		0	
+T_dn_abil_X	BOOL	T0091	ritardo caduta abilitazione asse X	0	
+Piatto_bloccato_alto	BOOL	T0094		0	
+T_data_modify	BOOL	T0095		0	
+T_out_rimbocco_seq	BOOL	T0096		0	
+T_chiude_lame_II	BOOL	T0098		0	
+T_chiude_lame_I	BOOL	T0099		0	
+T_dn_data_entry	BOOL	T0100		0	
+T_KA_On	BOOL	T0101		0	
+Ts_allarme	BOOL	T0102	tempo segnalazione allarme presente	0	
+T_accosta_controforma	BOOL	T0103		0	
+T_cancella_p	BOOL	T0104		0	
+T_rst_reg	BOOL	T0105		0	
+T_ritorno_pressini	BOOL	T0106		0	
+T_On_doppia_pressata	BOOL	T0107		0	
+T_Pos_Pres_forma	BOOL	T0111		0	
+T_Pos_Pres_bracci	BOOL	T0112		0	
+T_Pos_Pres_estrattore	BOOL	T0113		0	
+T_Pos_Pres_controforma	BOOL	T0114		0	
+T_preset_cntrfrm	BOOL	T0115		0	
+T_avvio_st_by_bracci	BOOL	T0116		0	
+T_fine_home_forma	BOOL	T0121		0	
+T_fine_home_bracci	BOOL	T0122		0	
+T_fine_home_estrattore	BOOL	T0123		0	
+T_fine_home_controforma	BOOL	T0124		0	
+Time_out_home_forma	BOOL	T0125	spegnimento asse forma durante la ricerca dell'home	0	
+T_corsa_st_by_bracci	BOOL	T0126		0	
+Time_out_home_controforma	BOOL	T0127	spegnimento asse controforma durante la ricerca dell'home	0	
+T_avvio_st_by_forma	BOOL	T0130		0	
+T_avvio_piatto_forma	BOOL	T0131		0	
+T_avvio_st_by_bracci_jog	BOOL	T0134		0	
+T_avvio_prelievo_bracci_jog	BOOL	T0135		0	
+T_avvio_st_by_estratt_jog	BOOL	T0138		0	
+T_avvio_piatto_estratt_jog	BOOL	T0139		0	
+t_avvio_cf_chiusa	BOOL	T0140		0	
+t_avvio_cf_accostata	BOOL	T0141		0	
+t_avvio_cf_aperta	BOOL	T0142		0	
+T_dly_cf_chiusa	BOOL	T0143		0	
+t_avvio_home_cf_chiusa	BOOL	T0144		0	
+timer_avvio_corsa_cf_auto	BOOL	T0145		0	
+T_blocca_scatola	BOOL	T0150	rimbocco sequenziale forma	0	
+T_curr_off_reg_drv	BOOL	T0160		0	
+T_curr_on_reg_drv	BOOL	T0161		0	
+T_avvio_homing_reg	BOOL	T0163		0	
+T_check_homing_reg	BOOL	T0164		0	
+t_avvio_posiz_reg	BOOL	T0167		0	
+T_check_pos_reg	BOOL	T0168		0	
+T_reg_set_pos	BOOL	T0170		0	
+T_check_pos_set_reg	BOOL	T0171		0	
+T_out_preset_reg	BOOL	T0172		0	
+T_ok_jog_reg	BOOL	T0175		0	
+T_dn_sblocco_fr	BOOL	T0177		0	
+T_reg_jog_min	BOOL	T0179		0	
+T_prep_sub	BOOL	T0180		0	
+T_out_sub	BOOL	T0181		0	
+T_send_sub	BOOL	T0182		0	
+T_pausa_sub	BOOL	T0183		0	
+T_chiude_sub	BOOL	T0184		0	
+T_pausa_sub33	BOOL	T0185		0	
+T_filtro_conferma	BOOL	T0186		0	
+T_ch_pinze	BOOL	T0200	tempo chiusura pinze	0	
+T_avvio_sb_X	BOOL	T0201	in ciclo	0	
+T_avvio_avanti_X	BOOL	T0202		0	
+T_dn_pinze	BOOL	T0203	tempo discesa pinze prelievo pezzo	0	
+T_avvio_indietro_X	BOOL	T0204		0	
+T_ap_pinze	BOOL	T0205	tempo rilascio pezzo (apertura pinze)	0	
+T_allenta_finestra_Y	BOOL	T0210		0	
+T_avvio_sb_Y	BOOL	T0211		0	
+T_avvio_piatto_Y	BOOL	T0212		0	
+T_avvio_S1_Y	BOOL	T0213		0	
+T_avvio_S2_Y	BOOL	T0214		0	
+T_avvio_S3_Y	BOOL	T0215		0	
+T_avvio_3lati_Y	BOOL	T0216		0	
+T_avvio_S7_Y	BOOL	T0217		0	
+T_avvio_Salita_Y	BOOL	T0218		0	
+T_avvio_finestra_Y	BOOL	T0219		0	
+T_pressata_finestra_Y	BOOL	T0220		0	
+T_avvio_sb_Z	BOOL	T0221	in ciclo	0	
+T_avvio_piatto_Z	BOOL	T0222	in ciclo	0	
+T_avvio_ritorno_Z	BOOL	T0223	in ciclo	0	
+T_avvio_sra_Y	BOOL	T0251		0	
+T_avvio_srs_Y	BOOL	T0252		0	
+T_avvio_src_Y	BOOL	T0253		0	
+T_avvio_riallinea_Y	BOOL	T0254		0	
+Potenza_presente	BOOL	W0.00		0	
+Condiz_ok_assi_forma	BOOL	W0.01		0	
+Condiz_ok_assi_bracci	BOOL	W0.02	000	0	
+Condiz_ok_assi_estrattori	BOOL	W0.03		0	
+Condiz_ok_assi_controforma	BOOL	W0.04		0	
+Assi_servolock	BOOL	W0.10	servolock attivo assi 	0	
+Forma_in_sforzo	BOOL	W0.11		0	
+Regolazioni_pronte	BOOL	W1.03		0	
+Condiz_mano_chiama_forma	BOOL	W2.01		0	
+Condiz_mano_chiama_bracci	BOOL	W2.02		0	
+Condiz_mano_chiama_estrattore	BOOL	W2.03		0	
+Condiz_mano_chiama_controforma	BOOL	W2.04		0	
+Condiz_mano_chiama_pinze	BOOL	W2.05		0	
+Condiz_mano_chiama_spazzole	BOOL	W2.06		0	
+Condiz_mano_chiama_rimbocchi	BOOL	W2.07		0	
+Condiz_mano_chiama_lame	BOOL	W2.08		0	
+Condiz_mano_chiama_pressini	BOOL	W2.09		0	
+cond_mano_forma	BOOL	W2.11		0	
+Condiz_mano_assi_bracci	BOOL	W2.12		0	
+Condiz_mano_assi_estratt	BOOL	W2.13		0	
+comorgani_auto	CHANNEL	W3		0	
+Ciclo_Chiama_Scatola	BOOL	W3.00		0	
+Stop_Foglio_Chiamato	BOOL	W3.01		0	
+Stop_Primo_Passo_Tappeto	BOOL	W3.02		0	
+Pressata_sequenziale	BOOL	W3.10		0	
+a_pressata_lembo_I	BOOL	W3.12	 	0	
+a_pressata_inferiore	BOOL	W3.15		0	
+rimbocchi_seq_attivi	BOOL	W4.10	in passo-passo	0	
+attesa_rimbocchi_riaperti	BOOL	W4.11		0	
+Ok_mano_forma	BOOL	W18.01	controllo interferenze con gli altri assi	0	
+Ok_mano_bracci	BOOL	W18.02	controllo interferenze con gli altri assi	0	
+Ok_mano_estrattore	BOOL	W18.03	controllo interferenze con gli altri assi	0	
+Ok_mano_cf	BOOL	W18.04	controllo interferenze con gli altri assi	0	
+Home_0_fatto	BOOL	W19.00	x homing generale	0	
+Home_1_fatto	BOOL	W19.01	x homing generale	0	
+Home_2_fatto	BOOL	W19.02	x homing generale	0	
+Home_3_fatto	BOOL	W19.03	x homing generale	0	
+Home_4_fatto	BOOL	W19.04	x homing generale	0	
+Home_5_fatto	BOOL	W19.05	x homing generale	0	
+Home_regolaz_noto	BOOL	W19.10		0	
+Home_generale_noto	BOOL	W19.15		0	
+Com_Home_carrelli	BOOL	W20.00		0	
+Com_Home_forma	BOOL	W20.01		0	
+Com_Home_bracci	BOOL	W20.02		0	
+Com_Home_estrattore	BOOL	W20.03		0	
+Com_Home_controforma	BOOL	W20.04		0	
+Com_Home_pinze	BOOL	W20.05		0	
+Homing_forma	BOOL	W20.06		0	
+Homing_bracci	BOOL	W20.07		0	
+Homing_estratt	BOOL	W20.08		0	
+Homing_controforma	BOOL	W20.09		0	
+Com_Home_regolazioni	BOOL	W20.10		0	
+Com_Home_assi_lavoro	BOOL	W20.11	richiede l'home di forma,bracci ed estrattore (+ controforma se esiste)	0	
+Caricorsa_Fa_bracci	BOOL	W20.12		0	
+Rev_Homing_forma	BOOL	W21.06		0	
+Rev_Homing_bracci	BOOL	W21.07		0	
+Rev_Homing_estratt	BOOL	W21.08		0	
+Rev_Homing_controforma	BOOL	W21.09		0	
+Corse_estrattore_mano	BOOL	W21.12	posizionamento basso o alto	0	
+Com_Stop_reset_generale	BOOL	W21.13		0	
+Posman_bracci_st_by	BOOL	W22.00		0	
+Posman_bracci_prelievo	BOOL	W22.01		0	
+Posman_estrattore_st_by	BOOL	W22.04		0	
+Posman_estrazione_scatola	BOOL	W22.05		0	
+Posman_forma_st_by	BOOL	W22.08		0	
+Posman_forma_piatto	BOOL	W22.09		0	
+Posman_controf_chiusa	BOOL	W22.11		0	
+Posman_contrf_accostata	BOOL	W22.12		0	
+Posman_contrf_aperta	BOOL	W22.13		0	
+caricorsa_controforma_chiusa	BOOL	W22.14	posizionamento in cf chiusa dopo procedura di home	0	
+Sfrena_hmi_forma	BOOL	W23.00		0	
+Sfrena_hmi_estrattore	BOOL	W23.01		0	
+Com_Posreg_generali	BOOL	W24.00		0	
+Com_Posreg_carrelli	BOOL	W24.01		0	
+Com_Posreg_pinze	BOOL	W24.02		0	
+Controforma_chiusa	BOOL	W25.00	Feedback cf chiusa (pneu e motor)	0	
+Controforma_accostata	BOOL	W25.01	Feedback cf accostata (pneu e motor)	0	
+Controforma_aperta	BOOL	W25.02	Feedback cf a aperta (pneu e motor)	0	
+Corsa_chiusura_controforma	BOOL	W26.00		0	
+Corsa_accostata_controforma	BOOL	W26.01		0	
+Corsa_apertura_controforma	BOOL	W26.02		0	
+lock_min	UINT	W40		0	
+m_forma_salita	BOOL	W50.00		0	
+m_forma_discesa	BOOL	W50.01		0	
+m_bracci_indietro	BOOL	W50.02		0	
+m_bracci_avanti	BOOL	W50.03		0	
+m_estratt_indietro	BOOL	W50.04		0	
+m_estratt_avanti	BOOL	W50.05		0	
+m_cf_indietro	BOOL	W50.06		0	
+m_cf_avanti	BOOL	W50.07		0	
+allarmi	CHANNEL	W80	condizioni di allarme - word 1/2	0	
+Emergenza	BOOL	W80.00	KA - emergenza generale	0	
+Pw_off	BOOL	W80.01	potenza non attiva	0	
+_VccOut	BOOL	W80.02	mancanza alimentazione uscite	0	
+Pressione	BOOL	W80.03	pressostato di minima aria compressa	0	
+Ripari_ap	BOOL	W80.04	ripari di sicurezza	0	
+Protezione_mt_generale	BOOL	W80.05	protezioni magnetotermiche generali	0	
+ex_Protezione_mt_tr_estrattore	BOOL	W80.06	protezione magnetotermica trasformatore estrattore	0	
+Driver_bracci	BOOL	W80.07		0	
+Driver_forma	BOOL	W80.08		0	
+Driver_estrattore	BOOL	W80.09		0	
+Driver_controforma	BOOL	W80.10		0	
+Trasmissione_bracci_sganciata	BOOL	W80.11		0	
+Trasmissione_forma_sganciata	BOOL	W80.12		0	
+Extracorsa_forma	BOOL	W80.14		0	
+Extracorsa_etrattore	BOOL	W80.15	errore estracorsa estrattore	0	
+Vcc_freni_motori	BOOL	W81.00		0	
+Drv_reg_Carrello_1	BOOL	W81.01		0	
+Drv_reg_Carrello_2	BOOL	W81.02		0	
+Drv_reg_Carrello_3	BOOL	W81.03		0	
+Drv_reg_Carrello_4	BOOL	W81.04		0	
+Drv_reg_Bracci	BOOL	W81.05		0	
+Drv_reg_Pinza_sx	BOOL	W81.06		0	
+Drv_reg_Pinza_dx	BOOL	W81.07		0	
+Serial_comm_error	BOOL	W81.08		0	
+Termico_pompa_vuoto	BOOL	W81.10	opzionale	0	
+Termico_tappeti_accessori	BOOL	W81.11		0	
+Termico_mot_ripari	BOOL	W81.12	eventuale	0	
+Cond_Allarmi	BOOL	W82.00		0	
+Protez_anteriore_aperta	BOOL	W82.01		0	
+Protez_posteriore_aperta	BOOL	W82.02		0	
+Protez_laterale_aperta	BOOL	W82.03		0	
+Pag_selezioni_hmi	BOOL	W90.01		0	
+Pag_programmi_hmi	BOOL	W90.02		0	
+Pag_servizio_hmi	BOOL	W90.03		0	
+Pag_configurazione_hmi	BOOL	W90.04	memoria modo operativo: configurazione	0	
+Pag_parametri_hmi	BOOL	W90.05		0	
+Pag_regolazioni_hmi	BOOL	W90.06	memoria modo operativo: regolazioni	0	
+Pag_passo_hmi	BOOL	W90.07	memoria modo operativo: passo-passo	0	
+Pag_automatico_hmi	BOOL	W90.08	memoria modo operativo: automatico	0	
+Pag_manuale_hmi	BOOL	W90.09	memoria modo operativo: manuale	0	
+Pag_regola_carrelli	BOOL	W90.11		0	
+Pag_regola_pinze	BOOL	W90.12		0	
+Pag_regola_generali	BOOL	W90.13		0	
+Pag_elenco_p	BOOL	W90.14		0	
+Automatico_hmi	BOOL	W90.15	solo nelle pagine di automatico	0	
+Ricalcolo_hmi	BOOL	W91.00		0	
+Pag_Rimb_Seq	BOOL	W91.01		0	
+Sel_rimb_ok	BOOL	W91.11		0	
+Com_Lama1	BOOL	W97.00		0	
+Com_Lama2	BOOL	W97.01		0	
+Com_Lama3	BOOL	W97.02		0	
+Com_Lama4	BOOL	W97.03		0	
+mem_uscita_lame	BOOL	W97.04		0	
+Vuoto_pressini_auto	BOOL	W97.05		0	
+Blocco_Piatto_auto	BOOL	W97.06		0	
+mem_riallineam	BOOL	W97.09		0	
+lame_entrate_rimb_s	BOOL	W97.10		0	
+Rim_init_fasi	BOOL	W97.13		0	
+Bloccauto_Piatto_finestra	BOOL	W98.06		0	
+Finestra_init_fasi	BOOL	W98.08		0	
+data_modified_hmi	BOOL	W99.05	strobe variabile numerica incrementata o decrementata	0	
+Cambio_pagina_hmi	BOOL	W100.02	cambio schermata	0	
+Data_entry_hmi	BOOL	W100.05	strobe variabile numerica o carattere impostata	0	
+Alarm_word_1_hmi	CHANNEL	W110		0	
+Reset_Allarmi	BOOL	W112.00		0	
+Quote_errate	BOOL	W115.01	quote formato non corrispondenti alla posizione regolata	0	
+All_scatola	BOOL	W115.02	blocco da controllo uscita scatola dalla rivestitrice	0	
+Sforzo_forma	BOOL	W115.03	coppia eccessiva	0	
+Allarme_Batteria_PLC_scarica	BOOL	W115.15		0	
+Nessun_avviso	BOOL	W116.00		0	
+MC_err_bracci	BOOL	W116.13		0	
+MC_err_forma	BOOL	W116.14		0	
+Mask_All_Batteria_PLC_scarica	BOOL	W116.15		0	
+lame_I_ch	BOOL	W123.10	posizione lame chiuse (non aperte) primo gruppo	0	
+spazzole_reg	BOOL	W123.12		0	
+lame_ch_seq	BOOL	W124.07	posizione lame chiuse nel ciclo sequenziale	0	
+lame_II_ch	BOOL	W124.10	posizione lame chiuse (non aperte) secondo gruppo	0	
+punta_prg_decadico	CHANNEL	W128		0	
+rsesto_prog_decadico	WORD	W129		0	
+appoggio0	CHANNEL	W130		0	
+Appoggio	CHANNEL	W130		0	
+Appoggio_Calcoli	CHANNEL	W130		0	
+appoggio2	CHANNEL	W132	 	0	
+appoggio3	CHANNEL	W133	 	0	
+appoggio4	CHANNEL	W134	 	0	
+appoggio6	CHANNEL	W136	 	0	
+appoggio_v	CHANNEL	W138		0	
+quoziente	CHANNEL	W140	risultato temporaneo divisione	0	
+Tempo_pressata	CHANNEL	W150		0	
+Disabil_drv_regolazioni	BOOL	W200.00		0	
+Abil_drv_regolazioni	BOOL	W200.01		0	
+Copia_Abil_drv_regolazioni	BOOL	W200.02		0	
+Stop_emerg_drv_reg	BOOL	W200.03		0	
+Stop_run_drv_reg	BOOL	W200.04		0	
+Instr_exec_drv_reg	BOOL	W200.05		0	
+drv_out_0_reset	BOOL	W200.06		0	
+drv_out_1_reset	BOOL	W200.07		0	
+drv_out_0_monitor	BOOL	W200.08		0	
+drv_out_1_monitor	BOOL	W200.09		0	
+drv_reg_monitor	BOOL	W200.10		0	
+pos_reg_monitor	BOOL	W200.11		0	
+pos_reg_reset	BOOL	W200.12		0	
+pos_reg_set	BOOL	W200.13		0	
+homepos_reg_set	BOOL	W200.14		0	
+Index_scan_drv_reg	CHANNEL	W201	00	0	
+scan_drv_reg_1	BOOL	W201.01		0	
+scan_drv_reg_2	BOOL	W201.02		0	
+scan_drv_reg_3	BOOL	W201.03		0	
+scan_drv_reg_4	BOOL	W201.04		0	
+scan_drv_reg_5	BOOL	W201.05		0	
+scan_drv_reg_6	BOOL	W201.06		0	
+scan_drv_reg_7	BOOL	W201.07		0	
+scan_drv_reg_over	BOOL	W201.08		0	
+Fasi_scan_drv_reg	CHANNEL	W202		0	
+Fs0_scan_drv_reg	BOOL	W202.00		0	
+Fs1_scan_drv_reg	BOOL	W202.01		0	
+Fs2_scan_drv_reg	BOOL	W202.02		0	
+Fs3_scan_drv_reg	BOOL	W202.03		0	
+Fs4_scan_drv_reg	BOOL	W202.04		0	
+Fs5_scan_drv_reg	BOOL	W202.05		0	
+Cmm_rxd_t_out	BOOL	W203.00		0	
+scan_drv_reg_t_out	BOOL	W203.01	time_out sub21	0	
+scan_reg_pos_t_out	BOOL	W203.02	time_out sub22	0	
+scan_out_reg_t_out	BOOL	W203.03	time out sub23	0	
+scan_eset_reg_t_out	BOOL	W203.04	time out sub24	0	
+out_reg_t_out	BOOL	W203.05	time out sub25	0	
+run_xec_reg_t_out	BOOL	W203.06	time out sub26	0	
+stop_reg_t_out	BOOL	W203.07	time out sub27	0	
+config_reg_t_out	BOOL	W203.08	time out sub28	0	
+home_wrreg_t_out	BOOL	W203.10	time out sub30	0	
+scan_drv_reg_ok	BOOL	W204.01	sub21	0	
+scan_reg_pos_ok	BOOL	W204.02	sub22	0	
+scan_out_reg_ok	BOOL	W204.03	sub23	0	
+pos_reset_reg_ok	BOOL	W204.04	sub24	0	
+out_read_reg_ok	BOOL	W204.05	sub25	0	
+run_exec_reg_ok	BOOL	W204.06	sub26	0	
+stop_reg_ok	BOOL	W204.07	sub27	0	
+config_reg_ok	BOOL	W204.08	sub28	0	
+scan_homewr_reg_ok	BOOL	W204.10	sub30	0	
+scan_dly_reg_ok	BOOL	W204.11	sub31	0	
+scan_outset_reg_ok	BOOL	W204.12	sub32	0	
+scan_runwrt_reg_ok	BOOL	W204.13	sub33	0	
+scan_poswrt_reg_ok	BOOL	W204.14	sub34	0	
+home_Instr_load_reg	BOOL	W205.00		0	
+dly_instr_load_reg	BOOL	W205.01		0	
+outset0_instr_load_reg	BOOL	W205.02		0	
+runfwd_instr_load_reg	BOOL	W205.03		0	
+runrwd_instr_load_reg	BOOL	W205.04		0	
+runrwd_instr_load_pausa	BOOL	W205.05		0	
+posit_instr_load_reg	BOOL	W205.06		0	
+dly_instr_load_pos_reg	BOOL	W205.07		0	
+outset1_instr_load_reg	BOOL	W205.08		0	
+configure_drv_reg	BOOL	W205.10		0	
+scan_reg_pos_meno	BOOL	W206.00		0	
+scan_reg_pos_piu	BOOL	W206.01		0	
+scan_reg_out_off	BOOL	W206.02		0	
+scan_reg_out_on	BOOL	W206.03		0	
+reg_home_target_ld	BOOL	W207.00		0	
+reg_home_target_loaded	BOOL	W207.01		0	
+reg_pos_target_ld	BOOL	W207.08		0	
+reg_pos_target_loaded	BOOL	W207.09		0	
+Drv_reg_ok	BOOL	W210.00		0	
+Pos_drv_loaded	BOOL	W210.01		0	
+istr_homine_loaded	BOOL	W210.02		0	
+instr_jog_loaded	BOOL	W210.03		0	
+drv_pronti	BOOL	W210.04		0	
+pos_instr_loaded	BOOL	W210.10		0	
+reg_carrelli_positioned	BOOL	W210.11		0	
+reg_pinze_positioned	BOOL	W210.12		0	
+reg_position_set	BOOL	W211.01		0	
+reg_position_loaded	BOOL	W211.02		0	
+app_reg_home_done	BOOL	W211.06		0	
+app_reg_pos_done	BOOL	W211.08		0	
+Stop_drv_reg_done	BOOL	W211.11		0	
+setpos_done	BOOL	W211.15		0	
+Bracci_ethip_Out	CHANNEL	W220	19 word - output assembly 103	0	
+Bracci_ethip_In	CHANNEL	W240	19 word - input assembly 113	0	
+Forma_ethip_Out	CHANNEL	W260	19 word - output assembly 103	0	
+Formai_ethip_In	CHANNEL	W280	19 word - input assembly 113	0	
+Status_query	BOOL	W300.00		0	
+Position_query	BOOL	W300.01		0	
+Position_set	BOOL	W300.02		0	
+Output_query	BOOL	W300.08		0	
+Output_set	BOOL	W300.09		0	
+Home_instr_write	BOOL	W300.10		0	
+Dly_instr_write	BOOL	W300.11		0	
+Outset_instr_write	BOOL	W300.12		0	
+run_instr_write	BOOL	W300.13		0	
+pos_instr_write	BOOL	W300.14		0	
+Index_asse_reg	CHANNEL	W302	puntatore asse selezionato	0	
+Index_assi_reg_tutti	BOOL	W302.00	puntatore a tutti gli assi in rete	0	
+Index_asse_reg_1	BOOL	W302.01	puntatore asse selezionato	0	
+Index_asse_reg_2	BOOL	W302.02	puntatore asse selezionato	0	
+Index_asse_reg_3	BOOL	W302.03	puntatore asse selezionato	0	
+Index_asse_reg_4	BOOL	W302.04	puntatore asse selezionato	0	
+Index_asse_reg_5	BOOL	W302.05	puntatore asse selezionato	0	
+Index_asse_reg_6	BOOL	W302.06	puntatore asse selezionato	0	
+Index_asse_reg_7	BOOL	W302.07	puntatore asse selezionato	0	
+address_asse_reg	CHANNEL	W303	indirizzo targeh del driver in configurazione	0	
+Quota_asse_reg	CHANNEL	W304	valore posizione asse selezionato	0	
+Quota_BCD_asse_reg	CHANNEL	W306	d1020	0	
+Condiz_blocco_sblocco_reg	BOOL	W310.00		0	
+drv_reg_attivi	BOOL	W310.10		0	
+result_drv_ok_reg_1	BOOL	W311.01	1 = no errors	0	
+result_out_0_reg_1	BOOL	W311.10	stato O0	0	
+result_out_1_reg_1	BOOL	W311.11	stato O1	0	
+result_drv_ok_reg_2	BOOL	W312.01	1 = no errors	0	
+result_out_0_reg_2	BOOL	W312.10	stato O0	0	
+result_out_1_reg_2	BOOL	W312.11	stato O1	0	
+result_drv_ok_reg_3	BOOL	W313.01	1 = no errors	0	
+result_out_0_reg_3	BOOL	W313.10	stato O0	0	
+result_out_1_reg_3	BOOL	W313.11	stato O1	0	
+result_drv_ok_reg_4	BOOL	W314.01	1 = no errors	0	
+result_out_0_reg_4	BOOL	W314.10	stato O0	0	
+result_out_1_reg_4	BOOL	W314.11	stato O1	0	
+result_drv_ok_reg_5	BOOL	W315.01	1 = no errors	0	
+result_out_0_reg_5	BOOL	W315.10	stato O0	0	
+result_out_1_reg_5	BOOL	W315.11	stato O1	0	
+result_drv_ok_reg_6	BOOL	W316.01	1 = no errors	0	
+result_out_0_reg_6	BOOL	W316.10	stato O0	0	
+result_out_1_reg_6	BOOL	W316.11	stato O1	0	
+result_drv_ok_reg_7	BOOL	W317.01	1 = no errors	0	
+result_out_0_reg_7	BOOL	W317.10	stato O0	0	
+result_out_1_reg_7	BOOL	W317.11	stato O1	0	
+Reg_ok_command	BOOL	W318.00		0	
+Pos_reg_1	CHANNEL	W322	result scan pos reg 	0	
+Pos_reg_2	CHANNEL	W324	result scan pos reg 	0	
+Pos_reg_3	CHANNEL	W326	result scan pos reg 	0	
+Pos_reg_4	CHANNEL	W328	result scan pos reg 	0	
+Pos_reg_5	CHANNEL	W330	result scan pos reg 	0	
+Pos_reg_6	CHANNEL	W332	result scan pos reg 	0	
+Pos_reg_7	CHANNEL	W334	result scan pos reg 	0	
+Semilarghezza_pulse	DINT	W340		0	
+Semilunghezza_pulse	DINT	W342		0	
+Lunghezza_pulse	DINT	W346		0	
+Larghezza_pulse	DINT	W348		0	
+Cmd_w_globale	CHANNEL	W360		0	
+Plc_reg_ethip_Out	CHANNEL	W360	24 word	0	
+Cmd_gl_unita_10x	BOOL	W360.00		0	
+Cmd_gl_modo_regolazioni	BOOL	W360.01		0	
+Cmd_gl_cancella_allarmi	BOOL	W360.07		0	
+Cmd_gl_token	BOOL	W360.09		0	
+Cmd_gl_sblocco_carrelli	BOOL	W360.11		0	
+Cmd_gl_sblocco_pinze	BOOL	W360.12		0	
+Cmd_gl_position_setting	BOOL	W360.14		0	
+Cmd_w_carrello_1	CHANNEL	W361		0	
+Cmd_c1_enable	BOOL	W361.00		0	
+Cmd_c1_home	BOOL	W361.01		0	
+Cmd_c1_position	BOOL	W361.02		0	
+Cmd_c1_jog	BOOL	W361.03		0	
+Cmd_c1_setpos	BOOL	W361.04		0	
+Cmd_w_carrello_2	CHANNEL	W362		0	
+Cmd_c2_enable	BOOL	W362.00		0	
+Cmd_c2_home	BOOL	W362.01		0	
+Cmd_c2_position	BOOL	W362.02		0	
+Cmd_c2_jog	BOOL	W362.03		0	
+Cmd_c2_setpos	BOOL	W362.04		0	
+Cmd_w_carrello_3	CHANNEL	W363		0	
+Cmd_c3_enable	BOOL	W363.00		0	
+Cmd_c3_home	BOOL	W363.01		0	
+Cmd_c3_position	BOOL	W363.02		0	
+Cmd_c3_jog	BOOL	W363.03		0	
+Cmd_c3_setpos	BOOL	W363.04		0	
+Cmd_w_carrello_4	CHANNEL	W364		0	
+Cmd_c4_enable	BOOL	W364.00		0	
+Cmd_c4_home	BOOL	W364.01		0	
+Cmd_c4_position	BOOL	W364.02		0	
+Cmd_c4_jog	BOOL	W364.03		0	
+Cmd_c4_setpos	BOOL	W364.04		0	
+Cmd_w_largh_bracci	CHANNEL	W365		0	
+Cmd_lar_br_enable	BOOL	W365.00		0	
+Cmd_lar_br_home	BOOL	W365.01		0	
+Cmd_lar_br_position	BOOL	W365.02		0	
+Cmd_lar_br_jog	BOOL	W365.03		0	
+Cmd_lar_br_setpos	BOOL	W365.04		0	
+Cmd_w_pinza_sx	CHANNEL	W366		0	
+Cmd_pinza_sx_enable	BOOL	W366.00		0	
+Cmd_pinza_sx_home	BOOL	W366.01		0	
+Cmd_pinza_sx_position	BOOL	W366.02		0	
+Cmd_pinza_sx_jog	BOOL	W366.03		0	
+Cmd_pinza_sx_setpos	BOOL	W366.04		0	
+Cmd_w_pinza_dx	CHANNEL	W367		0	
+Cmd_pinza_dx_enable	BOOL	W367.00		0	
+Cmd_pinza_dx_home	BOOL	W367.01		0	
+Cmd_pinza_dx_position	BOOL	W367.02		0	
+Cmd_pinza_dx_jog	BOOL	W367.03		0	
+Cmd_pinza_dx_setpos	BOOL	W367.04		0	
+Target_pos_carrello_1	INT	W376		0	
+Target_pos_carrello_2	INT	W377		0	
+Target_pos_carrello_3	INT	W378		0	
+Target_pos_carrello_4	INT	W379		0	
+Target_pos_largh_bracci	INT	W380		0	
+Target_pos_pinza_sx	INT	W381		0	
+Target_pos_pinza_dx	INT	W382		0	
+Plc_reg_ethip_In	CHANNEL	W384	24 word	0	
+Status_w_gen_rev_token	BOOL	W384.09		0	
+Status_w_carrello_1	CHANNEL	W385		0	
+Status_w_c1_errore	BOOL	W385.00		0	
+Status_w_c1_referenced	BOOL	W385.01		0	
+Status_w_c1_done_abs	BOOL	W385.02		0	
+Status_w_c1_done_home	BOOL	W385.03		0	
+Status_w_c1_done_moveadd	BOOL	W385.04		0	
+Status_w_c1_done_setpos	BOOL	W385.05		0	
+Status_w_carrello_2	CHANNEL	W386		0	
+Status_w_c2_errore	BOOL	W386.00		0	
+Status_w_c2_referenced	BOOL	W386.01		0	
+Status_w_c2_done_abs	BOOL	W386.02		0	
+Status_w_c2_done_home	BOOL	W386.03		0	
+Status_w_c2_done_moveadd	BOOL	W386.04		0	
+Status_w_c2_done_setpos	BOOL	W386.05		0	
+Status_w_carrello_3	CHANNEL	W387		0	
+Status_w_c3_errore	BOOL	W387.00		0	
+Status_w_c3_referenced	BOOL	W387.01		0	
+Status_w_c3_done_abs	BOOL	W387.02		0	
+Status_w_c3_done_home	BOOL	W387.03		0	
+Status_w_c3_done_moveadd	BOOL	W387.04		0	
+Status_w_c3_done_setpos	BOOL	W387.05		0	
+Status_w_carrello_4	CHANNEL	W388		0	
+Status_w_c4_errore	BOOL	W388.00		0	
+Status_w_c4_referenced	BOOL	W388.01		0	
+Status_w_c4_done_abs	BOOL	W388.02		0	
+Status_w_c4_done_home	BOOL	W388.03		0	
+Status_w_c4_done_moveadd	BOOL	W388.04		0	
+Status_w_c4_done_setpos	BOOL	W388.05		0	
+Status_w_largh_bracci	CHANNEL	W389		0	
+Status_w_L_br_errore	BOOL	W389.00		0	
+Status_w_L_br_referenced	BOOL	W389.01		0	
+Status_w_L_br_done_abs	BOOL	W389.02		0	
+Status_w_L_br_done_home	BOOL	W389.03		0	
+Status_w_L_br_done_moveadd	BOOL	W389.04		0	
+Status_w_L_br_done_setpos	BOOL	W389.05		0	
+Status_w_pinza_sx	CHANNEL	W390		0	
+Status_w_pinza_sx_errore	BOOL	W390.00		0	
+Status_w_pinza_sx_referenced	BOOL	W390.01		0	
+Status_w_pinza_sx_done_abs	BOOL	W390.02		0	
+Status_w_pinza_sx_done_home	BOOL	W390.03		0	
+Status_w_pinza_sx_done_moveadd	BOOL	W390.04		0	
+Status_w_pinza_sx_done_setpos	BOOL	W390.05		0	
+Status_w_pinza_dx	CHANNEL	W391		0	
+Status_w_pinza_dx_errore	BOOL	W391.00		0	
+Status_w_pinza_dx_referenced	BOOL	W391.01		0	
+Status_w_pinza_dx_done_abs	BOOL	W391.02		0	
+Status_w_pinza_dx_done_home	BOOL	W391.03		0	
+Status_w_pinza_dx_done_moveadd	BOOL	W391.04		0	
+Status_w_pinza_dx_done_setpos	BOOL	W391.05		0	
+Errorcode_carrello_1	CHANNEL	W392		0	
+Errorcode_carrello_2	CHANNEL	W393		0	
+Errorcode_carrello_3	CHANNEL	W394		0	
+Errorcode_carrello_4	CHANNEL	W395		0	
+Errorcode_largh_bracci	CHANNEL	W396		0	
+Errorcode_pinza_sx	CHANNEL	W397		0	
+Errorcode_pinza_dx	CHANNEL	W398		0	
+Act_pos_carrello_1	INT	W400		0	
+Act_pos_carrello_2	INT	W401		0	
+Act_pos_carrello_3	INT	W402		0	
+Act_pos_carrello_4	INT	W403		0	
+Act_pos_largh_bracci	INT	W404		0	
+Act_pos_pinza_sx	INT	W405		0	
+Act_pos_pinza_dx	INT	W406		0	
+Act_pos_volantino	INT	W407		0	
+Estrattore_ethip_Out	CHANNEL	W420	19 word - output assembly 103	0	
+Estrattore_ethip_In	CHANNEL	W440	19 word - input assembly 113	0	
+Controforma_ethip_Out	CHANNEL	W460	19 word - output assembly 103	0	
+Controf_par_ch_ethip_Out	LWORD	W460	parameter channel	0	
+Controf_drv_cmmnd_ethip_In	INT	W464	driver command	0	
+Controf_drv_ref_A_ethip_In	DINT	W465	driver reference A	0	
+Controf_drv_ref_B_ethip_In	DINT	W467	driver reference B	0	
+Controf_drv_acc_ethip_In	DINT	W469	driver acceleration	0	
+Controf_drv_dec_ethip_In	DINT	W471	driver deceleration	0	
+Controf_selpar1_ethip_Out	DINT	W473	driver selectable parameter 1	0	
+Controf_selpar2_ethip_Out	DINT	W475	driver selectable parameter 2	0	
+Controf_selpar3_ethip_Out	DINT	W477	driver selectable parameter 3	0	
+Controforma_ethip_In	CHANNEL	W480	19 word - input assembly 113	0	
+Controf_par_ch_ethip_In	LWORD	W480	parameter channel	0	
+Controf_drv_stat_ethip_In	INT	W484	driver status	0	
+Cf_drv_stat_run	BOOL	W484.01	driver status - run	0	
+Cf_drv_stat_error	BOOL	W484.06	driver status - error	0	
+Cf_drv_stat_warning	BOOL	W484.07	driver status - warning	0	
+Cf_drv_stat_halt	BOOL	W484.08	driver status - halt 	0	
+Controf_mf_stat_ethip_In	INT	W485	driver oparating mode status 	0	
+Controf_mtn_stat_ethip_In	INT	W486	driver motion status 	0	
+Controf_drv_input_ethip_In	INT	W487	driver input  status 	0	
+Controf_act_pos_ethip_In	DINT	W488	driver actual position	0	
+Controf_act_vel_ethip_In	DINT	W490	driver actual velocity	0	
+Controf_act_I_ethip_In	INT	W492	driver actual current	0	
+Controf_selpar1_ethip_In	DINT	W493	driver selectable parameter 1	0	
+Controf_selpar2_ethip_In	DINT	W495	driver selectable parameter 2	0	
+Controf_selpar3_ethip_In	DINT	W497	driver selectable parameter 3	0	
+Trasmissione	BOOL	W500.00		0	
+Sent_message	BOOL	W500.01		0	
+Received_message	BOOL	W500.02		0	
+rev_token_ud	BOOL	W500.10		0	
+conta_token	UINT	W501		0	
+Token_sec	UINT	W502		0	
+Caratteri_ricevuti	CHANNEL	W503		0	

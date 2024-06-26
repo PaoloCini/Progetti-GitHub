@@ -1,0 +1,97 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" dataWndSize="0,70" usedFonts="Tahoma,Metrostyle" pageName="Logo" pageSize="800,600" id="Logo" staticOptEnable="true" downloadPrepDone="false">
+  <wgtStyle color="rgb(0,0,0)" width="800" ver="040500458" v="04.05.00.458" fitToSize="1" x="0" forcePaint="512" height="600" y="0"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle width="0" x="0" height="0" y="0"/>
+   <langs defLangId="L4" curLangId="L4">
+    <lang writingsystem="Any" langCode="it-IT" langId="L1" name="ITALIANO" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="en-US" langId="L2" name="ENGLISH" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="fr-FR" langId="L3" name="FRANCAIS" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="es-ES" langId="L4" name="ESPANOL" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="de-DE" langId="L5" name="DEUTSCH" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="pt-PT" langId="L6" name="PORTUGUES" keypads="" defaultFont="Tahoma" removable="false"/>
+   </langs>
+   <MLTexts>
+    <MLText L3="" L5="" L2="" id="7" L1="" L4="" L6=""/>
+    <MLText L3="EPW_3NE" L5="EPW_3NE" L2="EPW_3NE" id="0" L1="EPW_3NE" L4="EPW_3NE" L6="EPW_3NE"/>
+    <MLText L3="EP185C" L5="EP185C" L2="EP185C" id="2" L1="EP185C" L4="EP185C" L6="EP185C"/>
+    <MLText L3="EUROPROGETTI s.r.l. Via delle Prata, 167 53048 Sinalunga (SI)      Tel. +390577631115    mail to info@epsrl.it" L5="EUROPROGETTI s.r.l. Via delle Prata, 167 53048 Sinalunga (SI)      Tel. +390577631115    mail to info@epsrl.it" L2="EUROPROGETTI s.r.l. Via delle Prata, 167 53048 Sinalunga (SI)      Tel. +390577631115    mail to info@epsrl.it" id="3" L1="EUROPROGETTI s.r.l. Via delle Prata, 167 53048 Sinalunga (SI)      Tel. +390577631115    mail to info@epsrl.it" L4="EUROPROGETTI s.r.l. Via delle Prata, 167 53048 Sinalunga (SI)      Tel. +390577631115    mail to info@epsrl.it" L6="EUROPROGETTI s.r.l. Via delle Prata, 167 53048 Sinalunga (SI)      Tel. +390577631115    mail to info@epsrl.it"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle marker="true" keypad-type="None" width="600" font-size="16" alignment="center" vert-align="middle" x="100" font-sizepx="21" forcePaint="2" height="80" wrapping="true" y="490" font-color="rgb(255,255,255)" cx="300" cy="37.89" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="800" x="0" height="387" y="93.53" cx="400" cy="193.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ImageWgt" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="BtnStd6.frmImg">
+    <wgtStyle bdrSize="0.26,0.23,0.24,0.20" width="1094.74" x="-147.37" height="529.58" y="-71.29" bdrImageSize="58.00,55.00" visibility="false" cx="528.42" fill="rgb(127,127,127)" bdrEdges="0.14,0.13,0.14,0.13" cy="260"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrect; hmi-type:btn; type:btn" id="BtnStd6.btn">
+    <wgtStyle bdrSize="0.20,0.20,0.17,0.20" width="800" value="0" downFillColor="none" x="0" form="standard" height="387" y="0" bdrImageSize="42.00,40.00" cx="400" type="momentary" fill="none" dx="1" dy="-1" cy="194.42"/>
+    <links>
+     <action class="LoadPageAction" actionWgt="_PageMgr" attribute="onMouseRelease" event="onMouseUp" pageName="selezione.jmx" actionID="1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd6.lbl">
+    <wgtStyle keypad-type="None" width="694.74" font-size="20" alignment="right" vert-align="bottom" x="21.05" font-sizepx="26" forcePaint="3" height="366.63" wrapping="true" y="10.18" font-color="rgb(255,255,255)" cx="459.79" cy="228.94" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="ImageWgt" static="true" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd6.icoImg">
+    <wgtStyle width="463.16" x="168.42" height="183.32" y="101.84" cx="231.58" cy="81.47"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle marker="true" keypad-type="None" width="400" font-size="24" alignment="center" vert-align="top" x="200" font-sizepx="32" forcePaint="2" height="80" font-bold="true" wrapping="true" y="0" font-color="rgb(0,0,255)" cx="200" cy="37.90" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle readWrite="true" value="-1" numberFormat="0" height="31.93" font-sizepx="29" showThousandSeparator="false" text="-1" x="604" usingFormat="hh:mm:ss" width="191.77" alignment="center" y="4" cx="95.88" min="0" form="date-time" font-size="22" max="4096" font-bold="true" cy="15.97" font-color="rgb(0,0,255)" font-family="Metrostyle" step="1" timeSpec="local" keypad-type="None" vert-align="middle"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle value="-1" numberFormat="0" height="32" font-sizepx="29" showThousandSeparator="false" text="-1" x="3" usingFormat="DD/MMM/YYYY" width="200" alignment="center" y="3" cx="99.99" min="0" form="date-time" font-size="22" max="4096" font-bold="true" cy="16" font-color="rgb(0,0,255)" font-family="Metrostyle" step="1" forcePaint="9" timeSpec="local" keypad-type="None" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" sourceType="System" attribute="value" tag="System Time" readWrite="R" tagIndex="-1" tagType="long" dataSource="_SysPropMgr" widgetType="Project"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="400" x="203" forcePaint="65" height="80" y="4" cx="200" cy="40"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ImageWgt" static="true" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="BtnStd1.frmImg">
+    <wgtStyle bdrSize="0.26,0.23,0.24,0.20" width="547.37" x="-73.68" height="109.47" y="-14.74" bdrImageSize="58.00,55.00" visibility="false" cx="264.21" fill="rgb(127,127,127)" bdrEdges="0.14,0.13,0.14,0.13" cy="53.75"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rrect; hmi-type:btn; type:btn" id="BtnStd1.btn">
+    <wgtStyle bdrSize="0.20,0.20,0.17,0.20" width="400" value="0" downFillColor="none" x="0" forcePaint="65" form="standard" height="80" y="0" bdrImageSize="42.00,40.00" cx="200" type="momentary" fill="none" dx="1" dy="-1" cy="40.19"/>
+    <links>
+     <action class="LoadPageAction" actionWgt="_PageMgr" attribute="onMouseRelease" event="onMouseUp" pageName="selezione.jmx" actionID="1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" static="true" hmiStyle="hmi-type:wgtlabel" id="BtnStd1.lbl">
+    <wgtStyle keypad-type="None" width="347.37" font-size="20" alignment="right" vert-align="bottom" x="10.52" font-sizepx="26" height="75.79" wrapping="true" y="2.10" font-color="rgb(255,255,255)" cx="229.90" cy="47.33" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="ImageWgt" static="true" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd1.icoImg">
+    <wgtStyle width="231.58" x="84.21" height="37.90" y="21.05" cx="115.79" cy="16.84"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Logo@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" height="0" y="0"/>
+  </object>
+  <object class="ImageWgt" id="image1">
+   <wgtStyle width="700" stroke="rgb(200,200,200)" x="48" forcePaint="1" height="101" y="236" cx="68.30" fill="rgb(230,230,230)" imagePath="images/Logo Europrogetti HD.png" cy="11.47"/>
+  </object>
+ </object>
+</wgtPage>

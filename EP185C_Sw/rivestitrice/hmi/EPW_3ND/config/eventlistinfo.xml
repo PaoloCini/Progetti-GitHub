@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1" name="Alarm1" group="Alarm1" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="2" name="Alarm2" group="Alarm2" trigger="bitMaskAlarm" description="[10@Alarm]NO POTENCIA ACTIVA"/>
+    <event id="3" name="Alarm3" group="Alarm3" trigger="bitMaskAlarm" description="[13@Alarm]FUENTE DE ALIMENTACIÓN DE SALIDA 24V"/>
+    <event id="4" name="Alarm4" group="Alarm4" trigger="bitMaskAlarm" description="[16@Alarm]FALTA PRESIÓN DE AIRE"/>
+    <event id="5" name="Alarm5" group="Alarm5" trigger="bitMaskAlarm" description="[19@Alarm]GUARDIAS ABIERTAS"/>
+    <event id="6" name="Alarm6" group="Alarm6" trigger="bitMaskAlarm" description="[22@Alarm]PROTECCIÓN MAGNETOTÉRMICA GENERAL"/>
+    <event id="7" name="Alarm7" group="Alarm7" trigger="bitMaskAlarm" description="[25@Alarm]PROTECCIÓN MAGNETOTÉRMICA EJECTOR"/>
+    <event id="8" name="Alarm8" group="Alarm8" trigger="bitMaskAlarm" description="[28@Alarm]CONTROLADOR DE LOS BRAZOS"/>
+    <event id="9" name="Alarm9" group="Alarm9" trigger="bitMaskAlarm" description="[31@Alarm]CONTROLADOR DEL MOLDE"/>
+    <event id="10" name="Alarm10" group="Alarm10" trigger="bitMaskAlarm" description="[140@Alarm]CONTROLADOR DEL EYECTOR"/>
+    <event id="11" name="Alarm11" group="Alarm11" trigger="bitMaskAlarm" description="[143@Alarm]CONTROLADOR DEL CONTRAMOLDE"/>
+    <event id="12" name="Alarm12" group="Alarm12" trigger="bitMaskAlarm" description="[146@Alarm]TRANSMISSIÓN BRAZOS DESENGANCHADA"/>
+    <event id="13" name="Alarm13" group="Alarm13" trigger="bitMaskAlarm" description="[149@Alarm]TRANSMISSIÓN MOLDE  DESENGANCHADA"/>
+    <event id="14" name="Alarm14" group="Alarm14" trigger="bitMaskAlarm" description="[8@Alarm]"/>
+    <event id="15" name="Alarm15" group="Alarm15" trigger="bitMaskAlarm" description="[155@Alarm]LIMITE CARRERA MOLDE"/>
+    <event id="16" name="Alarm16" group="Alarm16" trigger="bitMaskAlarm" description="[158@Alarm]LIMITE SUPERIOR EYECTOR"/>
+    <event id="17" name="Alarm17" group="Alarm17" trigger="bitMaskAlarm" description="[161@Alarm]FUENTE DE  ALIMENTACIÓN FRENOS MOTOR"/>
+    <event id="18" name="Alarm18" group="Alarm18" trigger="bitMaskAlarm" description="[164@Alarm]CONTROLADOR DE AJUSTE DE CARRO 1"/>
+    <event id="19" name="Alarm19" group="Alarm19" trigger="bitMaskAlarm" description="[167@Alarm]CONTROLADOR DE AJUSTE DE CARRO 2"/>
+    <event id="20" name="Alarm20" group="Alarm20" trigger="bitMaskAlarm" description="[170@Alarm]CONTROLADOR DE AJUSTE DE CARRO 3"/>
+    <event id="21" name="Alarm21" group="Alarm21" trigger="bitMaskAlarm" description="[173@Alarm]CONTROLADOR DE AJUSTE DE CARRO 4"/>
+    <event id="22" name="Alarm22" group="Alarm22" trigger="bitMaskAlarm" description="[176@Alarm]CONTROLADOR DE AJUSTE DE LOS BRAZOS"/>
+    <event id="23" name="Alarm23" group="Alarm23" trigger="bitMaskAlarm" description="[179@Alarm]CONTROLADOR DE AJUSTE PINZA ITZQUIERDA"/>
+    <event id="24" name="Alarm24" group="Alarm24" trigger="bitMaskAlarm" description="[182@Alarm]CONTROLADOR DE AJUSTE PINZA DERECHA"/>
+    <event id="25" name="Alarm25" group="Alarm25" trigger="bitMaskAlarm" description="[185@Alarm]ERROR DE COMUNICACIÓN EN SERIE"/>
+    <event id="26" name="Alarm26" group="Alarm26" trigger="bitMaskAlarm" description="[188@Alarm]TÉRMICO DE LA BOMBA DE VACÍO"/>
+    <event id="27" name="Alarm27" group="Alarm27" trigger="bitMaskAlarm" description="[191@Alarm]TÉRMICO CINTA EXTERIOR"/>
+    <event id="28" name="Alarm28" group="Alarm28" trigger="bitMaskAlarm" description="[194@Alarm]TÉRMICO MOTOR GUARDIAS"/>
+    <event id="29" name="Alarm29" group="Alarm29" trigger="bitMaskAlarm" description="[8@Alarm]"/>
+    <event id="30" name="Alarm30" group="Alarm30" trigger="bitMaskAlarm" description="[200@Alarm]CUOTAS INCORRECTAS"/>
+    <event id="31" name="Alarm31" group="Alarm31" trigger="bitMaskAlarm" description="[203@Alarm]CAJA BLOQUEADA"/>
+    <event id="32" name="Alarm32" group="Alarm32" trigger="bitMaskAlarm" description="[206@Alarm]EXCESIVO ESFUERZO DEL MOLDE"/>
+    <event id="33" name="Alarm33" group="Alarm33" trigger="bitMaskAlarm" description="[209@Alarm]BATERÍA BAJA"/>
+</events>

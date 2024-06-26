@@ -1,0 +1,21 @@
+rivestitrice 	EPW185C
+
+	HMI	EPW_3ND	Vision 608
+	PLC	EPW_3ND (14Kstep) Omron CJ2M-CPU33 + 2 x MD212
+				      "      CJ1W-ID262
+				      "      CJ1W-OD232
+				      "      CJ1W-OD212
+			PS	Omron  CJ1W-PD025
+	Assi	bracci		Schneider  LXM32MD30N4 su BMH1003Px6Axx
+		forma		Schneider  LXM32MD30N4 su BMH1401Px6Fxx
+		estrattore		Schneider  LXM32MD18N4 su BMH0703Px6Fxx
+		controforma	Schneider  LXM32MD12N4 su BMH0702Px6
+
+Rete Eth/IP rivestitrice	EPW_3ND						modificato 3NE
+     indirizzi	cpu		4
+		regolazioni	5	W360	W384
+		bracci		41	W220	W240
+		forma		42	W260	W280
+		estrattore		43	W420	W440
+		controforma	44	W460	W480
+

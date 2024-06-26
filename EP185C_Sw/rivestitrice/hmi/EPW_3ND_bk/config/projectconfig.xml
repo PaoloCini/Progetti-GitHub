@@ -1,0 +1,8 @@
+<ProjectConfig>
+ <version>04.05.00.458</version>
+ <targetName>Runtime PC</targetName>
+ <manufacturerCode></manufacturerCode>
+ <orientation>0</orientation>
+ <panelMemory>2GB</panelMemory>
+ <enableUserMgmt>true</enableUserMgmt>
+</ProjectConfig>

@@ -1,0 +1,1091 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" pageType="modal" dataWndSize="0,70" usedFonts="Tahoma,Roboto Light" dynPosition="false" px="0" singleInstance="true" pageName="Correzioni" pageSize="800,600" py="0" titleName="" scriptFile="correzioni.js" id="Correzioni" staticOptEnable="true" downloadPrepDone="false" titlebar="false">
+  <wgtStyle width="800" ver="040500458" v="04.05.00.458" fitToSize="1" x="0" forcePaint="512" height="600" y="0"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle width="0" x="0" height="0" y="0"/>
+   <langs defLangId="L4" curLangId="L4">
+    <lang writingsystem="Any" langCode="it-IT" langId="L1" name="ITALIANO" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="en-US" langId="L2" name="ENGLISH" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="fr-FR" langId="L3" name="FRANCAIS" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="es-ES" langId="L4" name="ESPANOL" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="de-DE" langId="L5" name="DEUTSCH" keypads="" defaultFont="Tahoma" removable="false"/>
+    <lang writingsystem="Any" langCode="pt-PT" langId="L6" name="PORTUGUES" keypads="" defaultFont="Tahoma" removable="false"/>
+   </langs>
+   <MLTexts>
+    <MLText L3="Label" L5="Label" L2="" id="0" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="1" L1="" L4="" L6="Label"/>
+    <MLText L3="SELEZIONE" L5="SELEZIONE" L2="POSITION CORRECTION" id="2" L1="CORREZIONI POSIZIONI" L4="CORRECCIÓN DE POSICIÓN" L6="SELEZIONE"/>
+    <MLText L3="Label" L5="Label" L2="" id="3" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="4" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="5" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="6" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="7" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="8" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="" id="9" L1="" L4="" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="12" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Closed Countermould" id="14" L1="Controforma Chiusa" L4="Controlde cerrada" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="15" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Half Closed Countermould" id="17" L1="Controforma Semichiusa" L4="Contramolde Semicerrado" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="19" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Turn In" id="21" L1="Rimbocchi" L4="Dobladores" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="23" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Blades" id="25" L1="Lame" L4="Cuchillas" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="26" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Pressers" id="28" L1="Pressini" L4="Prensadores" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="30" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Lower Pressure" id="33" L1="Pressata Inferiore" L4="Prensada Inferior" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="34" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Arms under the Mould" id="36" L1="Bracci Sotto alla Forma" L4="Brazos debajo del Molde" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="37" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Arms at Box Pick up" id="39" L1="Bracci Prelievo Scatola" L4="Brazos debajo del Molde" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Label" id="40" L1="°C" L4="°C" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="Box Ejection" id="42" L1="Estraz. Scatola" L4="extrac. de cajas" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="OK" id="43" L1="OK" L4="OK" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="44" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="45" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="46" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="47" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="48" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="49" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="50" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="51" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="52" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="54" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="86" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="87" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="88" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="89" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="90" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="91" L1="-" L4="-" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="+" id="92" L1="+" L4="+" L6="Label"/>
+    <MLText L3="Label" L5="Label" L2="-" id="93" L1="-" L4="-" L6="Label"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle wrapping="true" frameFill="rgb(230,230,250)" height="52" frame="true" font-sizepx="32" x="0" width="799" alignment="center" y="0" cx="400" font-size="24" font-bold="true" cy="25.11" font-family="Tahoma" forcePaint="2" marker="true" vert-align="middle" keypad-type="None"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric1">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(200,200,200)" font-sizepx="24" showThousandSeparator="false" text="999.99" x="55.77" usingFormat="" width="109" alignment="center" y="161" cx="49.61" min="-32768" form="Numeric" font-size="18" max="32767" cy="17.14" font-color="rgb(255,255,255)" font-family="Roboto Light" step="1" decimalDigits="2" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+  </object>
+  <object class="NumericWgt" id="numeric2">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(200,200,200)" font-sizepx="24" showThousandSeparator="false" text="999.99" x="55.92" usingFormat="" width="109" alignment="center" y="396" cx="49.61" min="-32768" form="Numeric" font-size="18" max="32767" cy="17.14" font-color="rgb(255,255,255)" font-family="Roboto Light" step="1" decimalDigits="2" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="70" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Correzioni@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" height="0" y="0"/>
+  </object>
+  <object class="NumericWgt" id="numeric5">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="70" cx="67.65" min="0" form="Numeric" font-size="18" max="200" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="CF_Chiusa" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="200*$('Klin')/10" compiledExpression="200*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label8">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="72" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="2" height="39" wrapping="true" y="70" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="118" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric3">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="118" cx="67.65" min="10" form="Numeric" font-size="18" max="100" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="H_lame" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="10*$('Klin')/10" compiledExpression="10*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="100*$('Klin')/10" compiledExpression="100*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="120" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="2" height="39" wrapping="true" y="118" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="166" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric4">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="166" cx="67.65" min="-500" form="Numeric" font-size="18" max="500" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="Scf1" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-500*$('Klin')/10" compiledExpression="-500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="500*$('Klin')/10" compiledExpression="500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="168" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="3">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="67" height="39" wrapping="true" y="166" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="214" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric6">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="214" cx="67.65" min="-500" form="Numeric" font-size="18" max="500" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="Scf2" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-500*$('Klin')/10" compiledExpression="-500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="500*$('Klin')/10" compiledExpression="500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label12">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="216" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="4">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="2" height="39" wrapping="true" y="214" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="25"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label14">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="261" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="26"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric7">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="261" cx="67.65" min="-500" form="Numeric" font-size="18" max="500" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="Scf3" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-500*$('Klin')/10" compiledExpression="-500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="500*$('Klin')/10" compiledExpression="500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label15">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="263" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="5">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label16">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="2" height="39" wrapping="true" y="261" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="28"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label17">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="309" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="30"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric8">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="309" cx="67.65" min="-500" form="Numeric" font-size="18" max="999" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="Scf4" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Doppia_Pressata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-500*$('Klin')/10" compiledExpression="-500*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="999*$('Klin')/10" compiledExpression="999*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label18">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="311" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Doppia_Pressata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="6">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label19">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="2" height="39" wrapping="true" y="309" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label20">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="357" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="34"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric9">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="502" usingFormat="" width="149" y="357" cx="67.65" min="-10" form="Numeric" font-size="18" max="10" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="in_corrBfrm" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-10*$('Klin')/10" compiledExpression="-10*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="10*$('Klin')/10" compiledExpression="10*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label21">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="590" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="359" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="7">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label22">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="14" font-sizepx="24" forcePaint="67" height="39" wrapping="true" y="357" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="36"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label23">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="404" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="37"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric10">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="502" usingFormat="" width="149" y="404" cx="67.65" min="-200" form="Numeric" font-size="18" max="200" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="in_corrBprl" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-200*$('Klin')/10" compiledExpression="-200*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="200*$('Klin')/10" compiledExpression="200*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label24">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="590" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="406" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="8">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label25">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="14" font-sizepx="24" forcePaint="67" height="39" wrapping="true" y="404" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="39"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label26">
+   <wgtStyle keypad-type="None" width="34" font-size="18" alignment="center" vert-align="middle" x="592" font-sizepx="24" forcePaint="2" height="33" wrapping="true" y="452" font-color="rgb(255,255,255)" cx="17.92" frameColor="rgb(200,200,200)" cy="15.30" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="40"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric11">
+   <wgtStyle readWrite="true" leadingDigits="3" value="999.99" numberFormat="1" height="39" frameColor="rgb(127,127,127)" frame="true" font-sizepx="24" showThousandSeparator="false" text="999.99" x="503" usingFormat="" width="149" y="453" cx="67.65" min="-999" form="Numeric" font-size="18" max="999" cy="17.14" font-family="Roboto Light" step="1" decimalDigits="2" forcePaint="9" timeSpec="local" keypad-type="Numeric" vert-align="middle"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="value" tag="Ecf" readWrite="R/W" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project">
+     <xForms>
+      <xForm class="ScaleXForm" Mod="10" Scale="1" name="Scale" Offset="0">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="Scale" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="-999*$('Klin')/10" compiledExpression="-999*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="999*$('Klin')/10" compiledExpression="999*$0/10" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" sourceType="Tag" attribute="$0" tag="Klin" readWrite="R" tagIndex="-1" tagType="float" dataSource="_TagMgr" widgetType="Project"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label27">
+   <wgtStyle keypad-type="None" width="55.50" font-size="18" alignment="center" vert-align="middle" x="591" font-sizepx="24" forcePaint="10" height="31.50" wrapping="true" y="454" cx="28.94" frameColor="rgb(200,200,200)" cy="14.62" font-family="Roboto Light"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="text" tag="UnitLin" readWrite="R" tagIndex="-1" tagType="string-8" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="9">
+     <MLFontFamily L3="Tahoma" L5="Tahoma" L2="Tahoma" L1="Roboto Light" L4="Roboto Light" L6="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label28">
+   <wgtStyle keypad-type="None" width="299" font-size="18" vert-align="middle" x="15" font-sizepx="24" forcePaint="2" height="39" wrapping="true" y="453" cx="153.66" frameColor="rgb(200,200,200)" cy="18" font-family="Tahoma"/>
+   <links>
+    <lang class="MLTextLink" textid="42"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd22" customType="ButtonsWithLabel">
+   <wgtStyle width="200" x="598" height="65" y="533" cx="100" cy="-97.50"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd22.btn">
+    <wgtStyle needlePath="images\Btn_rect_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="200" value="0" downFillColor="rgb(255,104,32)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\Btn_rect_blueUp.svg" form="standard" height="65" y="0" bdrImageSize="54.00,44.00" cx="100" type="momentary" fill="rgb(50,205,50)" cy="32.50"/>
+    <links>
+     <action class="CloseDialogAction" actionWgt="_PageMgr" attribute="onMouseRelease" event="onMouseUp" pageName="" closeParam="Selected" actionID="1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd22.lbl">
+    <wgtStyle keypad-type="None" width="177.78" font-size="18" alignment="center" vert-align="middle" x="7.42" font-sizepx="24" forcePaint="3" height="60.58" wrapping="true" y="1.48" font-color="rgb(255,255,255)" cx="88.90" cy="29.55" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="43"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" forcePaint="8" height="35" y="72" cx="24.50" cy="17.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd3.btn">
+    <wgtStyle value="0" height="35" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="49" y="0" needlePath="images\Btn_rectRound_Dwn.svg" cx="24.50" form="standard" releasePath="images\btn_rectround_blueup.svg" cy="17.50" downFillColor="rgb(0,176,199)" style="0" fill="rgb(0,70,136)" forcePaint="9" type="momentary"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="100" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="CF_Chiusa" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd3.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="44"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" forcePaint="8" height="35" y="72" cx="24.50" cy="17.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd2.btn">
+    <wgtStyle value="0" height="35" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="49" y="0" needlePath="images\Btn_rectRound_Dwn.svg" cx="24.50" form="standard" releasePath="images\btn_rectround_blueup.svg" cy="17.50" downFillColor="rgb(0,176,199)" style="0" fill="rgb(0,70,136)" forcePaint="9" type="momentary"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="10" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="CF_Chiusa" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd2.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="45"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" forcePaint="8" height="35" y="119.88" cx="24.50" cy="17.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd1.btn">
+    <wgtStyle value="0" height="35" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="49" y="0" needlePath="images\Btn_rectRound_Dwn.svg" cx="24.50" form="standard" releasePath="images\btn_rectround_blueup.svg" cy="17.50" downFillColor="rgb(0,176,199)" style="0" fill="rgb(0,70,136)" forcePaint="9" type="momentary"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="100" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="H_lame" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd1.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="46"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" forcePaint="8" height="35" y="119.88" cx="24.50" cy="17.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Controforma_motorizzata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd4.btn">
+    <wgtStyle value="0" height="35" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="49" y="0" needlePath="images\Btn_rectRound_Dwn.svg" cx="24.50" form="standard" releasePath="images\btn_rectround_blueup.svg" cy="17.50" downFillColor="rgb(0,176,199)" style="0" fill="rgb(0,70,136)" forcePaint="9" type="momentary"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="10" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="H_lame" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd4.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="47"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" height="35" y="167.75" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd5.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf1" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd5.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="48"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" height="35" y="167.75" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd6.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf1" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd6.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="49"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" height="35" y="215.63" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd7.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf2" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd7.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="50"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" height="35" y="215.63" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd8.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf2" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd8.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="51"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd9" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" height="35" y="263.50" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd9.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf3" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd9.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="52"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" height="35" y="263.50" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd10.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf3" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd10.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="54"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" forcePaint="8" height="35" y="311.38" cx="24.50" cy="17.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Doppia_Pressata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd11.btn">
+    <wgtStyle value="0" height="35" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="49" y="0" needlePath="images\Btn_rectRound_Dwn.svg" cx="24.50" form="standard" releasePath="images\btn_rectround_blueup.svg" cy="17.50" downFillColor="rgb(0,176,199)" style="0" fill="rgb(0,70,136)" forcePaint="9" type="momentary"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="999" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf4" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd11.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="86"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd12" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" forcePaint="8" height="35" y="311.38" cx="24.50" cy="17.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" sourceType="Tag" attribute="visibility" tag="Doppia_Pressata" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+   </dataLinks>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd12.btn">
+    <wgtStyle value="0" height="35" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" x="0" width="49" y="0" needlePath="images\Btn_rectRound_Dwn.svg" cx="24.50" form="standard" releasePath="images\btn_rectround_blueup.svg" cy="17.50" downFillColor="rgb(0,176,199)" style="0" fill="rgb(0,70,136)" forcePaint="9" type="momentary"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-500" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Scf4" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd12.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="87"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd13" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" height="35" y="359.25" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd13.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="10" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="in_corrBfrm" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd13.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="88"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd14" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" height="35" y="359.25" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd14.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-10" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="in_corrBfrm" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd14.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="89"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd15" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" height="35" y="407.13" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd15.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="200" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="in_corrBprl" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd15.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="90"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" height="35" y="407.13" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd16.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-999" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="in_corrBprl" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd16.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="91"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd17" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="736" height="35" y="455" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd17.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="1" attribute="onMouseRelease" event="onMouseUp" StepLimit="999" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Ecf" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd17.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="92"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd18" customType="ButtonsWithLabel">
+   <wgtStyle width="49" x="665" height="35" y="455" cx="24.50" cy="17.50"/>
+   <links>
+    <attr alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage" attrName="bdrImage"/>
+   </links>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd18.btn">
+    <wgtStyle needlePath="images\Btn_rectRound_Dwn.svg" bdrSize="0.17,0.17,0.15,0.16" width="49" value="0" downFillColor="rgb(0,176,199)" x="0" style="0" pushColor="rgb(128,128,0)" releasePath="images\btn_rectround_blueup.svg" form="standard" height="35" y="0" bdrImageSize="54.00,44.00" cx="24.50" type="momentary" fill="rgb(0,70,136)" cy="17.50"/>
+    <links>
+     <action class="StepTagAction" actionWgt="_TagMgr" Step="-1" attribute="onMouseRelease" event="onMouseUp" StepLimit="-999" actionID="1" StepOverLimit="true">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="Ecf" readWrite="R" tagIndex="-1" tagType="short" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+     <action class="SetBitAction" actionWgt="_TagMgr" attribute="onMouseRelease" event="onMouseUp" BitIndex="0" actionID="2">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" sourceType="Tag" attribute="tagSrc" tag="data_modified_hmi" readWrite="R" tagIndex="-1" tagType="boolean" dataSource="_TagMgr" widgetType="Project"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd18.lbl">
+    <wgtStyle keypad-type="None" width="43.55" font-size="18" alignment="center" vert-align="middle" x="1.82" font-sizepx="24" forcePaint="3" height="32.62" wrapping="true" y="0.80" font-color="rgb(237,237,237)" cx="21.78" cy="15.92" font-family="Tahoma"/>
+    <links>
+     <lang class="MLTextLink" textid="93"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,535 @@
+<scheduledActions>
+ <multiLangs>
+  <langs defLangId="L4" curLangId="L4">
+   <lang writingsystem="Any" langCode="it-IT" langId="L1" name="ITALIANO" keypads="" defaultFont="Tahoma" removable="false"/>
+   <lang writingsystem="Any" langCode="en-US" langId="L2" name="ENGLISH" keypads="" defaultFont="Tahoma" removable="false"/>
+   <lang writingsystem="Any" langCode="fr-FR" langId="L3" name="FRANCAIS" keypads="" defaultFont="Tahoma" removable="false"/>
+   <lang writingsystem="Any" langCode="es-ES" langId="L4" name="ESPANOL" keypads="" defaultFont="Tahoma" removable="false"/>
+   <lang writingsystem="Any" langCode="de-DE" langId="L5" name="DEUTSCH" keypads="" defaultFont="Tahoma" removable="false"/>
+   <lang writingsystem="Any" langCode="pt-PT" langId="L6" name="PORTUGUES" keypads="" defaultFont="Tahoma" removable="false"/>
+  </langs>
+  <MLTexts>
+   <MLText L3="Yearly" L5="Yearly" L2="Yearly" id="15" L1="Yearly" L4="Yearly" L6="Yearly"/>
+   <MLText L3="Hourly" L5="Hourly" L2="Hourly" id="16" L1="Hourly" L4="Hourly" L6="Hourly"/>
+   <MLText L3="Monthly" L5="Monthly" L2="Monthly" id="17" L1="Monthly" L4="Monthly" L6="Monthly"/>
+   <MLText L3="Daily" L5="Daily" L2="Daily" id="18" L1="Daily" L4="Daily" L6="Daily"/>
+   <MLText L3="Every" L5="Every" L2="Every" id="19" L1="Every" L4="Every" L6="Every"/>
+   <MLText L3="By Date" L5="By Date" L2="By Date" id="20" L1="By Date" L4="By Date" L6="By Date"/>
+   <MLText L3="Weekly" L5="Weekly" L2="Weekly" id="21" L1="Weekly" L4="Weekly" L6="Weekly"/>
+   <MLText L3="Hi-Res" L5="Hi-Res" L2="Hi-Res" id="22" L1="Hi-Res" L4="Hi-Res" L6="Hi-Res"/>
+   <MLText L3="Time" L5="Time" L2="Time" id="23" L1="Time" L4="Time" L6="Time"/>
+   <MLText L3="Sunset+" L5="Sunset+" L2="Sunset+" id="24" L1="Sunset+" L4="Sunset+" L6="Sunset+"/>
+   <MLText L3="Sunrise+" L5="Sunrise+" L2="Sunrise+" id="25" L1="Sunrise+" L4="Sunrise+" L6="Sunrise+"/>
+   <MLText L3="Sunset-" L5="Sunset-" L2="Sunset-" id="26" L1="Sunset-" L4="Sunset-" L6="Sunset-"/>
+   <MLText L3="Sunrise-" L5="Sunrise-" L2="Sunrise-" id="27" L1="Sunrise-" L4="Sunrise-" L6="Sunrise-"/>
+   <MLText L3="Random20" L5="Random20" L2="Random20" id="28" L1="Random20" L4="Random20" L6="Random20"/>
+   <MLText L3="Random10" L5="Random10" L2="Random10" id="29" L1="Random10" L4="Random10" L6="Random10"/>
+  </MLTexts>
+ </multiLangs>
+ <typeMLDesc Hourly="[16@Schedule]Hourly" Weekly="[21@Schedule]Weekly" HiRes="[22@Schedule]Hi-Res" ByDate="[20@Schedule]By Date" Daily="[18@Schedule]Daily" Monthly="[17@Schedule]Monthly" Every="[19@Schedule]Every" Yearly="[15@Schedule]Yearly"/>
+ <modeMLDesc SunrisePlus="[25@Schedule]Sunrise+" SunriseMinus="[27@Schedule]Sunrise-" SunsetPlus="[24@Schedule]Sunset+" Random20="[28@Schedule]Random20" Time="[23@Schedule]Time" Random10="[29@Schedule]Random10" SunsetMinus="[26@Schedule]Sunset-"/>
+ <timedAction>
+  <id>Inizio Turno 1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>05</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="1">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="1"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine Turno 1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>14</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="2">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="2"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio Turno 2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>13</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="3">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="3"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine Turno 2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>22</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="4">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="0"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio Turno 3</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>21</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="5">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="4"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine Turno 3</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>06</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="6">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="5"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio Turno Extra 1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>03</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="7">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="6"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine Turno Extra 1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>23</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="8">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="7"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio Turno Extra 2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>02</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="9">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="8"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine Turno Extra 2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth></dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>0,6,5,4,3,2,1</dayOfWeek>
+  <priority>1</priority>
+  <schType>Weekly</schType>
+  <actions enable="1" id="10">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="9"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio Prerisc_1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="11">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="10"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine Prerisc_1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="12">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="11"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio_Prerisc_2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="13">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="12"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine_Prerisc_2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="14">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="13"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio_Prerisc_3</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="15">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="14"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine_Prerisc_3</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="16">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="15"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio_Prerisc_4</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="17">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="16"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine_Prerisc_4</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="18">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="17"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio_Prerisc_5</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="19">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="18"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine_Prerisc_5</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="20">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="19"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio_Prerisc_6</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="21">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="20"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine_Prerisc_6</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="22">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="21"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Inizio_Prerisc_7</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>10</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="23">
+   <macroAction actionFunction="setBit" parameters=";0" actionID="22"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Fine_Prerisc_7</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone utc="" place="" longitude="" latitude=""/>
+  <second>0</second>
+  <minute>59</minute>
+  <hour>23</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="24">
+   <macroAction actionFunction="resetBit" parameters=";0" actionID="23"/>
+  </actions>
+ </timedAction>
+</scheduledActions>
