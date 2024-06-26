@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alarms>
+    <multiLangs>
+        <langs defLangId="L1" curLangId="L1">
+            <lang name="ITALIANO" langCode="it-IT" writingsystem="Any" defaultFont="Tahoma" langId="L1" removable="false" keypads=""/>
+            <lang name="ENGLISH" langCode="en-US" writingsystem="Any" defaultFont="Tahoma" langId="L2" removable="false" keypads=""/>
+            <lang name="FRANCAIS" langCode="fr-FR" writingsystem="Any" defaultFont="Tahoma" langId="L3" removable="false" keypads=""/>
+            <lang name="ESPANOL" langCode="es-ES" writingsystem="Any" defaultFont="Tahoma" langId="L4" removable="false" keypads=""/>
+            <lang name="DEUTSCH" langCode="de-DE" writingsystem="Any" defaultFont="Tahoma" langId="L5" removable="false" keypads=""/>
+            <lang name="PORTUGUES" langCode="pt-PT" writingsystem="Any" defaultFont="Tahoma" langId="L6" removable="false" keypads=""/>
+        </langs>
+        <MLTexts>
+            <MLText id="0" L1="" L2="" L3="" L4="" L5="" L6=""/>
+            <MLText id="20" L1="EMERGENZA" L2="EMERGENCY" L3="" L4="EMERGENCIA" L5="" L6=""/>
+            <MLText id="36" L1="ALLARME PROTEZIONI SICUREZZA" L2="SAFETY GUARDS " L3="" L4="PROTECCION DE SEGURIDAD" L5="" L6=""/>
+            <MLText id="41" L1="ALLARME FORMA SGANCIATA" L2="MOULD UNHOOKED" L3="" L4="MOLDE LIBERADO" L5="" L6=""/>
+            <MLText id="42" L1="PROTEZIONE M.T. SERVIZI" L2="SERVICES CIRCUIT BREAKER" L3="" L4="PROT. MAGNETOTERMICA SERVICIOS" L5="" L6=""/>
+            <MLText id="43" L1="PROTEZIONE M.T. TERMOREGOLAZIONE" L2="THERMAL REGULATORS CIRCUIT BREAKER" L3="" L4="PROT. MAGNETOT. TERMORREGULACIÓN " L5="" L6=""/>
+            <MLText id="44" L1="PROTEZIONE M.T. INVERTERS" L2="INVERTERS CIRCUIT BREAKER" L3="" L4="PROT. MAGNETOT. INVERTERS" L5="" L6=""/>
+            <MLText id="45" L1="PROTEZIONEM.T. PILA CARTONI" L2="CARDBOARD PILE CIRCUIT BREAKER" L3="" L4="PROT. MAGNETOT. PILA CARTONES" L5="" L6=""/>
+            <MLText id="46" L1="PROTEZIONEM.T. POMPA VUOTO" L2="VACUUM PUMP CIRCUIT BREAKER" L3="" L4="PROT. MAGNETOT. BOMBA DE VACÍO" L5="" L6=""/>
+            <MLText id="47" L1="PROTEZIONE M.T. AZIONAMENTO" L2="MOULD DRIVER CIRCUIT BREAKER" L3="" L4="PROT. MAGNETOT. DRIVER" L5="" L6=""/>
+            <MLText id="48" L1="ALLARME DOPPIO CARTONE" L2="DOUBLE CARDBOARD" L3="" L4="ALARMA DE CARTÓN DOBLE" L5="" L6=""/>
+            <MLText id="49" L1="INVERTER CAMMA" L2="CAM INVERTER" L3="" L4="INVERTER CAMA" L5="" L6=""/>
+            <MLText id="50" L1="INVERTER RULLI / CINGHIE" L2="BELTS-ROLLS INVERTER" L3="" L4="INVERTER ROLOS-CORREAS" L5="" L6=""/>
+            <MLText id="51" L1="INVERTER TAPPETO ACCUMULO" L2="STORAGE BELT INVERTER" L3="" L4="INVERTER CORREA DE ALMACENAMIENTO" L5="" L6=""/>
+            <MLText id="52" L1="ALLARME DRIVER FORMA" L2="MOULD DRIVER" L3="" L4="DRIVER MOLDE" L5="" L6=""/>
+            <MLText id="53" L1="ALLARME SFORZO FORMA" L2="MOULD IN EXCESSIVE EFFORT" L3="" L4="ALARM ESFUERZO DE FORMA" L5="" L6=""/>
+            <MLText id="55" L1="TEMPERATURA QUADRO ECCESSIVA" L2="EXCESIVE CABINET TEMPERATURE" L3="" L4="TEMPERAT. EXCESIVA  PANEL ELÉCTRICO" L5="" L6=""/>
+            <MLText id="56" L1="BATTERIA PLC SCARICA" L2="PLC -  LOW  BATTERY" L3="" L4="BATERIA DE PLC BAJA" L5="" L6=""/>
+            <MLText id="57" L1="TIME OUT AVVIO CICLO AUTOMATICO" L2="AUTOMATIC CYCLE START TIME EXPIRED" L3="" L4="TIME OUT START CICLO AUTOMÁTICO" L5="" L6=""/>
+            <MLText id="58" L1="TEMPERATURE FUORI RANGE" L2="OUT OF RANGE TEMPERATURES" L3="" L4="TEMPERATURAS FUERA DE RANGO" L5="" L6=""/>
+            <MLText id="59" L1="RIMUOVERE I NASTRINI TERMOSALD." L2="REMOVE THERMOSEALING  RIBBON" L3="" L4="REMOVER EL TERMOSELLABLE" L5="" L6=""/>
+            <MLText id="60" L1="RISERVA CARTONI" L2="CARDBOARD RESERVE" L3="" L4="CARTÓN BAJO" L5="" L6=""/>
+            <MLText id="61" L1="CONDIZIONI AVVIO CICLO MANCANTI" L2="START CYCLE CONDITIONS MISSING" L3="" L4="FALTA DE CONDICIONES PARA INICIAR EL CICLO" L5="" L6=""/>
+            <MLText id="62" L1="FINE CARTONE" L2="CARDBOARD FINISHED" L3="" L4="CARTÓN AGOTADO" L5="" L6=""/>
+            <MLText id="63" L1="CARTONE NON CARICATO" L2="CARDBOARD NOT LOADED" L3="" L4="CARTÓN NO CARGADO" L5="" L6=""/>
+            <MLText id="64" L1="TAPPETO VUOTO" L2=" EMPTY STORAGE BELT" L3="" L4="CORREA VACÍA" L5="" L6=""/>
+            <MLText id="65" L1="TERMOSALDANTE 2  ESAURITO" L2="THERMOSEALABLE RIBBON 2 FINISHED" L3="" L4="TERMOSELLADO 2 AGOTADO" L5="" L6=""/>
+            <MLText id="66" L1="TERMOSALDANTE 3 ESAURITO" L2="THERMOSEALABLE RIBBON 3 FINISHED" L3="" L4="TERMOSELLADO 3 AGOTADO" L5="" L6=""/>
+            <MLText id="67" L1="TERMOSALDANTE 4  ESAURITO" L2="THERMOSEALABLE RIBBON 4 FINISHED" L3="" L4="TERMOSELLADO 4 AGOTADO" L5="" L6=""/>
+            <MLText id="68" L1="TERMOSALDANTE 1 ESAURITO" L2="THERMOSEALABLE RIBBON 1 FINISHED" L3="" L4="TERMOSELLADO 1 AGOTADO" L5="" L6=""/>
+            <MLText id="69" L1="ALLARME DRIVER ESTRATTORE" L2="EJECTOR DRIVER" L3="" L4="DRIVER EXTRACTOR" L5="" L6=""/>
+            <MLText id="70" L1="ALLARME DRIVER SPINTORE" L2="PUSHER DRIVER" L3="" L4="DRIVER EMPUJADOR" L5="" L6=""/>
+            <MLText id="71" L1="LUBRIFICAZIONE" L2="LUBRICATION" L3="" L4="LUBRICACIÓN" L5="" L6=""/>
+            <MLText id="72" L1="ALLARME DRIVER NASTRINO 2 SINISTRO" L2="SEALING TAPE 2 LEFT DRIVER" L3="" L4="DRIVER CINTA T. 2 IZQUIERDA" L5="" L6=""/>
+            <MLText id="73" L1="ALLARME DRIVER NASTRINO 1 DESTRO" L2="SEALING TAPE 1 RIGHT DRIVER" L3="" L4="DRIVER CINTA T. 1 DERECHA" L5="" L6=""/>
+            <MLText id="74" L1="ALLARME DRIVER NASTRINO 2 DESTRO" L2="SEALING TAPE 2 RIGHT DRIVER" L3="" L4="DRIVER CINTA T. 2 DERECHA" L5="" L6=""/>
+            <MLText id="75" L1="ALLARME CONTROLLER NC413" L2="NC413 ALARM" L3="" L4="CONTROLLER NC413" L5="" L6=""/>
+            <MLText id="76" L1="ALLARME TERMOCONTROLLI" L2="THERMAL CONTROLS ALARM" L3="" L4="TERMOREGULADORES" L5="" L6=""/>
+            <MLText id="77" L1="ALLARME DRIVER NASTRINO 1 SINISTRO" L2="SEALING TAPE 1 LEFT DRIVER" L3="" L4="DRIVER CINTA T. 1 IZQUIERDA" L5="" L6=""/>
+            <MLText id="223" L1="Not Triggered" L2="Not Triggered" L3="Not Triggered" L4="Not Triggered" L5="Not Triggered" L6="Not Triggered"/>
+            <MLText id="224" L1="Disabled" L2="Disabled" L3="Disabled" L4="Disabled" L5="Disabled" L6="Disabled"/>
+            <MLText id="225" L1="Triggered" L2="Triggered" L3="Triggered" L4="Triggered" L5="Triggered" L6="Triggered"/>
+            <MLText id="226" L1="Triggered Not Acked" L2="Triggered Not Acked" L3="Triggered Not Acked" L4="Triggered Not Acked" L5="Triggered Not Acked" L6="Triggered Not Acked"/>
+            <MLText id="227" L1="Not Triggered Acked" L2="Not Triggered Acked" L3="Not Triggered Acked" L4="Not Triggered Acked" L5="Not Triggered Acked" L6="Not Triggered Acked"/>
+            <MLText id="228" L1="Not Triggered Not Acked" L2="Not Triggered Not Acked" L3="Not Triggered Not Acked" L4="Not Triggered Not Acked" L5="Not Triggered Not Acked" L6="Not Triggered Not Acked"/>
+            <MLText id="229" L1="Triggered Acked" L2="Triggered Acked" L3="Triggered Acked" L4="Triggered Acked" L5="Triggered Acked" L6="Triggered Acked"/>
+        </MLTexts>
+    </multiLangs>
+    <defaultColors notTriggeredTxtColor="#000000" notTriggeredBgColor="#ffffff" disabledTxtColor="#000000" disabledBgColor="#ffffff" triggeredTxtColor="#000000" triggeredBgColor="#ffffff" triggeredNotAckedTxtColor="#000000" triggeredNotAckedBgColor="#ffffff" notTriggeredAckedTxtColor="#000000" notTriggeredAckedBgColor="#ffffff" notTriggeredNotAckedTxtColor="#000000" notTriggeredNotAckedBgColor="#ffffff" triggeredAckedTxtColor="#000000" triggeredAckedBgColor="#ffffff" ackTxtColor="#ff0000" ackBgColor="#ffff00"/>
+    <stateMLDesc NotTriggered="[223@Alarm]Not Triggered" Disabled="[224@Alarm]Disabled" Triggered="[225@Alarm]Triggered" TriggeredNotAcked="[226@Alarm]Triggered Not Acked" NotTriggeredAcked="[227@Alarm]Not Triggered Acked" NotTriggeredNotAcked="[228@Alarm]Not Triggered Not Acked" TriggeredAcked="[229@Alarm]Triggered Acked"/>
+    <bitMaskAlarm alarmId="1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm1</name>
+        <groups></groups>
+        <source>emergenza</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="0" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[20@Alarm]EMERGENZA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="2" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm2</name>
+        <groups></groups>
+        <source>Al_Protezioni_Sicurezza</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="1" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[36@Alarm]ALLARME PROTEZIONI SICUREZZA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="3" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm3</name>
+        <groups></groups>
+        <source>Al_Forma_sganciata</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="2" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[41@Alarm]ALLARME FORMA SGANCIATA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="4" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm4</name>
+        <groups></groups>
+        <source>Al_Protezione_servizi</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="3" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[42@Alarm]PROTEZIONE M.T. SERVIZI</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="5" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm5</name>
+        <groups></groups>
+        <source>Al_Protezione_Termoregolazione</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="4" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[43@Alarm]PROTEZIONE M.T. TERMOREGOLAZIONE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="6" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm6</name>
+        <groups></groups>
+        <source>Al_Protezione_Inveters</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="5" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[44@Alarm]PROTEZIONE M.T. INVERTERS</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="7" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm7</name>
+        <groups></groups>
+        <source>Al_Protezione_pila_cartoni</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="6" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[45@Alarm]PROTEZIONEM.T. PILA CARTONI</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="8" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm8</name>
+        <groups></groups>
+        <source>Al_Protezione_pompa_vuoto</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="7" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[46@Alarm]PROTEZIONEM.T. POMPA VUOTO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="9" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm9</name>
+        <groups></groups>
+        <source>Al_Protezione_Drivers</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="8" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[47@Alarm]PROTEZIONE M.T. AZIONAMENTO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="10" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm10</name>
+        <groups></groups>
+        <source>All_doppio_cartone</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="9" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[48@Alarm]ALLARME DOPPIO CARTONE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="11" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm11</name>
+        <groups></groups>
+        <source>All_fine_cartone</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[0@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="12" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm12</name>
+        <groups></groups>
+        <source>Al_Inverter_Camma</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="10" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[49@Alarm]INVERTER CAMMA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="13" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm13</name>
+        <groups></groups>
+        <source>Al_Inverter_Rulli_cinghie</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="11" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[50@Alarm]INVERTER RULLI / CINGHIE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="14" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm14</name>
+        <groups></groups>
+        <source>Al_Inverter_Tappeto</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="12" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[51@Alarm]INVERTER TAPPETO ACCUMULO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="15" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm15</name>
+        <groups></groups>
+        <source>Al_Driver_Forma</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="13" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[52@Alarm]ALLARME DRIVER FORMA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="16" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm16</name>
+        <groups></groups>
+        <source>Al_sforzo_forma</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Allarmi" actionID="14" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[53@Alarm]ALLARME SFORZO FORMA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="17" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm17</name>
+        <groups></groups>
+        <source>Mess_batteria_PLC_scarica</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="15" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[56@Alarm]BATTERIA PLC SCARICA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="18" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm18</name>
+        <groups></groups>
+        <source>All_Temperatura_Quadro</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="16" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[55@Alarm]TEMPERATURA QUADRO ECCESSIVA</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="19" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm19</name>
+        <groups></groups>
+        <source>Mess_T_out_avvio_ciclo</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="17" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[57@Alarm]TIME OUT AVVIO CICLO AUTOMATICO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="20" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm20</name>
+        <groups></groups>
+        <source>Mess_Condiz_avvio_ciclo</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="18" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[61@Alarm]CONDIZIONI AVVIO CICLO MANCANTI</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="21" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm21</name>
+        <groups></groups>
+        <source>Mess_out_range_temperature</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="19" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[58@Alarm]TEMPERATURE FUORI RANGE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="22" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm22</name>
+        <groups></groups>
+        <source>Mess_RimuovereNastrini</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="20" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[59@Alarm]RIMUOVERE I NASTRINI TERMOSALD.</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="23" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm23</name>
+        <groups></groups>
+        <source>Mess_riserva_cartone</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="21" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[60@Alarm]RISERVA CARTONI</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="24" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm24</name>
+        <groups></groups>
+        <source>Mess_cartone_non_caricato</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="22" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[63@Alarm]CARTONE NON CARICATO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="25" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm25</name>
+        <groups></groups>
+        <source>Avviso_fine_cartone</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="37" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[62@Alarm]FINE CARTONE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="26" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm26</name>
+        <groups></groups>
+        <source>Mess_tappeto_vuoto</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="23" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[64@Alarm]TAPPETO VUOTO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="27" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm27</name>
+        <groups></groups>
+        <source>Mess_termosaldante1_esaurim</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="24" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[68@Alarm]TERMOSALDANTE 1 ESAURITO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="28" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm28</name>
+        <groups></groups>
+        <source>Mess_termosaldante2_esaurim</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="25" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[65@Alarm]TERMOSALDANTE 2  ESAURITO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="29" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm29</name>
+        <groups></groups>
+        <source>Mess_termosaldante3_esaurim</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="26" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[66@Alarm]TERMOSALDANTE 3 ESAURITO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="30" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm30</name>
+        <groups></groups>
+        <source>Mess_termosaldante4_esaurim</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avvisi" actionID="27" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[67@Alarm]TERMOSALDANTE 4  ESAURITO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="31" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm31</name>
+        <groups></groups>
+        <source>Avviso_lubrificazione</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Avv_Lubrificazione" actionID="28" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[71@Alarm]LUBRIFICAZIONE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="32" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm32</name>
+        <groups></groups>
+        <source>W111_0</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[0@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="33" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm33</name>
+        <groups></groups>
+        <source>Al_Driver_Estrattore</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="29" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[69@Alarm]ALLARME DRIVER ESTRATTORE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="34" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm34</name>
+        <groups></groups>
+        <source>Al_Driver_Spintore</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarms_General" actionID="30" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[70@Alarm]ALLARME DRIVER SPINTORE</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="35" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm35</name>
+        <groups></groups>
+        <source>Al_Driver_Nastr1_Sx</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarm_Drivers_Nastrini" actionID="31" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[77@Alarm]ALLARME DRIVER NASTRINO 1 SINISTRO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="36" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm36</name>
+        <groups></groups>
+        <source>Al_Driver_Nastr2_Sx</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarm_Drivers_Nastrini" actionID="32" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[72@Alarm]ALLARME DRIVER NASTRINO 2 SINISTRO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="37" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm37</name>
+        <groups></groups>
+        <source>Al_Driver_Nastr1_Dx</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarm_Drivers_Nastrini" actionID="33" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[73@Alarm]ALLARME DRIVER NASTRINO 1 DESTRO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="38" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm38</name>
+        <groups></groups>
+        <source>Al_Driver_Nastr2_Dx</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarm_Drivers_Nastrini" actionID="34" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[74@Alarm]ALLARME DRIVER NASTRINO 2 DESTRO</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="39" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm39</name>
+        <groups></groups>
+        <source>Al_NC413</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>false</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarm_NC413" actionID="35" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[75@Alarm]ALLARME CONTROLLER NC413</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="40" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm40</name>
+        <groups></groups>
+        <source>Al_Termocontrolli</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="jsAction" parameters="Alarm_TC" actionID="36" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[76@Alarm]ALLARME TERMOCONTROLLI</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[0@Alarm]</customField_1>
+            <customField_2>[0@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>64</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+</alarms>

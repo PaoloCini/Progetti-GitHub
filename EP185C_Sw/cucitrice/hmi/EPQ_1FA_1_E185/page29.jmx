@@ -1,0 +1,37 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object dataWndSize="0,70" class="PageWgt" usedFonts="Tahoma" staticOptEnable="true" id="Page29" pageName="Page29" downloadPrepDone="false" pageSize="800,600">
+  <wgtStyle fitToSize="1" x="0" y="0" forcePaint="512" ver="040500458" height="600" v="04.05.00.458" width="800"/>
+  <object class="PageMLTextMgrWgt" mgrType="Page" id="_PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+   <langs curLangId="L2" defLangId="L2">
+    <lang keypads="" langCode="it-IT" removable="false" writingsystem="Any" name="ITALIANO" langId="L1" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="en-US" removable="false" writingsystem="Any" name="ENGLISH" langId="L2" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="fr-FR" removable="false" writingsystem="Any" name="FRANCAIS" langId="L3" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="es-ES" removable="false" writingsystem="Any" name="ESPANOL" langId="L4" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="de-DE" removable="false" writingsystem="Any" name="DEUTSCH" langId="L5" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="pt-PT" removable="false" writingsystem="Any" name="PORTUGUES" langId="L6" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L2="Label" L3="Label" L4="Atrás" L5="Label" id="0" L6="Label" L1="Indietro"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Page29@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+  </object>
+  <object customType="ButtonsWithLabel" class="GroupWgt" id="BtnStd4">
+   <wgtStyle x="620" y="535" height="65" cy="-97.50" cx="90" width="180"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd4.btn">
+    <wgtStyle needlePath="images\Btn_rect_Dwn.svg" form="standard" value="0" style="0" fill="rgb(50,205,50)" downFillColor="rgb(0,0,255)" x="0" releasePath="images\Btn_rect_blueUp.svg" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" y="0" height="65" cy="32.50" pushColor="rgb(128,128,0)" cx="90" type="momentary" width="180"/>
+    <links>
+     <action class="LoadPageAction" attribute="onMouseClick" actionID="1" event="onMouseClick" actionWgt="_PageMgr" pageName="selezione.jmx"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd4.lbl">
+    <wgtStyle font-bold="true" font-family="Tahoma" font-size="18" x="6.68" vert-align="middle" wrapping="true" y="1.48" forcePaint="3" font-sizepx="24" height="60.58" cy="29.55" keypad-type="None" cx="80.01" font-color="rgb(237,237,237)" alignment="center" width="160"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

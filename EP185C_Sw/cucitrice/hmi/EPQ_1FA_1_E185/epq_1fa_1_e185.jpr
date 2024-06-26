@@ -1,0 +1,329 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object signProject="false" screenSaverTimeout="0" debugIP="127.0.0.1" ServerSynchEnable="local+remote" IncludePDFReader="false" refreshTime="100" IncludeVNC="false" orientation="0" pageSize="640,480" longDateFormat="MM/DD/YY - hh:mm:ss" maxBandwidth="0" shortDateFormat="DD/MM/YYYY" sdcards="0" autoRepeatPeriod="250" class="ProjectWgt" TouchBuzzerTime="200" webConnectionMode="auto" pageName="EPQ_1FA_1_E185" ContextMenu="0" defaultPageSize="800,600" browserOptForceLayers="1" browserOptNativeRenderLoop="1" gesturePassthruEnabled="0" guid="8AE94EE8-8CD7-4217-B022-09F5248EFB3A" decimalSymbol="." targetName="Runtime PC" webShowRuntimeErrors="false" maxOpenDlgs="5" onAccessDenied="0" targetType="Windows/x86-32" webMemoryThreshold="0" id="EPQ_1FA_1_E185" thousandSymbol="," pageType="project" listSeparator="," qtft="true" maxTrendPrintRows="50000" UserMgmtTmplType="Large" panelMemory="2GB" screenSaverPage="0" staticOptEnable="true" diskSizes="128MB" dataWndSize="0,70" bgColorOption="0" webMemoryAvailable="0" holdTime="2000" messageboxVisible="1" enableUserMgmt="true" scriptFile="epq_1fa_1_e185.js" changePageAnimationOnCache="0" webInactivityTimeout="600" browserOpt="1" downloadPrepDone="false" gesturePassthruDelay="200" KeyPadTmplType="KeyPadTemplates_large" screenSaverDisplayTime="0" changePageAnimation="0">
+  <wgtStyle x="0" height="480" ver="040500458" width="640" fitToSize="1" y="0" v="04.05.00.458"/>
+  <object class="MultiLangMgrWgt" id="_MultiLangMgr" fileName="multilang.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="PageMgrWgt" id="_PageMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <categories>
+    <category name="Native" defaultsize="800,600" home="Logos.jmx" technology="3">
+     <pages>
+      <page class="PageWgt" size="800,480" name="Selezione" file="selezione.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Lingua_U_Misura" file="lingua_u_misura.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Sel Configurazione" file="sel configurazione.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Logos" file="logos.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page5" file="page5.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page6" file="page6.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page7" file="page7.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page8" file="page8.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page9" file="page9.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Gestione Programmi" file="gestione programmi.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Elenco Programmi" file="elenco programmi.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page12" file="page12.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page13" file="page13.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page14" file="page14.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page15" file="page15.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page16" file="page16.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page17" file="page17.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page18" file="page18.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page19" file="page19.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Manutenzione" file="manutenzione.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Ingressi_Cuc_0" file="ingressi_cuc_0.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Ingressi_Cuc_1" file="ingressi_cuc_1.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Ingressi_Cuc_2" file="ingressi_cuc_2.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Ingressi Speciali" file="ingressi speciali.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Page 25" file="page 25.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page26" file="page26.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page27" file="page27.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page28" file="page28.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page29" file="page29.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Forma" file="configurazione - forma.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page31" file="page31.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Pressore" file="configurazione - pressore.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Nastrini" file="configurazione - nastrini.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Carico cartone" file="configurazione - carico cartone.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page35" file="page35.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Assi" file="configurazione - assi.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page37" file="page37.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page38" file="page38.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page39" file="page39.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page40" file="page40.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Termocontrollo 1 Sx" file="configurazione - termocontrollo 1 sx.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Configurazione - Termocontrollo 2 Dx" file="configurazione - termocontrollo 2 dx.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page43" file="page43.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page44" file="page44.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page45" file="page45.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page46" file="page46.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page47" file="page47.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page48" file="page48.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page49" file="page49.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Parametri - Formato" file="parametri - formato.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Parametri - Scatola Obliqua" file="parametri - scatola obliqua.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Parametri - Velocita'" file="parametri - velocita'.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Parametri - Velocit 2" file="parametri - velocit 2.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Parametri - Tempi" file="parametri - tempi.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Parametri - Ciclo Scatola" file="parametri - ciclo scatola.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page56" file="page56.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page57" file="page57.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page58" file="page58.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page 59" file="page 59.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page60" file="page60.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page61" file="page61.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page62" file="page62.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page63" file="page63.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page64" file="page64.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page65" file="page65.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page66" file="page66.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page67" file="page67.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page68" file="page68.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page69" file="page69.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Prove Scatola" file="prove scatola.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page71" file="page71.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page72" file="page72.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page73" file="page73.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page74" file="page74.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page75" file="page75.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page76" file="page76.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page77" file="page77.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page78" file="page78.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page79" file="page79.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Automatico" file="automatico.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page81" file="page81.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page82" file="page82.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page83" file="page83.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page84" file="page84.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page85" file="page85.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page86" file="page86.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page87" file="page87.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page88" file="page88.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page89" file="page89.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Manuale Carico" file="manuale carico.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Manuale Formatura" file="manuale formatura.jmx" type="normal"/>
+      <page class="PageWgt" size="800,480" name="Manuale Nastrini" file="manuale nastrini.jmx" type="normal"/>
+      <page class="PageWgt" size="800,600" name="Page93" file="page93.jmx" type="normal"/>
+      <page class="DialogWgt" size="600,400" name="Temperature" file="temperature.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Correzioni" file="correzioni.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Emergenze" file="emergenze.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Allarme NC413" file="allarme nc413.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Allarme Drivers Nastrini" file="allarme drivers nastrini.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Allarme Termocontrolli" file="allarme termocontrolli.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Allarmi" file="allarmi.jmx" type="dialog"/>
+      <page class="DialogWgt" size="600,400" name="Avvisi" file="avvisi.jmx" type="dialog"/>
+      <page class="PageWgt" size="800,600" name="Page94" file="page94.jmx" type="normal"/>
+      <page class="DialogWgt" size="600,400" name="Avviso Lubrificazione" file="avviso lubrificazione.jmx" type="dialog"/>
+      <page class="PageWgt" size="800,600" name="Page95" file="page95.jmx" type="normal"/>
+     </pages>
+     <templatePages/>
+    </category>
+   </categories>
+  </object>
+  <object mgrType="Project" class="PageMLTextMgrWgt" mlFileName="" id="_ProjectMLTextMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <langs curLangId="L1" defLangId="L1">
+    <lang writingsystem="Any" removable="false" langCode="it-IT" name="ITALIANO" langId="L1" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="en-US" name="ENGLISH" langId="L2" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="fr-FR" name="FRANCAIS" langId="L3" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="es-ES" name="ESPANOL" langId="L4" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="de-DE" name="DEUTSCH" langId="L5" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="pt-PT" name="PORTUGUES" langId="L6" defaultFont="Tahoma" keypads=""/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="PLCMgrWgt" id="_PLCMgr" fileName="protocols.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="TagMgrWgt" id="_TagMgr" fileName="tags.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <dataLinks>
+    <dataLink dataSource="_IdalGrpSrc" attribute="GroupSource" sourceType="Data" readWrite="R"/>
+    <dataLink dataSource="_IdalTagSrc" attribute="TagSource" sourceType="Data" readWrite="R/W"/>
+   </dataLinks>
+  </object>
+  <object retryCount="1" threadEnable="true" class="IdalItemsWgt" debugEnable="false" id="_IdalTagSrc">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object retryCount="1" threadEnable="false" class="IdalGroupWgt" debugEnable="false" id="_IdalGrpSrc">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="TrendMgrWgt" id="_TrendMgr" fileName="trends.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="ReportMgrWgt" id="_ReportMgr" fileName="reports.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="ReportPageMgrWgt" id="_ReportPageMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <categories/>
+  </object>
+  <object class="DictionaryMgrWgt" id="_DictionaryMgr" fileName="dictionaries.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object mgrType="Alarm" class="PageMLTextMgrWgt" mlFileName="alarms.xml" id="_AlarmMLTextMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="AlarmsMgrWgt" nCustomFields="2" id="_AlarmsMgr" fileName="alarms.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <dataLinks>
+    <dataLink dataSource="_IdalAlarms" attribute="AlarmSource" sourceType="Data" readWrite="R"/>
+   </dataLinks>
+  </object>
+  <object class="EventMgrWgt" id="_EventMgr" fileName="eventconfig.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object mgrType="Scheduler" class="PageMLTextMgrWgt" mlFileName="scheduler.xml" id="_ScheduleMLTextMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="ScheduleMgrWgt" id="_ScheduleMgr" fileName="scheduler.xml">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object retryCount="1" threadEnable="false" class="IdalAlarmsWgt" debugEnable="false" id="_IdalAlarms">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="IdalUserMgmtWgt" id="_IdalUserMgmt">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="IdalMgrWgt" id="_IdalMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="RecipeMgrWgt" id="_RecipeMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <dataLinks>
+    <dataLink dataSource="_IdalRecipe" attribute="recipeIOSrc" sourceType="Recipe" readWrite="R/W"/>
+   </dataLinks>
+  </object>
+  <object class="AuditTrailMgrWgt" id="_AuditTrailMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="DataTransferMgrWgt" syncOnInit="true" id="_DataTransferMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <object r="0" enable="true" highLimit="60" class="DataXferWgt" name="data1" transferMode="0" lowLimit="0" syncOnInit="1" hI1="data1.b" direction="0" h1="data1.b" type="1" id="data1">
+    <wgtStyle x="0" height="0" width="0" y="0"/>
+    <dataLinks>
+     <dataLink tag="Minute" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="int" attribute="srcA" sourceType="System" readWrite="R"/>
+     <dataLink tag="Hmi_minuti" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="srcB" sourceType="Tag" readWrite="R"/>
+    </dataLinks>
+   </object>
+   <object r="1" enable="true" highLimit="24" class="DataXferWgt" name="data2" transferMode="0" lowLimit="0" syncOnInit="1" hI1="data2.b" direction="0" h1="data2.b" type="1" id="data2">
+    <wgtStyle x="0" height="0" width="0" y="0"/>
+    <dataLinks>
+     <dataLink tag="Hour" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="int" attribute="srcA" sourceType="System" readWrite="R"/>
+     <dataLink tag="Hmi_ora" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="srcB" sourceType="Tag" readWrite="R"/>
+    </dataLinks>
+   </object>
+   <object r="2" enable="true" highLimit="7" class="DataXferWgt" name="data3" transferMode="0" lowLimit="0" syncOnInit="1" hI1="data3.b" direction="0" h1="data3.b" type="1" id="data3">
+    <wgtStyle x="0" height="0" width="0" y="0"/>
+    <dataLinks>
+     <dataLink tag="Day Of Week" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="int" attribute="srcA" sourceType="System" readWrite="R"/>
+     <dataLink tag="Hmi_giornosettimana" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="srcB" sourceType="Tag" readWrite="R"/>
+    </dataLinks>
+   </object>
+   <object r="3" enable="true" highLimit="1" class="DataXferWgt" name="data4" transferMode="0" lowLimit="0" syncOnInit="1" hI1="data4.b" direction="0" h1="data4.b" type="1" id="data4">
+    <wgtStyle x="0" height="0" width="0" y="0"/>
+    <dataLinks>
+     <dataLink tag="Is keypad open" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="bool" attribute="srcA" sourceType="System" readWrite="R"/>
+     <dataLink tag="data_entry_hmi" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="srcB" sourceType="Tag" readWrite="R"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="IndexedTagSetMgrWgt" id="_IndexedTagSetMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="DBConnectorMgrWgt" id="_DBConnectorMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="IdalDBConnectorWgt" id="_IdalDBConnector">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="UserGroupMgrWgt" id="_UserGroupMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="UserMgrWgt" id="_UserMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <dataLinks>
+    <dataLink dataSource="_IdalUserMgmt" attribute="userSource" sourceType="Data" readWrite="R"/>
+    <dataLink dataSource="_IdalUserMgmt" attribute="userSource" sourceType="Data" readWrite="W"/>
+   </dataLinks>
+  </object>
+  <object class="PrintMgrWgt" id="_PrintMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="ThreadMgrWgt" id="_ThreadMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <dataLinks>
+    <dataLink dataSource="_IdalItems" attribute="WriteSource" sourceType="Data" readWrite="W"/>
+   </dataLinks>
+  </object>
+  <object retryCount="1" threadEnable="false" class="IdalItemsWgt" debugEnable="false" id="_IdalItems">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="VariablesWgt" id="_VariablesWgt">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="RemoteClientMgrWgt" id="_RemoteClientMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="SysPropMgrWgt" id="_SysPropMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <dataLinks>
+    <dataLink dataSource="_IdalSysProp" attribute="sysIOSrc" sourceType="Data" readWrite="R/W"/>
+   </dataLinks>
+  </object>
+  <object class="ScreenMgrWgt" id="_ScreenMgr" TimeOutInterval="60">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="IdalRecipeWgt" id="_IdalRecipe">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="IdalSysPropWgt" id="_IdalSysProp">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="KeypadMgrWgt" id="_KeypadMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="KeyExtMgrWgt" id="_KeyExtMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="OPCUAMgrWgt" id="_OPCUAMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="CorvinaMgrWgt" id="_CorvinaMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="IFMqttMgrWgt" id="_IFMqttMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="SignatureMgrWgt" id="_SignatureMgr">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="JSFunctBlockWgt" id="_JSFunctBlock">
+   <wgtStyle value5="" value9="" value3="" value16="" value11="" y="0" value2="" value7="" value14="" value15="" initDelay="0" width="71" value8="" value4="" value10="" x="0" value13="" value12="" value6="" height="55" value1=""/>
+   <dataLinks>
+    <dataLink tag="U_misura_lin" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="value1" sourceType="Tag" readWrite="R"/>
+    <dataLink tag="U_misura_term" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="value2" sourceType="Tag" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <action event="onDataUpdate" class="JavaScriptAction" attribute="onDataUpdate" actionID="0" actionWgt="_WgtMgr" f="_JSFunctBlock_onDataUpdate"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="EPQ_1FA_1_E185@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="JSFunctBlockWgt" id="_JSFunctBlock1">
+   <wgtStyle value5="" value9="" value3="" value16="" value11="" y="0" value2="" value7="" value14="" value15="" initDelay="0" width="71" value8="" value4="" value10="" x="0" value13="" value12="" value6="" height="55" value1=""/>
+   <links>
+    <action event="onDataUpdate" class="JavaScriptAction" attribute="onDataUpdate" actionID="0" actionWgt="_WgtMgr" f="_JSFunctBlock1_onDataUpdate"/>
+   </links>
+  </object>
+  <object class="JSFunctBlockWgt" id="_JSFunctBlock2">
+   <wgtStyle value5="" value9="" value3="" value16="" value11="" y="0" value2="" value7="" value14="" value15="" initDelay="0" width="71" value8="" value4="" value10="" x="0" value13="" value12="" value6="" height="55" value1=""/>
+   <dataLinks>
+    <dataLink tag="richiesta_n_pagina_hmi_pila" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="short" attribute="value1" sourceType="Tag" readWrite="R"/>
+    <dataLink tag="richiesta_n_pagina_hmi_BordoM" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="short" attribute="value2" sourceType="Tag" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <action event="onDataUpdate" class="JavaScriptAction" attribute="onDataUpdate" actionID="0" actionWgt="_WgtMgr" f="_JSFunctBlock2_onDataUpdate"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1" name="Alarm1" group="Alarm1" trigger="bitMaskAlarm" description="[20@Alarm]EMERGENZA"/>
+    <event id="2" name="Alarm2" group="Alarm2" trigger="bitMaskAlarm" description="[36@Alarm]ALLARME PROTEZIONI SICUREZZA"/>
+    <event id="3" name="Alarm3" group="Alarm3" trigger="bitMaskAlarm" description="[41@Alarm]ALLARME FORMA SGANCIATA"/>
+    <event id="4" name="Alarm4" group="Alarm4" trigger="bitMaskAlarm" description="[42@Alarm]PROTEZIONE M.T. SERVIZI"/>
+    <event id="5" name="Alarm5" group="Alarm5" trigger="bitMaskAlarm" description="[43@Alarm]PROTEZIONE M.T. TERMOREGOLAZIONE"/>
+    <event id="6" name="Alarm6" group="Alarm6" trigger="bitMaskAlarm" description="[44@Alarm]PROTEZIONE M.T. INVERTERS"/>
+    <event id="7" name="Alarm7" group="Alarm7" trigger="bitMaskAlarm" description="[45@Alarm]PROTEZIONEM.T. PILA CARTONI"/>
+    <event id="8" name="Alarm8" group="Alarm8" trigger="bitMaskAlarm" description="[46@Alarm]PROTEZIONEM.T. POMPA VUOTO"/>
+    <event id="9" name="Alarm9" group="Alarm9" trigger="bitMaskAlarm" description="[47@Alarm]PROTEZIONE M.T. AZIONAMENTO"/>
+    <event id="10" name="Alarm10" group="Alarm10" trigger="bitMaskAlarm" description="[48@Alarm]ALLARME DOPPIO CARTONE"/>
+    <event id="11" name="Alarm11" group="Alarm11" trigger="bitMaskAlarm" description="[0@Alarm]"/>
+    <event id="12" name="Alarm12" group="Alarm12" trigger="bitMaskAlarm" description="[49@Alarm]INVERTER CAMMA"/>
+    <event id="13" name="Alarm13" group="Alarm13" trigger="bitMaskAlarm" description="[50@Alarm]INVERTER RULLI / CINGHIE"/>
+    <event id="14" name="Alarm14" group="Alarm14" trigger="bitMaskAlarm" description="[51@Alarm]INVERTER TAPPETO ACCUMULO"/>
+    <event id="15" name="Alarm15" group="Alarm15" trigger="bitMaskAlarm" description="[52@Alarm]ALLARME DRIVER FORMA"/>
+    <event id="16" name="Alarm16" group="Alarm16" trigger="bitMaskAlarm" description="[53@Alarm]ALLARME SFORZO FORMA"/>
+    <event id="17" name="Alarm17" group="Alarm17" trigger="bitMaskAlarm" description="[56@Alarm]BATTERIA PLC SCARICA"/>
+    <event id="18" name="Alarm18" group="Alarm18" trigger="bitMaskAlarm" description="[55@Alarm]TEMPERATURA QUADRO ECCESSIVA"/>
+    <event id="19" name="Alarm19" group="Alarm19" trigger="bitMaskAlarm" description="[57@Alarm]TIME OUT AVVIO CICLO AUTOMATICO"/>
+    <event id="20" name="Alarm20" group="Alarm20" trigger="bitMaskAlarm" description="[61@Alarm]CONDIZIONI AVVIO CICLO MANCANTI"/>
+    <event id="21" name="Alarm21" group="Alarm21" trigger="bitMaskAlarm" description="[58@Alarm]TEMPERATURE FUORI RANGE"/>
+    <event id="22" name="Alarm22" group="Alarm22" trigger="bitMaskAlarm" description="[59@Alarm]RIMUOVERE I NASTRINI TERMOSALD."/>
+    <event id="23" name="Alarm23" group="Alarm23" trigger="bitMaskAlarm" description="[60@Alarm]RISERVA CARTONI"/>
+    <event id="24" name="Alarm24" group="Alarm24" trigger="bitMaskAlarm" description="[63@Alarm]CARTONE NON CARICATO"/>
+    <event id="25" name="Alarm25" group="Alarm25" trigger="bitMaskAlarm" description="[62@Alarm]FINE CARTONE"/>
+    <event id="26" name="Alarm26" group="Alarm26" trigger="bitMaskAlarm" description="[64@Alarm]TAPPETO VUOTO"/>
+    <event id="27" name="Alarm27" group="Alarm27" trigger="bitMaskAlarm" description="[68@Alarm]TERMOSALDANTE 1 ESAURITO"/>
+    <event id="28" name="Alarm28" group="Alarm28" trigger="bitMaskAlarm" description="[65@Alarm]TERMOSALDANTE 2  ESAURITO"/>
+    <event id="29" name="Alarm29" group="Alarm29" trigger="bitMaskAlarm" description="[66@Alarm]TERMOSALDANTE 3 ESAURITO"/>
+    <event id="30" name="Alarm30" group="Alarm30" trigger="bitMaskAlarm" description="[67@Alarm]TERMOSALDANTE 4  ESAURITO"/>
+    <event id="31" name="Alarm31" group="Alarm31" trigger="bitMaskAlarm" description="[71@Alarm]LUBRIFICAZIONE"/>
+    <event id="32" name="Alarm32" group="Alarm32" trigger="bitMaskAlarm" description="[0@Alarm]"/>
+    <event id="33" name="Alarm33" group="Alarm33" trigger="bitMaskAlarm" description="[69@Alarm]ALLARME DRIVER ESTRATTORE"/>
+    <event id="34" name="Alarm34" group="Alarm34" trigger="bitMaskAlarm" description="[70@Alarm]ALLARME DRIVER SPINTORE"/>
+    <event id="35" name="Alarm35" group="Alarm35" trigger="bitMaskAlarm" description="[77@Alarm]ALLARME DRIVER NASTRINO 1 SINISTRO"/>
+    <event id="36" name="Alarm36" group="Alarm36" trigger="bitMaskAlarm" description="[72@Alarm]ALLARME DRIVER NASTRINO 2 SINISTRO"/>
+    <event id="37" name="Alarm37" group="Alarm37" trigger="bitMaskAlarm" description="[73@Alarm]ALLARME DRIVER NASTRINO 1 DESTRO"/>
+    <event id="38" name="Alarm38" group="Alarm38" trigger="bitMaskAlarm" description="[74@Alarm]ALLARME DRIVER NASTRINO 2 DESTRO"/>
+    <event id="39" name="Alarm39" group="Alarm39" trigger="bitMaskAlarm" description="[75@Alarm]ALLARME CONTROLLER NC413"/>
+    <event id="40" name="Alarm40" group="Alarm40" trigger="bitMaskAlarm" description="[76@Alarm]ALLARME TERMOCONTROLLI"/>
+</events>

@@ -1,0 +1,152 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" usedFonts="Tahoma,Roboto Light" singleInstance="true" pageName="Allarme Drivers Nastrini" pageType="modal" staticOptEnable="true" py="0" titleName="" downloadPrepDone="false" px="0" dynPosition="false" staticFile="opt/allarme drivers nastrini.png" dataWndSize="0,70" pageSize="600,400" id="Allarme Drivers Nastrini" titlebar="false" scriptFile="allarme drivers nastrini.js">
+  <wgtStyle x="0" height="400" ver="040500458" width="600" fitToSize="1" y="0" v="04.05.00.458"/>
+  <links>
+   <action event="onActivate" class="JavaScriptAction" attribute="onActivate" actionID="1" actionWgt="_WgtMgr" f="update_alarm_banner"/>
+  </links>
+  <object mgrType="Page" class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <langs curLangId="L1" defLangId="L1">
+    <lang writingsystem="Any" removable="false" langCode="it-IT" name="ITALIANO" langId="L1" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="en-US" name="ENGLISH" langId="L2" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="fr-FR" name="FRANCAIS" langId="L3" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="es-ES" name="ESPANOL" langId="L4" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="de-DE" name="DEUTSCH" langId="L5" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="pt-PT" name="PORTUGUES" langId="L6" defaultFont="Tahoma" keypads=""/>
+   </langs>
+   <MLTexts>
+    <MLText L3="" L1="" L6="" L2="" L5="" L4="" id="1"/>
+    <MLText L3="Label" L1="Nastrino 1 sinistro" L6="Label" L2="Left Sealing Tape 1" L5="Label" L4="Cinta de termosellado 1 izquierda" id="0"/>
+    <MLText L3="Label" L1="Nastrino 2 sinistro" L6="Label" L2="Left Sealing Tape 2" L5="Label" L4="Cinta de termosellado 2 izquierda" id="2"/>
+    <MLText L3="Label" L1="Nastrino 1 destro" L6="Label" L2="Right Sealing Tape 1" L5="Label" L4="Cinta de termosellado 1 derecha" id="3"/>
+    <MLText L3="Label" L1="Nastrino 2 destro" L6="Label" L2="Right Sealing Tape 2" L5="Label" L4="Cinta de termosellado 2 derecha" id="4"/>
+    <MLText L3="Label" L1="Maschera" L6="Label" L2="Mask Alarms" L5="Label" L4="Ocultar Alarmas" id="5"/>
+    <MLText L3="Label" L1="Cancella allarmi" L6="Label" L2="Erase Alarms" L5="Label" L4="Eliminar Alarmas" id="6"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Allarme Drivers Nastrini@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label2">
+   <wgtStyle font-size="18" x="40" height="39" font-sizepx="24" wgtStaticOpt="dynamic" cx="187.47" width="365" forcePaint="18" font-family="Tahoma" cy="18" keypad-type="None" y="114" vert-align="middle" wrapping="true" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label4">
+   <wgtStyle font-size="18" x="40" height="39" font-sizepx="24" wgtStaticOpt="dynamic" cx="187.47" width="365" forcePaint="18" font-family="Tahoma" cy="18" keypad-type="None" y="222" vert-align="middle" wrapping="true" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label5">
+   <wgtStyle font-size="18" x="40" height="39" font-sizepx="24" wgtStaticOpt="dynamic" cx="187.47" width="365" forcePaint="18" font-family="Tahoma" cy="18" keypad-type="None" y="168" vert-align="middle" wrapping="true" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label8">
+   <wgtStyle font-size="18" x="40" height="39" font-sizepx="24" wgtStaticOpt="dynamic" cx="187.47" width="365" forcePaint="18" font-family="Tahoma" cy="18" keypad-type="None" y="275" vert-align="middle" wrapping="true" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="alarm_banner">
+   <wgtStyle font-bold="true" vert-align="middle" forcePaint="2072" font-sizepx="27" cx="300.50" y="0" frameFill="rgb(102,102,102)" scrollMode="2" font-family="Tahoma" wgtStaticOpt="dynamic" font-size="20" frameColor="none" width="600" cy="40.27" x="0" frame="true" keypad-type="None" font-color="rgb(255,0,0)" marker="true" height="84" alignment="center"/>
+   <dataLinks>
+    <dataLink tag="Alarm triggered" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" attribute="visibility" sourceType="System" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="badge">
+   <wgtStyle x="2" height="28" cx="14" width="28" forcePaint="8" cy="14" y="85"/>
+   <dataLinks>
+    <dataLink tag="Alarm triggered" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="int" attribute="visibility" sourceType="System" readWrite="R"/>
+   </dataLinks>
+   <object class="ShapeWgt" id="badge.circle1">
+    <wgtStyle x="0" height="28" cx="14" width="28" rx="22" ry="19" forcePaint="1" cy="14" fill="rgb(255,0,0)" stroke="none" y="0" nodeName="ellipse"/>
+   </object>
+   <object class="NumericWgt" id="badge.field1">
+    <wgtStyle font-bold="true" timeSpec="local" value="99" vert-align="top" forcePaint="9" form="Numeric" font-sizepx="13" cx="12.42" y="5" font-family="Roboto Light" max="2147483647" min="-2147483648" font-size="10" text="99" width="27" cy="9.45" x="0" numberFormat="6" keypad-type="Numeric" font-color="rgb(255,255,255)" usingFormat="#" showThousandSeparator="false" height="21" alignment="center" step="1"/>
+    <dataLinks>
+     <dataLink tag="Number of triggered alarms" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="int" attribute="value" sourceType="System" readWrite="R"/>
+    </dataLinks>
+    <links>
+     <action event="onDataUpdate" class="JavaScriptAction" attribute="onDataUpdate" actionID="1" actionWgt="_WgtMgr" f="update_alarm_banner"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="roundrect1">
+   <wgtStyle x="469" height="34" cx="43.64" width="90" rx="20" ry="20" forcePaint="136" cy="16.45" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="116" nodeName="rect"/>
+   <dataLinks>
+    <dataLink tag="Driver_nastrino_1_ok" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="fill" sourceType="Tag" readWrite="R">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#ededed"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd22">
+   <wgtStyle x="399" height="65" cx="100" width="200" cy="-97.50" y="334"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd22.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="100" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="200" cy="32.50" x="0" downFillColor="rgb(0,0,255)" height="65"/>
+    <dataLinks>
+     <dataLink tag="Cancella_allarmi" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd22.lbl">
+    <wgtStyle font-size="18" x="7.42" font-color="rgb(255,255,255)" height="60.58" font-sizepx="24" cx="88.90" font-bold="true" width="177.78" forcePaint="3" font-family="Tahoma" alignment="center" cy="29.55" keypad-type="None" y="1.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd2">
+   <wgtStyle x="1" height="65" cx="100" width="200" cy="-97.50" y="334"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd2.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="maintained" cx="100" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(255,0,0)" releasePath="images\Btn_rect_blueUp.svg" width="200" cy="32.50" x="0" downFillColor="rgb(255,104,32)" height="65"/>
+    <dataLinks>
+     <dataLink tag="maschera_on" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd2.lbl">
+    <wgtStyle font-size="18" x="7.42" font-color="rgb(255,255,255)" height="60.58" font-sizepx="24" cx="88.90" font-bold="true" width="177.78" forcePaint="3" font-family="Tahoma" alignment="center" cy="29.55" keypad-type="None" y="1.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="roundrect2">
+   <wgtStyle x="469" height="34" cx="43.64" width="90" rx="20" ry="20" forcePaint="136" cy="16.45" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="171" nodeName="rect"/>
+   <dataLinks>
+    <dataLink tag="Driver_nastrino_3_ok" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="fill" sourceType="Tag" readWrite="R">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#ededed"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="roundrect3">
+   <wgtStyle x="469" height="34" cx="43.64" width="90" rx="20" ry="20" forcePaint="136" cy="16.45" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="226" nodeName="rect"/>
+   <dataLinks>
+    <dataLink tag="Driver_nastrino_2_ok" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="fill" sourceType="Tag" readWrite="R">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#ededed"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="roundrect4">
+   <wgtStyle x="469" height="34" cx="43.64" width="90" rx="20" ry="20" forcePaint="136" cy="16.45" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="281" nodeName="rect"/>
+   <dataLinks>
+    <dataLink tag="Driver_nastrino_4_ok" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="fill" sourceType="Tag" readWrite="R">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#ff0000;#ededed"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,430 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" usedFonts="Tahoma,Roboto Light,Metrostyle" pageName="Manuale Carico" staticOptEnable="true" downloadPrepDone="false" staticFile="opt/manuale carico.png" dataWndSize="0,70" pageSize="800,480" id="Manuale Carico">
+  <wgtStyle x="0" height="480" ver="040500458" width="800" color="rgb(0,0,0)" fitToSize="1" y="0" v="04.05.00.458"/>
+  <object mgrType="Page" class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <langs curLangId="L1" defLangId="L1">
+    <lang writingsystem="Any" removable="false" langCode="it-IT" name="ITALIANO" langId="L1" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="en-US" name="ENGLISH" langId="L2" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="fr-FR" name="FRANCAIS" langId="L3" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="es-ES" name="ESPANOL" langId="L4" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="de-DE" name="DEUTSCH" langId="L5" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="pt-PT" name="PORTUGUES" langId="L6" defaultFont="Tahoma" keypads=""/>
+   </langs>
+   <MLTexts>
+    <MLText L3="Label" L1="" L6="Label" L2="" L5="Label" L4="" id="0"/>
+    <MLText L3="Label" L1="" L6="Label" L2="" L5="Label" L4="" id="1"/>
+    <MLText L3="SELEZIONE" L1="MANUALE CARICO CARTONE" L6="SELEZIONE" L2="MANUAL - LOAD" L5="SELEZIONE" L4="MANUAL CARGA DE CARTÓN" id="3"/>
+    <MLText L3="Label" L1="Pila Cartone" L6="Label" L2="Cardboard Pile" L5="Label" L4="Pila Cartón" id="12"/>
+    <MLText L3="Label" L1="Rulli - Cinghie" L6="Label" L2="Rolls - Belts" L5="Label" L4="Rodillo - Correas" id="15"/>
+    <MLText L3="Message" L1="Passo&#xa;Tappeto" L6="Message" L2="Belt&#xa;Step" L5="Message" L4="Paso Cinta &#xa;de acumul." id="19"/>
+    <MLText L3="Message" L1="Tappeto&#xa;Accumulo" L6="Message" L2="Storage&#xa;Belt" L5="Message" L4="Cinta de &#xa;acumulac." id="21"/>
+    <MLText L3="Label" L1="Ok" L6="Label" L2="End" L5="Label" L4="Ok" id="25"/>
+    <MLText L3="Label" L1="Temperature" L6="Label" L2="Temperature" L5="Label" L4="Temperaturas" id="26"/>
+    <MLText L3="Label" L1="Pompa Vuoto" L6="Label" L2="Vacuum Pump" L5="Label" L4="Bomba de vacío" id="41"/>
+    <MLText L3="Label" L1="Prove Scatola" L6="Label" L2="Box Test" L5="Label" L4="Pruebas de caja" id="45"/>
+    <MLText L3="Label" L1="StandBy" L6="Label" L2="Stand-by" L5="Label" L4="En Espera" id="54"/>
+    <MLText L3="Label" L1="Prelievo" L6="Label" L2="Pick up" L5="Label" L4="Retiro" id="55"/>
+    <MLText L3="Label" L1="Introduttore" L6="Label" L2="Feeder" L5="Label" L4="Introductor" id="66"/>
+    <MLText L3="Label" L1="INTRODUTTORE PNEUMATOCO" L6="Label" L2="Label" L5="Label" L4="Label" id="72"/>
+    <MLText L3="Label" L1="Manuale Nastrini" L6="Label" L2="Manual" L5="Label" L4="Manual" id="148"/>
+    <MLText L3="Label" L1="Manuale Formatura" L6="Label" L2="Manual" L5="Label" L4="Manual" id="149"/>
+    <MLText L3="Message" L1="Sblocco Tavole" L6="Message" L2="Home" L5="Message" L4="Desbloqueo&#xa;de las tablas" id="185"/>
+    <MLText L3="Message" L1="Tavole&#xa;Sbloccate" L6="Message" L2="Home&#xa;Known" L5="Message" L4="Tablas&#xa;desbloque" id="186"/>
+    <MLText L3="Label" L1="Correzioni" L6="Label" L2="Corrections" L5="Label" L4="Correcciones" id="215"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Manuale Carico@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd4">
+   <wgtStyle x="598" height="65" cx="100" width="200" cy="-97.50" y="414"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd4.btn">
+    <wgtStyle x="0" height="65" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="100" width="200" style="0" cy="32.50" form="standard" fill="rgb(50,205,50)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(85,255,0)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="selezione.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd4.lbl">
+    <wgtStyle font-size="18" x="7.42" font-color="rgb(255,255,255)" height="60.58" font-sizepx="24" cx="88.90" width="177.78" forcePaint="3" font-family="Tahoma" alignment="center" cy="29.55" keypad-type="None" y="1.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="25"/>
+    </links>
+   </object>
+  </object>
+  <object class="NumericWgt" id="numeric1">
+   <wgtStyle timeSpec="local" value="999.9" vert-align="middle" forcePaint="8" form="Numeric" leadingDigits="3" font-sizepx="16" cx="36.08" y="356" font-family="Roboto Light" max="32767" min="-32768" font-size="12" text="999.9" frameColor="rgb(127,127,127)" width="79" cy="17.14" decimalDigits="1" x="21" numberFormat="1" keypad-type="Numeric" font-color="rgb(255,255,255)" usingFormat="" showThousandSeparator="false" height="39" step="1"/>
+   <dataLinks>
+    <dataLink tag="Temperatura_1" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="short" attribute="value" sourceType="Tag" readWrite="R">
+     <xForms>
+      <xForm class="ScaleXForm" name="Scale" Mod="10" Scale="1" Offset="0">
+       <dataLinks>
+        <dataLink tag="Ktmp" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="float" attribute="Scale" sourceType="Tag" readWrite="R"/>
+        <dataLink tag="Ktmp_offset" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="float" attribute="Offset" sourceType="Tag" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle x="409" height="55" cx="83" width="166" cy="27.50" y="221"/>
+   <object class="GroupWgt" customType="Buttons" id="GroupWgt2.BtnStd9">
+    <wgtStyle x="0" height="55" cx="83" width="166" cy="27.50" y="0"/>
+    <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="GroupWgt2.BtnStd9.btn">
+     <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="27.50" x="0" downFillColor="rgb(50,205,50)" height="55"/>
+     <dataLinks>
+      <dataLink tag="PB_Sel_tappeto_accumulo_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+      <dataLink tag="Sel_tappeto_accumulo_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00008b;#32cd32"/>
+       </xForms>
+      </dataLink>
+      <dataLink tag="Sel_tappeto_accumulo_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00008b;#32cd32"/>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="MsgTextWgt" id="GroupWgt2.msgtext2">
+    <wgtStyle value="0" vert-align="middle" forcePaint="3" continous="true" font-sizepx="24" cx="94.99" y="0" font-family="Tahoma" max="1" viewindex="false" min="0" frameSize="0" font-size="18" text="" frameColor="none" width="166" cy="24.75" x="0" frame="true" keypad-type="None" font-color="rgb(255,255,255)" height="55" alignment="center">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L3="Tahoma" L1="Tahoma" L6="Tahoma" L2="Tahoma" L5="Tahoma" L4="Tahoma"/>
+      <textid idx="0" val="21"/>
+      <textid idx="1" val="19"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label20">
+   <wgtStyle font-size="12" x="62" font-color="rgb(255,255,255)" height="29" font-sizepx="16" cx="20.49" width="39" forcePaint="10" font-family="Roboto Light" alignment="center" cy="13.50" keypad-type="None" y="359" vert-align="middle" wrapping="true" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink tag="UnitTemp" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="string-8" attribute="text" sourceType="Tag" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L3="Tahoma" L1="Roboto Light" L6="Tahoma" L2="Roboto Light" L5="Tahoma" L4="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect21">
+   <wgtStyle x="6" height="55" cx="644" width="644" cy="56.83" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="6" nodeName="rect"/>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle font-size="24" x="59" height="47" font-sizepx="32" cx="250.31" font-bold="true" width="500" forcePaint="2" font-family="Tahoma" alignment="center" cy="22.74" keypad-type="None" y="7" vert-align="top" marker="true" wrapping="true"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect22">
+   <wgtStyle x="659" height="55" cx="137" width="137" cy="56.83" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="5" nodeName="rect"/>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle timeSpec="local" value="-1" vert-align="middle" form="date-time" font-sizepx="16" cx="75" y="32" font-family="Metrostyle" max="4096" min="0" font-size="12" text="-1" readWrite="true" width="150" cy="15.97" x="650" numberFormat="0" keypad-type="None" font-color="rgb(0,0,139)" usingFormat="hh:mm:ss" showThousandSeparator="false" height="31.93" alignment="center" step="1"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle timeSpec="local" value="-1" vert-align="middle" forcePaint="73" form="date-time" font-sizepx="16" cx="74.99" y="5" font-family="Metrostyle" max="4096" min="0" font-size="12" text="-1" width="150" cy="16" x="651" numberFormat="0" keypad-type="None" font-color="rgb(0,0,139)" usingFormat="SHORT-DATE" showThousandSeparator="false" height="32" alignment="center" step="1"/>
+   <dataLinks>
+    <dataLink tag="System Time" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="long" attribute="value" sourceType="System" readWrite="R"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd8">
+   <wgtStyle x="29" height="55" cx="83" width="166" cy="-82.50" y="221"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd8.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="27.50" x="0" downFillColor="rgb(50,205,50)" height="55"/>
+    <dataLinks>
+     <dataLink tag="PB_Sel_pila_cartone_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+     <dataLink tag="Sel_pila_cartone_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00008b;#32cd32"/>
+      </xForms>
+     </dataLink>
+     <dataLink tag="Sel_pila_cartone_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00008b;#32cd32"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd8.lbl">
+    <wgtStyle font-size="18" x="6.15" font-color="rgb(255,255,255)" height="51.26" font-sizepx="24" cx="73.78" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="25" keypad-type="None" y="1.25" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd9">
+   <wgtStyle x="219" height="55" cx="83" width="166" cy="-82.50" y="221"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd9.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="27.50" x="0" downFillColor="rgb(50,205,50)" height="55"/>
+    <dataLinks>
+     <dataLink tag="PB_Sel_rulli_cinghie_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+     <dataLink tag="Sel_rulli_cinghie_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00008b;#32cd32"/>
+      </xForms>
+     </dataLink>
+     <dataLink tag="Sel_rulli_cinghie_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00008b;#32cd32"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd9.lbl">
+    <wgtStyle font-size="18" x="6.15" font-color="rgb(255,255,255)" height="51.26" font-sizepx="24" cx="73.78" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="25" keypad-type="None" y="1.25" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd10">
+   <wgtStyle x="27" height="50" cx="83" width="166" cy="-75" y="305"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd10.btn">
+    <wgtStyle x="0" height="50" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="83" width="166" style="0" cy="25" form="standard" fill="rgb(255,0,0)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(255,104,32)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="ShowDialogAction" pageName="temperature.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd10.lbl">
+    <wgtStyle font-size="18" x="6.16" font-color="rgb(255,255,255)" height="46.60" font-sizepx="24" cx="73.79" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="22.73" keypad-type="None" y="1.14" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+  </object>
+  <object class="NumericWgt" id="numeric3">
+   <wgtStyle timeSpec="local" value="999.9" vert-align="middle" forcePaint="8" form="Numeric" leadingDigits="3" font-sizepx="16" cx="36.08" y="356" font-family="Roboto Light" max="32767" min="-32768" font-size="12" text="999.9" frameColor="rgb(127,127,127)" width="79" cy="17.14" decimalDigits="1" x="123" numberFormat="1" keypad-type="Numeric" font-color="rgb(255,255,255)" usingFormat="" showThousandSeparator="false" height="39" step="1"/>
+   <dataLinks>
+    <dataLink tag="Temperatura_2" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="short" attribute="value" sourceType="Tag" readWrite="R">
+     <xForms>
+      <xForm class="ScaleXForm" name="Scale" Mod="10" Scale="1" Offset="0">
+       <dataLinks>
+        <dataLink tag="Ktmp" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="float" attribute="Scale" sourceType="Tag" readWrite="R"/>
+        <dataLink tag="Ktmp_offset" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="float" attribute="Offset" sourceType="Tag" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle font-size="12" x="165" font-color="rgb(255,255,255)" height="29" font-sizepx="16" cx="20.49" width="39" forcePaint="10" font-family="Roboto Light" alignment="center" cy="13.50" keypad-type="None" y="359" vert-align="middle" wrapping="true" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink tag="UnitTemp" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="string-8" attribute="text" sourceType="Tag" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1">
+     <MLFontFamily L3="Tahoma" L1="Roboto Light" L6="Tahoma" L2="Roboto Light" L5="Tahoma" L4="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect2">
+   <wgtStyle x="6" height="119" cx="302.42" width="625" cy="59.50" fill="none" stroke="rgb(255,255,255)" y="69" nodeName="rect"/>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd16">
+   <wgtStyle x="599" height="55" cx="83" width="166" cy="27.50" y="221"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd16.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="27.50" x="0" downFillColor="rgb(50,205,50)" height="55"/>
+    <dataLinks>
+     <dataLink tag="PB_Sel_pompa_vuoto_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+     <dataLink tag="Sel_pompa_vuoto" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+      </xForms>
+     </dataLink>
+     <dataLink tag="Sel_pompa_vuoto" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd16.lbl">
+    <wgtStyle font-size="18" x="6.16" font-color="rgb(237,237,237)" height="51.26" font-sizepx="24" cx="73.78" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="25" keypad-type="None" y="1.24" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="41"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd153">
+   <wgtStyle x="8" height="65" cx="89.50" width="179" cy="-97.50" y="408"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd153.btn">
+    <wgtStyle x="0" height="65" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="89.50" width="179" style="0" cy="32.50" form="standard" fill="rgb(0,0,139)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(0,0,255)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="prove scatola.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd153.lbl">
+    <wgtStyle font-size="18" x="6.64" font-color="rgb(255,255,255)" height="60.58" font-sizepx="24" cx="79.57" width="159.12" forcePaint="3" font-family="Tahoma" alignment="center" cy="29.55" keypad-type="None" y="1.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="45"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd6">
+   <wgtStyle x="22" height="50" cx="83" width="166" cy="-75" y="127"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd6.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="25" x="0" downFillColor="rgb(0,0,255)" height="50"/>
+    <dataLinks>
+     <dataLink tag="PB_Sel_introduttore_cartone_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+     <dataLink tag="Sel_introduttore_cartone_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#55aaff"/>
+      </xForms>
+     </dataLink>
+     <dataLink tag="Sel_introduttore_cartone_mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#55aaff"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd6.lbl">
+    <wgtStyle font-size="18" x="6.15" font-color="rgb(255,255,255)" height="46.60" font-sizepx="24" cx="73.78" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="22.73" keypad-type="None" y="1.14" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="66"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd3">
+   <wgtStyle x="446" height="50" cx="83" width="166" cy="-75" y="127"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd3.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="25" x="0" downFillColor="rgb(0,0,255)" height="50"/>
+    <dataLinks>
+     <dataLink tag="PB_Introd_Prelievo" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+     <dataLink tag="Introduttore_Mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#55aaff"/>
+      </xForms>
+     </dataLink>
+     <dataLink tag="Introduttore_Mano" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#800080"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd3.lbl">
+    <wgtStyle font-size="18" x="6.15" font-color="rgb(255,255,255)" height="46.60" font-sizepx="24" cx="73.78" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="22.73" keypad-type="None" y="1.14" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="55"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd5">
+   <wgtStyle x="234" height="50" cx="83" width="166" cy="25" y="127"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd5.btn">
+    <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="momentary" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="25" x="0" downFillColor="rgb(128,0,128)" height="50"/>
+    <dataLinks>
+     <dataLink tag="PB_Introd_StBy" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd5.lbl">
+    <wgtStyle font-size="18" x="6.15" font-color="rgb(255,255,255)" height="46.60" font-sizepx="24" cx="73.78" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="22.73" keypad-type="None" y="1.14" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="54"/>
+    </links>
+   </object>
+  </object>
+  <object static="true" class="LabelWgt" id="label1">
+   <wgtStyle vert-align="middle" wrapping="true" font-sizepx="16" cx="102.44" frameFill="rgb(127,127,127)" y="74" font-family="Tahoma" frameSize="0" font-size="12" frameColor="rgb(127,127,127)" width="200" cy="18" x="217" frame="true" keypad-type="None" font-color="rgb(255,255,255)" height="40" alignment="center"/>
+   <links>
+    <lang class="MLTextLink" textid="72"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd1">
+   <wgtStyle x="205.25" height="65" cx="89.50" width="179" cy="-97.50" y="408"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd1.btn">
+    <wgtStyle x="0" height="65" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="89.50" width="179" style="0" cy="32.50" form="standard" fill="rgb(0,0,139)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(0,0,255)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="manuale nastrini.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd1.lbl">
+    <wgtStyle font-size="18" x="6.65" font-color="rgb(255,255,255)" height="60.57" font-sizepx="24" cx="79.57" width="159.11" forcePaint="3" font-family="Tahoma" alignment="center" cy="29.56" keypad-type="None" y="1.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="148"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd7">
+   <wgtStyle x="402.50" height="65" cx="89.50" width="179" cy="-97.50" y="408"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd7.btn">
+    <wgtStyle x="0" height="65" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="89.50" width="179" style="0" cy="32.50" form="standard" fill="rgb(0,0,139)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(0,0,255)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="manuale formatura.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd7.lbl">
+    <wgtStyle font-size="18" x="6.65" font-color="rgb(255,255,255)" height="60.57" font-sizepx="24" cx="79.57" width="159.11" forcePaint="3" font-family="Tahoma" alignment="center" cy="29.56" keypad-type="None" y="1.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="149"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt13">
+   <wgtStyle x="219" height="55" cx="83" width="166" cy="27.50" y="305"/>
+   <object class="GroupWgt" customType="Buttons" id="GroupWgt13.BtnStd9">
+    <wgtStyle x="0" height="55" cx="83" width="166" cy="27.50" y="0"/>
+    <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="GroupWgt13.BtnStd9.btn">
+     <wgtStyle style="0" value="0" forcePaint="8" form="standard" type="maintained" cx="83" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,0,139)" releasePath="images\Btn_rect_blueUp.svg" width="166" cy="27.50" x="0" downFillColor="rgb(50,205,50)" height="55"/>
+     <dataLinks>
+      <dataLink tag="PB_sblocco_tavole" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+      <dataLink tag="PB_sblocco_tavole" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="upColor" sourceType="Tag" readWrite="R/W">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+       </xForms>
+      </dataLink>
+      <dataLink tag="PB_sblocco_tavole" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="pushColor" sourceType="Tag" readWrite="R/W">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" name="ColorPaletteCustom" ColorPaletteCustom="#00007f;#32cd32"/>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="MsgTextWgt" id="GroupWgt13.msgtext2">
+    <wgtStyle value="0" vert-align="middle" forcePaint="11" continous="true" font-sizepx="24" cx="94.98" y="0" font-family="Tahoma" max="1" viewindex="false" min="0" frameSize="0" font-size="18" text="" frameColor="none" width="166" cy="24.75" x="0" frame="true" keypad-type="None" font-color="rgb(255,255,255)" height="55" alignment="center">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+     </msgtxt>
+    </wgtStyle>
+    <dataLinks>
+     <dataLink tag="PB_sblocco_tavole" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R"/>
+    </dataLinks>
+    <links>
+     <lang class="MLMsgLink:messages:">
+      <MLFontFamily L3="Tahoma" L1="Tahoma" L6="Tahoma" L2="Tahoma" L5="Tahoma" L4="Tahoma"/>
+      <textid idx="0" val="185"/>
+      <textid idx="1" val="186"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd2">
+   <wgtStyle x="409" height="50" cx="83" width="166" cy="25" y="307.50"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd2.btn">
+    <wgtStyle x="0" height="50" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="83" width="166" style="0" cy="25" form="standard" fill="rgb(0,0,139)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(0,0,255)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="ShowDialogAction" pageName="correzioni.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd2.lbl">
+    <wgtStyle font-size="18" x="6.16" font-color="rgb(255,255,255)" height="46.60" font-sizepx="24" cx="73.79" width="147.56" forcePaint="3" font-family="Tahoma" alignment="center" cy="22.73" keypad-type="None" y="1.14" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="215"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

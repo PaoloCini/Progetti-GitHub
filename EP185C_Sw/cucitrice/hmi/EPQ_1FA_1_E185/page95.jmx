@@ -1,0 +1,43 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object dataWndSize="0,70" class="PageWgt" usedFonts="Tahoma,Metrostyle" staticOptEnable="true" id="Page95" pageName="Page95" downloadPrepDone="false" pageSize="800,600" staticFile="opt/page95.png">
+  <wgtStyle fitToSize="1" x="0" y="0" ver="040500458" height="600" v="04.05.00.458" width="800"/>
+  <object class="PageMLTextMgrWgt" mgrType="Page" id="_PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+   <langs curLangId="L2" defLangId="L2">
+    <lang keypads="" langCode="it-IT" removable="false" writingsystem="Any" name="ITALIANO" langId="L1" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="en-US" removable="false" writingsystem="Any" name="ENGLISH" langId="L2" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="fr-FR" removable="false" writingsystem="Any" name="FRANCAIS" langId="L3" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="es-ES" removable="false" writingsystem="Any" name="ESPANOL" langId="L4" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="de-DE" removable="false" writingsystem="Any" name="DEUTSCH" langId="L5" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="pt-PT" removable="false" writingsystem="Any" name="PORTUGUES" langId="L6" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L2="SELEZIONE" L3="SELEZIONE" L4="SELEZIONE" L5="SELEZIONE" id="1" L6="SELEZIONE" L1="CONFIGURAZIONE - Nastrini"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Page95@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect21">
+   <wgtStyle nodeName="rect" fill="rgb(237,237,237)" x="6" y="6" stroke="rgb(200,200,200)" height="55" cy="56.83" cx="644" width="644"/>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle font-bold="true" font-family="Tahoma" font-size="24" x="11" vert-align="top" wrapping="true" marker="true" y="13.50" forcePaint="2" font-sizepx="32" height="47" cy="22.74" keypad-type="None" cx="310.39" alignment="center" width="620"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect22">
+   <wgtStyle nodeName="rect" fill="rgb(237,237,237)" x="659" y="5" stroke="rgb(200,200,200)" height="55" cy="56.83" cx="137" width="137"/>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle form="date-time" vert-align="middle" value="-1" max="4096" numberFormat="0" step="1" min="0" y="32" readWrite="true" font-family="Metrostyle" height="31.93" font-sizepx="16" font-color="rgb(0,0,139)" x="650" timeSpec="local" showThousandSeparator="false" alignment="center" cy="15.97" width="150" usingFormat="hh:mm:ss" keypad-type="None" cx="75" font-size="12" text="-1"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle form="date-time" vert-align="middle" value="-1" max="4096" numberFormat="0" forcePaint="73" step="1" min="0" y="5" font-family="Metrostyle" height="32" font-sizepx="16" font-color="rgb(0,0,139)" x="651" timeSpec="local" showThousandSeparator="false" alignment="center" cy="16" width="150" keypad-type="None" usingFormat="SHORT-DATE" cx="74.99" font-size="12" text="-1"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" dataSource="_SysPropMgr" widgetType="Project" tagType="long" attribute="value" tagIndex="-1" tag="System Time" readWrite="R" sourceType="System"/>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

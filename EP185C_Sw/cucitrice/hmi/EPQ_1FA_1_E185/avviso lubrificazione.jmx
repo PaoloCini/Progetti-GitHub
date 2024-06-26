@@ -1,0 +1,118 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object dataWndSize="0,70" px="0" class="DialogWgt" usedFonts="Tahoma,Roboto Light" pageType="modal" py="0" singleInstance="true" staticOptEnable="true" titlebar="true" titleName="" id="Avviso Lubrificazione" pageName="Avviso Lubrificazione" downloadPrepDone="false" pageSize="600,400" scriptFile="avviso lubrificazione.js" staticFile="opt/avviso lubrificazione.png" dynPosition="false">
+  <wgtStyle fitToSize="1" x="0" y="0" ver="040500458" height="400" v="04.05.00.458" width="600"/>
+  <links>
+   <action class="JavaScriptAction" attribute="onActivate" actionID="0" f="update_alarm_banner" event="onActivate" actionWgt="_WgtMgr"/>
+  </links>
+  <object class="PageMLTextMgrWgt" mgrType="Page" id="_PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+   <langs curLangId="L2" defLangId="L2">
+    <lang keypads="" langCode="it-IT" removable="false" writingsystem="Any" name="ITALIANO" langId="L1" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="en-US" removable="false" writingsystem="Any" name="ENGLISH" langId="L2" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="fr-FR" removable="false" writingsystem="Any" name="FRANCAIS" langId="L3" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="es-ES" removable="false" writingsystem="Any" name="ESPANOL" langId="L4" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="de-DE" removable="false" writingsystem="Any" name="DEUTSCH" langId="L5" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="pt-PT" removable="false" writingsystem="Any" name="PORTUGUES" langId="L6" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L2="" L3="" L4="" L5="" id="14" L6="" L1=""/>
+    <MLText L2="Lubrication Interval" L3="Label" L4="Intervalo de lubricación" L5="Label" id="0" L6="Label" L1="Intervallo di lubrificazione"/>
+    <MLText L2="REARM THE OIL PUM" L3="Label" L4="Rearmar la bomba de aceite" L5="Label" id="7" L6="Label" L1="Riarmare la pompa dell'olio"/>
+    <MLText L2="Ok" L3="Label" L4="Ok" L5="Label" id="8" L6="Label" L1="Conferma"/>
+    <MLText L2="Elapsed time" L3="Label" L4="Gastado" L5="Label" id="9" L6="Label" L1="Trascorso"/>
+    <MLText L2="h" L3="Label" L4="h" L5="Label" id="10" L6="Label" L1="h"/>
+    <MLText L2="h" L3="Label" L4="h" L5="Label" id="11" L6="Label" L1="h"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Avviso Lubrificazione@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+  </object>
+  <object static="true" class="ShapeWgt" id="roundrect1">
+   <wgtStyle nodeName="rect" rx="20" fill="none" x="48" ry="20" y="92" stroke="rgb(0,0,255)" height="125" cy="60.48" cx="249.21" width="514"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle font-bold="true" font-family="Tahoma" font-size="24" x="79" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="103" forcePaint="2" font-sizepx="32" height="109" cy="49.50" keypad-type="None" cx="226.39" font-color="rgb(0,0,255)" alignment="center" width="441"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11">
+   <wgtStyle font-family="Tahoma" font-size="18" x="393" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="232" forcePaint="2" font-sizepx="24" height="33" cy="15.30" keypad-type="None" cx="10.24" alignment="center" width="19"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric1">
+   <wgtStyle form="Numeric" vert-align="middle" value="9999" max="2000" numberFormat="1" forcePaint="8" step="1" min="8" y="238" leadingDigits="4" readWrite="true" font-family="Roboto Light" height="27.62" font-sizepx="27" frameColor="rgb(200,200,200)" x="275" timeSpec="local" showThousandSeparator="false" alignment="center" cy="12.27" width="108.23" keypad-type="Numeric" usingFormat="" cx="49.26" font-size="20" text="9999"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="unsignedShort" attribute="value" tagIndex="-1" tag="ore_manutenzione" readWrite="R/W" sourceType="Tag"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle font-family="Tahoma" font-size="18" x="18" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="229" forcePaint="67" font-sizepx="24" height="41.69" cy="19.21" keypad-type="None" cx="182.85" width="356"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle font-family="Tahoma" font-size="18" x="21" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="301" forcePaint="2" font-sizepx="24" height="42" cy="19.35" keypad-type="None" cx="106.02" width="206"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle font-family="Tahoma" font-size="18" x="394" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="303" forcePaint="2" font-sizepx="24" height="33" cy="15.30" keypad-type="None" cx="10.24" alignment="center" width="19"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric2">
+   <wgtStyle form="Numeric" vert-align="middle" value="9999" max="2000" numberFormat="1" forcePaint="8" step="1" min="8" y="307" leadingDigits="4" readWrite="true" font-family="Roboto Light" height="27.62" font-sizepx="27" frameColor="rgb(200,200,200)" x="273" timeSpec="local" showThousandSeparator="false" alignment="center" cy="12.27" width="108.23" keypad-type="Numeric" usingFormat="" cx="49.26" font-size="20" text="9999"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="unsignedShort" attribute="value" tagIndex="-1" tag="contaore_manutenzione" readWrite="R/W" sourceType="Tag"/>
+   </dataLinks>
+  </object>
+  <object customType="ButtonsWithLabel" class="GroupWgt" id="BtnStd22">
+   <wgtStyle x="399" y="335" forcePaint="1" height="65" cy="-97.50" cx="100" width="200"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd22.btn">
+    <wgtStyle form="standard" bdrSize="0.17,0.17,0.15,0.16" value="0" forcePaint="9" y="0" style="0" bdrImageSize="54.00,44.00" height="65" fill="rgb(50,205,50)" type="momentary" x="0" downFillColor="rgb(0,147,0)" cy="32.50" releasePath="images\Btn_rect_blueUp.svg" needlePath="images\Btn_rect_Dwn.svg" width="200" cx="100" pushColor="rgb(128,128,0)"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="boolean" attribute="value" tagIndex="-1" tag="Tasto_conferma" readWrite="R/W" sourceType="Tag"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd22.lbl">
+    <wgtStyle font-family="Tahoma" font-size="18" x="7.42" vert-align="middle" wrapping="true" y="1.48" forcePaint="3" font-sizepx="24" height="60.58" cy="29.55" keypad-type="None" cx="88.90" font-color="rgb(255,255,255)" alignment="center" width="177.78"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="alarm_banner">
+   <wgtStyle vert-align="middle" forcePaint="2072" scrollMode="2" marker="true" y="0" font-family="Tahoma" height="84" font-sizepx="27" frameColor="none" font-color="rgb(255,0,0)" x="0" alignment="center" cy="40.27" frame="true" wgtStaticOpt="dynamic" font-bold="true" width="600" frameFill="rgb(102,102,102)" keypad-type="None" cx="300.50" font-size="20"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" dataSource="_SysPropMgr" widgetType="Project" attribute="visibility" tagIndex="-1" tag="Alarm triggered" readWrite="R" sourceType="System"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="badge">
+   <wgtStyle x="2" y="85" forcePaint="8" height="28" cy="14" cx="14" width="28"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" dataSource="_SysPropMgr" widgetType="Project" tagType="int" attribute="visibility" tagIndex="-1" tag="Alarm triggered" readWrite="R" sourceType="System"/>
+   </dataLinks>
+   <object class="ShapeWgt" id="badge.circle1">
+    <wgtStyle nodeName="ellipse" rx="22" fill="rgb(255,0,0)" x="0" ry="19" y="0" forcePaint="1" stroke="none" height="28" cy="14" cx="14" width="28"/>
+   </object>
+   <object class="NumericWgt" id="badge.field1">
+    <wgtStyle form="Numeric" vert-align="top" value="99" max="2147483647" numberFormat="6" forcePaint="9" step="1" min="-2147483648" y="5" font-family="Roboto Light" height="21" font-sizepx="13" font-color="rgb(255,255,255)" x="0" timeSpec="local" showThousandSeparator="false" alignment="center" cy="9.45" font-bold="true" width="27" keypad-type="Numeric" usingFormat="#" cx="12.42" font-size="10" text="99"/>
+    <dataLinks>
+     <dataLink class="SysPropMgrWgt" dataSource="_SysPropMgr" widgetType="Project" tagType="int" attribute="value" tagIndex="-1" tag="Number of triggered alarms" readWrite="R" sourceType="System"/>
+    </dataLinks>
+    <links>
+     <action class="JavaScriptAction" attribute="onDataUpdate" actionID="1" f="update_alarm_banner" event="onDataUpdate" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

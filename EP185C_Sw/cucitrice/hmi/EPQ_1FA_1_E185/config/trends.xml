@@ -1,0 +1,19 @@
+<trends>
+ <multiLangs>
+  <langs curLangId="L2" defLangId="L2">
+   <lang langId="L1" name="ITALIANO" defaultFont="Tahoma" removable="false" writingsystem="Any" keypads="" langCode="it-IT"/>
+   <lang langId="L2" name="ENGLISH" defaultFont="Tahoma" removable="false" writingsystem="Any" keypads="" langCode="en-US"/>
+   <lang langId="L3" name="FRANCAIS" defaultFont="Tahoma" removable="false" writingsystem="Any" keypads="" langCode="fr-FR"/>
+   <lang langId="L4" name="ESPANOL" defaultFont="Tahoma" removable="false" writingsystem="Any" keypads="" langCode="es-ES"/>
+   <lang langId="L5" name="DEUTSCH" defaultFont="Tahoma" removable="false" writingsystem="Any" keypads="" langCode="de-DE"/>
+   <lang langId="L6" name="PORTUGUES" defaultFont="Tahoma" removable="false" writingsystem="Any" keypads="" langCode="pt-PT"/>
+  </langs>
+  <MLTexts>
+   <MLText L5="Timestamp" L3="Timestamp" L4="Timestamp" L6="Timestamp" id="9" L2="Timestamp" L1="Timestamp"/>
+   <MLText L5="Date" L3="Date" L4="Date" L6="Date" id="10" L2="Date" L1="Date"/>
+   <MLText L5="Time" L3="Time" L4="Time" L6="Time" id="11" L2="Time" L1="Time"/>
+   <MLText L5="Quality" L3="Quality" L4="Quality" L6="Quality" id="12" L2="Quality" L1="Quality"/>
+  </MLTexts>
+ </multiLangs>
+ <commonTitleMLDesc Timestamp="[9@Trend]Timestamp" Time="[11@Trend]Time" Quality="[12@Trend]Quality" Date="[10@Trend]Date"/>
+</trends>

@@ -1,0 +1,31 @@
+18/06/2024			
+			Lavori HMI cucitrice 185 Salnes.
+			-Predisporre su plc e Hmi 2 variabili di richiesta pag.: richiesta_n_pagin_hmi_pila, richiesta_n_pagin_hmi_bordoM. Su Hmi fatto D5001, D5101
+			Predisporre su plc e Hmi 2 variabili di pag. attuale : n_pagina_hmi_pila, n_pagina_hmi_bordoM. Su Hmi fatto D5000. D5100
+			Impostata la disabilitazione di alcuni tasti se siamo a Bordo Macchina: in pag. SELEZIONE i ps. 'AUTOMATICO' e 'PROGRAMMI' e 'MANUTENZIONE'
+			In Manuale formatura: si attiva il blocco dei tasti se: sono in Pila (Sel==0) e ho protez. aperte OPPURE
+																	sono in Bordo M (Sel==1) e ho prot. chiuse
+								 Per le protezioni Aperte o Chiuse implemetare una Tag da Plc che mi fa la serie delle due protez. SX e DX
+			-Mappati i vari input di Nastrini Ok
+
+			
+17/06/2024
+			Lavori HMI cucitrice 185 Salnes.
+			Arrivato alla pag. correzioni completata.
+			Modificata pag.90 Manuale Carico; Aggiunta pag.91 Manuale Formatura; pag.92 Manuale Nastrini
+			MANUALE CARICO CARTONE: da associare la variab. ai pulsanti introduttore.
+			MANUALE FORMATURA: W323.05 decidere se PB_Sel_introduttore_mano o PB_Sel_Pressore_mano. (Lascerei PB_Sel_Pressore_mano che era già esistente)
+								Rivedere tutti i ps dell'estrattore perchè da associare alla variab. giusta
+								Rivedere anche spintore.
+			POPUP TEMPERATURE: ricontrollare le variab.	
+			Popup Correzioni Ok!
+14/06/2024
+			EPQ_1FA_1_E185
+			-Arrivato pag.80: Automatico
+			-In Pag.70 Prove Scatola inserire ps. Sblocco Tavole
+			-Pag.Parametri Formato: La variabile CARTONE STANDARD da rivedere. Non coincide con quello del pannello dellla vecchia 185
+			-Fare config. Estrattore, config. Spintore. Vedere config. pressore.(non trovato KT pressore nel plc, velocità ecc.)
+			-Ripreso HMI cucitrice da Top Print perchè già era delle stesse dimensioni: Vision 607.
+			Da fare traduz. in Spagnolo. Vedere Hmi di 175M di Salnes
+			Pag. GESTIONE RICETTE: Vedere Punta_messaggi D940 se i messaggi sono giusti. 
+			Pag.Ingressi_Cuc_0, ..1, ..2 da controllare tutte.

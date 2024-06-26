@@ -1,0 +1,211 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" usedFonts="Tahoma,Metrostyle" pageName="Sel Configurazione" staticOptEnable="true" downloadPrepDone="false" staticFile="opt/sel configurazione.png" dataWndSize="0,70" pageSize="800,480" id="Sel Configurazione">
+  <wgtStyle x="0" height="480" ver="040500458" width="800" color="rgb(0,0,0)" fitToSize="1" y="0" v="04.05.00.458"/>
+  <object mgrType="Page" class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+   <langs curLangId="L1" defLangId="L1">
+    <lang writingsystem="Any" removable="false" langCode="it-IT" name="ITALIANO" langId="L1" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="en-US" name="ENGLISH" langId="L2" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="fr-FR" name="FRANCAIS" langId="L3" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="es-ES" name="ESPANOL" langId="L4" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="de-DE" name="DEUTSCH" langId="L5" defaultFont="Tahoma" keypads=""/>
+    <lang writingsystem="Any" removable="false" langCode="pt-PT" name="PORTUGUES" langId="L6" defaultFont="Tahoma" keypads=""/>
+   </langs>
+   <MLTexts>
+    <MLText L3="OK" L1="Ok" L6="OK" L2="OK" L5="OK" L4="OK" id="0"/>
+    <MLText L3="SELEZIONE" L1="CONFIGURAZIONE" L6="SELEZIONE" L2="CONFIGURATION" L5="SELEZIONE" L4="CONFIGURACCION" id="3"/>
+    <MLText L3="MANUTENZIONE" L1="CAMMA" L6="MANUTENZIONE" L2="CAM" L5="MANUTENZIONE" L4="PRESSOR" id="6"/>
+    <MLText L3="LINGUA" L1="CARICO CARTONE" L6="LINGUA" L2="LOADING - UNLOAD." L5="LINGUA" L4="CARGA DE CARTÓN" id="11"/>
+    <MLText L3="MANUTENZIONE" L1="TERMOCONTROLLI" L6="MANUTENZIONE" L2="THERMOCONTR." L5="MANUTENZIONE" L4="CONTROLES TÉRMICOS" id="12"/>
+    <MLText L3="LINGUA" L1="FORMA" L6="LINGUA" L2="MOULD" L5="LINGUA" L4="MOLDE" id="14"/>
+    <MLText L3="MANUTENZIONE" L1="ASSI" L6="MANUTENZIONE" L2="AXLES" L5="MANUTENZIONE" L4="EJES" id="15"/>
+    <MLText L3="LINGUA" L1="NASTRINI" L6="LINGUA" L2="SEALING TAPES" L5="LINGUA" L4="TERMOSELLADORAS" id="19"/>
+    <MLText L3="MANUTENZIONE" L1="SALVA RICETTA RIF." L6="MANUTENZIONE" L2="SAVE REF. RECIPE" L5="MANUTENZIONE" L4="SALVAR  REFERENCIA" id="23"/>
+    <MLText L3="Label" L1="Hmi Bordo Macchina" L6="Label" L2="Hmi Board Machine" L5="Label" L4="A bordo de la máquina" id="26"/>
+    <MLText L3="Label" L1="Hmi Pila Cartoni" L6="Label" L2="Hmi Carboard Pile" L5="Label" L4="Pila de cartón Hmi" id="27"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Sel Configurazione@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" height="0" width="0" y="0"/>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect1">
+   <wgtStyle x="600" height="65" cx="100" width="200" cy="32.50" y="414"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect1.btn">
+    <wgtStyle x="0" height="65" value="0" pushColor="rgb(152,251,152)" width="200" dx="1" form="rectangle" fill="rgb(50,205,50)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,147,0)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="selezione.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect1.txt">
+    <wgtStyle font-size="20" x="31.04" font-color="rgb(255,255,255)" height="20.80" font-sizepx="27" cx="74.35" width="144.83" forcePaint="3" font-family="Tahoma" alignment="center" cy="10.82" keypad-type="None" y="22.10" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect2">
+   <wgtStyle x="30" height="72" cx="175" width="350" cy="36" y="271.33"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect2.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" dx="1" form="rectangle" fill="rgb(0,85,255)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="configurazione - assi.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect2.txt">
+    <wgtStyle font-size="18" x="54.31" font-color="rgb(255,255,255)" height="23.04" font-sizepx="24" cx="130.09" width="253.44" forcePaint="3" font-family="Tahoma" alignment="center" cy="11.98" keypad-type="None" y="24.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect5">
+   <wgtStyle x="30" height="72" cx="175" width="350" cy="36" y="183.67"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect5.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" dx="1" form="rectangle" fill="rgb(0,85,255)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="configurazione - forma.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect5.txt">
+    <wgtStyle font-size="18" x="54.31" font-color="rgb(255,255,255)" height="23.04" font-sizepx="24" cx="130.09" width="253.44" forcePaint="3" font-family="Tahoma" alignment="center" cy="11.98" keypad-type="None" y="24.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect9">
+   <wgtStyle x="420" height="72" cx="175" width="350" cy="36" y="183.67"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect9.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" dx="1" form="rectangle" fill="rgb(0,85,255)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="configurazione - pressore.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect9.txt">
+    <wgtStyle font-size="18" x="37.31" font-color="rgb(255,255,255)" height="72" font-sizepx="24" cx="134.75" width="262.50" forcePaint="3" font-family="Tahoma" alignment="center" cy="37.44" keypad-type="None" y="0" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect10">
+   <wgtStyle x="420" height="72" cx="175" width="350" cy="36" y="271.33"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect10.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" dx="1" form="rectangle" fill="rgb(0,85,255)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="configurazione - nastrini.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect10.txt">
+    <wgtStyle font-size="18" x="54.31" font-color="rgb(255,255,255)" height="23.04" font-sizepx="24" cx="130.09" width="253.44" forcePaint="3" font-family="Tahoma" alignment="center" cy="11.98" keypad-type="None" y="24.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect5">
+   <wgtStyle x="660" height="55" cx="137" width="137" cy="56.83" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="6" nodeName="rect"/>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect4">
+   <wgtStyle x="7.61" height="55" cx="644" width="644" cy="56.83" fill="rgb(237,237,237)" stroke="rgb(200,200,200)" y="7" nodeName="rect"/>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle font-size="24" x="152" height="48" font-sizepx="32" cx="200" font-bold="true" width="400" forcePaint="2" font-family="Tahoma" alignment="center" cy="22.74" keypad-type="None" y="10" vert-align="top" marker="true" wrapping="true"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle timeSpec="local" value="-1" vert-align="middle" form="date-time" font-sizepx="16" cx="75" y="33" font-family="Metrostyle" max="4096" min="0" font-size="12" text="-1" readWrite="true" width="150" cy="15.97" x="651" numberFormat="0" keypad-type="None" font-color="rgb(0,0,139)" usingFormat="hh:mm:ss" showThousandSeparator="false" height="31.93" alignment="center" step="1"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle timeSpec="local" value="-1" vert-align="middle" forcePaint="73" form="date-time" font-sizepx="16" cx="74.99" y="6" font-family="Metrostyle" max="4096" min="0" font-size="12" text="-1" width="150" cy="16" x="652" numberFormat="0" keypad-type="None" font-color="rgb(0,0,139)" usingFormat="SHORT-DATE" showThousandSeparator="false" height="32" alignment="center" step="1"/>
+   <dataLinks>
+    <dataLink tag="System Time" tagIndex="-1" widgetType="Project" dataSource="_SysPropMgr" class="SysPropMgrWgt" tagType="long" attribute="value" sourceType="System" readWrite="R"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect4">
+   <wgtStyle x="420" height="72" cx="175" width="350" cy="36" y="96"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect4.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" dx="1" form="rectangle" fill="rgb(0,85,255)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="configurazione - termocontrollo 1 sx.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect4.txt">
+    <wgtStyle font-size="18" x="37.31" font-color="rgb(255,255,255)" height="72" font-sizepx="24" cx="134.75" width="262.50" forcePaint="3" font-family="Tahoma" alignment="center" cy="37.44" keypad-type="None" y="0" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect3">
+   <wgtStyle x="30" height="72" cx="175" width="350" cy="36" y="96"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect3.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" dx="1" form="rectangle" fill="rgb(0,85,255)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <links>
+     <action event="onMouseUp" class="LoadPageAction" pageName="configurazione - carico cartone.jmx" attribute="onMouseRelease" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect3.txt">
+    <wgtStyle font-size="18" x="54.31" font-color="rgb(255,255,255)" height="23.04" font-sizepx="24" cx="130.09" width="253.44" forcePaint="3" font-family="Tahoma" alignment="center" cy="11.98" keypad-type="None" y="24.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect6">
+   <wgtStyle x="30" height="72" cx="175" width="350" cy="36" y="359"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect6.btn">
+    <wgtStyle x="0" height="72" value="0" pushColor="rgb(170,170,255)" width="350" forcePaint="8" dx="1" form="rectangle" fill="rgb(255,255,0)" needlePath="images\win-like-press.svg" dy="-1" y="0" type="momentary" downFillColor="rgb(0,85,255)" releasePath="images\win-like.svg"/>
+    <dataLinks>
+     <dataLink tag="tasto_crea_ricetta_ref" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="boolean" attribute="value" sourceType="Tag" readWrite="R/W"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="BtnRect6.txt">
+    <wgtStyle font-size="18" x="54.31" height="23.04" font-sizepx="24" cx="130.09" width="253.44" forcePaint="3" font-family="Tahoma" alignment="center" cy="11.98" keypad-type="None" y="24.48" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="23"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd1">
+   <wgtStyle x="420" height="47" cx="62" width="124" cy="23.50" y="357"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd1.btn">
+    <wgtStyle style="0" value="0" form="standard" mtx="1,0,0,0,1,0,0,0,1" type="momentary" cx="62" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" fill="rgb(0,85,255)" releasePath="images\Btn_rect_blueUp.svg" width="124" cy="23.50" x="0" downFillColor="rgb(50,205,50)" height="47"/>
+    <links>
+     <action event="onMouseUp" class="WriteTagAction" attribute="onMouseRelease" actionID="1" TagValue="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink tag="SelZone" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="tagSrc" sourceType="Tag" readWrite="R"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd1.lbl">
+    <wgtStyle font-size="12" x="4.60" font-color="rgb(237,237,237)" height="43.80" font-sizepx="13" cx="55.11" width="110.22" forcePaint="1" font-family="Tahoma" alignment="center" cy="21.37" keypad-type="None" y="1.07" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="27"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="BtnStd2">
+   <wgtStyle x="420" height="47" cx="62" width="124" cy="23.50" y="415"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd2.btn">
+    <wgtStyle x="0" height="47" value="0" pushColor="rgb(128,128,0)" bdrSize="0.17,0.17,0.15,0.16" cx="62" width="124" style="0" cy="23.50" form="standard" fill="rgb(0,85,255)" needlePath="images\Btn_rect_Dwn.svg" bdrImageSize="54.00,44.00" y="0" type="momentary" downFillColor="rgb(50,205,50)" releasePath="images\Btn_rect_blueUp.svg"/>
+    <links>
+     <action event="onMouseUp" class="WriteTagAction" attribute="onMouseRelease" actionID="0" TagValue="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink tag="SelZone" tagIndex="-1" widgetType="Project" dataSource="_TagMgr" class="TagMgrWgt" tagType="unsignedShort" attribute="tagSrc" sourceType="Tag" readWrite="R"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd2.lbl">
+    <wgtStyle font-size="12" x="4.60" font-color="rgb(237,237,237)" height="43.80" font-sizepx="13" cx="55.11" width="110.22" forcePaint="1" font-family="Tahoma" alignment="center" cy="21.37" keypad-type="None" y="1.07" vert-align="middle" wrapping="true"/>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

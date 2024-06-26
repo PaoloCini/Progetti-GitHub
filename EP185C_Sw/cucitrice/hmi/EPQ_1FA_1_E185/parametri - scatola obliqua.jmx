@@ -1,0 +1,277 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object dataWndSize="0,70" class="PageWgt" usedFonts="Tahoma,Roboto Light,Metrostyle" staticOptEnable="true" id="Parametri - Scatola Obliqua" pageName="Parametri - Scatola Obliqua" downloadPrepDone="false" pageSize="800,480" staticFile="opt/parametri - scatola obliqua.png">
+  <wgtStyle fitToSize="1" color="rgb(0,0,0)" x="0" y="0" ver="040500458" height="480" v="04.05.00.458" width="800"/>
+  <object static="true" class="ShapeWgt" id="rect2">
+   <wgtStyle nodeName="rect" fill="none" x="16.71" y="385" stroke="rgb(255,255,255)" height="90" cy="45" cx="94.17" width="194.60"/>
+  </object>
+  <object class="PageMLTextMgrWgt" mgrType="Page" id="_PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+   <langs curLangId="L2" defLangId="L2">
+    <lang keypads="" langCode="it-IT" removable="false" writingsystem="Any" name="ITALIANO" langId="L1" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="en-US" removable="false" writingsystem="Any" name="ENGLISH" langId="L2" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="fr-FR" removable="false" writingsystem="Any" name="FRANCAIS" langId="L3" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="es-ES" removable="false" writingsystem="Any" name="ESPANOL" langId="L4" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="de-DE" removable="false" writingsystem="Any" name="DEUTSCH" langId="L5" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="pt-PT" removable="false" writingsystem="Any" name="PORTUGUES" langId="L6" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L2="Corner Height Setting" L3="Label" L4="Ajuste de la altura de los Bordes" L5="Label" id="0" L6="Label" L1="Impostazione Altezza Spigoli"/>
+    <MLText L2="Load Side" L3="Label" L4="Lado de carga" L5="Label" id="1" L6="Label" L1="Lato Carico"/>
+    <MLText L2="Left Side" L3="Label" L4="Lado&#xa;izquierdo" L5="Label" id="8" L6="Label" L1="Lato Sinistro"/>
+    <MLText L2="Right Side" L3="Label" L4="Lado&#xa;Derecho" L5="Label" id="9" L6="Label" L1="Lato Destro"/>
+    <MLText L2="2 Right" L3="Label" L4="2 Derecha" L5="Label" id="11" L6="Label" L1="2 Destra"/>
+    <MLText L2="1 Right" L3="Label" L4="1 Derecha" L5="Label" id="12" L6="Label" L1="1 Destra"/>
+    <MLText L2="2 Left" L3="Label" L4="2 Izquierda" L5="Label" id="13" L6="Label" L1="2 Sinistra"/>
+    <MLText L2="1 Left" L3="Label" L4="1 Izquierda" L5="Label" id="14" L6="Label" L1="1 Sinistra"/>
+    <MLText L2="Ok" L3="Label" L4="Ok" L5="Label" id="17" L6="Label" L1="Ok"/>
+    <MLText L2="Box Height" L3="Label" L4="Altura Caja" L5="Label" id="22" L6="Label" L1="Altezza Scatola"/>
+    <MLText L2="" L3="Label" L4="" L5="Label" id="23" L6="Label" L1=""/>
+    <MLText L2="Right side height" L3="Label" L4="Altura del lado Der." L5="Altura del lado der." id="24" L6="Label" L1="Altezza Lato Destro"/>
+    <MLText L2="Left side height" L3="Label" L4="Altura del lado Izq." L5="Label" id="31" L6="Label" L1="Altezza Lato Sinistro"/>
+    <MLText L2="" L3="Label" L4="" L5="Label" id="32" L6="Label" L1=""/>
+    <MLText L2="PARAMETERS  -  Oblique Box" L3="SELEZIONE" L4="PARAMETROS  -  Caja oblicua" L5="SELEZIONE" id="33" L6="SELEZIONE" L1="PARAMETRI - Scatola Obliqua"/>
+    <MLText L2="" L3="Label" L4="" L5="Label" id="34" L6="Label" L1=""/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Parametri - Scatola Obliqua@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" height="0" width="0"/>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect21">
+   <wgtStyle nodeName="rect" fill="rgb(237,237,237)" x="6" y="6" stroke="rgb(200,200,200)" height="55" cy="56.83" cx="644" width="644"/>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle font-bold="true" font-family="Tahoma" font-size="24" x="49" vert-align="top" wrapping="true" marker="true" y="11" forcePaint="2" font-sizepx="32" height="47" cy="22.74" keypad-type="None" cx="278.85" alignment="center" width="557"/>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object customType="ButtonsWithLabel" class="GroupWgt" id="BtnStd3">
+   <wgtStyle x="598" y="414" height="65" cy="-97.50" cx="100" width="200"/>
+   <object class="ButtonWgt" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnStd3.btn">
+    <wgtStyle needlePath="images\Btn_rect_Dwn.svg" form="standard" value="0" style="0" fill="rgb(50,205,50)" downFillColor="rgb(85,255,0)" x="0" releasePath="images\Btn_rect_blueUp.svg" bdrSize="0.17,0.17,0.15,0.16" bdrImageSize="54.00,44.00" y="0" height="65" cy="32.50" pushColor="rgb(128,128,0)" cx="100" type="momentary" width="200"/>
+    <links>
+     <action class="LoadPageAction" attribute="onMouseRelease" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="parametri - formato.jmx"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd3.lbl">
+    <wgtStyle font-family="Tahoma" font-size="18" x="7.42" vert-align="middle" wrapping="true" y="1.48" forcePaint="3" font-sizepx="24" height="60.58" cy="29.55" keypad-type="None" cx="88.90" font-color="rgb(237,237,237)" alignment="center" width="177.78"/>
+    <links>
+     <lang class="MLTextLink" textid="17"/>
+    </links>
+   </object>
+  </object>
+  <object class="NumericWgt" id="numeric9">
+   <wgtStyle form="Numeric" vert-align="middle" value="999.9" max="32767" numberFormat="1" forcePaint="8" step="1" min="-32768" y="213" leadingDigits="3" readWrite="true" font-family="Roboto Light" height="39" font-sizepx="24" frameColor="rgb(255,255,255)" decimalDigits="1" font-color="rgb(255,255,255)" x="620" timeSpec="local" showThousandSeparator="false" cy="17.15" frame="true" width="149" keypad-type="Numeric" usingFormat="" cx="67.64" font-size="18" text="999.9"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="value" tagIndex="-1" tag="Altezza_Sc_lato_sinistro" readWrite="R/W" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="min" tagIndex="-1" tag="Altezza_min_scatola" readWrite="R" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="max" tagIndex="-1" tag="Altezza_max_scatola" readWrite="R" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect22">
+   <wgtStyle nodeName="rect" fill="rgb(237,237,237)" x="659" y="5" stroke="rgb(200,200,200)" height="55" cy="56.83" cx="137" width="137"/>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle form="date-time" vert-align="middle" value="-1" max="4096" numberFormat="0" step="1" min="0" y="32" readWrite="true" font-family="Metrostyle" height="31.93" font-sizepx="16" font-color="rgb(0,0,139)" x="650" timeSpec="local" showThousandSeparator="false" alignment="center" cy="15.97" width="150" usingFormat="hh:mm:ss" keypad-type="None" cx="75" font-size="12" text="-1"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle form="date-time" vert-align="middle" value="-1" max="4096" numberFormat="0" forcePaint="73" step="1" min="0" y="5" font-family="Metrostyle" height="32" font-sizepx="16" font-color="rgb(0,0,139)" x="651" timeSpec="local" showThousandSeparator="false" alignment="center" cy="16" width="150" keypad-type="None" usingFormat="SHORT-DATE" cx="74.99" font-size="12" text="-1"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" dataSource="_SysPropMgr" widgetType="Project" tagType="long" attribute="value" tagIndex="-1" tag="System Time" readWrite="R" sourceType="System"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle font-family="Roboto Light" font-size="18" x="709" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="216" forcePaint="10" font-sizepx="24" height="31.50" cy="14.62" keypad-type="None" cx="28.94" font-color="rgb(255,255,255)" alignment="right" width="55.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="string-8" attribute="text" tagIndex="-1" tag="UnitLin" readWrite="R" sourceType="Tag"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="23">
+     <MLFontFamily L2="Roboto Light" L3="Tahoma" L4="Tahoma" L5="Tahoma" L6="Tahoma" L1="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric6">
+   <wgtStyle form="Numeric" vert-align="middle" value="999.9" max="32767" numberFormat="1" forcePaint="8" step="1" min="-32768" y="211" leadingDigits="3" readWrite="true" font-family="Roboto Light" height="39" font-sizepx="24" frameColor="rgb(255,255,255)" decimalDigits="1" font-color="rgb(255,255,255)" x="26" timeSpec="local" showThousandSeparator="false" cy="17.15" frame="true" width="149" keypad-type="Numeric" usingFormat="" cx="67.64" font-size="18" text="999.9"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="value" tagIndex="-1" tag="Altezza_Sc_lato_destro" readWrite="R/W" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="min" tagIndex="-1" tag="Altezza_min_scatola" readWrite="R" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="max" tagIndex="-1" tag="Altezza_max_scatola" readWrite="R" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle font-family="Roboto Light" font-size="18" x="115" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="214" forcePaint="10" font-sizepx="24" height="31.50" cy="14.62" keypad-type="None" cx="28.94" font-color="rgb(255,255,255)" alignment="right" width="55.50"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="string-8" attribute="text" tagIndex="-1" tag="UnitLin" readWrite="R" sourceType="Tag"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="34">
+     <MLFontFamily L2="Roboto Light" L3="Tahoma" L4="Tahoma" L5="Tahoma" L6="Tahoma" L1="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label3">
+   <wgtStyle font-family="Tahoma" font-size="18" x="8" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="390.94" forcePaint="18" font-sizepx="24" height="32.96" cy="15.28" keypad-type="None" cx="109.09" font-color="rgb(255,255,255)" alignment="center" width="212"/>
+   <links>
+    <lang class="MLTextLink" textid="22"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="numeric7">
+   <wgtStyle form="Numeric" vert-align="middle" value="999.9" max="2000" numberFormat="1" forcePaint="8" step="1" min="100" y="430" leadingDigits="3" font-family="Roboto Light" height="32.96" font-sizepx="24" frameColor="rgb(255,255,255)" decimalDigits="1" font-color="rgb(255,255,255)" x="41.89" timeSpec="local" showThousandSeparator="false" cy="14.56" frame="true" width="144.23" keypad-type="Numeric" usingFormat="" cx="65.49" font-size="18" text="999.9"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="short" attribute="value" tagIndex="-1" tag="Altezza_scatola" readWrite="R" sourceType="Tag">
+     <xForms>
+      <xForm class="ScaleXForm" Offset="0" name="Scale" Mod="10" Scale="1">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="Scale" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink attribute="min" sourceType="Formula">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="100*$('Klin')/10" name="Formula" compiledExpression="100*$0/10">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="$0" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink attribute="max" sourceType="Formula">
+     <xForms>
+      <xForm class="FormulaXForm" colorPalette="" expression="2000*$('Klin')/10" name="Formula" compiledExpression="2000*$0/10">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="float" attribute="$0" tagIndex="-1" tag="Klin" readWrite="R" sourceType="Tag"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle font-family="Roboto Light" font-size="18" x="126.12" frameColor="rgb(200,200,200)" vert-align="middle" wrapping="true" y="432.55" forcePaint="10" font-sizepx="24" height="26.59" cy="12.41" keypad-type="None" cx="28.02" font-color="rgb(255,255,255)" alignment="right" width="53.70"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" dataSource="_TagMgr" widgetType="Project" tagType="string-8" attribute="text" tagIndex="-1" tag="UnitLin" readWrite="R" sourceType="Tag"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="32">
+     <MLFontFamily L2="Roboto Light" L3="Tahoma" L4="Tahoma" L5="Tahoma" L6="Tahoma" L1="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object static="true" class="ShapeWgt" id="rect1">
+   <wgtStyle nodeName="rect" fill="rgb(237,237,237)" x="204" y="216" stroke="rgb(200,200,200)" height="158" cy="79" cx="193.06" width="399"/>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label7">
+   <wgtStyle font-family="Tahoma" font-size="18" x="473" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="328" forcePaint="18" font-sizepx="24" height="39" cy="18" keypad-type="None" cx="66.59" width="129"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label2">
+   <wgtStyle font-family="Tahoma" font-size="18" x="224" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="328" forcePaint="18" font-sizepx="24" height="39" cy="18" keypad-type="None" cx="61.46" width="119"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label4">
+   <wgtStyle font-family="Tahoma" font-size="18" x="228" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="222" forcePaint="18" font-sizepx="24" height="39" cy="18" keypad-type="None" cx="61.46" width="119"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label5">
+   <wgtStyle font-family="Tahoma" font-size="18" x="473" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="222" forcePaint="18" font-sizepx="24" height="39" cy="18" keypad-type="None" cx="66.59" width="129"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label6">
+   <wgtStyle font-bold="true" font-family="Tahoma" font-size="18" x="646" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="273" forcePaint="18" font-sizepx="24" height="79" cy="36" keypad-type="None" cx="61.47" font-color="rgb(204,36,204)" width="119"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label9">
+   <wgtStyle font-bold="true" font-family="Tahoma" font-size="18" x="50" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="273" forcePaint="18" font-sizepx="24" height="79" cy="36" keypad-type="None" cx="57.37" font-color="rgb(204,36,204)" width="111"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label10">
+   <wgtStyle vert-align="middle" forcePaint="18" y="108" font-family="Tahoma" height="39" wrapping="true" font-sizepx="24" frameColor="rgb(200,200,200)" font-color="rgb(204,36,204)" x="295" alignment="center" cy="18" wgtStaticOpt="dynamic" font-bold="true" width="199" keypad-type="None" cx="102.43" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="Arrows5">
+   <wgtStyle fill="rgb(204,36,204)" x="364" y="145" forcePaint="1" height="64" cy="32" cx="27.50" imagePath="images/ArrowsIcon5.svg" width="55"/>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label1">
+   <wgtStyle vert-align="middle" forcePaint="83" y="44" font-family="Tahoma" height="79" wrapping="true" font-sizepx="32" frameColor="rgb(200,200,200)" font-color="rgb(255,255,255)" x="120" alignment="center" cy="36" wgtStaticOpt="dynamic" font-bold="true" width="551" keypad-type="None" cx="282.73" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label8">
+   <wgtStyle font-family="Tahoma" font-size="18" x="4" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="145" forcePaint="18" font-sizepx="24" height="39" cy="18" keypad-type="None" cx="112.68" font-color="rgb(255,255,255)" alignment="center" width="219"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GridLayout7.label11">
+   <wgtStyle font-family="Tahoma" font-size="18" x="568" frameColor="rgb(200,200,200)" wgtStaticOpt="dynamic" vert-align="middle" wrapping="true" y="145" forcePaint="18" font-sizepx="24" height="39" cy="18" keypad-type="None" cx="112.68" font-color="rgb(255,255,255)" alignment="center" width="219"/>
+   <links>
+    <lang class="MLTextLink" textid="31"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

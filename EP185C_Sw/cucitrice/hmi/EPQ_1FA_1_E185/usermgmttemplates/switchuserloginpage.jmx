@@ -1,0 +1,93 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object dataWndSize="0,70" class="PageWgt" usedFonts="Tahoma" staticOptEnable="false" id="SwitchUserLoginPage" pageName="SwitchUserLoginPage" downloadPrepDone="false" pageSize="480,480" staticFile="opt/switchuserloginpage.png">
+  <wgtStyle fitToSize="1" x="0" y="0" ver="040500458" height="480" cy="150" v="04.05.00.458" cx="200" width="480"/>
+  <object class="PageMLTextMgrWgt" mgrType="Page" id="_PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle x="0" y="0" height="0" cy="0" cx="0" width="0"/>
+   <langs curLangId="L2" defLangId="L2">
+    <lang keypads="" langCode="it-IT" removable="false" writingsystem="Any" name="ITALIANO" langId="L1" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="en-US" removable="false" writingsystem="Any" name="ENGLISH" langId="L2" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="fr-FR" removable="false" writingsystem="Any" name="FRANCAIS" langId="L3" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="es-ES" removable="false" writingsystem="Any" name="ESPANOL" langId="L4" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="de-DE" removable="false" writingsystem="Any" name="DEUTSCH" langId="L5" defaultFont="Tahoma"/>
+    <lang keypads="" langCode="pt-PT" removable="false" writingsystem="Any" name="PORTUGUES" langId="L6" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="ImageWgt" id="image2">
+   <wgtStyle x="0" y="0" height="480" cy="232.80" cx="234" imagePath="images/bgSwitchUserLoginPage.svg" width="480"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle text="User name:" font-family="Tahoma" font-size="12" x="93" vert-align="top" marker="true" y="152" height="19" cy="10" keypad-type="None" cx="42" font-color="rgb(40,40,40)" alignment="right" width="82"/>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle text="Password:" font-family="Tahoma" font-size="12" x="102" vert-align="top" marker="true" y="199" height="19" cy="9" keypad-type="None" cx="42" font-color="rgb(40,40,40)" alignment="right" width="73"/>
+  </object>
+  <object customType="Button" class="GroupWgt" id="GroupWgt5">
+   <wgtStyle x="288" y="280" height="40" cy="19" cx="48" width="102"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image8">
+    <wgtStyle x="0" y="0" height="40" cy="18" cx="46" imagePath="images/ButtonFrame.svg" width="102"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd3">
+    <wgtStyle needlePath="images/ButtonPressed.svg" dx="1" form="standard" value="0" fill="rgb(211,211,211)" downFillColor="rgb(211,211,211)" x="3.12" releasePath="images/Button.svg" dy="-1" y="3.71" height="33" cy="15" cx="47.15" type="momentary" width="96"/>
+    <links>
+     <action class="SwitchUserLogInAction" LoginEditID="LogInEditWgt1" attribute="onMouseRelease" actionID="0" event="onMouseUp" actionWgt="_UserMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle text="Sign In" font-family="Tahoma" font-size="12" x="22.78" vert-align="middle" y="8.78" forcePaint="1" height="22" cy="10" keypad-type="None" cx="27.84" font-color="rgb(40,40,40)" alignment="center" width="58"/>
+   </object>
+  </object>
+  <object class="LogInEditWgt" id="LogInEditWgt1">
+   <wgtStyle x="220" y="143" height="83" cy="41" cx="85" width="170"/>
+   <object class="EditBoxWgt" id="password_edit">
+    <wgtStyle text="" font-family="Tahoma" font-size="14" x="0" editType="2" vert-align="middle" y="49" forcePaint="8" height="34" cy="18" keypad-type="Alphabet" cx="23" font-color="rgb(40,40,40)" width="170"/>
+    <dataLinks>
+     <dataLink dataSource="LogInEditWgt1" attribute="text" tag="password" readWrite="R/W" sourceType="Widget"/>
+    </dataLinks>
+   </object>
+   <object class="EditBoxWgt" id="username_edit">
+    <wgtStyle text="" font-family="Tahoma" font-size="14" x="0" editType="-842150451" vert-align="middle" y="0" forcePaint="8" height="34" cy="18" keypad-type="Alphabet" cx="23" font-color="rgb(40,40,40)" width="170"/>
+    <dataLinks>
+     <dataLink dataSource="LogInEditWgt1" attribute="text" tag="username" readWrite="R/W" sourceType="Widget"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="LabelWgt" id="error_msg">
+   <wgtStyle text="" font-family="Tahoma" font-size="12" x="15" wgtStaticOpt="dynamic" vert-align="top" wrapping="true" marker="true" y="333" forcePaint="16" height="76" cy="36.98" keypad-type="None" cx="101.28" font-color="rgb(255,0,0)" width="204"/>
+  </object>
+  <object customType="Button" class="GroupWgt" id="GroupWgt1">
+   <wgtStyle x="158" y="280" height="40" cy="0" cx="0" width="102"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image1">
+    <wgtStyle x="0" y="0" height="40" cy="24.09" cx="74.96" imagePath="images/ButtonFrame.svg" width="102"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd1">
+    <wgtStyle needlePath="images/ButtonPressed.svg" dx="1" form="standard" value="0" fill="rgb(211,211,211)" downFillColor="rgb(211,211,211)" x="3.12" releasePath="images/Button.svg" dy="-1" y="3.70" height="33" cy="18.69" cx="74.72" type="momentary" width="96"/>
+    <links>
+     <action class="SwitchUserBackAction" attribute="onMouseRelease" actionID="1" event="onMouseUp" actionWgt="_UserMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label4">
+    <wgtStyle text="Back" font-family="Tahoma" font-size="12" x="20.64" vert-align="middle" y="9.77" forcePaint="1" height="20.26" cy="7.23" keypad-type="None" cx="33.96" font-color="rgb(40,40,40)" alignment="center" width="63.98"/>
+   </object>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="checkbox3">
+   <wgtStyle needlePath="images\checkboxOFF.svg" dx="1" form="standard" value="1" downFillColor="rgb(0,0,0)" x="252" releasePath="images\checkboxON.svg" dy="-1" y="240" forcePaint="8" height="32" cy="16" pushColor="rgb(128,128,0)" cx="16" type="maintained" width="32"/>
+   <dataLinks>
+    <dataLink dataSource="password_edit" attribute="value" tag="editType" readWrite="R/W" sourceType="Widget">
+     <xForms>
+      <xForm class="BitIndexXForm" BitIndex="1" name="BitIndex"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle text="Show password" font-family="Tahoma" font-size="12" x="279" vert-align="top" wrapping="true" marker="true" y="248" forcePaint="1" font-sizepx="16" height="19" cy="1.29" keypad-type="None" cx="285.86" font-color="rgb(23,30,40)" alignment="right" width="112"/>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,6 @@
+<printdetails spoolMediaType="0" diskquota="-1" maxpixmapsize="16000000" ramquota="16000000" spoolFolder="c:/europrogetti/progetti/macchine/grapicaslanes/ep185_nuova/ep185_24_elaborazione/cucitrice/hmi/epq_1fa_1_e185/reportspool">
+ <printerPorts>
+  <port>File</port>
+  <port>Default</port>
+ </printerPorts>
+</printdetails>

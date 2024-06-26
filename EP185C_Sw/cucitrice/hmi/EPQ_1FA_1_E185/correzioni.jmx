@@ -1,0 +1,454 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object staticOptEnable="true" pageType="modal" pageName="Correzioni" px="0" id="Correzioni" titlebar="false" pageSize="600,400" py="0" downloadPrepDone="false" dynPosition="false" dataWndSize="0,70" class="DialogWgt" usedFonts="Tahoma,Roboto Light" scriptFile="correzioni.js" staticFile="opt/correzioni.png" titleName="" singleInstance="true">
+  <wgtStyle y="0" height="400" x="0" fitToSize="1" v="04.05.00.458" ver="040500458" width="600"/>
+  <links>
+   <action event="onActivate" actionWgt="_WgtMgr" f="Calcolo_Passi_onActivate" class="JavaScriptAction" actionID="0" attribute="onActivate"/>
+  </links>
+  <object id="rect1" static="true" class="ShapeWgt">
+   <wgtStyle y="61" height="267" cx="290.32" x="1" fill="rgb(237,237,237)" nodeName="rect" stroke="rgb(200,200,200)" cy="133.50" width="600"/>
+  </object>
+  <object mgrType="Page" id="_PageMLTextMgrWgt" class="PageMLTextMgrWgt" mlFileName="">
+   <wgtStyle y="0" height="0" x="0" width="0"/>
+   <langs curLangId="L1" defLangId="L1">
+    <lang langId="L1" langCode="it-IT" writingsystem="Any" defaultFont="Tahoma" removable="false" name="ITALIANO" keypads=""/>
+    <lang langId="L2" langCode="en-US" writingsystem="Any" defaultFont="Tahoma" removable="false" name="ENGLISH" keypads=""/>
+    <lang langId="L3" langCode="fr-FR" writingsystem="Any" defaultFont="Tahoma" removable="false" name="FRANCAIS" keypads=""/>
+    <lang langId="L4" langCode="es-ES" writingsystem="Any" defaultFont="Tahoma" removable="false" name="ESPANOL" keypads=""/>
+    <lang langId="L5" langCode="de-DE" writingsystem="Any" defaultFont="Tahoma" removable="false" name="DEUTSCH" keypads=""/>
+    <lang langId="L6" langCode="pt-PT" writingsystem="Any" defaultFont="Tahoma" removable="false" name="PORTUGUES" keypads=""/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L4="" id="0" L6="Label" L5="Label" L3="Label" L2=""/>
+    <MLText L1="CORREZIONI" L4="CORRECCIONES" id="1" L6="SELEZIONE" L5="SELEZIONE" L3="SELEZIONE" L2="CORRECTIONS"/>
+    <MLText L1="" L4="" id="4" L6="Label" L5="Label" L3="Label" L2=""/>
+    <MLText L1="" L4="" id="5" L6="Label" L5="Label" L3="Label" L2=""/>
+    <MLText L1="" L4="" id="6" L6="Label" L5="Label" L3="Label" L2=""/>
+    <MLText L1="Forma - Posizione guide cartone" L4="Posición de las guías de cartón" id="7" L6="Label" L5="Label" L3="Label" L2="Cardboard Guide Position"/>
+    <MLText L1="Delta Nastrini" L4="Delta Termos." id="11" L6="Label" L5="Label" L3="Label" L2="Delta S. Tape"/>
+    <MLText L1="Forma - Posizione rimbocchi" L4="Posición de los Dobladores" id="13" L6="Label" L5="Label" L3="Label" L2="Turn in Position"/>
+    <MLText L1="Forma - Posizione pressata" L4="Posición de los Prensadores" id="14" L6="Label" L5="Label" L3="Label" L2="Pressing Position"/>
+    <MLText L1="Estrattore - Standby" L4="Extractor - en Espera" id="18" L6="Label" L5="Label" L3="Label" L2="Ejector - Stand-by"/>
+    <MLText L1="Estrattore - Prelievo" L4="Extractor - Retiro de caja" id="19" L6="Label" L5="Label" L3="Label" L2="Ejector - Pick up"/>
+    <MLText L1="Spintore - Standby" L4="Empujador - en Espera" id="20" L6="Label" L5="Label" L3="Label" L2="Pusher - Stand-by"/>
+    <MLText L1="OK" L4="Ok" id="21" L6="Label" L5="Label" L3="Label" L2="OK"/>
+    <MLText L1="Spintore - Fine Spinta" L4="Empujador - Final del empuje" id="22" L6="Label" L5="Label" L3="Label" L2="Pusher - End Push"/>
+   </MLTexts>
+  </object>
+  <object id="Correzioni@$GroupSubscrWgt@$0" class="GroupSubscribeWgt">
+   <wgtStyle y="0" height="0" x="0" width="0"/>
+  </object>
+  <object id="label9" class="LabelWgt">
+   <wgtStyle y="0" frame="true" font-sizepx="32" width="599" x="1" keypad-type="None" height="52" font-size="24" font-family="Tahoma" cx="300" vert-align="middle" wrapping="true" font-bold="true" cy="25.11" marker="true" frameFill="rgb(230,230,250)" alignment="center" forcePaint="2"/>
+   <links>
+    <lang textid="1" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric4" class="NumericWgt">
+   <wgtStyle y="73" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" mtx="1,0,0,0,1,0,0,0,1" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="8" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_forma_guide_cartone" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label6" class="LabelWgt">
+   <wgtStyle y="73" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" mtx="1,0,0,0,1,0,0,0,1" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="0" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label7" class="LabelWgt">
+   <wgtStyle y="136.33" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="2" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="14" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric6" class="NumericWgt">
+   <wgtStyle y="107.17" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="8" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_forma_rimbocchi" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label12" class="LabelWgt">
+   <wgtStyle y="107.17" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="4" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label13" class="LabelWgt">
+   <wgtStyle y="68" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="67" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="7" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="label16" class="LabelWgt">
+   <wgtStyle y="102.17" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="67" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="13" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric11" class="NumericWgt">
+   <wgtStyle y="348" frame="true" font-sizepx="24" max="1800" width="149" readWrite="true" timeSpec="local" step="1" x="180" keypad-type="Numeric" usingFormat="" text="999.99" height="39" font-size="18" font-family="Roboto Light" cx="67.65" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.99" form="Numeric" cy="17.14" leadingDigits="3" min="-300" numberFormat="1" forcePaint="8" decimalDigits="2"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Delta_nastrini" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="1800*$('Klin')/10" compiledExpression="1800*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label27" class="LabelWgt">
+   <wgtStyle y="351" height="31.50" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="266" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="14.62" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="6" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label28" class="LabelWgt">
+   <wgtStyle y="346" height="39" font-size="18" wrapping="true" cx="76.83" vert-align="middle" x="7" keypad-type="None" forcePaint="2" font-family="Tahoma" cy="18" width="149" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="11" class="MLTextLink"/>
+   </links>
+  </object>
+  <object customType="ButtonsWithLabel" id="BtnStd22" class="GroupWgt">
+   <wgtStyle y="335" height="65" cx="100" x="400" cy="-97.50" width="200"/>
+   <object id="BtnStd22.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn" class="ButtonWgt">
+    <wgtStyle downFillColor="rgb(255,104,32)" y="0" height="65" cx="100" x="0" type="momentary" fill="rgb(50,205,50)" value="0" releasePath="images\Btn_rect_blueUp.svg" style="0" bdrImageSize="54.00,44.00" form="standard" bdrSize="0.17,0.17,0.15,0.16" cy="32.50" width="200" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg"/>
+    <links>
+     <action closeParam="Selected" pageName="" event="onMouseUp" actionWgt="_PageMgr" class="CloseDialogAction" actionID="1" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object id="BtnStd22.lbl" hmiStyle="hmi-type:wgtlabel" class="LabelWgt">
+    <wgtStyle y="1.48" height="60.58" font-size="18" alignment="center" wrapping="true" cx="88.90" vert-align="middle" x="7.42" keypad-type="None" font-color="rgb(255,255,255)" forcePaint="3" font-family="Tahoma" cy="29.55" width="177.78" font-sizepx="24"/>
+    <links>
+     <lang textid="21" class="MLTextLink"/>
+    </links>
+   </object>
+  </object>
+  <object id="numeric1" class="NumericWgt">
+   <wgtStyle y="141.33" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="9" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_forma_pressata" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label2" class="LabelWgt">
+   <wgtStyle y="141.33" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="5" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label1" class="LabelWgt">
+   <wgtStyle y="204.67" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="2" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="19" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric2" class="NumericWgt">
+   <wgtStyle y="175.50" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="8" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_estrattore_stby" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label3" class="LabelWgt">
+   <wgtStyle y="175.50" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="4" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label4" class="LabelWgt">
+   <wgtStyle y="170.50" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="67" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="18" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric3" class="NumericWgt">
+   <wgtStyle y="209.67" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="9" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_estrattore_prelievo" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label5" class="LabelWgt">
+   <wgtStyle y="209.67" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="5" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label8" class="LabelWgt">
+   <wgtStyle y="273" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="2" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="22" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric5" class="NumericWgt">
+   <wgtStyle y="243.83" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="8" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_spintore_stby" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label10" class="LabelWgt">
+   <wgtStyle y="243.83" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="4" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+  <object id="label11" class="LabelWgt">
+   <wgtStyle y="238.83" height="39" font-size="15" wrapping="true" cx="204.88" vert-align="middle" x="23" keypad-type="None" forcePaint="67" font-family="Tahoma" cy="18" width="399" font-sizepx="20" frameColor="rgb(200,200,200)"/>
+   <links>
+    <lang textid="20" class="MLTextLink"/>
+   </links>
+  </object>
+  <object id="numeric7" class="NumericWgt">
+   <wgtStyle y="278" frame="true" font-sizepx="20" max="300" width="129" readWrite="true" timeSpec="local" step="1" x="448" keypad-type="Numeric" usingFormat="" text="999.9" height="29" font-size="15" font-family="Roboto Light" cx="58.63" vert-align="middle" frameColor="rgb(127,127,127)" showThousandSeparator="false" value="999.9" form="Numeric" cy="12.85" leadingDigits="3" min="-300" numberFormat="1" forcePaint="9" decimalDigits="1"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Corr_fine_spinta_scatola" widgetType="Project" tagType="short" tagIndex="-1" class="TagMgrWgt" attribute="value" readWrite="R/W">
+     <xForms>
+      <xForm Scale="1" Offset="0" class="ScaleXForm" name="Scale" Mod="10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="Scale" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="min">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="-300*$('Klin')/10" compiledExpression="-300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+    <dataLink sourceType="Formula" attribute="max">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" name="Formula" expression="300*$('Klin')/10" compiledExpression="300*$0/10">
+       <dataLinks>
+        <dataLink dataSource="_TagMgr" sourceType="Tag" tag="Klin" widgetType="Project" tagType="float" tagIndex="-1" class="TagMgrWgt" attribute="$0" readWrite="R"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object id="label14" class="LabelWgt">
+   <wgtStyle y="278" height="29" font-size="18" alignment="center" wrapping="true" cx="28.94" vert-align="middle" x="517" keypad-type="None" forcePaint="10" font-family="Roboto Light" cy="13.50" width="55.50" font-sizepx="24" frameColor="rgb(200,200,200)"/>
+   <dataLinks>
+    <dataLink dataSource="_TagMgr" sourceType="Tag" tag="UnitLin" widgetType="Project" tagType="string-8" tagIndex="-1" class="TagMgrWgt" attribute="text" readWrite="R"/>
+   </dataLinks>
+   <links>
+    <lang textid="5" class="MLTextLink">
+     <MLFontFamily L1="Roboto Light" L4="Roboto Light" L6="Tahoma" L5="Tahoma" L3="Tahoma" L2="Roboto Light"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

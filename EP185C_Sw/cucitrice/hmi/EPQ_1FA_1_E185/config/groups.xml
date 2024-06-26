@@ -1,0 +1,649 @@
+<groups>
+ <group Type="Auto">
+  <name>Allarme Drivers Nastrini@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Cancella_allarmi</tag>
+  <tag>Driver_nastrino_1_ok</tag>
+  <tag>Driver_nastrino_2_ok</tag>
+  <tag>Driver_nastrino_3_ok</tag>
+  <tag>Driver_nastrino_4_ok</tag>
+  <tag>Number of triggered alarms</tag>
+  <tag>maschera_on</tag>
+ </group>
+ <group Type="Auto">
+  <name>Allarme NC413@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Cancella_allarmi</tag>
+  <tag>NC_errore_Nastrino1dx</tag>
+  <tag>NC_errore_Nastrino1sx</tag>
+  <tag>NC_errore_Nastrino2sx</tag>
+  <tag>NC_errore_Nastrino4</tag>
+  <tag>Number of triggered alarms</tag>
+  <tag>maschera_on</tag>
+ </group>
+ <group Type="Auto">
+  <name>Allarme Termocontrolli@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Cancella_allarmi</tag>
+  <tag>FatalError_TC_Dx</tag>
+  <tag>FatalError_TC_Sx</tag>
+  <tag>Number of triggered alarms</tag>
+  <tag>Sensore_Dx_TC2_errore</tag>
+  <tag>Sensore_Sx_TC1_errore</tag>
+  <tag>TC1_setting_error</tag>
+  <tag>TC2_setting_error</tag>
+  <tag>maschera_on</tag>
+ </group>
+ <group Type="Auto">
+  <name>Allarmi@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Cancella_allarmi</tag>
+  <tag>Number of triggered alarms</tag>
+ </group>
+ <group Type="Auto">
+  <name>Automatico@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Cadenza</tag>
+  <tag>Ciclo_Cucitrice_Attivo</tag>
+  <tag>Contapezzi</tag>
+  <tag>Contapezzi_Total</tag>
+  <tag>Klin</tag>
+  <tag>Lotto_Pezzi</tag>
+  <tag>Lunghezza_Cartone</tag>
+  <tag>PB_Sel_fogli_inc</tag>
+  <tag>PB_Sel_pompa_vuoto_mano</tag>
+  <tag>PB_richiesta_scatola</tag>
+  <tag>Pos_ang_pressore</tag>
+  <tag>Poslin_asse_forma</tag>
+  <tag>Punta_messaggi</tag>
+  <tag>Sel_pompa_vuoto</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>Vel_override</tag>
+  <tag>cartone_caricato</tag>
+  <tag>range_temperature</tag>
+  <tag>richiesta_scatola</tag>
+  <tag>scatola_deposta</tag>
+  <tag>sel_Np_orig</tag>
+  <tag>tappeto_attivo</tag>
+  <tag>tasto_azzeramento</tag>
+ </group>
+ <group Type="Auto">
+  <name>Avvisi@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Cancella_allarmi</tag>
+  <tag>Number of triggered alarms</tag>
+ </group>
+ <group Type="Auto">
+  <name>Avviso Lubrificazione@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Number of triggered alarms</tag>
+  <tag>Tasto_conferma</tag>
+  <tag>contaore_manutenzione</tag>
+  <tag>ore_manutenzione</tag>
+ </group>
+ <group Type="Auto">
+  <name>Calendar@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Assi@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Accelerazione_libero</tag>
+  <tag>Kt_forma</tag>
+  <tag>Kt_pressore</tag>
+  <tag>Kv_pressore</tag>
+  <tag>Kv_rulli_cinghie</tag>
+  <tag>Kv_tappeto</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Carico cartone@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Corsa_max_rulli_cinghie_carico</tag>
+  <tag>Dist_Fotocell_Forma</tag>
+  <tag>Klin</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>Vel_mano_rulli_cinghie</tag>
+  <tag>Velocita_max_rulli_cinghie</tag>
+  <tag>Velocita_max_tappeto_acc</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Forma@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Accelerazione_forma</tag>
+  <tag>Corsa_massima_forma</tag>
+  <tag>Decelerazione_forma</tag>
+  <tag>Klin</tag>
+  <tag>Pos_forma_guide_cartone</tag>
+  <tag>Pos_forma_home</tag>
+  <tag>Pos_forma_pressata</tag>
+  <tag>Pos_forma_rimbocchi</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>Vel_mano_forma</tag>
+  <tag>Velocita_max_forma</tag>
+  <tag>Velocita_max_pressore</tag>
+  <tag>rimbocchi_T_attivi</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Nastrini@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Corsa_max_nastrini</tag>
+  <tag>K_T_nastrini</tag>
+  <tag>Klin</tag>
+  <tag>Sormonto_nastrini</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>Vel_mano_nastrini</tag>
+  <tag>Velocita_max_nastrini</tag>
+  <tag>Velocita_min_nastrini</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Pressore@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Klin</tag>
+  <tag>Pos_h_camma_vuoto</tag>
+  <tag>Pos_h_pressore_estrattore</tag>
+  <tag>Pos_h_pressore_pressata</tag>
+  <tag>Pos_h_pressore_st_by</tag>
+  <tag>Pos_home_pressore</tag>
+  <tag>Pos_l_camma_vuoto</tag>
+  <tag>Pos_l_pressore_estrattore</tag>
+  <tag>Pos_l_pressore_pressata</tag>
+  <tag>Pos_l_pressore_st_by</tag>
+  <tag>Pos_ok_forma_risalita</tag>
+  <tag>Pos_test_forma_pressata</tag>
+  <tag>Sincronismo_Pressore</tag>
+  <tag>System Time</tag>
+  <tag>Vel_mano_pressore</tag>
+  <tag>Velocita_home_pressore</tag>
+  <tag>Velocita_lenta_pressore</tag>
+  <tag>Velocita_max_pressore</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Termocontrollo 1 Sx@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>All_1_TC_Dx</tag>
+  <tag>All_2_TC_Dx</tag>
+  <tag>Compens_TC_Dx</tag>
+  <tag>Ktmp</tag>
+  <tag>Ktmp_offset</tag>
+  <tag>On_off_sensib_TC_Dx</tag>
+  <tag>PID_deriv_TC_Dx</tag>
+  <tag>PID_integr_TC_Dx</tag>
+  <tag>PID_prop_TC_Dx</tag>
+  <tag>System Time</tag>
+  <tag>TC1_autotuning</tag>
+  <tag>TC1_autotuning_atto</tag>
+  <tag>Time_contr_TC_Dx</tag>
+  <tag>UnitTemp</tag>
+ </group>
+ <group Type="Auto">
+  <name>Configurazione - Termocontrollo 2 Dx@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>All_1_TC_Sx</tag>
+  <tag>All_2_TC_Sx</tag>
+  <tag>Compens_TC_Sx</tag>
+  <tag>Ktmp</tag>
+  <tag>Ktmp_offset</tag>
+  <tag>On_off_sensib_TC_Sx</tag>
+  <tag>PID_deriv_TC_Sx</tag>
+  <tag>PID_integr_TC_Sx</tag>
+  <tag>PID_prop_TC_Sx</tag>
+  <tag>System Time</tag>
+  <tag>TC2_autotuning</tag>
+  <tag>TC2_autotuning_atto</tag>
+  <tag>Time_contr_TC_Sx</tag>
+  <tag>UnitTemp</tag>
+ </group>
+ <group Type="Auto">
+  <name>Correzioni@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Corr_estrattore_prelievo</tag>
+  <tag>Corr_estrattore_stby</tag>
+  <tag>Corr_fine_spinta_scatola</tag>
+  <tag>Corr_forma_guide_cartone</tag>
+  <tag>Corr_forma_pressata</tag>
+  <tag>Corr_forma_rimbocchi</tag>
+  <tag>Corr_spintore_stby</tag>
+  <tag>Delta_nastrini</tag>
+  <tag>Klin</tag>
+  <tag>UnitLin</tag>
+ </group>
+ <group Type="Auto">
+  <name>EPQ_1FA_1_E185@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Day Of Week</tag>
+  <tag>Hmi_giornosettimana</tag>
+  <tag>Hmi_minuti</tag>
+  <tag>Hmi_ora</tag>
+  <tag>Hour</tag>
+  <tag>Is keypad open</tag>
+  <tag>Minute</tag>
+  <tag>U_misura_lin</tag>
+  <tag>U_misura_term</tag>
+  <tag>data_entry_hmi</tag>
+  <tag>richiesta_n_pagina_hmi_BordoM</tag>
+  <tag>richiesta_n_pagina_hmi_pila</tag>
+ </group>
+ <group Type="Auto">
+  <name>Elenco Programmi@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Art1</tag>
+  <tag>Art10</tag>
+  <tag>Art2</tag>
+  <tag>Art3</tag>
+  <tag>Art4</tag>
+  <tag>Art5</tag>
+  <tag>Art6</tag>
+  <tag>Art7</tag>
+  <tag>Art8</tag>
+  <tag>Art9</tag>
+  <tag>Klin</tag>
+  <tag>LungCartone1</tag>
+  <tag>LungCartone10</tag>
+  <tag>LungCartone2</tag>
+  <tag>LungCartone3</tag>
+  <tag>LungCartone4</tag>
+  <tag>LungCartone5</tag>
+  <tag>LungCartone6</tag>
+  <tag>LungCartone7</tag>
+  <tag>LungCartone8</tag>
+  <tag>LungCartone9</tag>
+  <tag>NProg1</tag>
+  <tag>NProg10</tag>
+  <tag>NProg2</tag>
+  <tag>NProg3</tag>
+  <tag>NProg4</tag>
+  <tag>NProg5</tag>
+  <tag>NProg6</tag>
+  <tag>NProg7</tag>
+  <tag>NProg8</tag>
+  <tag>NProg9</tag>
+  <tag>punta_elenco_prgr</tag>
+  <tag>tasto_aumenta</tag>
+  <tag>tasto_diminuisce</tag>
+ </group>
+ <group Type="Auto">
+  <name>Emergenze@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Cancella_allarmi</tag>
+  <tag>maschera_on</tag>
+ </group>
+ <group Type="Auto">
+  <name>Gestione Programmi@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Articolo</tag>
+  <tag>Klin</tag>
+  <tag>Lightcanc_programmi</tag>
+  <tag>Lightrich_programmi</tag>
+  <tag>Lightsalva_programmi</tag>
+  <tag>Lunghezza_Cartone</tag>
+  <tag>Punta_messaggi</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>canc_programmi</tag>
+  <tag>rich_programmi</tag>
+  <tag>salva_programmi</tag>
+  <tag>sel_Np_orig</tag>
+  <tag>tasto_escape</tag>
+  <tag>tasto_nuovo_formato</tag>
+ </group>
+ <group Type="Auto">
+  <name>Ingressi Speciali@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Encoder_Bracci_A</tag>
+  <tag>Encoder_Bracci_B</tag>
+  <tag>Encoder_Forma_A</tag>
+  <tag>Encoder_Forma_B</tag>
+  <tag>S_Xcorsa_Forma</tag>
+  <tag>S_home_Bracci</tag>
+  <tag>S_home_Forma</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Ingressi_Cuc_0@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Ciclo_fogli_attivo</tag>
+  <tag>Fc_protezioni</tag>
+  <tag>KA_Emergenza</tag>
+  <tag>P_Start_ciclo</tag>
+  <tag>P_Stop_ciclo</tag>
+  <tag>P_camma_avanti</tag>
+  <tag>P_camma_indietro</tag>
+  <tag>P_passo_spintore_mano</tag>
+  <tag>S_Sgancio_forma</tag>
+  <tag>S_protezioni_dx</tag>
+  <tag>S_protezioni_sx</tag>
+  <tag>Sel_attiva_aumenta</tag>
+  <tag>Sel_disattiva_diminuisce</tag>
+  <tag>Sel_esclusione_protezioni</tag>
+  <tag>Sel_riempimento_tappeto</tag>
+  <tag>Sel_svuotamento_tappeto</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Ingressi_Cuc_1@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Coppia_forma</tag>
+  <tag>Driver_forma_Ok</tag>
+  <tag>Inverter_camma_Ok</tag>
+  <tag>Inverter_rulli_Ok</tag>
+  <tag>Inverter_tappeto_Ok</tag>
+  <tag>M_T_Driver</tag>
+  <tag>M_T_Inverters</tag>
+  <tag>M_T_pila_cartone</tag>
+  <tag>M_T_pompa_vuoto</tag>
+  <tag>M_T_termoregolazione</tag>
+  <tag>P_forma_sale</tag>
+  <tag>P_forma_scende</tag>
+  <tag>S_fine_termosald_1</tag>
+  <tag>S_fine_termosald_2</tag>
+  <tag>S_fine_termosald_3</tag>
+  <tag>S_fine_termosald_4</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Ingressi_Cuc_2@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Comando_centratura</tag>
+  <tag>Extra_alto_pila_cartone</tag>
+  <tag>S_disattiva_vuoto</tag>
+  <tag>S_doppio_cartone</tag>
+  <tag>S_estrattore_alto</tag>
+  <tag>S_estrattore_basso</tag>
+  <tag>S_fine_cartoni</tag>
+  <tag>S_rimboccoT_pila_chiuso</tag>
+  <tag>S_rimboccoT_uscita_chiuso</tag>
+  <tag>S_riserva_cartoni</tag>
+  <tag>S_spintore_avanti</tag>
+  <tag>S_spintore_indietro</tag>
+  <tag>S_tappeto_pieno</tag>
+  <tag>S_tasteggio_cartone</tag>
+  <tag>Scatola_da_centratore</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Lingua_U_Misura@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+  <tag>U_misura_lin</tag>
+  <tag>U_misura_term</tag>
+ </group>
+ <group Type="Auto">
+  <name>Logos@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Manuale Carico@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Introduttore_Mano</tag>
+  <tag>Ktmp</tag>
+  <tag>Ktmp_offset</tag>
+  <tag>PB_Introd_Prelievo</tag>
+  <tag>PB_Introd_StBy</tag>
+  <tag>PB_Sel_introduttore_cartone_mano</tag>
+  <tag>PB_Sel_pila_cartone_mano</tag>
+  <tag>PB_Sel_pompa_vuoto_mano</tag>
+  <tag>PB_Sel_rulli_cinghie_mano</tag>
+  <tag>PB_Sel_tappeto_accumulo_mano</tag>
+  <tag>PB_sblocco_tavole</tag>
+  <tag>Sel_introduttore_cartone_mano</tag>
+  <tag>Sel_pila_cartone_mano</tag>
+  <tag>Sel_pompa_vuoto</tag>
+  <tag>Sel_rulli_cinghie_mano</tag>
+  <tag>Sel_tappeto_accumulo_mano</tag>
+  <tag>System Time</tag>
+  <tag>Temperatura_1</tag>
+  <tag>Temperatura_2</tag>
+  <tag>UnitTemp</tag>
+ </group>
+ <group Type="Auto">
+  <name>Manuale Formatura@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Com_Home_forma</tag>
+  <tag>Com_Home_pressore</tag>
+  <tag>Com_Home_spintore</tag>
+  <tag>Fc_protezioni</tag>
+  <tag>Home_forma_noto</tag>
+  <tag>Home_pressore_noto</tag>
+  <tag>Home_spintore_fatto</tag>
+  <tag>Klin</tag>
+  <tag>PB_Sel_Forma_mano</tag>
+  <tag>PB_Sel_Pressore_mano</tag>
+  <tag>PB_Sel_estrattore_mano</tag>
+  <tag>PB_Sel_spintore_mano</tag>
+  <tag>Pos_ang_pressore</tag>
+  <tag>Poslin_asse_forma</tag>
+  <tag>SelZone</tag>
+  <tag>Sel_estrattore_mano</tag>
+  <tag>Sel_forma_mano</tag>
+  <tag>Sel_pos_forma_pressata</tag>
+  <tag>Sel_pos_forma_st_by</tag>
+  <tag>Sel_pos_pressore_accostato</tag>
+  <tag>Sel_pos_pressore_pressata</tag>
+  <tag>Sel_pos_pressore_st_by</tag>
+  <tag>Sel_pos_spintore_spinta</tag>
+  <tag>Sel_pos_spintore_stby</tag>
+  <tag>Sel_pressore_mano</tag>
+  <tag>Sel_spintore_mano</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+ </group>
+ <group Type="Auto">
+  <name>Manuale Nastrini@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Fc_protezioni</tag>
+  <tag>Klin</tag>
+  <tag>Ktmp</tag>
+  <tag>Ktmp_offset</tag>
+  <tag>PB_Sel_nastrino_1Dx_mano</tag>
+  <tag>PB_Sel_nastrino_1Sx_mano</tag>
+  <tag>PB_Sel_nastrino_2Dx_mano</tag>
+  <tag>PB_Sel_nastrino_2Sx_mano</tag>
+  <tag>PB_Sel_taglio_nastrini_mano</tag>
+  <tag>Poslin_nastrino_1Dx</tag>
+  <tag>Poslin_nastrino_1Sx</tag>
+  <tag>Poslin_nastrino_2Dx</tag>
+  <tag>Poslin_nastrino_2Sx</tag>
+  <tag>Scat_ob_dx_corto</tag>
+  <tag>Scat_ob_sx_corto</tag>
+  <tag>Scatola_obliqua</tag>
+  <tag>SelZone</tag>
+  <tag>Sel_nastrino_1Dx_mano</tag>
+  <tag>Sel_nastrino_1Sx_mano</tag>
+  <tag>Sel_nastrino_2Dx_mano</tag>
+  <tag>Sel_nastrino_2Sx_mano</tag>
+  <tag>System Time</tag>
+  <tag>Temperatura_1</tag>
+  <tag>Temperatura_2</tag>
+  <tag>UnitLin</tag>
+  <tag>UnitTemp</tag>
+  <tag>svolgimento_nastrini_mano</tag>
+ </group>
+ <group Type="Auto">
+  <name>Manutenzione@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Conta_minuti</tag>
+  <tag>Conta_ore</tag>
+  <tag>Conta_secondi</tag>
+  <tag>Contapezzi_Grantotale</tag>
+  <tag>Contapezzi_Total</tag>
+  <tag>Scansioni_secondo</tag>
+  <tag>System Time</tag>
+  <tag>Tasto_conferma</tag>
+  <tag>contaore_manutenzione</tag>
+  <tag>ore_manutenzione</tag>
+  <tag>tasto_azzeramento</tag>
+ </group>
+ <group Type="Auto">
+  <name>Page 25@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Encoder_A_forma</tag>
+  <tag>Encoder_A_pressore</tag>
+  <tag>Encoder_B_forma</tag>
+  <tag>Encoder_B_pressore</tag>
+  <tag>S_home_forma</tag>
+  <tag>S_home_pressore</tag>
+  <tag>S_xcorsa_forma</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Page95@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Parametri - Ciclo Scatola@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Articolo</tag>
+  <tag>En_Termosaldanti</tag>
+  <tag>Punta_messaggi</tag>
+  <tag>System Time</tag>
+  <tag>sel_Np_orig</tag>
+  <tag>tappeto_attivo</tag>
+ </group>
+ <group Type="Auto">
+  <name>Parametri - Formato@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Altezza_forma</tag>
+  <tag>Altezza_scatola</tag>
+  <tag>Articolo</tag>
+  <tag>Klin</tag>
+  <tag>Larghezza_scatola</tag>
+  <tag>Lunghezza_Cartone</tag>
+  <tag>Lunghezza_scatola</tag>
+  <tag>Sel_Cartone_T</tag>
+  <tag>Spessore_Cartone</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+ </group>
+ <group Type="Auto">
+  <name>Parametri - Scatola Obliqua@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Altezza_Sc_lato_destro</tag>
+  <tag>Altezza_Sc_lato_sinistro</tag>
+  <tag>Altezza_max_scatola</tag>
+  <tag>Altezza_min_scatola</tag>
+  <tag>Altezza_scatola</tag>
+  <tag>Klin</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+ </group>
+ <group Type="Auto">
+  <name>Parametri - Tempi@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+  <tag>T_Rilascio_Vuoto_Intr</tag>
+  <tag>T_soffio_ril_cartone</tag>
+  <tag>Tempo_accostatori</tag>
+  <tag>Tempo_fine_spinta_accumulo</tag>
+  <tag>Tempo_pressata</tag>
+  <tag>Tempo_rimbocchi_attivi</tag>
+  <tag>Tempo_sincro_step_tappeto</tag>
+ </group>
+ <group Type="Auto">
+  <name>Parametri - Velocit 2@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Klin</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>Vel_estrattore_discesa</tag>
+  <tag>Vel_estrattore_salita</tag>
+  <tag>Vel_spintore_avanti</tag>
+  <tag>Vel_spintore_indietro</tag>
+  <tag>Vel_spintore_lento</tag>
+  <tag>Velocita_max_estrattore</tag>
+  <tag>Velocita_max_spintore</tag>
+ </group>
+ <group Type="Auto">
+  <name>Parametri - Velocita'@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Klin</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>Vel_forma_discesa</tag>
+  <tag>Vel_forma_lembi</tag>
+  <tag>Vel_forma_salita</tag>
+  <tag>Vel_pressore</tag>
+  <tag>Vel_rulli_cinghie_carico</tag>
+  <tag>Vel_svolgim_nastrini</tag>
+  <tag>Vel_tappeto_accumulo</tag>
+  <tag>Vel_tappeto_step</tag>
+  <tag>Velocita_max_forma</tag>
+  <tag>Velocita_max_nastrini</tag>
+  <tag>Velocita_max_pressore</tag>
+  <tag>Velocita_max_rulli_cinghie</tag>
+  <tag>Velocita_max_tappeto_acc</tag>
+ </group>
+ <group Type="Auto">
+  <name>Prove Scatola@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Assi_in_home</tag>
+  <tag>Com_Home_Assi_Cuc</tag>
+  <tag>En_Termosaldanti</tag>
+  <tag>Fs_carico_cinghie</tag>
+  <tag>Fs_formatura</tag>
+  <tag>Klin</tag>
+  <tag>Lunghezza_Cartone</tag>
+  <tag>Pos_ang_pressore</tag>
+  <tag>Poslin_asse_forma</tag>
+  <tag>Ps_carico_cartone</tag>
+  <tag>Ps_formatura</tag>
+  <tag>Ps_stop_reset</tag>
+  <tag>Punta_messaggi</tag>
+  <tag>Step_Prova_Hmi</tag>
+  <tag>System Time</tag>
+  <tag>UnitLin</tag>
+  <tag>cartone_caricato</tag>
+  <tag>range_temperature</tag>
+  <tag>sel_Np_orig</tag>
+  <tag>tappeto_attivo</tag>
+ </group>
+ <group Type="Auto">
+  <name>Sel Configurazione@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+  <tag>tasto_crea_ricetta_ref</tag>
+ </group>
+ <group Type="Auto">
+  <name>Selezione@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>PB_Sel_pompa_vuoto_mano</tag>
+  <tag>SelZone</tag>
+  <tag>Sel_pompa_vuoto</tag>
+  <tag>System Time</tag>
+  <tag>This Client User-Name</tag>
+ </group>
+ <group Type="Auto">
+  <name>Temperature@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Ab_Termoresist_1</tag>
+  <tag>Ab_Termoresist_2</tag>
+  <tag>All1_TC_Dx</tag>
+  <tag>All1_TC_Sx</tag>
+  <tag>Ktmp</tag>
+  <tag>Ktmp_offset</tag>
+  <tag>Set_Temperatura_1</tag>
+  <tag>Set_Temperatura_2</tag>
+  <tag>TC1_autotuning_atto</tag>
+  <tag>TC2_autotuning_atto</tag>
+  <tag>Temperatura_1</tag>
+  <tag>Temperatura_2</tag>
+  <tag>Termo1_On</tag>
+  <tag>Termo2_On</tag>
+  <tag>UnitTemp</tag>
+ </group>
+</groups>
